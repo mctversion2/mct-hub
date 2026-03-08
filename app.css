@@ -1238,6 +1238,46 @@
   color: var(--color-text-muted);
 }
 
+/* Audio Player */
+.audio-player-section {
+  margin: var(--space-5) 0;
+  padding: var(--space-4) var(--space-5);
+  background: rgba(14, 165, 233, 0.04);
+  border: 1px solid rgba(14, 165, 233, 0.12);
+  border-radius: var(--radius-lg);
+}
+.audio-player-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  color: var(--color-primary);
+}
+.audio-player-title {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.audio-player-element {
+  width: 100%;
+  height: 40px;
+  border-radius: var(--radius-md);
+  outline: none;
+}
+.audio-player-element::-webkit-media-controls-panel {
+  background: var(--color-surface-2);
+}
+.audio-player-disclaimer {
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  opacity: 0.7;
+  line-height: 1.4;
+}
+
 /* Article Source Link */
 .article-source-link {
   display: inline-flex;

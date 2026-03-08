@@ -868,6 +868,47 @@
     return html;
   }
 
+  // ── Audio Player ──
+  var audioAvailableCache = {};
+
+  function checkAudioAvailable(artId) {
+    if (artId in audioAvailableCache) return;
+    var audioUrl = 'audio/' + artId + '.mp3';
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', audioUrl, true);
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        audioAvailableCache[artId] = true;
+        var player = $('#audio-player-section');
+        if (player) player.style.display = 'block';
+      } else {
+        audioAvailableCache[artId] = false;
+      }
+    };
+    xhr.onerror = function () { audioAvailableCache[artId] = false; };
+    xhr.send();
+  }
+
+  function renderAudioPlayer(meta) {
+    var artId = meta.id;
+    // Check if audio exists (async, will show player when confirmed)
+    setTimeout(function () { checkAudioAvailable(artId); }, 100);
+
+    return '<div class="audio-player-section" id="audio-player-section" style="display:none;">' +
+      '<div class="audio-player-header">' +
+        '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>' +
+        '<span class="audio-player-title">Listen to this article</span>' +
+      '</div>' +
+      '<audio controls preload="none" class="audio-player-element" id="article-audio">' +
+        '<source src="audio/' + artId + '.mp3" type="audio/mpeg">' +
+      '</audio>' +
+      '<p class="audio-player-disclaimer">' +
+        '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:-1px;margin-right:4px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>' +
+        'This is an AI-generated audio narration for your convenience. I wish I could voice it myself.' +
+      '</p>' +
+    '</div>';
+  }
+
   function showArticle(articleId) {
     // Normalize to "art_X" string format for meta lookup
     var artId = String(articleId);
@@ -909,6 +950,7 @@
           (meta.shares ? '<span class="article-info-divider"></span><span>' + meta.shares.toLocaleString() + ' shares</span>' : '') +
         '</div>' +
       '</div>' +
+      renderAudioPlayer(meta) +
       '<div class="article-body" id="article-body-content"><p style="opacity:0.5;">Loading article...</p></div>' +
       (meta.url ?
         '<a href="' + escapeHtml(meta.url) + '" target="_blank" rel="noopener noreferrer" class="article-source-link">' +
