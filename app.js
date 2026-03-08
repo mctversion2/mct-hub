@@ -950,7 +950,6 @@
           (meta.shares ? '<span class="article-info-divider"></span><span>' + meta.shares.toLocaleString() + ' shares</span>' : '') +
         '</div>' +
       '</div>' +
-      renderAudioPlayer(meta) +
       '<div class="article-body" id="article-body-content"><p style="opacity:0.5;">Loading article...</p></div>' +
       (meta.url ?
         '<a href="' + escapeHtml(meta.url) + '" target="_blank" rel="noopener noreferrer" class="article-source-link">' +
