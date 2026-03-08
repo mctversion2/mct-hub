@@ -626,8 +626,11 @@
     var html = "";
     top.forEach(function (tag) {
       var active = state.currentTag === tag ? " active" : "";
-      html += '<button class="tag-cloud-item' + active + '" data-tag="' + escapeHtml(tag) + '">' +
-        escapeHtml(tag) + ' <span style="opacity:0.6">(' + tagCounts[tag] + ')</span></button>';
+      var count = tagCounts[tag];
+      // Weight by article count: high ≥100, mid 50-99, low <50
+      var weightClass = count >= 100 ? " tag-weight-high" : count >= 50 ? " tag-weight-mid" : " tag-weight-low";
+      html += '<button class="tag-cloud-item' + active + weightClass + '" data-tag="' + escapeHtml(tag) + '">' +
+        escapeHtml(tag) + ' <span style="opacity:0.6">(' + count + ')</span></button>';
     });
     container.innerHTML = html;
   }
@@ -873,16 +876,37 @@
   function renderRelatedArticles(meta) {
     if (!meta.tags || meta.tags.length === 0) return "";
 
-    var related = ARTICLES_META.filter(function (a) {
-      if (a.id === meta.id) return false;
-      if (!a.tags) return false;
-      return a.tags.some(function (t) { return meta.tags.indexOf(t) !== -1; });
-    }).slice(0, 4);
+    // Find candidates with at least one matching tag, count matches
+    var candidates = [];
+    ARTICLES_META.forEach(function (a) {
+      if (a.id === meta.id) return;
+      if (!a.tags) return;
+      var matchCount = 0;
+      a.tags.forEach(function (t) {
+        if (meta.tags.indexOf(t) !== -1) matchCount++;
+      });
+      if (matchCount > 0) {
+        candidates.push({ article: a, matchCount: matchCount });
+      }
+    });
 
-    if (related.length === 0) return "";
+    if (candidates.length === 0) return "";
+
+    // Sort by match count desc, then by date desc
+    candidates.sort(function (x, y) {
+      if (y.matchCount !== x.matchCount) return y.matchCount - x.matchCount;
+      var da = x.article.date || "";
+      var db = y.article.date || "";
+      if (db > da) return 1;
+      if (db < da) return -1;
+      return 0;
+    });
+
+    var top = candidates.slice(0, 4);
 
     var html = '<div class="related-section"><p class="related-title">Related Articles</p><div class="related-grid">';
-    related.forEach(function (a) {
+    top.forEach(function (c) {
+      var a = c.article;
       var relImgHtml = a.image
         ? '<div class="related-image"><img src="' + escapeHtml(a.image) + '" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>'
         : '';
@@ -936,6 +960,61 @@
     $("#search-results").innerHTML = html;
   }
 
+  // ---- READING PROGRESS BAR ----
+  var progressBar = null;
+  var progressRAF = null;
+
+  function createProgressBar() {
+    if (progressBar) return;
+    progressBar = document.createElement("div");
+    progressBar.id = "reading-progress-bar";
+    document.body.appendChild(progressBar);
+  }
+
+  function removeProgressBar() {
+    if (progressBar) {
+      progressBar.style.width = "0%";
+      // Small delay before removing to allow final transition
+      setTimeout(function () {
+        if (progressBar && progressBar.parentNode) {
+          progressBar.parentNode.removeChild(progressBar);
+        }
+        progressBar = null;
+      }, 150);
+    }
+    if (progressRAF) {
+      cancelAnimationFrame(progressRAF);
+      progressRAF = null;
+    }
+    window.removeEventListener("scroll", updateProgress, { passive: true });
+  }
+
+  function updateProgress() {
+    if (progressRAF) cancelAnimationFrame(progressRAF);
+    progressRAF = requestAnimationFrame(function () {
+      if (!progressBar) return;
+      var docEl = document.documentElement;
+      var scrollTop = window.scrollY || docEl.scrollTop;
+      var scrollHeight = docEl.scrollHeight - docEl.clientHeight;
+      if (scrollHeight <= 0) {
+        progressBar.style.width = "100%";
+        return;
+      }
+      var pct = Math.min(100, Math.max(0, (scrollTop / scrollHeight) * 100));
+      progressBar.style.width = pct + "%";
+    });
+  }
+
+  function startProgressBar() {
+    createProgressBar();
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    updateProgress();
+  }
+
+  function stopProgressBar() {
+    removeProgressBar();
+  }
+
   // ---- ROUTING ----
   function navigateTo(view, data) {
     $$(".view").forEach(function (v) { v.classList.remove("active"); });
@@ -946,11 +1025,13 @@
       $("#view-article").classList.add("active");
       showArticle(data);
       window.location.hash = "article/" + data;
+      startProgressBar();
     } else if (view === "about") {
       state.currentView = "about";
       $("#view-about").classList.add("active");
       window.location.hash = "about";
       window.scrollTo(0, 0);
+      stopProgressBar();
     } else {
       state.currentView = "home";
       $("#view-home").classList.add("active");
@@ -959,6 +1040,7 @@
       } else {
         window.location.hash = "";
       }
+      stopProgressBar();
     }
 
     // Update nav active state
@@ -1056,6 +1138,10 @@
       if (sourceBtn) {
         e.preventDefault();
         var source = sourceBtn.dataset.source;
+        // If in article or about view, navigate home first
+        if (state.currentView !== "home") {
+          navigateTo("home");
+        }
         // Toggle: if same source clicked, clear filter
         if (state.currentSource === source) {
           clearSourceFilter();
@@ -1218,6 +1304,19 @@
 
     // Hash change
     window.addEventListener("hashchange", handleHashChange);
+
+    // Tag filters scroll indicator (left-edge fade on scroll)
+    var tagFiltersEl = $("#tag-filters");
+    var tagFiltersWrap = $("#tag-filters-wrap");
+    if (tagFiltersEl && tagFiltersWrap) {
+      tagFiltersEl.addEventListener("scroll", function () {
+        if (tagFiltersEl.scrollLeft > 10) {
+          tagFiltersWrap.classList.add("scrolled-start");
+        } else {
+          tagFiltersWrap.classList.remove("scrolled-start");
+        }
+      }, { passive: true });
+    }
   }
 
   function closeSearch() {

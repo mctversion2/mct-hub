@@ -106,10 +106,9 @@
   <!-- HOME VIEW -->
   <div id="view-home" class="view active">
 
-    <!-- Source Hub Banner -->
-    <section class="source-hub">
+    <!-- Source Hub Banner — hidden from above-the-fold, moved to sidebar & About page -->
+    <section class="source-hub" hidden aria-hidden="true">
       <div class="source-hub-inner">
-        <p class="source-hub-tagline">All Morning Coffee Thoughts articles — from every platform.</p>
         <div class="source-badges">
           <button class="source-badge" data-source="facebook" type="button">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="source-badge-icon fb"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -139,7 +138,9 @@
           <button class="filter-btn" data-category="Commentary" role="tab" aria-selected="false">Commentary</button>
 
         </div>
-        <div class="tag-filters" id="tag-filters"></div>
+        <div class="tag-filters-wrap" id="tag-filters-wrap">
+          <div class="tag-filters" id="tag-filters"></div>
+        </div>
       </div>
     </section>
 
@@ -218,6 +219,23 @@
               <span class="stat-number">48K+</span>
               <span class="stat-label">Followers</span>
             </div>
+            <div class="stat-item" style="grid-column: 1 / -1; border-top: 1px solid var(--color-divider); padding-top: var(--space-3); margin-top: var(--space-1);">
+              <span style="display:block; font-family: var(--font-body); font-size: var(--text-xs); color: var(--color-text-faint); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: var(--space-2);">Sources</span>
+              <div class="sidebar-sources" id="sidebar-sources">
+                <button class="sidebar-source-badge" data-source="facebook" type="button">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" style="color:#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  MCT 2.0 <span class="ssbadge-count" id="sbc-facebook">232</span>
+                </button>
+                <button class="sidebar-source-badge" data-source="website" type="button">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  Website <span class="ssbadge-count" id="sbc-website">184</span>
+                </button>
+                <button class="sidebar-source-badge" data-source="mct1_facebook" type="button">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" style="color:#9333EA"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  MCT 1.0 <span class="ssbadge-count" id="sbc-mct1">14</span>
+                </button>
+              </div>
+            </div>
           </div>
         </aside>
       </div>
@@ -241,26 +259,89 @@
       <div class="about-content">
         <div class="about-text">
           <p>Morning Coffee Thoughts (MCT) is an independent Philippine political commentary platform that covers the issues that matter most to Filipinos — from elections and governance to corruption, the ICC, and the West Philippine Sea.</p>
-          <p>All Morning Coffee Thoughts articles — from every platform. MCT 2.0 on Facebook, the official blog at morningcoffeethoughts.org, and MCT 1.0 (the original Facebook page), all searchable in one place.</p>
           <p>Founded as a personal blog, MCT has grown into a trusted voice in Philippine political discourse, with a community of over 48,000 followers on Facebook. The writing style is direct, thoroughly sourced, and unapologetically honest.</p>
-          <p>Beyond politics, MCT also explores personal topics — freelancing, technology, and the everyday experiences of being Filipino in a rapidly changing world.</p>
-          <p>Every article aims to cut through noise and provide context that readers can't easily find elsewhere. Sources are cited. Claims are verified. Commentary is clearly labeled as such.</p>
+          <p>Every article aims to cut through noise and provide context that readers can’t easily find elsewhere. Sources are cited. Claims are verified. Commentary is clearly labeled as such.</p>
           <p>The portal syncs automatically — new articles published on Facebook or the blog appear here within hours.</p>
         </div>
+
         <div class="about-stats-grid">
           <div class="about-stat">
-            <span class="about-stat-number">430</span>
+            <span class="about-stat-number">430+</span>
             <span class="about-stat-label">Articles Published</span>
           </div>
           <div class="about-stat">
-            <span class="about-stat-number" id="stat-followers">...</span>
+            <span class="about-stat-number" id="stat-followers">48K+</span>
             <span class="about-stat-label">Facebook Followers</span>
           </div>
           <div class="about-stat">
-            <span class="about-stat-number">430–2026</span>
+            <span class="about-stat-number">2024–2026</span>
             <span class="about-stat-label">Coverage Period</span>
           </div>
         </div>
+
+        <!-- Timeline -->
+        <div class="about-timeline">
+          <h2 class="about-timeline-title">MCT Timeline</h2>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <div class="timeline-year">2024</div>
+              <div class="timeline-event">MCT 1.0 launched on Facebook — the original page where it all started, covering Philippine politics with direct commentary.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2025</div>
+              <div class="timeline-event">MCT 2.0 Facebook page launched with expanded coverage. <em>morningcoffeethoughts.org</em> blog started, reaching a broader audience beyond Facebook.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2026</div>
+              <div class="timeline-event">MCT Hub portal launched — all 430+ articles from every platform in one searchable archive, with 48K+ followers and growing.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- What MCT Covers -->
+        <div class="about-topics">
+          <h2 class="about-topics-title">What MCT Covers</h2>
+          <div class="about-topics-grid">
+            <span class="about-topic-chip">Elections</span>
+            <span class="about-topic-chip">Corruption</span>
+            <span class="about-topic-chip">Governance</span>
+            <span class="about-topic-chip">National Budget</span>
+            <span class="about-topic-chip">ICC &amp; International Law</span>
+            <span class="about-topic-chip">West Philippine Sea</span>
+            <span class="about-topic-chip">Marcos Administration</span>
+            <span class="about-topic-chip">Sara Duterte</span>
+            <span class="about-topic-chip">Judicial Affairs</span>
+            <span class="about-topic-chip">Human Rights</span>
+            <span class="about-topic-chip">OFW Issues</span>
+            <span class="about-topic-chip">Philippine Economy</span>
+            <span class="about-topic-chip">POGO &amp; Online Gambling</span>
+            <span class="about-topic-chip">Media &amp; Press Freedom</span>
+          </div>
+        </div>
+
+        <!-- Source Hub in About page -->
+        <div class="about-source-hub">
+          <h2 class="about-source-hub-title">Article Sources</h2>
+          <p style="font-family: var(--font-body); font-size: var(--text-sm); color: var(--color-text-muted); margin-bottom: var(--space-4); line-height: 1.6;">All Morning Coffee Thoughts articles — from every platform — are searchable here. Click a source to filter:</p>
+          <div class="about-source-badges">
+            <button class="source-badge" data-source="facebook" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="source-badge-icon fb"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>MCT 2.0 Facebook</span>
+              <span class="source-badge-count">232</span>
+            </button>
+            <button class="source-badge" data-source="website" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="source-badge-icon web"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>morningcoffeethoughts.org</span>
+              <span class="source-badge-count">184</span>
+            </button>
+            <button class="source-badge" data-source="mct1_facebook" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="source-badge-icon fb"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>MCT 1.0 Facebook</span>
+              <span class="source-badge-count">14</span>
+            </button>
+          </div>
+        </div>
+
         <div class="about-links">
           <h2>Connect</h2>
           <a href="https://www.facebook.com/morningcoffeethoughts2" target="_blank" rel="noopener noreferrer" class="about-link">
@@ -275,6 +356,22 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             inquiry@morningcoffeethoughts.org
           </a>
+        </div>
+
+        <!-- Call to action -->
+        <div class="about-cta">
+          <p class="about-cta-title">Support Independent Journalism</p>
+          <p class="about-cta-text">MCT is reader-supported. No ads, no sponsors — just research, facts, and honest commentary. Follow for daily updates or help keep it going.</p>
+          <div class="about-cta-buttons">
+            <a href="https://www.facebook.com/morningcoffeethoughts2" target="_blank" rel="noopener noreferrer" class="about-cta-btn about-cta-btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Follow on Facebook
+            </a>
+            <button class="about-cta-btn about-cta-btn-secondary" onclick="document.getElementById('paypal-modal').classList.add('visible')" type="button">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              Support MCT
+            </button>
+          </div>
         </div>
       </div>
     </div>
