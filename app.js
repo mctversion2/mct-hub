@@ -1483,7 +1483,7 @@
     function buildItem(a) {
       return (
         '<div class="ticker-item" data-article="' + a.id + '">' +
-          '<img class="ticker-img" src="' + escapeHtml(a.image) + '" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'">' +
+          '<img class="ticker-img" src="' + escapeHtml(a.image) + '" width="28" height="28" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'">' +
           '<span class="ticker-title">' + escapeHtml(toTitleCase(a.title.length > 65 ? a.title.substring(0, 62) + '...' : a.title)) + '</span>' +
         '</div>'
       );

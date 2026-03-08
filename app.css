@@ -1965,8 +1965,9 @@
 }
 .ticker-track {
   display: flex;
+  flex-wrap: nowrap;
   gap: 0;
-  animation: ticker-scroll 20s linear infinite;
+  animation: ticker-scroll 60s linear infinite;
   will-change: transform;
 }
 .ticker-track:hover {
@@ -1987,11 +1988,15 @@
   background: rgba(255,255,255,0.05);
 }
 .ticker-img {
-  width: 28px;
-  height: 28px;
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px;
+  max-width: 28px !important;
+  max-height: 28px !important;
   border-radius: 4px;
   object-fit: cover;
   flex-shrink: 0;
+  display: inline-block !important;
 }
 .ticker-title {
   font-size: 0.72rem;
@@ -2013,8 +2018,11 @@
     font-size: 0.6rem;
   }
   .ticker-img {
-    width: 24px;
-    height: 24px;
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px;
+    max-width: 24px !important;
+    max-height: 24px !important;
   }
   .ticker-title {
     font-size: 0.65rem;
