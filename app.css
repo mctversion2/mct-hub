@@ -1827,3 +1827,61 @@
   opacity: 1;
   max-height: 2rem;
 }
+
+/* PayPal Modal */
+.paypal-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+.paypal-modal.visible {
+  display: flex;
+}
+.paypal-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+.paypal-modal-content {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1.5rem 1.5rem;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.paypal-modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem;
+}
+.paypal-modal-close:hover {
+  color: #333;
+}
+.paypal-modal-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+.paypal-modal-desc {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}

@@ -288,10 +288,21 @@
     <p class="support-heading">Support Independent Philippine Voices</p>
     <p class="support-text">Morning Coffee Thoughts is reader-supported. No ads, no sponsors, no corporate backing &mdash; just research, facts, and honest commentary. If this work matters to you, consider helping keep it going.</p>
     <div class="support-buttons">
-      <a href="https://www.paypal.com/smart/buttons?flow=subscription_setup&clientID=AclqDFoMMWXCHlEZ86YKjCSa5lkbAunI3gBX35ZJxxcCAWDMU9d68ctiyZsnscbsQb4MMG9GbGwljgAv&currency=USD&intent=subscription" target="_blank" rel="noopener noreferrer" class="support-btn support-btn-paypal">Support via PayPal</a>
+      <button class="support-btn support-btn-paypal" onclick="document.getElementById('paypal-modal').classList.add('visible')">Support via PayPal</button>
       <button class="support-btn support-btn-gcash" onclick="document.getElementById('gcash-info').classList.toggle('visible')">Support via GCash</button>
     </div>
     <p class="gcash-info" id="gcash-info">GCash: 0969 314 4839</p>
+
+    <!-- PayPal Modal -->
+    <div class="paypal-modal" id="paypal-modal">
+      <div class="paypal-modal-backdrop" onclick="document.getElementById('paypal-modal').classList.remove('visible')"></div>
+      <div class="paypal-modal-content">
+        <button class="paypal-modal-close" onclick="document.getElementById('paypal-modal').classList.remove('visible')">&times;</button>
+        <p class="paypal-modal-title">Support via PayPal</p>
+        <p class="paypal-modal-desc">Subscribe to support Morning Coffee Thoughts. Your contribution helps keep independent commentary alive.</p>
+        <div id="paypal-button-container-P-9K802369962927120NEUOSGQ"></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -311,6 +322,28 @@
 
   </div>
 </footer>
+
+<!-- PayPal SDK -->
+<script src="https://www.paypal.com/sdk/js?client-id=AclqDFoMMWXCHlEZ86YKjCSa5lkbAunI3gBX35ZJxxcCAWDMU9d68ctiyZsnscbsQb4MMG9GbGwljgAv&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+    style: {
+      shape: 'rect',
+      color: 'gold',
+      layout: 'vertical',
+      label: 'subscribe'
+    },
+    createSubscription: function(data, actions) {
+      return actions.subscription.create({
+        plan_id: 'P-9K802369962927120NEUOSGQ'
+      });
+    },
+    onApprove: function(data, actions) {
+      document.getElementById('paypal-modal').classList.remove('visible');
+      alert('Thank you for your support! Subscription ID: ' + data.subscriptionID);
+    }
+  }).render('#paypal-button-container-P-9K802369962927120NEUOSGQ');
+</script>
 
 </body>
 </html>
