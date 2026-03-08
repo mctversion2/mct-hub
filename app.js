@@ -273,6 +273,89 @@
       '</div>';
   }
 
+  // ---- RENDER: EVENT BANNER (Google Doodle-style) ----
+  function getActiveEvent() {
+    if (typeof MCT_EVENTS === 'undefined') return null;
+    // Use Asia/Manila timezone
+    var now;
+    try {
+      var manilaStr = new Date().toLocaleString('en-US', { timeZone: 'Asia/Manila' });
+      now = new Date(manilaStr);
+    } catch (e) {
+      now = new Date();
+    }
+    var m = now.getMonth() + 1; // 1-12
+    var d = now.getDate();
+
+    // Find the most specific event (shortest duration = highest priority)
+    var matches = [];
+    for (var i = 0; i < MCT_EVENTS.length; i++) {
+      var ev = MCT_EVENTS[i];
+      var inRange = false;
+      if (ev.startMonth === ev.endMonth) {
+        // Same month
+        inRange = (m === ev.startMonth && d >= ev.startDay && d <= ev.endDay);
+      } else if (ev.startMonth < ev.endMonth) {
+        // Spans months (e.g. Dec 16 - Dec 25 is same month, but Dec 25 - Jan 2)
+        inRange = (m === ev.startMonth && d >= ev.startDay) ||
+                  (m === ev.endMonth && d <= ev.endDay) ||
+                  (m > ev.startMonth && m < ev.endMonth);
+      } else {
+        // Wraps around year end (e.g. Dec to Jan)
+        inRange = (m === ev.startMonth && d >= ev.startDay) ||
+                  (m === ev.endMonth && d <= ev.endDay) ||
+                  (m > ev.startMonth || m < ev.endMonth);
+      }
+      if (inRange) {
+        // Calculate duration in days for priority
+        var duration = 0;
+        if (ev.startMonth === ev.endMonth) {
+          duration = ev.endDay - ev.startDay + 1;
+        } else {
+          duration = 30; // rough estimate for multi-month
+        }
+        matches.push({ event: ev, duration: duration });
+      }
+    }
+    if (matches.length === 0) return null;
+    // Sort by shortest duration (most specific event wins)
+    matches.sort(function(a, b) { return a.duration - b.duration; });
+    return matches[0].event;
+  }
+
+  function renderEventBanner() {
+    var section = $("#event-banner");
+    if (!section) return;
+    var ev = getActiveEvent();
+    if (!ev) {
+      section.hidden = true;
+      section.innerHTML = '';
+      return;
+    }
+    // Check if banner image exists
+    var imgPath = './events/event-' + ev.id + '.png';
+    var c1 = ev.accentColor || '#9333ea';
+    var c2 = ev.accentColor2 || c1;
+    var tc = ev.textColor || '#ffffff';
+
+    section.hidden = false;
+    section.innerHTML =
+      '<div class="event-banner-card">' +
+        '<img class="event-banner-img" src="' + imgPath + '" alt="' + escapeHtml(ev.name) + '" loading="eager" ' +
+          'onerror="this.style.display=\'none\'">' +
+        '<div class="event-banner-overlay" style="background:linear-gradient(135deg, ' + c1 + 'cc 0%, ' + c2 + 'aa 40%, transparent 70%)"></div>' +
+        '<div class="event-banner-content" style="color:' + tc + '">' +
+          '<div class="event-banner-emoji">' + (ev.emoji || '') + '</div>' +
+          '<div class="event-banner-title">' + escapeHtml(ev.name) + '</div>' +
+          '<div class="event-banner-subtitle">' + escapeHtml(ev.subtitle) + '</div>' +
+          '<div class="event-banner-badge" style="color:' + tc + '">' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>' +
+            'Morning Coffee Thoughts' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
+
   // ---- RENDER: ARTICLE CARDS ----
   function renderArticleCard(a) {
     var imgHtml = a.image
@@ -366,8 +449,10 @@
 
     // SOURCE-FILTERED MODE: paginated, no hero
     if (state.currentSource) {
-      // Hide hero when viewing a source
+      // Hide hero and event banner when viewing a source
       $("#hero-section").innerHTML = "";
+      var evBanner = $("#event-banner");
+      if (evBanner) evBanner.hidden = true;
 
       // Show source filter header
       var sourceLabel = state.currentSource === "facebook" ? "MCT 2.0 Facebook" :
@@ -419,6 +504,8 @@
     // Remove source filter header if present
     var existingHeader = $("#source-filter-header");
     if (existingHeader) { existingHeader.hidden = true; }
+    // Restore event banner
+    renderEventBanner();
     paginationWrap.hidden = true;
 
     // Skip the hero article (first one)
@@ -1229,6 +1316,7 @@
 
   function init() {
     initTheme();
+    renderEventBanner();
     renderHero();
     renderArticles(true);
     renderPopular();
