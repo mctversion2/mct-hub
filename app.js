@@ -554,7 +554,20 @@
   // ---- RENDER: FILTER BAR TAGS ----
   function renderFilterTags() {
     var container = $("#tag-filters");
-    var topTags = ["Duterte", "Elections", "Corruption", "Congress", "ICC", "Impeachment", "West Philippine Sea", "OFW"];
+    // Dynamically compute top tags from actual article data
+    var tagCounts = {};
+    ARTICLES_META.forEach(function (a) {
+      if (a.tags) {
+        a.tags.forEach(function (t) {
+          tagCounts[t] = (tagCounts[t] || 0) + 1;
+        });
+      }
+    });
+    // Sort by frequency, take top 12
+    var topTags = Object.keys(tagCounts).sort(function (a, b) {
+      return tagCounts[b] - tagCounts[a];
+    }).slice(0, 12);
+
     var html = "";
     topTags.forEach(function (tag) {
       var active = state.currentTag === tag ? " active" : "";
