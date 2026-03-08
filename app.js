@@ -661,6 +661,67 @@
   }
 
   // ---- ARTICLE VIEW ----
+  // Extract a human-readable source name from a URL
+  function extractSourceName(url) {
+    try {
+      var hostname = url.replace(/^https?:\/\//, '').split('/')[0].replace(/^www\./, '');
+      // Known Philippine / international news sources
+      var nameMap = {
+        'inquirer.net': 'Inquirer',
+        'newsinfo.inquirer.net': 'Inquirer',
+        'globalnation.inquirer.net': 'Inquirer',
+        'entertainment.inquirer.net': 'Inquirer',
+        'cebudailynews.inquirer.net': 'Cebu Daily News',
+        'technology.inquirer.net': 'Inquirer',
+        'business.inquirer.net': 'Inquirer',
+        'abs-cbn.com': 'ABS-CBN',
+        'gmanetwork.com': 'GMA News',
+        'rappler.com': 'Rappler',
+        'philstar.com': 'Philstar',
+        'mb.com.ph': 'Manila Bulletin',
+        'manilatimes.net': 'Manila Times',
+        'pna.gov.ph': 'PNA',
+        'pco.gov.ph': 'PCO',
+        'doe.gov.ph': 'DOE',
+        'filipinotimes.net': 'Filipino Times',
+        'gulfnews.com': 'Gulf News',
+        'reuters.com': 'Reuters',
+        'bbc.com': 'BBC',
+        'cnnphilippines.com': 'CNN Philippines',
+        'aljazeera.com': 'Al Jazeera',
+        'facebook.com': 'Facebook',
+        'x.com': 'X (Twitter)',
+        'twitter.com': 'X (Twitter)',
+        'youtube.com': 'YouTube',
+        'diskurso.ph': 'Diskurso PH',
+        'eia.gov': 'U.S. EIA',
+        'sunstar.com.ph': 'SunStar',
+        'dailyguardian.com.ph': 'Daily Guardian',
+        'bilyonaryo.com': 'Bilyonaryo',
+        'interaksyon.philstar.com': 'Interaksyon',
+        'verafiles.org': 'Vera Files',
+        'newsbreak.ph': 'Newsbreak',
+        'bulatlat.com': 'Bulatlat',
+        'mindanews.com': 'MindaNews',
+        'businessworld.com.ph': 'BusinessWorld',
+        'manilastandard.net': 'Manila Standard'
+      };
+      // Try exact hostname match first, then base domain
+      if (nameMap[hostname]) return nameMap[hostname];
+      // Try without subdomain: e.g. 'newsinfo.inquirer.net' -> 'inquirer.net'
+      var parts = hostname.split('.');
+      if (parts.length > 2) {
+        var baseDomain = parts.slice(-2).join('.');
+        if (nameMap[baseDomain]) return nameMap[baseDomain];
+      }
+      // Fallback: clean up domain into a readable name
+      var base = parts.length > 2 ? parts.slice(-2, -1)[0] : parts[0];
+      return base.charAt(0).toUpperCase() + base.slice(1);
+    } catch (e) {
+      return url.length > 40 ? url.substring(0, 37) + '...' : url;
+    }
+  }
+
   function formatArticleText(text, title) {
     if (!text) return "<p>Article content unavailable.</p>";
 
@@ -748,11 +809,27 @@
         continue;
       }
 
-      // URL lines in sources
+      // URL lines in sources (bare URL on its own line)
       if (inSources && /^https?:\/\//.test(trimmed)) {
         flushParagraph();
-        var displayUrl = trimmed.length > 60 ? trimmed.substring(0, 57) + "..." : trimmed;
-        html += '<p><a href="' + escapeHtml(trimmed) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(displayUrl) + '</a></p>';
+        var srcName = extractSourceName(trimmed);
+        html += '<p><a href="' + escapeHtml(trimmed) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(srcName) + '</a></p>';
+        continue;
+      }
+
+      // Numbered source lines: "1. SourceName, URL" or "1. SourceName (context), URL"
+      if (inSources && /^\d+\.\s/.test(trimmed)) {
+        flushParagraph();
+        var srcMatch = trimmed.match(/^\d+\.\s+(.+?),?\s+(https?:\/\/\S+)/);
+        if (srcMatch) {
+          var sLabel = srcMatch[1].replace(/,\s*$/, '').trim();
+          var sUrl = srcMatch[2];
+          html += '<p style="padding-left:var(--space-4);">' +
+            trimmed.match(/^\d+/)[0] + '. ' +
+            '<a href="' + escapeHtml(sUrl) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(sLabel) + '</a></p>';
+        } else {
+          html += '<p style="padding-left:var(--space-4);">' + trimmed + '</p>';
+        }
         continue;
       }
 
@@ -763,7 +840,7 @@
         continue;
       }
 
-      // Numbered list items
+      // Numbered list items (outside sources section)
       if (/^\d+\.\s/.test(trimmed)) {
         flushParagraph();
         html += '<p style="padding-left:var(--space-4);">' + trimmed + '</p>';
@@ -779,11 +856,13 @@
       html += '</div>';
     }
 
-    // Auto-link URLs in text
-    html = html.replace(/(https?:\/\/[^\s<"]+)/g, function (url) {
-      if (url.indexOf('href="') !== -1) return url; // Already in a link
-      var display = url.length > 50 ? url.substring(0, 47) + "..." : url;
-      return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + display + '</a>';
+    // Auto-link URLs in text (show source name instead of raw URL)
+    // Only match URLs that are NOT already inside an <a> tag (not preceded by href=" or >)
+    html = html.replace(/(<a[^>]*>.*?<\/a>)|(https?:\/\/[^\s<"]+)/g, function (match, linkedBlock, rawUrl) {
+      if (linkedBlock) return linkedBlock; // Already a complete link — leave it alone
+      if (!rawUrl) return match;
+      var display = extractSourceName(rawUrl);
+      return '<a href="' + rawUrl + '" target="_blank" rel="noopener noreferrer">' + display + '</a>';
     });
 
     return html;
