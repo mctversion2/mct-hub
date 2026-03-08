@@ -86,34 +86,46 @@
       return;
     }
     var a = articles[0];
+    var heroImgHtml = a.image
+      ? '<div class="hero-image"><img src="' + escapeHtml(a.image) + '" alt="" loading="eager" onerror="this.parentNode.style.display=\'none\'"></div>'
+      : '';
     section.innerHTML =
-      '<div class="hero-card" data-article="' + a.id + '">' +
-        '<div class="hero-meta">' +
-          '<span class="category-badge ' + getCategoryClass(a.category) + '">' + escapeHtml(a.category) + '</span>' +
-          (a.date ? '<span class="card-date">' + formatDate(a.date) + '</span>' : '') +
-          '<span class="card-date">' + a.read_time + ' min read</span>' +
+      '<div class="hero-card ' + (a.image ? 'has-image' : '') + '" data-article="' + a.id + '">' +
+        heroImgHtml +
+        '<div class="hero-text">' +
+          '<div class="hero-meta">' +
+            '<span class="category-badge ' + getCategoryClass(a.category) + '">' + escapeHtml(a.category) + '</span>' +
+            (a.date ? '<span class="card-date">' + formatDate(a.date) + '</span>' : '') +
+            '<span class="card-date">' + a.read_time + ' min read</span>' +
+          '</div>' +
+          '<h2 class="hero-title">' + escapeHtml(toTitleCase(a.title)) + '</h2>' +
+          '<p class="hero-excerpt">' + escapeHtml(a.excerpt) + '</p>' +
         '</div>' +
-        '<h2 class="hero-title">' + escapeHtml(toTitleCase(a.title)) + '</h2>' +
-        '<p class="hero-excerpt">' + escapeHtml(a.excerpt) + '</p>' +
       '</div>';
   }
 
   // ---- RENDER: ARTICLE CARDS ----
   function renderArticleCard(a) {
+    var imgHtml = a.image
+      ? '<div class="card-image"><img src="' + escapeHtml(a.image) + '" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>'
+      : '';
     return (
-      '<div class="article-card" data-article="' + a.id + '">' +
-        '<div class="card-meta">' +
-          '<span class="category-badge ' + getCategoryClass(a.category) + '">' + escapeHtml(a.category) + '</span>' +
-          (a.date ? '<span class="card-date">' + formatDate(a.date) + '</span>' : '') +
-        '</div>' +
-        '<h3 class="card-title">' + escapeHtml(toTitleCase(a.title)) + '</h3>' +
-        '<p class="card-excerpt">' + escapeHtml(a.excerpt) + '</p>' +
-        '<div class="card-footer">' +
-          '<span>' + a.read_time + ' min read' + (a.word_count ? ' · ' + a.word_count.toLocaleString() + ' words' : '') + '</span>' +
-          '<span class="card-source">' +
-            '<span class="source-dot ' + (a.source || '') + '"></span>' +
-            (a.source === 'facebook' ? 'Facebook' : a.source === 'website' ? 'Website' : a.source === 'mct1_facebook' ? 'MCT 1.0' : '') +
-          '</span>' +
+      '<div class="article-card ' + (a.image ? 'has-image' : '') + '" data-article="' + a.id + '">' +
+        imgHtml +
+        '<div class="card-content">' +
+          '<div class="card-meta">' +
+            '<span class="category-badge ' + getCategoryClass(a.category) + '">' + escapeHtml(a.category) + '</span>' +
+            (a.date ? '<span class="card-date">' + formatDate(a.date) + '</span>' : '') +
+          '</div>' +
+          '<h3 class="card-title">' + escapeHtml(toTitleCase(a.title)) + '</h3>' +
+          '<p class="card-excerpt">' + escapeHtml(a.excerpt) + '</p>' +
+          '<div class="card-footer">' +
+            '<span>' + a.read_time + ' min read' + (a.word_count ? ' · ' + a.word_count.toLocaleString() + ' words' : '') + '</span>' +
+            '<span class="card-source">' +
+              '<span class="source-dot ' + (a.source || '') + '"></span>' +
+              (a.source === 'facebook' ? 'Facebook' : a.source === 'website' ? 'Website' : a.source === 'mct1_facebook' ? 'MCT 1.0' : '') +
+            '</span>' +
+          '</div>' +
         '</div>' +
       '</div>'
     );
@@ -462,11 +474,16 @@
 
     var relatedHtml = renderRelatedArticles(meta);
 
+    var articleImgHtml = meta.image
+      ? '<div class="article-cover"><img src="' + escapeHtml(meta.image) + '" alt="" loading="eager" onerror="this.parentNode.style.display=\'none\'"></div>'
+      : '';
+
     container.innerHTML =
       '<a href="#" class="article-back" id="article-back">' +
         '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>' +
         'Back to articles' +
       '</a>' +
+      articleImgHtml +
       '<div class="article-header">' +
         '<div class="card-meta">' +
           '<span class="category-badge ' + getCategoryClass(meta.category) + '">' + escapeHtml(meta.category) + '</span>' +
@@ -525,8 +542,12 @@
 
     var html = '<div class="related-section"><p class="related-title">Related Articles</p><div class="related-grid">';
     related.forEach(function (a) {
+      var relImgHtml = a.image
+        ? '<div class="related-image"><img src="' + escapeHtml(a.image) + '" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>'
+        : '';
       html +=
         '<div class="related-item" data-article="' + a.id + '">' +
+          relImgHtml +
           '<div>' +
             '<p class="related-cat">' + escapeHtml(a.category) + '</p>' +
             '<h3>' + escapeHtml(toTitleCase(a.title)) + '</h3>' +
