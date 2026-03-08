@@ -474,10 +474,11 @@
   }
 
   function showArticle(articleId) {
-    var meta = ARTICLES_META.find(function (a) { return a.id === articleId; });
+    var id = typeof articleId === "string" ? parseInt(articleId, 10) : articleId;
+    var meta = ARTICLES_META.find(function (a) { return a.id === id; });
     if (!meta) return;
 
-    var text = ARTICLES_TEXT[articleId] || "";
+    var text = ARTICLES_TEXT[id] || ARTICLES_TEXT[String(id)] || "";
     var container = $("#article-content");
 
     var relatedHtml = renderRelatedArticles(meta);
