@@ -1207,6 +1207,11 @@
   color: var(--color-primary);
   margin-top: 0;
 }
+.article-body .sources-section p {
+  margin-bottom: var(--space-1);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
 .article-body a {
   color: var(--color-primary);
   text-decoration: underline;
