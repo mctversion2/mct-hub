@@ -287,39 +287,33 @@
     var m = now.getMonth() + 1; // 1-12
     var d = now.getDate();
 
-    // Find the most specific event (shortest duration = highest priority)
+    // Priority map: day=1, week=2, month=3 (shorter events override longer)
+    var PRIORITY = { day: 1, week: 2, month: 3 };
+
     var matches = [];
     for (var i = 0; i < MCT_EVENTS.length; i++) {
       var ev = MCT_EVENTS[i];
       var inRange = false;
       if (ev.startMonth === ev.endMonth) {
-        // Same month
         inRange = (m === ev.startMonth && d >= ev.startDay && d <= ev.endDay);
       } else if (ev.startMonth < ev.endMonth) {
-        // Spans months (e.g. Dec 16 - Dec 25 is same month, but Dec 25 - Jan 2)
         inRange = (m === ev.startMonth && d >= ev.startDay) ||
                   (m === ev.endMonth && d <= ev.endDay) ||
                   (m > ev.startMonth && m < ev.endMonth);
       } else {
-        // Wraps around year end (e.g. Dec to Jan)
+        // Wraps year end (e.g. Dec 31 → Jan 2)
         inRange = (m === ev.startMonth && d >= ev.startDay) ||
                   (m === ev.endMonth && d <= ev.endDay) ||
                   (m > ev.startMonth || m < ev.endMonth);
       }
       if (inRange) {
-        // Calculate duration in days for priority
-        var duration = 0;
-        if (ev.startMonth === ev.endMonth) {
-          duration = ev.endDay - ev.startDay + 1;
-        } else {
-          duration = 30; // rough estimate for multi-month
-        }
-        matches.push({ event: ev, duration: duration });
+        var pri = PRIORITY[ev.duration] || 3;
+        matches.push({ event: ev, priority: pri });
       }
     }
     if (matches.length === 0) return null;
-    // Sort by shortest duration (most specific event wins)
-    matches.sort(function(a, b) { return a.duration - b.duration; });
+    // Shortest-duration (lowest priority number) wins
+    matches.sort(function(a, b) { return a.priority - b.priority; });
     return matches[0].event;
   }
 
