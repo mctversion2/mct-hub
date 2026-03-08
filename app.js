@@ -22,33 +22,40 @@
   var chunkCache = {};
   var CHUNK_SIZE = 20;
 
-  function getChunkIndex(articleId) {
-    return Math.floor(articleId / CHUNK_SIZE);
+  function extractNumericId(articleId) {
+    // Handle both "art_5" and 5 and "5" formats
+    if (typeof articleId === "number") return articleId;
+    var s = String(articleId);
+    if (s.indexOf("art_") === 0) return parseInt(s.substring(4), 10);
+    var n = parseInt(s, 10);
+    return isNaN(n) ? -1 : n;
+  }
+
+  function getChunkIndex(numId) {
+    return Math.floor(numId / CHUNK_SIZE);
   }
 
   function loadArticleText(articleId, callback) {
-    var id = typeof articleId === "string" ? parseInt(articleId, 10) : articleId;
-    if (textCache[id] !== undefined) {
-      callback(textCache[id]);
+    var num = extractNumericId(articleId);
+    if (num < 0) { callback(""); return; }
+    if (textCache[num] !== undefined) {
+      callback(textCache[num]);
       return;
     }
-    var chunkIdx = getChunkIndex(id);
+    var chunkIdx = getChunkIndex(num);
     if (chunkCache[chunkIdx]) {
-      // Chunk already loaded, extract
-      textCache[id] = chunkCache[chunkIdx][String(id)] || "";
-      callback(textCache[id]);
+      textCache[num] = chunkCache[chunkIdx][String(num)] || "";
+      callback(textCache[num]);
       return;
     }
-    // Fetch chunk
     fetch("./chunks/text-" + chunkIdx + ".json")
       .then(function (r) { return r.json(); })
       .then(function (data) {
         chunkCache[chunkIdx] = data;
-        // Cache all articles in this chunk
         for (var key in data) {
           textCache[parseInt(key, 10)] = data[key];
         }
-        callback(textCache[id] || "");
+        callback(textCache[num] || "");
       })
       .catch(function () {
         callback("");
@@ -569,8 +576,11 @@
   }
 
   function showArticle(articleId) {
-    var id = typeof articleId === "string" ? parseInt(articleId, 10) : articleId;
-    var meta = ARTICLES_META.find(function (a) { return a.id === id; });
+    // Normalize to "art_X" string format for meta lookup
+    var artId = String(articleId);
+    if (artId.indexOf("art_") !== 0) artId = "art_" + artId;
+    var id = extractNumericId(artId);
+    var meta = ARTICLES_META.find(function (a) { return a.id === artId; });
     if (!meta) return;
 
     var container = $("#article-content");
