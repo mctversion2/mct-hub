@@ -1146,13 +1146,7 @@
   font-weight: 600;
 }
 .article-body .red-square {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  background: var(--color-primary);
-  border-radius: 3px;
-  vertical-align: middle;
-  margin-right: var(--space-1);
+  display: none;
 }
 .article-body .sources-section {
   margin-top: var(--space-8);
