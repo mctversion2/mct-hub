@@ -1,4 +1,4 @@
-/* global ARTICLES_META, ARTICLES_TEXT */
+/* global ARTICLES_META */
 
 (function () {
   "use strict";
@@ -16,6 +16,44 @@
     currentPage: 1,
     sourcePageSize: 10
   };
+
+  // ---- TEXT CACHE (lazy-loaded) ----
+  var textCache = {};
+  var chunkCache = {};
+  var CHUNK_SIZE = 20;
+
+  function getChunkIndex(articleId) {
+    return Math.floor(articleId / CHUNK_SIZE);
+  }
+
+  function loadArticleText(articleId, callback) {
+    var id = typeof articleId === "string" ? parseInt(articleId, 10) : articleId;
+    if (textCache[id] !== undefined) {
+      callback(textCache[id]);
+      return;
+    }
+    var chunkIdx = getChunkIndex(id);
+    if (chunkCache[chunkIdx]) {
+      // Chunk already loaded, extract
+      textCache[id] = chunkCache[chunkIdx][String(id)] || "";
+      callback(textCache[id]);
+      return;
+    }
+    // Fetch chunk
+    fetch("./chunks/text-" + chunkIdx + ".json")
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        chunkCache[chunkIdx] = data;
+        // Cache all articles in this chunk
+        for (var key in data) {
+          textCache[parseInt(key, 10)] = data[key];
+        }
+        callback(textCache[id] || "");
+      })
+      .catch(function () {
+        callback("");
+      });
+  }
 
   // ---- DOM REFS ----
   var $ = function (sel) { return document.querySelector(sel); };
@@ -535,7 +573,6 @@
     var meta = ARTICLES_META.find(function (a) { return a.id === id; });
     if (!meta) return;
 
-    var text = ARTICLES_TEXT[id] || ARTICLES_TEXT[String(id)] || "";
     var container = $("#article-content");
 
     var relatedHtml = renderRelatedArticles(meta);
@@ -544,6 +581,7 @@
       ? '<div class="article-cover"><img src="' + escapeHtml(meta.image) + '" alt="" loading="eager" onerror="this.parentNode.style.display=\'none\'"></div>'
       : '';
 
+    // Show article shell immediately with loading state for body
     container.innerHTML =
       '<a href="#" class="article-back" id="article-back">' +
         '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>' +
@@ -566,7 +604,7 @@
           (meta.reactions ? '<span class="article-info-divider"></span><span>' + meta.reactions.toLocaleString() + ' reactions</span>' : '') +
         '</div>' +
       '</div>' +
-      '<div class="article-body">' + formatArticleText(text, meta.title) + '</div>' +
+      '<div class="article-body" id="article-body-content"><p style="opacity:0.5;">Loading article...</p></div>' +
       (meta.url ?
         '<a href="' + escapeHtml(meta.url) + '" target="_blank" rel="noopener noreferrer" class="article-source-link">' +
           '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
@@ -593,6 +631,14 @@
 
     // Scroll to top
     window.scrollTo(0, 0);
+
+    // Lazy-load article text
+    loadArticleText(id, function (text) {
+      var bodyEl = $("#article-body-content");
+      if (bodyEl) {
+        bodyEl.innerHTML = formatArticleText(text, meta.title);
+      }
+    });
   }
 
   function renderRelatedArticles(meta) {
