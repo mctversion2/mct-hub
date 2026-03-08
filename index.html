@@ -125,10 +125,35 @@
       <!-- Populated by JS -->
     </section>
 
-    <!-- Article Grid + Sidebar -->
+    <!-- Latest News Section -->
+    <section class="homepage-section" id="section-news" hidden>
+      <div class="homepage-section-inner">
+        <div class="section-header">
+          <h2 class="section-label">Latest News</h2>
+          <button class="section-see-all" data-category="News">See all news &rarr;</button>
+        </div>
+        <div class="section-grid" id="news-grid"></div>
+      </div>
+    </section>
+
+    <!-- Latest Commentaries Section -->
+    <section class="homepage-section" id="section-commentary" hidden>
+      <div class="homepage-section-inner">
+        <div class="section-header">
+          <h2 class="section-label">Latest Commentaries</h2>
+          <button class="section-see-all" data-category="Commentary">See all commentaries &rarr;</button>
+        </div>
+        <div class="section-grid" id="commentary-grid"></div>
+      </div>
+    </section>
+
+    <!-- All Articles Grid + Sidebar -->
     <section class="content-section">
       <div class="content-layout">
         <div class="articles-main">
+          <div class="section-header" id="all-articles-header" hidden>
+            <h2 class="section-label">All Articles</h2>
+          </div>
           <div class="articles-grid" id="articles-grid">
             <!-- Populated by JS -->
           </div>

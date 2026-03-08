@@ -139,11 +139,68 @@
     );
   }
 
+  // ---- RENDER: HOMEPAGE SECTIONS ----
+  function renderHomepageSections() {
+    var newsSection = $("#section-news");
+    var commentarySection = $("#section-commentary");
+    var newsGrid = $("#news-grid");
+    var commentaryGrid = $("#commentary-grid");
+    var allHeader = $("#all-articles-header");
+
+    // Only show sections on default home (no source/category/tag filter)
+    var isDefault = !state.currentSource && state.currentCategory === "all" && !state.currentTag;
+
+    if (!isDefault) {
+      newsSection.hidden = true;
+      commentarySection.hidden = true;
+      if (allHeader) allHeader.hidden = true;
+      return;
+    }
+
+    // Get latest news (up to 4)
+    var allSorted = ARTICLES_META.slice().sort(function (a, b) {
+      var da = a.date || ""; var db = b.date || "";
+      if (da > db) return -1; if (da < db) return 1; return 0;
+    });
+    var latestNews = allSorted.filter(function (a) { return a.category === "News"; }).slice(0, 4);
+    var latestCommentary = allSorted.filter(function (a) { return a.category === "Commentary"; }).slice(0, 4);
+
+    // Render news
+    if (latestNews.length > 0) {
+      var newsHtml = "";
+      for (var i = 0; i < latestNews.length; i++) {
+        newsHtml += renderArticleCard(latestNews[i]);
+      }
+      newsGrid.innerHTML = newsHtml;
+      newsSection.hidden = false;
+    } else {
+      newsSection.hidden = true;
+    }
+
+    // Render commentary
+    if (latestCommentary.length > 0) {
+      var commHtml = "";
+      for (var j = 0; j < latestCommentary.length; j++) {
+        commHtml += renderArticleCard(latestCommentary[j]);
+      }
+      commentaryGrid.innerHTML = commHtml;
+      commentarySection.hidden = false;
+    } else {
+      commentarySection.hidden = true;
+    }
+
+    // Show "All Articles" header
+    if (allHeader) allHeader.hidden = false;
+  }
+
   function renderArticles(reset) {
     var grid = $("#articles-grid");
     var articles = getFilteredArticles();
     var loadMoreWrap = $("#load-more-wrap");
     var paginationWrap = $("#pagination-wrap");
+
+    // Render homepage sections
+    renderHomepageSections();
 
     // SOURCE-FILTERED MODE: paginated, no hero
     if (state.currentSource) {
@@ -214,8 +271,8 @@
     var endIdx = Math.min(startIdx + state.pageSize, displayArticles.length);
 
     var defaultHtml = "";
-    for (var j = startIdx; j < endIdx; j++) {
-      defaultHtml += renderArticleCard(displayArticles[j]);
+    for (var k = startIdx; k < endIdx; k++) {
+      defaultHtml += renderArticleCard(displayArticles[k]);
     }
     grid.insertAdjacentHTML("beforeend", defaultHtml);
     state.articlesShown = endIdx;
