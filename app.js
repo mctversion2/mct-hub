@@ -62,6 +62,115 @@
       });
   }
 
+  // ---- COMMENTS CACHE (lazy-loaded) ----
+  var commentsCache = {};
+  var commentsChunkCache = {};
+
+  function loadArticleComments(articleId, callback) {
+    var num = extractNumericId(articleId);
+    if (num < 0) { callback([]); return; }
+    if (commentsCache[num] !== undefined) {
+      callback(commentsCache[num]);
+      return;
+    }
+    var chunkIdx = getChunkIndex(num);
+    if (commentsChunkCache[chunkIdx]) {
+      commentsCache[num] = commentsChunkCache[chunkIdx][String(num)] || [];
+      callback(commentsCache[num]);
+      return;
+    }
+    fetch("./comments/comments-" + chunkIdx + ".json")
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        commentsChunkCache[chunkIdx] = data;
+        for (var key in data) {
+          commentsCache[parseInt(key, 10)] = data[key];
+        }
+        callback(commentsCache[num] || []);
+      })
+      .catch(function () {
+        callback([]);
+      });
+  }
+
+  function formatCommentTime(isoStr) {
+    if (!isoStr) return "";
+    try {
+      var d = new Date(isoStr);
+      var now = new Date();
+      var diff = now - d;
+      var mins = Math.floor(diff / 60000);
+      if (mins < 60) return mins + "m ago";
+      var hrs = Math.floor(mins / 60);
+      if (hrs < 24) return hrs + "h ago";
+      var days = Math.floor(hrs / 24);
+      if (days < 30) return days + "d ago";
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    } catch (e) {
+      return "";
+    }
+  }
+
+  function renderCommentsSection(meta, numId) {
+    if (meta.source !== "facebook" || !meta.fb_post_id) return "";
+
+    var engHtml =
+      '<div class="fb-engagement-bar">' +
+        '<div class="fb-engagement-stats">' +
+          (meta.reactions ? '<span class="fb-stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>' + meta.reactions.toLocaleString() + '</span>' : '') +
+          (meta.comments ? '<span class="fb-stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>' + meta.comments.toLocaleString() + '</span>' : '') +
+          (meta.shares ? '<span class="fb-stat"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>' + meta.shares.toLocaleString() + '</span>' : '') +
+        '</div>' +
+      '</div>';
+
+    var commentsHtml =
+      '<div class="fb-comments-section" id="fb-comments-section">' +
+        '<div class="fb-comments-header">' +
+          '<h3 class="fb-comments-title">' +
+            '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:6px;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>' +
+            'Facebook Comments' +
+          '</h3>' +
+        '</div>' +
+        '<div class="fb-comments-list" id="fb-comments-list">' +
+          '<p style="opacity:0.4;font-size:var(--text-sm);">Loading comments...</p>' +
+        '</div>' +
+        '<a href="' + escapeHtml(meta.url) + '" target="_blank" rel="noopener noreferrer" class="fb-join-cta">' +
+          '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>' +
+          'Join the conversation on Facebook' +
+        '</a>' +
+      '</div>';
+
+    return engHtml + commentsHtml;
+  }
+
+  function populateComments(numId) {
+    var listEl = $("#fb-comments-list");
+    if (!listEl) return;
+
+    loadArticleComments(numId, function (comments) {
+      if (!comments || comments.length === 0) {
+        listEl.innerHTML = '<p class="fb-no-comments">No comments yet. Be the first to comment on Facebook.</p>';
+        return;
+      }
+      var html = '';
+      for (var i = 0; i < comments.length; i++) {
+        var c = comments[i];
+        var text = escapeHtml(c.text || "");
+        var timeStr = formatCommentTime(c.time);
+        var likes = c.likes || 0;
+        html +=
+          '<div class="fb-comment">' +
+            '<div class="fb-comment-body">' + text + '</div>' +
+            '<div class="fb-comment-meta">' +
+              (timeStr ? '<span>' + timeStr + '</span>' : '') +
+              (likes > 0 ? '<span class="fb-comment-likes"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21h4V9H2v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>' + likes + '</span>' : '') +
+            '</div>' +
+          '</div>';
+      }
+      listEl.innerHTML = html;
+    });
+  }
+
   // ---- DOM REFS ----
   var $ = function (sel) { return document.querySelector(sel); };
   var $$ = function (sel) { return document.querySelectorAll(sel); };
@@ -78,6 +187,13 @@
   function getCategoryClass(cat) {
     if (!cat) return "news";
     return cat.toLowerCase();
+  }
+
+  function formatCount(n) {
+    if (!n) return "0";
+    if (n >= 1000000) return (n / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
+    if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "K";
+    return String(n);
   }
 
   function getFilteredArticles() {
@@ -174,9 +290,10 @@
           '<p class="card-excerpt">' + escapeHtml(a.excerpt) + '</p>' +
           '<div class="card-footer">' +
             '<span>' + a.read_time + ' min read' + (a.word_count ? ' · ' + a.word_count.toLocaleString() + ' words' : '') + '</span>' +
-            '<span class="card-source">' +
-              '<span class="source-dot ' + (a.source || '') + '"></span>' +
-              (a.source === 'facebook' ? 'Facebook' : a.source === 'website' ? 'Website' : a.source === 'mct1_facebook' ? 'MCT 1.0' : '') +
+            '<span class="card-engagement">' +
+              (a.reactions ? '<span class="card-eng-item" title="Reactions">❤ ' + formatCount(a.reactions) + '</span>' : '') +
+              (a.comments ? '<span class="card-eng-item" title="Comments">💬 ' + formatCount(a.comments) + '</span>' : '') +
+              (a.shares ? '<span class="card-eng-item" title="Shares">↗ ' + formatCount(a.shares) + '</span>' : '') +
             '</span>' +
           '</div>' +
         '</div>' +
@@ -612,6 +729,8 @@
           '<span class="article-info-divider"></span>' +
           '<span>' + (meta.word_count || 0).toLocaleString() + ' words</span>' +
           (meta.reactions ? '<span class="article-info-divider"></span><span>' + meta.reactions.toLocaleString() + ' reactions</span>' : '') +
+          (meta.comments ? '<span class="article-info-divider"></span><span>' + meta.comments.toLocaleString() + ' comments</span>' : '') +
+          (meta.shares ? '<span class="article-info-divider"></span><span>' + meta.shares.toLocaleString() + ' shares</span>' : '') +
         '</div>' +
       '</div>' +
       '<div class="article-body" id="article-body-content"><p style="opacity:0.5;">Loading article...</p></div>' +
@@ -637,6 +756,7 @@
           '</button>' +
         '</div>' +
       '</div>' +
+      renderCommentsSection(meta, id) +
       relatedHtml;
 
     // Scroll to top
@@ -649,6 +769,11 @@
         bodyEl.innerHTML = formatArticleText(text, meta.title);
       }
     });
+
+    // Lazy-load comments for Facebook articles
+    if (meta.source === "facebook" && meta.fb_post_id) {
+      populateComments(id);
+    }
   }
 
   function renderRelatedArticles(meta) {
