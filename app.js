@@ -230,7 +230,7 @@
     if (str !== str.toUpperCase()) return str;
     var small = ['a','an','the','and','but','or','for','nor','on','at','to','by','in','of','up','as','is','it'];
     // Common acronyms/abbreviations to keep uppercase
-    var acronyms = ['OFW','OFWS','ICC','BBM','VP','US','USA','UK','EU','UN','ASEAN','NATO','GDP','PHP','USD','NAIA','DFA','DOJ','DOF','PNP','AFP','NBI','BIR','SEC','DILG','DSWD','DOLE','DMW','BSP','PSA','WPS','EDSA','POGO','PAGCOR','SC','CA','RTC','MTC','SB','COMELEC','PCGG','COA','BI','BOC','PDEA','NICA','NSC','PSG','QC','NCR','BARMM','LGU','SOGIE','TRAIN','PBBM','SWOH','PDP','LP','NPC','NP','SARA'];
+    var acronyms = ['OFW','OFWS','ICC','BBM','VP','US','USA','UK','EU','UN','ASEAN','NATO','GDP','PHP','USD','NAIA','DFA','DOJ','DOF','PNP','AFP','NBI','BIR','SEC','DILG','DSWD','DOLE','DMW','BSP','PSA','WPS','EDSA','POGO','PAGCOR','SC','CA','RTC','MTC','SB','COMELEC','PCGG','COA','BI','BOC','PDEA','NICA','NSC','PSG','QC','NCR','BARMM','LGU','SOGIE','TRAIN','PBBM','SWOH','PDP','LP','NPC','NP','SARA','THX','IMAX','SM','AI','CEO','CFO','COO','CTO','HR','IT','PR','TV','FM','AM','DPWH','LTFRB','LTO','MMDA','MRT','LRT','NLEX','SLEX','TPLEX','SCTEX','PRRD','FPRRD','SSS','GSIS','PAG-IBIG','PAGIBIG','OWWA'];
     var acronymMap = {};
     acronyms.forEach(function(a) { acronymMap[a.toLowerCase()] = a; });
     return str.toLowerCase().split(' ').map(function(word, i) {
