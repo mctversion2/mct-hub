@@ -903,6 +903,17 @@
   }
 
   // ---- INIT ----
+  function fetchFollowerCount() {
+    var el = $("#stat-followers");
+    if (!el) return;
+    var url = "https://graph.facebook.com/v21.0/893376663850463?fields=followers_count&access_token=EAA5p2tb7aWUBQxI5uuZBddZAc05uKH2ceCsrbAKJTZByZCsQjkMfZBftEYWeYnGRg246sQS2mZCIbGslIXazwCbhWwKiIvS7gTywvIlgb3u1MVbWWEBZCoKDRrqDOng2VB5pMDr60z5j6MaNSHOgOYvjqyK0bm5Xq4YLhjZAR7NN2t56sk4NveyEFNUV1vp3cQ2ZB7fiTvwxmPutOQxZA4kSaUmgZDZD";
+    fetch(url).then(function(r) { return r.json(); }).then(function(data) {
+      if (data.followers_count) {
+        el.textContent = data.followers_count.toLocaleString();
+      }
+    }).catch(function() { el.textContent = "48,000+"; });
+  }
+
   function init() {
     initTheme();
     renderHero();
@@ -912,6 +923,7 @@
     renderFilterTags();
     initEvents();
     handleHashChange();
+    fetchFollowerCount();
   }
 
   // Wait for data to load
