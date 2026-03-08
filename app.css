@@ -1418,7 +1418,7 @@
 .ticker-track {
   display: flex;
   gap: 0;
-  animation: ticker-scroll 120s linear infinite;
+  animation: ticker-scroll 45s linear infinite;
   will-change: transform;
 }
 .ticker-track:hover {
