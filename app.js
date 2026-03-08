@@ -1,0 +1,893 @@
+/* global ARTICLES_META, ARTICLES_TEXT */
+
+(function () {
+  "use strict";
+
+  // ---- STATE ----
+  var state = {
+    currentView: "home",
+    currentCategory: "all",
+    currentTag: null,
+    currentArticleId: null,
+    articlesShown: 0,
+    pageSize: 20,
+    searchQuery: "",
+    currentSource: null,
+    currentPage: 1,
+    sourcePageSize: 10
+  };
+
+  // ---- DOM REFS ----
+  var $ = function (sel) { return document.querySelector(sel); };
+  var $$ = function (sel) { return document.querySelectorAll(sel); };
+
+  // ---- UTILITY ----
+  function formatDate(dateStr) {
+    if (!dateStr) return "";
+    var parts = dateStr.split("-");
+    var d = new Date(parts[0], parts[1] - 1, parts[2]);
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    return months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+  }
+
+  function getCategoryClass(cat) {
+    if (!cat) return "news";
+    return cat.toLowerCase();
+  }
+
+  function getFilteredArticles() {
+    var articles = ARTICLES_META;
+    if (state.currentSource) {
+      articles = articles.filter(function (a) { return a.source === state.currentSource; });
+    }
+    if (state.currentCategory !== "all") {
+      articles = articles.filter(function (a) { return a.category === state.currentCategory; });
+    }
+    if (state.currentTag) {
+      articles = articles.filter(function (a) { return a.tags && a.tags.indexOf(state.currentTag) !== -1; });
+    }
+    return articles;
+  }
+
+  function escapeHtml(text) {
+    var div = document.createElement("div");
+    div.textContent = text;
+    return div.innerHTML;
+  }
+
+  function toTitleCase(str) {
+    if (!str) return str;
+    // Only convert if the entire string is uppercase
+    if (str !== str.toUpperCase()) return str;
+    var small = ['a','an','the','and','but','or','for','nor','on','at','to','by','in','of','up','as','is','it'];
+    // Common acronyms/abbreviations to keep uppercase
+    var acronyms = ['OFW','OFWS','ICC','BBM','VP','US','USA','UK','EU','UN','ASEAN','NATO','GDP','PHP','USD','NAIA','DFA','DOJ','DOF','PNP','AFP','NBI','BIR','SEC','DILG','DSWD','DOLE','DMW','BSP','PSA','WPS','EDSA','POGO','PAGCOR','SC','CA','RTC','MTC','SB','COMELEC','PCGG','COA','BI','BOC','PDEA','NICA','NSC','PSG','QC','NCR','BARMM','LGU','SOGIE','TRAIN','PBBM','SWOH','PDP','LP','NPC','NP','SARA'];
+    var acronymMap = {};
+    acronyms.forEach(function(a) { acronymMap[a.toLowerCase()] = a; });
+    return str.toLowerCase().split(' ').map(function(word, i) {
+      // Check for acronyms (strip punctuation for matching)
+      var cleanWord = word.replace(/[^a-z]/g, '');
+      if (acronymMap[cleanWord]) {
+        return word.replace(cleanWord, acronymMap[cleanWord]);
+      }
+      if (i === 0 || small.indexOf(word) === -1) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      }
+      return word;
+    }).join(' ');
+  }
+
+  // ---- RENDER: HERO ----
+  function renderHero() {
+    var section = $("#hero-section");
+    var articles = getFilteredArticles();
+    if (articles.length === 0) {
+      section.innerHTML = "";
+      return;
+    }
+    var a = articles[0];
+    section.innerHTML =
+      '<div class="hero-card" data-article="' + a.id + '">' +
+        '<div class="hero-meta">' +
+          '<span class="category-badge ' + getCategoryClass(a.category) + '">' + escapeHtml(a.category) + '</span>' +
+          (a.date ? '<span class="card-date">' + formatDate(a.date) + '</span>' : '') +
+          '<span class="card-date">' + a.read_time + ' min read</span>' +
+        '</div>' +
+        '<h2 class="hero-title">' + escapeHtml(toTitleCase(a.title)) + '</h2>' +
+        '<p class="hero-excerpt">' + escapeHtml(a.excerpt) + '</p>' +
+      '</div>';
+  }
+
+  // ---- RENDER: ARTICLE CARDS ----
+  function renderArticleCard(a) {
+    return (
+      '<div class="article-card" data-article="' + a.id + '">' +
+        '<div class="card-meta">' +
+          '<span class="category-badge ' + getCategoryClass(a.category) + '">' + escapeHtml(a.category) + '</span>' +
+          (a.date ? '<span class="card-date">' + formatDate(a.date) + '</span>' : '') +
+        '</div>' +
+        '<h3 class="card-title">' + escapeHtml(toTitleCase(a.title)) + '</h3>' +
+        '<p class="card-excerpt">' + escapeHtml(a.excerpt) + '</p>' +
+        '<div class="card-footer">' +
+          '<span>' + a.read_time + ' min read' + (a.word_count ? ' · ' + a.word_count.toLocaleString() + ' words' : '') + '</span>' +
+          '<span class="card-source">' +
+            '<span class="source-dot ' + (a.source || '') + '"></span>' +
+            (a.source === 'facebook' ? 'Facebook' : a.source === 'website' ? 'Website' : a.source === 'mct1_facebook' ? 'MCT 1.0' : '') +
+          '</span>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function renderArticles(reset) {
+    var grid = $("#articles-grid");
+    var articles = getFilteredArticles();
+    var loadMoreWrap = $("#load-more-wrap");
+    var paginationWrap = $("#pagination-wrap");
+
+    // SOURCE-FILTERED MODE: paginated, no hero
+    if (state.currentSource) {
+      // Hide hero when viewing a source
+      $("#hero-section").innerHTML = "";
+
+      // Show source filter header
+      var sourceLabel = state.currentSource === "facebook" ? "MCT 2.0 Facebook" :
+        state.currentSource === "website" ? "morningcoffeethoughts.org" : "MCT 1.0 Facebook";
+      var headerEl = $("#source-filter-header");
+      if (!headerEl) {
+        headerEl = document.createElement("div");
+        headerEl.id = "source-filter-header";
+        headerEl.className = "source-filter-header";
+        grid.parentNode.insertBefore(headerEl, grid);
+      }
+      headerEl.innerHTML =
+        '<div class="source-filter-info">' +
+          '<h2 class="source-filter-title">Showing articles from <span class="source-filter-name">' + escapeHtml(sourceLabel) + '</span></h2>' +
+          '<span class="source-filter-count">' + articles.length + ' articles</span>' +
+        '</div>' +
+        '<button class="source-filter-clear" id="source-filter-clear" type="button">' +
+          '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>' +
+          'Show All' +
+        '</button>';
+      headerEl.hidden = false;
+
+      // Paginated rendering
+      var page = state.currentPage;
+      var perPage = state.sourcePageSize;
+      var totalPages = Math.ceil(articles.length / perPage);
+      var start = (page - 1) * perPage;
+      var end = Math.min(start + perPage, articles.length);
+
+      grid.innerHTML = "";
+      var html = "";
+      for (var i = start; i < end; i++) {
+        html += renderArticleCard(articles[i]);
+      }
+      grid.innerHTML = html;
+
+      // Pagination controls
+      loadMoreWrap.hidden = true;
+      if (totalPages > 1) {
+        paginationWrap.hidden = false;
+        paginationWrap.innerHTML = renderPagination(page, totalPages);
+      } else {
+        paginationWrap.hidden = true;
+      }
+      return;
+    }
+
+    // DEFAULT MODE: hero + load-more
+    // Remove source filter header if present
+    var existingHeader = $("#source-filter-header");
+    if (existingHeader) { existingHeader.hidden = true; }
+    paginationWrap.hidden = true;
+
+    // Skip the hero article (first one)
+    var displayArticles = articles.slice(1);
+
+    if (reset) {
+      state.articlesShown = 0;
+      grid.innerHTML = "";
+    }
+
+    var startIdx = state.articlesShown;
+    var endIdx = Math.min(startIdx + state.pageSize, displayArticles.length);
+
+    var defaultHtml = "";
+    for (var j = startIdx; j < endIdx; j++) {
+      defaultHtml += renderArticleCard(displayArticles[j]);
+    }
+    grid.insertAdjacentHTML("beforeend", defaultHtml);
+    state.articlesShown = endIdx;
+
+    // Show/hide load more
+    if (endIdx >= displayArticles.length) {
+      loadMoreWrap.hidden = true;
+    } else {
+      loadMoreWrap.hidden = false;
+    }
+  }
+
+  // ---- PAGINATION RENDERER ----
+  function renderPagination(current, total) {
+    var html = '<nav class="pagination" aria-label="Article pages">';
+
+    // Previous button
+    if (current > 1) {
+      html += '<button class="page-btn page-prev" data-page="' + (current - 1) + '" type="button">' +
+        '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>' +
+        'Prev</button>';
+    } else {
+      html += '<button class="page-btn page-prev" disabled type="button">' +
+        '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>' +
+        'Prev</button>';
+    }
+
+    // Page numbers with ellipsis logic
+    var pages = buildPageNumbers(current, total);
+    for (var i = 0; i < pages.length; i++) {
+      if (pages[i] === "...") {
+        html += '<span class="page-ellipsis">&hellip;</span>';
+      } else {
+        var active = pages[i] === current ? " active" : "";
+        html += '<button class="page-btn page-num' + active + '" data-page="' + pages[i] + '" type="button">' + pages[i] + '</button>';
+      }
+    }
+
+    // Next button
+    if (current < total) {
+      html += '<button class="page-btn page-next" data-page="' + (current + 1) + '" type="button">' +
+        'Next<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>' +
+        '</button>';
+    } else {
+      html += '<button class="page-btn page-next" disabled type="button">' +
+        'Next<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>' +
+        '</button>';
+    }
+
+    html += '</nav>';
+    return html;
+  }
+
+  function buildPageNumbers(current, total) {
+    if (total <= 7) {
+      var all = [];
+      for (var i = 1; i <= total; i++) { all.push(i); }
+      return all;
+    }
+    var pages = [1];
+    if (current > 3) { pages.push("..."); }
+    var rangeStart = Math.max(2, current - 1);
+    var rangeEnd = Math.min(total - 1, current + 1);
+    for (var j = rangeStart; j <= rangeEnd; j++) { pages.push(j); }
+    if (current < total - 2) { pages.push("..."); }
+    pages.push(total);
+    return pages;
+  }
+
+  // ---- RENDER: POPULAR ----
+  function renderPopular() {
+    var container = $("#popular-articles");
+    var sorted = ARTICLES_META.slice().sort(function (a, b) {
+      return (b.reactions || 0) - (a.reactions || 0);
+    });
+    var top = sorted.slice(0, 8);
+    var html = "";
+    for (var i = 0; i < top.length; i++) {
+      var a = top[i];
+      html +=
+        '<div class="popular-item" data-article="' + a.id + '">' +
+          '<span class="popular-rank">' + (i + 1) + '</span>' +
+          '<div class="popular-info">' +
+            '<h3>' + escapeHtml(toTitleCase(a.title)) + '</h3>' +
+            '<p>' + (a.reactions ? a.reactions.toLocaleString() + ' reactions' : '') +
+              (a.date ? ' · ' + formatDate(a.date) : '') + '</p>' +
+          '</div>' +
+        '</div>';
+    }
+    container.innerHTML = html;
+  }
+
+  // ---- RENDER: TAG CLOUD ----
+  function renderTagCloud() {
+    var container = $("#tag-cloud");
+    var tagCounts = {};
+    ARTICLES_META.forEach(function (a) {
+      if (a.tags) {
+        a.tags.forEach(function (t) {
+          tagCounts[t] = (tagCounts[t] || 0) + 1;
+        });
+      }
+    });
+    var sorted = Object.keys(tagCounts).sort(function (a, b) {
+      return tagCounts[b] - tagCounts[a];
+    });
+    var top = sorted.slice(0, 15);
+    var html = "";
+    top.forEach(function (tag) {
+      var active = state.currentTag === tag ? " active" : "";
+      html += '<button class="tag-cloud-item' + active + '" data-tag="' + escapeHtml(tag) + '">' +
+        escapeHtml(tag) + ' <span style="opacity:0.6">(' + tagCounts[tag] + ')</span></button>';
+    });
+    container.innerHTML = html;
+  }
+
+  // ---- RENDER: FILTER BAR TAGS ----
+  function renderFilterTags() {
+    var container = $("#tag-filters");
+    var topTags = ["Duterte", "Elections", "Corruption", "Congress", "ICC", "Impeachment", "West Philippine Sea", "OFW"];
+    var html = "";
+    topTags.forEach(function (tag) {
+      var active = state.currentTag === tag ? " active" : "";
+      html += '<button class="tag-chip' + active + '" data-tag="' + escapeHtml(tag) + '">' + escapeHtml(tag) + '</button>';
+    });
+    container.innerHTML = html;
+  }
+
+  // ---- ARTICLE VIEW ----
+  function formatArticleText(text, title) {
+    if (!text) return "<p>Article content unavailable.</p>";
+
+    // Remove leading line if it matches the title (avoid duplication)
+    if (title) {
+      var titleClean = title.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+      var lines0 = text.split('\n');
+      for (var li = 0; li < Math.min(3, lines0.length); li++) {
+        var lineClean = lines0[li].replace(/🟥/g, '').replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+        if (lineClean && titleClean && lineClean === titleClean) {
+          lines0.splice(li, 1);
+          break;
+        }
+      }
+      text = lines0.join('\n');
+    }
+
+    // Replace 🟥 with styled red squares
+    text = text.replace(/🟥/g, '<span class="red-square" aria-hidden="true"></span>');
+
+    // Split into lines
+    var lines = text.split("\n");
+    var html = "";
+    var inSources = false;
+    var currentParagraph = [];
+
+    function flushParagraph() {
+      if (currentParagraph.length > 0) {
+        var pText = currentParagraph.join(" ").trim();
+        if (pText) {
+          html += "<p>" + pText + "</p>";
+        }
+        currentParagraph = [];
+      }
+    }
+
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i];
+      var trimmed = line.trim();
+
+      // Detect SOURCES section
+      if (/^(SOURCES?|References?|SOURCE|REFERENCES)\s*:?\s*$/i.test(trimmed) ||
+          /^#{1,3}\s*(SOURCES?|References?)\s*$/i.test(trimmed)) {
+        flushParagraph();
+        inSources = true;
+        html += '<div class="sources-section">';
+        html += '<h3>Sources</h3>';
+        continue;
+      }
+
+      // Headers (## or ###)
+      if (/^#{2,3}\s/.test(trimmed)) {
+        flushParagraph();
+        var level = trimmed.startsWith("###") ? "h3" : "h2";
+        var headerText = trimmed.replace(/^#{2,3}\s+/, "");
+        html += "<" + level + ">" + headerText + "</" + level + ">";
+        continue;
+      }
+
+      // Lines starting with red square marker are section headings
+      if (/^<span class="red-square"/.test(trimmed) && trimmed.length < 200) {
+        flushParagraph();
+        var headingText = trimmed.replace(/<span class="red-square"[^>]*><\/span>\s*/g, "").trim();
+        if (headingText.length > 3) {
+          html += '<h2><span class="red-square" aria-hidden="true"></span> ' + headingText + '</h2>';
+          continue;
+        }
+      }
+
+      // ALL CAPS lines (section headers in the text)
+      if (trimmed.length > 10 && trimmed === trimmed.toUpperCase() && /[A-Z]/.test(trimmed) &&
+          !trimmed.startsWith("HTTP") && !trimmed.startsWith("WWW") && !/^\d/.test(trimmed)) {
+        flushParagraph();
+        // Clean leading red squares
+        var cleanHeader = trimmed.replace(/<span class="red-square"[^>]*><\/span>\s*/g, "");
+        if (cleanHeader.length > 5) {
+          html += '<h2><span class="red-square" aria-hidden="true"></span> ' + cleanHeader + '</h2>';
+          continue;
+        }
+      }
+
+      // Empty line = paragraph break
+      if (!trimmed) {
+        flushParagraph();
+        continue;
+      }
+
+      // URL lines in sources
+      if (inSources && /^https?:\/\//.test(trimmed)) {
+        flushParagraph();
+        var displayUrl = trimmed.length > 60 ? trimmed.substring(0, 57) + "..." : trimmed;
+        html += '<p><a href="' + escapeHtml(trimmed) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(displayUrl) + '</a></p>';
+        continue;
+      }
+
+      // List items
+      if (/^[-•]\s/.test(trimmed)) {
+        flushParagraph();
+        html += '<p style="padding-left:var(--space-4);">' + trimmed.substring(2) + '</p>';
+        continue;
+      }
+
+      // Numbered list items
+      if (/^\d+\.\s/.test(trimmed)) {
+        flushParagraph();
+        html += '<p style="padding-left:var(--space-4);">' + trimmed + '</p>';
+        continue;
+      }
+
+      // Regular text — accumulate
+      currentParagraph.push(trimmed);
+    }
+
+    flushParagraph();
+    if (inSources) {
+      html += '</div>';
+    }
+
+    // Auto-link URLs in text
+    html = html.replace(/(https?:\/\/[^\s<"]+)/g, function (url) {
+      if (url.indexOf('href="') !== -1) return url; // Already in a link
+      var display = url.length > 50 ? url.substring(0, 47) + "..." : url;
+      return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + display + '</a>';
+    });
+
+    return html;
+  }
+
+  function showArticle(articleId) {
+    var meta = ARTICLES_META.find(function (a) { return a.id === articleId; });
+    if (!meta) return;
+
+    var text = ARTICLES_TEXT[articleId] || "";
+    var container = $("#article-content");
+
+    var relatedHtml = renderRelatedArticles(meta);
+
+    container.innerHTML =
+      '<a href="#" class="article-back" id="article-back">' +
+        '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>' +
+        'Back to articles' +
+      '</a>' +
+      '<div class="article-header">' +
+        '<div class="card-meta">' +
+          '<span class="category-badge ' + getCategoryClass(meta.category) + '">' + escapeHtml(meta.category) + '</span>' +
+          (meta.tags ? meta.tags.map(function (t) {
+            return '<button class="tag-chip" data-tag="' + escapeHtml(t) + '" style="font-size:var(--text-xs);padding:2px 8px;">' + escapeHtml(t) + '</button>';
+          }).join('') : '') +
+        '</div>' +
+        '<h1 class="article-heading">' + escapeHtml(toTitleCase(meta.title)) + '</h1>' +
+        '<div class="article-info">' +
+          (meta.date ? '<span>' + formatDate(meta.date) + '</span><span class="article-info-divider"></span>' : '') +
+          '<span>' + meta.read_time + ' min read</span>' +
+          '<span class="article-info-divider"></span>' +
+          '<span>' + (meta.word_count || 0).toLocaleString() + ' words</span>' +
+          (meta.reactions ? '<span class="article-info-divider"></span><span>' + meta.reactions.toLocaleString() + ' reactions</span>' : '') +
+        '</div>' +
+      '</div>' +
+      '<div class="article-body">' + formatArticleText(text, meta.title) + '</div>' +
+      (meta.url ?
+        '<a href="' + escapeHtml(meta.url) + '" target="_blank" rel="noopener noreferrer" class="article-source-link">' +
+          '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>' +
+          'View original on ' + (meta.source === 'facebook' ? 'Facebook' : 'Website') +
+        '</a>' : '') +
+      '<div class="share-section">' +
+        '<p class="share-title">Share this article</p>' +
+        '<div class="share-buttons">' +
+          '<a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(meta.url || '') + '" target="_blank" rel="noopener noreferrer">' +
+            '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>' +
+            'Facebook' +
+          '</a>' +
+          '<a class="share-btn" href="https://twitter.com/intent/tweet?text=' + encodeURIComponent(meta.title) + '&url=' + encodeURIComponent(meta.url || '') + '" target="_blank" rel="noopener noreferrer">' +
+            '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>' +
+            'X / Twitter' +
+          '</a>' +
+          '<button class="share-btn" id="copy-link-btn" data-url="' + escapeHtml(meta.url || '') + '">' +
+            '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>' +
+            'Copy Link' +
+          '</button>' +
+        '</div>' +
+      '</div>' +
+      relatedHtml;
+
+    // Scroll to top
+    window.scrollTo(0, 0);
+  }
+
+  function renderRelatedArticles(meta) {
+    if (!meta.tags || meta.tags.length === 0) return "";
+
+    var related = ARTICLES_META.filter(function (a) {
+      if (a.id === meta.id) return false;
+      if (!a.tags) return false;
+      return a.tags.some(function (t) { return meta.tags.indexOf(t) !== -1; });
+    }).slice(0, 4);
+
+    if (related.length === 0) return "";
+
+    var html = '<div class="related-section"><p class="related-title">Related Articles</p><div class="related-grid">';
+    related.forEach(function (a) {
+      html +=
+        '<div class="related-item" data-article="' + a.id + '">' +
+          '<div>' +
+            '<p class="related-cat">' + escapeHtml(a.category) + '</p>' +
+            '<h3>' + escapeHtml(toTitleCase(a.title)) + '</h3>' +
+            '<p>' + (a.date ? formatDate(a.date) + ' · ' : '') + a.read_time + ' min read</p>' +
+          '</div>' +
+        '</div>';
+    });
+    html += '</div></div>';
+    return html;
+  }
+
+  // ---- SEARCH ----
+  function performSearch(query) {
+    if (!query || query.length < 2) {
+      $("#search-results").innerHTML = '<div class="search-empty">Type at least 2 characters to search</div>';
+      return;
+    }
+
+    var q = query.toLowerCase();
+    var results = ARTICLES_META.filter(function (a) {
+      return a.title.toLowerCase().indexOf(q) !== -1 ||
+        a.excerpt.toLowerCase().indexOf(q) !== -1 ||
+        (a.tags && a.tags.some(function (t) { return t.toLowerCase().indexOf(q) !== -1; }));
+    }).slice(0, 20);
+
+    if (results.length === 0) {
+      $("#search-results").innerHTML = '<div class="search-empty">No articles found for "' + escapeHtml(query) + '"</div>';
+      return;
+    }
+
+    var re = new RegExp("(" + query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi");
+    var html = "";
+    results.forEach(function (a) {
+      var title = escapeHtml(toTitleCase(a.title)).replace(re, "<mark>$1</mark>");
+      var excerpt = escapeHtml(a.excerpt).replace(re, "<mark>$1</mark>");
+      html +=
+        '<div class="search-result-item" data-article="' + a.id + '">' +
+          '<h3>' + title + '</h3>' +
+          '<p class="search-meta">' + escapeHtml(a.category) +
+            (a.date ? ' · ' + formatDate(a.date) : '') +
+            ' · ' + a.read_time + ' min read</p>' +
+          '<p class="search-excerpt">' + excerpt + '</p>' +
+        '</div>';
+    });
+    $("#search-results").innerHTML = html;
+  }
+
+  // ---- ROUTING ----
+  function navigateTo(view, data) {
+    $$(".view").forEach(function (v) { v.classList.remove("active"); });
+
+    if (view === "article" && data) {
+      state.currentView = "article";
+      state.currentArticleId = data;
+      $("#view-article").classList.add("active");
+      showArticle(data);
+      window.location.hash = "article/" + data;
+    } else if (view === "about") {
+      state.currentView = "about";
+      $("#view-about").classList.add("active");
+      window.location.hash = "about";
+      window.scrollTo(0, 0);
+    } else {
+      state.currentView = "home";
+      $("#view-home").classList.add("active");
+      if (!window.location.hash || window.location.hash === "#") {
+        // Don't change hash
+      } else {
+        window.location.hash = "";
+      }
+    }
+
+    // Update nav active state
+    $$(".nav-link, .mobile-nav-link").forEach(function (link) {
+      link.classList.remove("active");
+      if (link.dataset.nav === view || (view === "home" && link.dataset.nav === "home")) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  function handleHashChange() {
+    var hash = window.location.hash.replace("#", "");
+    if (hash.startsWith("article/")) {
+      var id = hash.replace("article/", "");
+      navigateTo("article", id);
+    } else if (hash === "about") {
+      navigateTo("about");
+    } else {
+      navigateTo("home");
+    }
+  }
+
+  // ---- THEME TOGGLE ----
+  function initTheme() {
+    var toggle = $("[data-theme-toggle]");
+    var root = document.documentElement;
+    var theme = "dark";
+    root.setAttribute("data-theme", theme);
+    updateThemeIcon(toggle, theme);
+
+    toggle.addEventListener("click", function () {
+      theme = theme === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", theme);
+      toggle.setAttribute("aria-label", "Switch to " + (theme === "dark" ? "light" : "dark") + " mode");
+      updateThemeIcon(toggle, theme);
+    });
+  }
+
+  function updateThemeIcon(toggle, theme) {
+    toggle.innerHTML = theme === "dark"
+      ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  }
+
+  // ---- SOURCE FILTER HELPERS ----
+  function clearSourceFilter() {
+    state.currentSource = null;
+    state.currentPage = 1;
+    updateSourceBadgeActive();
+    renderHero();
+    renderArticles(true);
+  }
+
+  function updateSourceBadgeActive() {
+    $$(".source-badge[data-source]").forEach(function (badge) {
+      if (state.currentSource && badge.dataset.source === state.currentSource) {
+        badge.classList.add("active");
+      } else {
+        badge.classList.remove("active");
+      }
+    });
+  }
+
+  // ---- EVENT HANDLERS ----
+  function initEvents() {
+    // Article card clicks (delegated)
+    document.addEventListener("click", function (e) {
+      var card = e.target.closest("[data-article]");
+      if (card) {
+        e.preventDefault();
+        navigateTo("article", card.dataset.article);
+        return;
+      }
+
+      // Tag clicks
+      var tagBtn = e.target.closest("[data-tag]");
+      if (tagBtn) {
+        e.preventDefault();
+        var tag = tagBtn.dataset.tag;
+        // If we're in article view and click a tag, go back to home with that tag
+        if (state.currentView === "article") {
+          navigateTo("home");
+        }
+        state.currentTag = state.currentTag === tag ? null : tag;
+        renderFilterTags();
+        renderTagCloud();
+        renderHero();
+        renderArticles(true);
+        return;
+      }
+
+      // Source badge clicks
+      var sourceBtn = e.target.closest("[data-source]");
+      if (sourceBtn) {
+        e.preventDefault();
+        var source = sourceBtn.dataset.source;
+        // Toggle: if same source clicked, clear filter
+        if (state.currentSource === source) {
+          clearSourceFilter();
+        } else {
+          state.currentSource = source;
+          state.currentPage = 1;
+          state.currentCategory = "all";
+          state.currentTag = null;
+          updateSourceBadgeActive();
+          $$(".filter-btn").forEach(function (b) { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+          $('[data-category="all"]').classList.add("active");
+          $('[data-category="all"]').setAttribute("aria-selected", "true");
+          renderFilterTags();
+          renderArticles(true);
+        }
+        return;
+      }
+
+      // Source filter clear button
+      if (e.target.closest("#source-filter-clear")) {
+        e.preventDefault();
+        clearSourceFilter();
+        return;
+      }
+
+      // Pagination clicks
+      var pageBtn = e.target.closest("[data-page]");
+      if (pageBtn && !pageBtn.disabled) {
+        e.preventDefault();
+        state.currentPage = parseInt(pageBtn.dataset.page, 10);
+        renderArticles(true);
+        // Scroll to top of grid
+        var gridTop = $("#articles-grid");
+        if (gridTop) { gridTop.scrollIntoView({ behavior: "smooth", block: "start" }); }
+        return;
+      }
+
+      // Category filter
+      var catBtn = e.target.closest("[data-category]");
+      if (catBtn) {
+        e.preventDefault();
+        state.currentCategory = catBtn.dataset.category;
+        state.currentTag = null;
+        // Clear source filter when changing category
+        if (state.currentSource) {
+          state.currentSource = null;
+          state.currentPage = 1;
+          updateSourceBadgeActive();
+        }
+        $$(".filter-btn").forEach(function (b) { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+        catBtn.classList.add("active");
+        catBtn.setAttribute("aria-selected", "true");
+        renderFilterTags();
+        renderTagCloud();
+        renderHero();
+        renderArticles(true);
+        return;
+      }
+
+      // Nav links
+      var navLink = e.target.closest("[data-nav]");
+      if (navLink) {
+        e.preventDefault();
+        var dest = navLink.dataset.nav;
+        if (dest === "home") {
+          state.currentCategory = "all";
+          state.currentTag = null;
+          $$(".filter-btn").forEach(function (b) { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
+          $('[data-category="all"]').classList.add("active");
+          $('[data-category="all"]').setAttribute("aria-selected", "true");
+          renderFilterTags();
+          renderTagCloud();
+          renderHero();
+          renderArticles(true);
+        }
+        navigateTo(dest);
+        closeMobileMenu();
+        return;
+      }
+
+      // Back button in article view
+      if (e.target.closest("#article-back")) {
+        e.preventDefault();
+        navigateTo("home");
+        return;
+      }
+
+      // Copy link
+      if (e.target.closest("#copy-link-btn")) {
+        var btn = e.target.closest("#copy-link-btn");
+        var url = btn.dataset.url;
+        if (url && navigator.clipboard) {
+          navigator.clipboard.writeText(url).then(function () {
+            btn.textContent = "Copied!";
+            setTimeout(function () {
+              btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy Link';
+            }, 2000);
+          });
+        }
+        return;
+      }
+    });
+
+    // Load more
+    $("#btn-load-more").addEventListener("click", function () {
+      renderArticles(false);
+    });
+
+    // Search
+    $("#search-toggle").addEventListener("click", function () {
+      var overlay = $("#search-overlay");
+      overlay.hidden = false;
+      setTimeout(function () { $("#search-input").focus(); }, 100);
+    });
+    $("#search-close").addEventListener("click", closeSearch);
+    $("#search-input").addEventListener("input", function () {
+      performSearch(this.value);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeSearch();
+        closeMobileMenu();
+      }
+      // Ctrl+K or Cmd+K to open search
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault();
+        var overlay = $("#search-overlay");
+        if (overlay.hidden) {
+          overlay.hidden = false;
+          setTimeout(function () { $("#search-input").focus(); }, 100);
+        } else {
+          closeSearch();
+        }
+      }
+    });
+
+    // Mobile menu
+    $("#mobile-menu-toggle").addEventListener("click", function () {
+      var menu = $("#mobile-menu");
+      var isOpen = !menu.hidden;
+      menu.hidden = isOpen;
+      this.setAttribute("aria-expanded", !isOpen);
+      this.innerHTML = isOpen
+        ? '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>'
+        : '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+    });
+
+    // Header scroll behavior
+    var header = $("#site-header");
+    var lastScroll = 0;
+    window.addEventListener("scroll", function () {
+      var scroll = window.scrollY;
+      if (scroll > 60) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+      lastScroll = scroll;
+    }, { passive: true });
+
+    // Hash change
+    window.addEventListener("hashchange", handleHashChange);
+  }
+
+  function closeSearch() {
+    $("#search-overlay").hidden = true;
+    $("#search-input").value = "";
+    $("#search-results").innerHTML = "";
+  }
+
+  function closeMobileMenu() {
+    var menu = $("#mobile-menu");
+    menu.hidden = true;
+    var toggle = $("#mobile-menu-toggle");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+  }
+
+  // ---- INIT ----
+  function init() {
+    initTheme();
+    renderHero();
+    renderArticles(true);
+    renderPopular();
+    renderTagCloud();
+    renderFilterTags();
+    initEvents();
+    handleHashChange();
+  }
+
+  // Wait for data to load
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();

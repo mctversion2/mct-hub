@@ -1,0 +1,203 @@
+/* Art direction: Modern SaaS platform — dark mode, neon blue accents
+   Palette: Deep charcoal backgrounds, neon blue (#0EA5E9) primary, cool grays
+   Typography: Inter — clean, geometric, high-contrast SaaS standard
+   Density: Feature-card layout, glassmorphism nav, 12px rounded corners */
+
+/* ============================================================
+   TYPE SCALE
+   ============================================================ */
+:root {
+  --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.8125rem);
+  --text-sm:   clamp(0.8125rem, 0.78rem + 0.25vw, 0.9375rem);
+  --text-base: clamp(0.9375rem, 0.9rem  + 0.25vw, 1.0625rem);
+  --text-lg:   clamp(1.125rem, 1rem    + 0.75vw, 1.5rem);
+  --text-xl:   clamp(1.5rem,   1.2rem  + 1.25vw, 2.25rem);
+  --text-2xl:  clamp(2rem,     1.2rem  + 2.5vw,  3.25rem);
+  --text-3xl:  clamp(2.5rem,   1rem    + 4vw,    4.5rem);
+  --text-hero: clamp(3rem,     0.5rem  + 7vw,    7rem);
+
+  /* SPACING — 4px base */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* FONTS */
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* RADIUS — 12px base per user request */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* TRANSITIONS */
+  --transition-interactive: 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* CONTENT WIDTHS */
+  --content-narrow: 720px;
+  --content-default: 960px;
+  --content-wide: 1240px;
+  --content-full: 100%;
+
+  /* GLASSMORPHISM */
+  --glass-bg: rgba(17, 20, 28, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-blur: 20px;
+
+  /* NEON GLOW */
+  --neon-glow-sm: 0 0 8px rgba(14, 165, 233, 0.25);
+  --neon-glow-md: 0 0 16px rgba(14, 165, 233, 0.3);
+  --neon-glow-lg: 0 0 32px rgba(14, 165, 233, 0.2);
+}
+
+/* ============================================================
+   MCT DARK MODE (Default — SaaS dark aesthetic)
+   Deep charcoal backgrounds, neon blue accents
+   ============================================================ */
+:root, [data-theme="dark"] {
+  /* Surfaces — deep charcoal gradient */
+  --color-bg:               #0B0E14;
+  --color-surface:          #11141C;
+  --color-surface-2:        #161A24;
+  --color-surface-offset:   #1C2030;
+  --color-surface-offset-2: #222738;
+  --color-surface-dynamic:  #282E40;
+  --color-divider:          rgba(255, 255, 255, 0.06);
+  --color-border:           rgba(255, 255, 255, 0.08);
+
+  /* Text — high contrast on dark */
+  --color-text:             #F0F2F5;
+  --color-text-muted:       #8B92A5;
+  --color-text-faint:       #565D73;
+  --color-text-inverse:     #0B0E14;
+
+  /* Primary — Neon Blue */
+  --color-primary:          #0EA5E9;
+  --color-primary-hover:    #38BDF8;
+  --color-primary-active:   #0284C7;
+  --color-primary-highlight: rgba(14, 165, 233, 0.1);
+
+  /* Secondary — Cool Slate */
+  --color-secondary:        #64748B;
+  --color-secondary-hover:  #94A3B8;
+  --color-secondary-active: #475569;
+
+  /* Accent — Electric Cyan */
+  --color-accent:           #22D3EE;
+  --color-accent-hover:     #67E8F9;
+  --color-accent-active:    #06B6D4;
+  --color-accent-highlight: rgba(34, 211, 238, 0.08);
+
+  /* Category colors — vivid on dark */
+  --color-cat-news:         #0EA5E9;
+  --color-cat-commentary:   #A78BFA;
+  --color-cat-coffee:       #F59E0B;
+  --color-cat-breaking:     #EF4444;
+  --color-cat-developing:   #F97316;
+  --color-cat-update:       #22C55E;
+
+  /* Shadows — dark mode elevation */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================================
+   MCT LIGHT MODE
+   ============================================================ */
+[data-theme="light"] {
+  --color-bg:               #F8FAFC;
+  --color-surface:          #FFFFFF;
+  --color-surface-2:        #F1F5F9;
+  --color-surface-offset:   #E2E8F0;
+  --color-surface-offset-2: #CBD5E1;
+  --color-surface-dynamic:  #94A3B8;
+  --color-divider:          rgba(0, 0, 0, 0.06);
+  --color-border:           rgba(0, 0, 0, 0.1);
+
+  --color-text:             #0F172A;
+  --color-text-muted:       #64748B;
+  --color-text-faint:       #94A3B8;
+  --color-text-inverse:     #F8FAFC;
+
+  --color-primary:          #0284C7;
+  --color-primary-hover:    #0369A1;
+  --color-primary-active:   #075985;
+  --color-primary-highlight: rgba(2, 132, 199, 0.08);
+
+  --color-secondary:        #64748B;
+  --color-secondary-hover:  #475569;
+  --color-secondary-active: #334155;
+
+  --color-accent:           #0891B2;
+  --color-accent-hover:     #0E7490;
+  --color-accent-active:    #155E75;
+  --color-accent-highlight: rgba(8, 145, 178, 0.06);
+
+  --color-cat-news:         #0284C7;
+  --color-cat-commentary:   #7C3AED;
+  --color-cat-coffee:       #D97706;
+  --color-cat-breaking:     #DC2626;
+  --color-cat-developing:   #EA580C;
+  --color-cat-update:       #16A34A;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.06);
+
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(0, 0, 0, 0.06);
+}
+
+/* System preference fallback */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --color-bg:               #F8FAFC;
+    --color-surface:          #FFFFFF;
+    --color-surface-2:        #F1F5F9;
+    --color-surface-offset:   #E2E8F0;
+    --color-surface-offset-2: #CBD5E1;
+    --color-surface-dynamic:  #94A3B8;
+    --color-divider:          rgba(0, 0, 0, 0.06);
+    --color-border:           rgba(0, 0, 0, 0.1);
+    --color-text:             #0F172A;
+    --color-text-muted:       #64748B;
+    --color-text-faint:       #94A3B8;
+    --color-text-inverse:     #F8FAFC;
+    --color-primary:          #0284C7;
+    --color-primary-hover:    #0369A1;
+    --color-primary-active:   #075985;
+    --color-primary-highlight: rgba(2, 132, 199, 0.08);
+    --color-secondary:        #64748B;
+    --color-secondary-hover:  #475569;
+    --color-secondary-active: #334155;
+    --color-accent:           #0891B2;
+    --color-accent-hover:     #0E7490;
+    --color-accent-active:    #155E75;
+    --color-accent-highlight: rgba(8, 145, 178, 0.06);
+    --color-cat-news:         #0284C7;
+    --color-cat-commentary:   #7C3AED;
+    --color-cat-coffee:       #D97706;
+    --color-cat-breaking:     #DC2626;
+    --color-cat-developing:   #EA580C;
+    --color-cat-update:       #16A34A;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+    --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.06);
+    --glass-bg: rgba(255, 255, 255, 0.72);
+    --glass-border: rgba(0, 0, 0, 0.06);
+  }
+}
