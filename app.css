@@ -1398,22 +1398,22 @@
   overflow: hidden;
   background: rgba(0,0,0,0.25);
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  padding: 0.5rem 0;
+  padding: 0;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 .ticker-label {
-  flex-shrink: 0;
-  padding: 0.25rem 0.85rem;
-  font-size: 0.65rem;
+  padding: 0.45rem 0.85rem 0.2rem;
+  font-size: 0.62rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--color-accent);
-  background: rgba(59,130,246,0.08);
-  border-right: 1px solid rgba(255,255,255,0.06);
   white-space: nowrap;
-  z-index: 1;
+}
+.ticker-track-wrap {
+  overflow: hidden;
+  padding-bottom: 0.45rem;
 }
 .ticker-track {
   display: flex;
