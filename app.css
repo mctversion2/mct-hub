@@ -1705,7 +1705,7 @@
 /* Homepage Sections */
 .homepage-section {
   padding: 1.5rem 1.5rem 0;
-  max-width: var(--content-max);
+  max-width: var(--content-wide);
   margin: 0 auto;
 }
 .homepage-section-inner {
