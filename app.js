@@ -46,6 +46,14 @@
     if (state.currentTag) {
       articles = articles.filter(function (a) { return a.tags && a.tags.indexOf(state.currentTag) !== -1; });
     }
+    // Sort by date descending — latest articles first
+    articles = articles.slice().sort(function (a, b) {
+      var da = a.date || "";
+      var db = b.date || "";
+      if (da > db) return -1;
+      if (da < db) return 1;
+      return 0;
+    });
     return articles;
   }
 
