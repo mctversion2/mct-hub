@@ -1391,3 +1391,74 @@
   border-radius: var(--radius-full);
 }
 ::-webkit-scrollbar-thumb:hover { background: var(--color-surface-dynamic); }
+
+/* Support Banner */
+.support-banner {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+.support-inner {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.support-heading {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.6rem;
+}
+.support-text {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 1.2rem;
+}
+.support-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.support-btn {
+  display: inline-block;
+  padding: 0.45rem 1.2rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-family: inherit;
+}
+.support-btn:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.2);
+  color: var(--color-text-primary);
+}
+.support-btn-paypal:hover {
+  border-color: rgba(0,112,187,0.4);
+  color: #0070bb;
+}
+.support-btn-gcash:hover {
+  border-color: rgba(0,119,255,0.4);
+  color: #0077ff;
+}
+.gcash-info {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 0.75rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+.gcash-info.visible {
+  opacity: 1;
+  max-height: 2rem;
+}
