@@ -14,7 +14,10 @@
     searchQuery: "",
     currentSource: null,
     currentPage: 1,
-    sourcePageSize: 10
+    sourcePageSize: 10,
+    categoryViewName: null,
+    categoryViewPage: 1,
+    categoryViewPageSize: 12
   };
 
   // ---- TEXT CACHE (lazy-loaded) ----
@@ -1172,6 +1175,94 @@
     removeProgressBar();
   }
 
+  // ---- RENDER: CATEGORY VIEW (All News / All Commentary) ----
+  function renderCategoryView() {
+    var catName = state.categoryViewName;
+    if (!catName) return;
+
+    var titleEl = $("#category-view-title");
+    var countEl = $("#category-view-count");
+    var gridEl = $("#category-view-grid");
+    var paginationEl = $("#category-view-pagination");
+
+    // Get all articles for this category, sorted newest first
+    var articles = ARTICLES_META.slice()
+      .filter(function (a) { return a.category === catName; })
+      .sort(function (a, b) {
+        var da = a.date || ""; var db = b.date || "";
+        if (da > db) return -1; if (da < db) return 1; return 0;
+      });
+
+    var label = catName === "News" ? "All News" : "All Commentaries";
+    titleEl.textContent = label;
+    countEl.textContent = articles.length + " article" + (articles.length !== 1 ? "s" : "");
+
+    // Pagination
+    var page = state.categoryViewPage;
+    var perPage = state.categoryViewPageSize;
+    var totalPages = Math.ceil(articles.length / perPage);
+    if (page > totalPages) page = totalPages;
+    if (page < 1) page = 1;
+    state.categoryViewPage = page;
+
+    var start = (page - 1) * perPage;
+    var end = Math.min(start + perPage, articles.length);
+
+    var html = "";
+    for (var i = start; i < end; i++) {
+      html += renderArticleCard(articles[i]);
+    }
+    gridEl.innerHTML = html;
+
+    // Render pagination
+    if (totalPages > 1) {
+      paginationEl.innerHTML = renderCategoryPagination(page, totalPages);
+      paginationEl.hidden = false;
+    } else {
+      paginationEl.innerHTML = "";
+      paginationEl.hidden = true;
+    }
+
+    window.scrollTo(0, 0);
+  }
+
+  function renderCategoryPagination(current, total) {
+    var html = '<nav class="pagination" aria-label="Category pages">';
+
+    if (current > 1) {
+      html += '<button class="page-btn page-prev" data-catpage="' + (current - 1) + '" type="button">' +
+        '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>' +
+        'Prev</button>';
+    } else {
+      html += '<button class="page-btn page-prev" disabled type="button">' +
+        '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>' +
+        'Prev</button>';
+    }
+
+    var pages = buildPageNumbers(current, total);
+    for (var i = 0; i < pages.length; i++) {
+      if (pages[i] === "...") {
+        html += '<span class="page-ellipsis">&hellip;</span>';
+      } else {
+        var active = pages[i] === current ? " active" : "";
+        html += '<button class="page-btn page-num' + active + '" data-catpage="' + pages[i] + '" type="button">' + pages[i] + '</button>';
+      }
+    }
+
+    if (current < total) {
+      html += '<button class="page-btn page-next" data-catpage="' + (current + 1) + '" type="button">' +
+        'Next<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>' +
+        '</button>';
+    } else {
+      html += '<button class="page-btn page-next" disabled type="button">' +
+        'Next<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>' +
+        '</button>';
+    }
+
+    html += '</nav>';
+    return html;
+  }
+
   // ---- ROUTING ----
   function navigateTo(view, data) {
     $$(".view").forEach(function (v) { v.classList.remove("active"); });
@@ -1183,6 +1274,14 @@
       showArticle(data);
       window.location.hash = "article/" + data;
       startProgressBar();
+    } else if (view === "news" || view === "commentary") {
+      state.currentView = "category";
+      state.categoryViewName = view === "news" ? "News" : "Commentary";
+      state.categoryViewPage = 1;
+      $("#view-category").classList.add("active");
+      renderCategoryView();
+      window.location.hash = view;
+      stopProgressBar();
     } else if (view === "about") {
       state.currentView = "about";
       $("#view-about").classList.add("active");
@@ -1201,9 +1300,13 @@
     }
 
     // Update nav active state
+    var navView = view;
+    if (view === "category") {
+      navView = state.categoryViewName === "News" ? "news" : "commentary";
+    }
     $$(".nav-link, .mobile-nav-link").forEach(function (link) {
       link.classList.remove("active");
-      if (link.dataset.nav === view || (view === "home" && link.dataset.nav === "home")) {
+      if (link.dataset.nav === navView || (navView === "home" && link.dataset.nav === "home")) {
         link.classList.add("active");
       }
     });
@@ -1214,6 +1317,10 @@
     if (hash.startsWith("article/")) {
       var id = hash.replace("article/", "");
       navigateTo("article", id);
+    } else if (hash === "news") {
+      navigateTo("news");
+    } else if (hash === "commentary") {
+      navigateTo("commentary");
     } else if (hash === "about") {
       navigateTo("about");
     } else {
@@ -1324,6 +1431,25 @@
         return;
       }
 
+      // Category view pagination clicks
+      var catPageBtn = e.target.closest("[data-catpage]");
+      if (catPageBtn && !catPageBtn.disabled) {
+        e.preventDefault();
+        state.categoryViewPage = parseInt(catPageBtn.dataset.catpage, 10);
+        renderCategoryView();
+        return;
+      }
+
+      // "See all" buttons → navigate to category view
+      var seeAllBtn = e.target.closest(".section-see-all");
+      if (seeAllBtn) {
+        e.preventDefault();
+        var cat = seeAllBtn.dataset.category;
+        if (cat === "News") { navigateTo("news"); }
+        else if (cat === "Commentary") { navigateTo("commentary"); }
+        return;
+      }
+
       // Pagination clicks
       var pageBtn = e.target.closest("[data-page]");
       if (pageBtn && !pageBtn.disabled) {
@@ -1337,7 +1463,7 @@
       }
 
       // Category filter
-      var catBtn = e.target.closest("[data-category]");
+      var catBtn = e.target.closest(".filter-btn[data-category]");
       if (catBtn) {
         e.preventDefault();
         state.currentCategory = catBtn.dataset.category;
