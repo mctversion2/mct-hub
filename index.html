@@ -174,23 +174,17 @@
       </div>
     </section>
 
-    <!-- All Articles Grid + Sidebar -->
+    <!-- Hidden grid placeholders (JS needs these IDs) -->
+    <div hidden>
+      <div id="articles-grid"></div>
+      <div id="load-more-wrap"></div>
+      <div id="btn-load-more"></div>
+      <div id="pagination-wrap"></div>
+    </div>
+
+    <!-- Sidebar + Stats -->
     <section class="content-section">
       <div class="content-layout">
-        <div class="articles-main">
-          <div class="section-header" id="all-articles-header" hidden>
-            <h2 class="section-label">All Articles</h2>
-          </div>
-          <div class="articles-grid" id="articles-grid">
-            <!-- Populated by JS -->
-          </div>
-          <div class="load-more-wrap" id="load-more-wrap">
-            <button class="btn-load-more" id="btn-load-more">Load More Articles</button>
-          </div>
-          <div class="pagination-wrap" id="pagination-wrap" hidden>
-            <!-- Populated by JS -->
-          </div>
-        </div>
         <aside class="sidebar" aria-label="Popular articles and tags">
           <div class="sidebar-section">
             <h2 class="sidebar-title">Most Popular</h2>

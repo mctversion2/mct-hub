@@ -388,7 +388,7 @@
     var commentarySection = $("#section-commentary");
     var newsGrid = $("#news-grid");
     var commentaryGrid = $("#commentary-grid");
-    var allHeader = $("#all-articles-header");
+
 
     // Only show sections on default home (no source/category/tag filter)
     var isDefault = !state.currentSource && state.currentCategory === "all" && !state.currentTag;
@@ -396,7 +396,7 @@
     if (!isDefault) {
       newsSection.hidden = true;
       commentarySection.hidden = true;
-      if (allHeader) allHeader.hidden = true;
+
       return;
     }
 
@@ -432,8 +432,7 @@
       commentarySection.hidden = true;
     }
 
-    // Show "All Articles" header
-    if (allHeader) allHeader.hidden = false;
+
   }
 
   function renderArticles(reset) {
