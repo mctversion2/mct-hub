@@ -538,12 +538,10 @@
   padding: 0;
 }
 .hero-top {
-  display: flex;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: 45% 1fr;
 }
 .hero-image {
-  flex: 0 0 auto;
-  width: 45%;
   border-radius: var(--radius-xl) 0 0 0;
   overflow: hidden;
   line-height: 0;
@@ -554,16 +552,16 @@
   display: block;
 }
 .hero-card.has-image .hero-text {
-  flex: 1;
-  padding: var(--space-6) var(--space-8);
+  padding: var(--space-5) var(--space-6);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 .hero-bottom {
-  padding: 0 var(--space-8) var(--space-8);
+  padding: 0 var(--space-8) var(--space-6);
   border-top: 1px solid var(--color-border);
-  padding-top: var(--space-5);
+  padding-top: var(--space-4);
 }
 .hero-card::before {
   content: '';
@@ -603,11 +601,11 @@
 }
 .hero-title {
   font-family: var(--font-display);
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
   font-weight: 700;
   color: var(--color-text);
-  margin-bottom: var(--space-4);
-  line-height: 1.15;
+  margin-bottom: var(--space-3);
+  line-height: 1.2;
   letter-spacing: -0.02em;
   position: relative;
   z-index: 1;
@@ -623,11 +621,13 @@
 }
 @media (max-width: 768px) {
   .hero-top {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .hero-image {
-    width: 100%;
     border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  }
+  .hero-title {
+    font-size: var(--text-xl);
   }
   .hero-card.has-image .hero-text {
     padding: var(--space-5);
