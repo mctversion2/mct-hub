@@ -24,6 +24,7 @@
   var textCache = {};
   var chunkCache = {};
   var CHUNK_SIZE = 20;
+  var CACHE_BUST = "v=" + Date.now();
 
   function extractNumericId(articleId) {
     // Handle both "art_5" and 5 and "5" formats
@@ -51,7 +52,7 @@
       callback(textCache[num]);
       return;
     }
-    fetch("./chunks/text-" + chunkIdx + ".json")
+    fetch("./chunks/text-" + chunkIdx + ".json?" + CACHE_BUST)
       .then(function (r) { return r.json(); })
       .then(function (data) {
         chunkCache[chunkIdx] = data;
@@ -82,7 +83,7 @@
       callback(commentsCache[num]);
       return;
     }
-    fetch("./comments/comments-" + chunkIdx + ".json")
+    fetch("./comments/comments-" + chunkIdx + ".json?" + CACHE_BUST)
       .then(function (r) { return r.json(); })
       .then(function (data) {
         commentsChunkCache[chunkIdx] = data;

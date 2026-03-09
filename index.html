@@ -34,15 +34,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="./base.css?v=1773056734">
-<link rel="stylesheet" href="./style.css?v=1773056734">
-<link rel="stylesheet" href="./app.css?v=1773056734">
+<link rel="stylesheet" href="./base.css?v=1773058255">
+<link rel="stylesheet" href="./style.css?v=1773058255">
+<link rel="stylesheet" href="./app.css?v=1773058255">
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4495102979672305" crossorigin="anonymous"></script>
 
-<script src="./articles-meta.js?v=1773056734" defer></script>
-<script src="./events-calendar.js?v=1773056734" defer></script>
-<script src="./app.js?v=1773056734" defer></script>
+<script src="./articles-meta.js?v=1773058255" defer></script>
+<script src="./events-calendar.js?v=1773058255" defer></script>
+<script src="./app.js?v=1773058255" defer></script>
 </head>
 <body>
 
@@ -449,6 +449,36 @@
       alert('Thank you for your support! Subscription ID: ' + data.subscriptionID);
     }
   }).render('#paypal-button-container-P-9K802369962927120NEUOSGQ');
+</script>
+
+<script>
+// Register service worker for cache control
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').then(function(reg) {
+    // Check for updates every time the page loads
+    reg.update();
+    // When a new service worker is found, activate it immediately
+    reg.addEventListener('updatefound', function() {
+      var newWorker = reg.installing;
+      if (newWorker) {
+        newWorker.addEventListener('statechange', function() {
+          if (newWorker.state === 'activated') {
+            // New SW active — reload to get fresh content
+            window.location.reload();
+          }
+        });
+      }
+    });
+  });
+  // If the SW takes control mid-session, reload for fresh content
+  var refreshing = false;
+  navigator.serviceWorker.addEventListener('controllerchange', function() {
+    if (!refreshing) {
+      refreshing = true;
+      window.location.reload();
+    }
+  });
+}
 </script>
 
 </body>
