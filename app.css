@@ -1007,6 +1007,16 @@
   border-bottom: 2px solid var(--color-primary);
   margin-bottom: var(--space-4);
 }
+.popular-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 var(--space-8);
+}
+@media (max-width: 768px) {
+  .popular-list {
+    grid-template-columns: 1fr;
+  }
+}
 .popular-item {
   display: flex;
   gap: var(--space-3);

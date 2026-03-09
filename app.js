@@ -591,10 +591,11 @@
   // ---- RENDER: POPULAR ----
   function renderPopular() {
     var container = $("#popular-articles");
+    if (!container) return;
     var sorted = ARTICLES_META.slice().sort(function (a, b) {
       return (b.reactions || 0) - (a.reactions || 0);
     });
-    var top = sorted.slice(0, 8);
+    var top = sorted.slice(0, 10);
     var html = "";
     for (var i = 0; i < top.length; i++) {
       var a = top[i];
@@ -610,6 +611,39 @@
     }
     container.innerHTML = html;
   }
+
+  // ---- RENDER: PAST BLOGS (random non-news, reshuffles periodically) ----
+  function renderPastBlogs() {
+    var container = $("#past-blogs");
+    if (!container) return;
+    // Filter: exclude News, only commentary/opinion/reflection/etc.
+    var pool = ARTICLES_META.filter(function (a) {
+      return a.category !== "News";
+    });
+    // Shuffle
+    for (var s = pool.length - 1; s > 0; s--) {
+      var r = Math.floor(Math.random() * (s + 1));
+      var temp = pool[s]; pool[s] = pool[r]; pool[r] = temp;
+    }
+    var selected = pool.slice(0, 10);
+    var html = "";
+    for (var i = 0; i < selected.length; i++) {
+      var a = selected[i];
+      html +=
+        '<div class="popular-item" data-article="' + a.id + '">' +
+          '<span class="popular-rank">' + (i + 1) + '</span>' +
+          '<div class="popular-info">' +
+            '<h3>' + escapeHtml(toTitleCase(a.title)) + '</h3>' +
+            '<p>' + escapeHtml(a.category) +
+              (a.date ? ' · ' + formatDate(a.date) : '') + '</p>' +
+          '</div>' +
+        '</div>';
+    }
+    container.innerHTML = html;
+  }
+
+  // Reshuffle Past Blogs every 10 minutes
+  setInterval(renderPastBlogs, 10 * 60 * 1000);
 
   // ---- RENDER: TAG CLOUD ----
   function renderTagCloud() {
@@ -1476,6 +1510,7 @@
     renderHero();
     renderArticles(true);
     renderPopular();
+    renderPastBlogs();
     renderTagCloud();
     renderFilterTags();
     initEvents();
