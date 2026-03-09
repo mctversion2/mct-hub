@@ -1453,67 +1453,7 @@
     toggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
   }
 
-  // ---- RENDER: ARCHIVE TICKER ----
-  function renderTicker() {
-    var wrap = $("#ticker-wrap");
-    var track = $("#ticker-track");
-    if (!wrap || !track) return;
 
-    // Get commentary articles with images, excluding the most recent 20
-    var commentaries = ARTICLES_META.slice().filter(function (a) {
-      return a.category === "Commentary" && a.image;
-    }).sort(function (a, b) {
-      var da = a.date || ""; var db = b.date || "";
-      if (da > db) return -1; if (da < db) return 1; return 0;
-    });
-
-    // Skip the 20 most recent, pick from older ones
-    var pool = commentaries.slice(20);
-    if (pool.length < 5) pool = commentaries; // fallback if not enough
-
-    // Shuffle and pick 15
-    for (var s = pool.length - 1; s > 0; s--) {
-      var r = Math.floor(Math.random() * (s + 1));
-      var temp = pool[s]; pool[s] = pool[r]; pool[r] = temp;
-    }
-    var selected = pool.slice(0, 15);
-
-    // Build ticker items — duplicate for seamless loop
-    var html = "";
-    function buildItem(a) {
-      return (
-        '<div class="ticker-item" data-article="' + a.id + '">' +
-          '<img class="ticker-img" src="' + escapeHtml(a.image) + '" width="28" height="28" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'">' +
-          '<span class="ticker-title">' + escapeHtml(toTitleCase(a.title.length > 65 ? a.title.substring(0, 62) + '...' : a.title)) + '</span>' +
-        '</div>'
-      );
-    }
-    for (var i = 0; i < selected.length; i++) {
-      html += buildItem(selected[i]);
-    }
-    // Duplicate for seamless infinite scroll
-    for (var j = 0; j < selected.length; j++) {
-      html += buildItem(selected[j]);
-    }
-
-    track.innerHTML = html;
-    wrap.hidden = false;
-
-    // Pause on hover
-    track.addEventListener("mouseenter", function () {
-      track.style.animationPlayState = "paused";
-    });
-    track.addEventListener("mouseleave", function () {
-      track.style.animationPlayState = "running";
-    });
-    // Pause on touch
-    track.addEventListener("touchstart", function () {
-      track.style.animationPlayState = "paused";
-    }, { passive: true });
-    track.addEventListener("touchend", function () {
-      track.style.animationPlayState = "running";
-    });
-  }
 
   // ---- INIT ----
   function fetchFollowerCount() {
@@ -1538,7 +1478,6 @@
     initEvents();
     handleHashChange();
     fetchFollowerCount();
-    renderTicker();
   }
 
   // Wait for data to load
