@@ -2294,15 +2294,29 @@
 }
 .donation-popup-gcash {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
   background: linear-gradient(135deg, #007bff22, #007bff0a);
   border: 1px solid #007bff44;
   border-radius: 12px;
-  padding: 0.9rem 1.25rem;
+  padding: 1.25rem;
   margin-bottom: 1rem;
   cursor: default;
+}
+.donation-popup-qr {
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.donation-popup-gcash-details {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 .donation-popup-gcash-label {
   font-family: var(--font-heading, 'Inter', sans-serif);
@@ -2339,6 +2353,10 @@
   }
   .donation-popup-title {
     font-size: 1.05rem;
+  }
+  .donation-popup-qr {
+    width: 150px;
+    height: 150px;
   }
   .donation-popup-gcash-number {
     font-size: 1.1rem;
