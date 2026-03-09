@@ -260,14 +260,18 @@
       : '';
     section.innerHTML =
       '<div class="hero-card ' + (a.image ? 'has-image' : '') + '" data-article="' + a.id + '">' +
-        heroImgHtml +
-        '<div class="hero-text">' +
-          '<div class="hero-meta">' +
-            '<span class="category-badge ' + getCategoryClass(a.category) + '">' + escapeHtml(a.category) + '</span>' +
-            (a.date ? '<span class="card-date">' + formatDate(a.date) + '</span>' : '') +
-            '<span class="card-date">' + a.read_time + ' min read</span>' +
+        '<div class="hero-top">' +
+          heroImgHtml +
+          '<div class="hero-text">' +
+            '<div class="hero-meta">' +
+              '<span class="category-badge ' + getCategoryClass(a.category) + '">' + escapeHtml(a.category) + '</span>' +
+              (a.date ? '<span class="card-date">' + formatDate(a.date) + '</span>' : '') +
+              '<span class="card-date">' + a.read_time + ' min read</span>' +
+            '</div>' +
+            '<h2 class="hero-title">' + escapeHtml(toTitleCase(a.title)) + '</h2>' +
           '</div>' +
-          '<h2 class="hero-title">' + escapeHtml(toTitleCase(a.title)) + '</h2>' +
+        '</div>' +
+        '<div class="hero-bottom">' +
           '<p class="hero-excerpt">' + escapeHtml(a.excerpt) + '</p>' +
         '</div>' +
       '</div>';
