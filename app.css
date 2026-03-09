@@ -2144,6 +2144,21 @@
   margin-bottom: 1.2rem;
 }
 
+/* ---- FILTERED ARTICLES SECTION ---- */
+.filtered-articles-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+}
+.filtered-articles-inner {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .filtered-articles-section {
+    padding: 0 1rem 1.5rem;
+  }
+}
+
 /* ---- CATEGORY VIEW (All News / All Commentary) ---- */
 .category-view {
   max-width: 1200px;

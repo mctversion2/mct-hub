@@ -389,19 +389,28 @@
   function renderHomepageSections() {
     var newsSection = $("#section-news");
     var commentarySection = $("#section-commentary");
+    var popularSection = $("#section-popular");
+    var pastBlogsSection = $("#section-past-blogs");
+    var filteredSection = $("#filtered-articles-section");
     var newsGrid = $("#news-grid");
     var commentaryGrid = $("#commentary-grid");
 
-
-    // Only show sections on default home (no source/category/tag filter)
+    // Only show homepage sections on default home (no source/category/tag filter)
     var isDefault = !state.currentSource && state.currentCategory === "all" && !state.currentTag;
 
     if (!isDefault) {
       newsSection.hidden = true;
       commentarySection.hidden = true;
-
+      popularSection.hidden = true;
+      pastBlogsSection.hidden = true;
+      filteredSection.hidden = false;
       return;
     }
+
+    // Default view: show homepage sections, hide filtered grid
+    filteredSection.hidden = true;
+    popularSection.hidden = false;
+    pastBlogsSection.hidden = false;
 
     // Get latest news (up to 4)
     var allSorted = ARTICLES_META.slice().sort(function (a, b) {
@@ -434,8 +443,6 @@
     } else {
       commentarySection.hidden = true;
     }
-
-
   }
 
   function renderArticles(reset) {
@@ -494,6 +501,44 @@
       if (totalPages > 1) {
         paginationWrap.hidden = false;
         paginationWrap.innerHTML = renderPagination(page, totalPages);
+      } else {
+        paginationWrap.hidden = true;
+      }
+      return;
+    }
+
+    // CATEGORY/TAG FILTERED MODE: paginated grid
+    var isFiltered = state.currentCategory !== "all" || state.currentTag;
+    if (isFiltered) {
+      // Hide hero when filtered
+      $("#hero-section").innerHTML = "";
+      var evBanner2 = $("#event-banner");
+      if (evBanner2) evBanner2.hidden = true;
+      // Remove source filter header if present
+      var existingHeader2 = $("#source-filter-header");
+      if (existingHeader2) { existingHeader2.hidden = true; }
+
+      var fPage = state.currentPage;
+      var fPerPage = 12;
+      var fTotalPages = Math.ceil(articles.length / fPerPage);
+      if (fPage > fTotalPages) fPage = fTotalPages;
+      if (fPage < 1) fPage = 1;
+      state.currentPage = fPage;
+
+      var fStart = (fPage - 1) * fPerPage;
+      var fEnd = Math.min(fStart + fPerPage, articles.length);
+
+      grid.innerHTML = "";
+      var fHtml = "";
+      for (var fi = fStart; fi < fEnd; fi++) {
+        fHtml += renderArticleCard(articles[fi]);
+      }
+      grid.innerHTML = fHtml;
+
+      loadMoreWrap.hidden = true;
+      if (fTotalPages > 1) {
+        paginationWrap.hidden = false;
+        paginationWrap.innerHTML = renderPagination(fPage, fTotalPages);
       } else {
         paginationWrap.hidden = true;
       }
@@ -1468,10 +1513,10 @@
         e.preventDefault();
         state.currentCategory = catBtn.dataset.category;
         state.currentTag = null;
+        state.currentPage = 1;
         // Clear source filter when changing category
         if (state.currentSource) {
           state.currentSource = null;
-          state.currentPage = 1;
           updateSourceBadgeActive();
         }
         $$(".filter-btn").forEach(function (b) { b.classList.remove("active"); b.setAttribute("aria-selected", "false"); });
