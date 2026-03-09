@@ -1671,10 +1671,17 @@
     popupShown: false
   };
 
+  // Check if popup was already shown this session (via session cookie)
+  if (document.cookie.indexOf("mct_donated=1") !== -1) {
+    donationState.popupShown = true;
+  }
+
   function trackArticleView() {
     donationState.articlesViewed++;
     if (donationState.articlesViewed >= 2 && !donationState.popupShown) {
       donationState.popupShown = true;
+      // Set a session cookie (no max-age = expires when browser closes)
+      document.cookie = "mct_donated=1;path=/;SameSite=Lax";
       setTimeout(showDonationPopup, 1500);
     }
   }
