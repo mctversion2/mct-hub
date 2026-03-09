@@ -995,6 +995,7 @@
   }
 
   function showArticle(articleId) {
+    trackArticleView();
     // Normalize to "art_X" string format for meta lookup
     var artId = String(articleId);
     if (artId.indexOf("art_") !== 0) artId = "art_" + artId;
@@ -1663,6 +1664,53 @@
 
 
 
+  // ---- DONATION POPUP ----
+  var donationState = {
+    articlesViewed: 0,
+    popupShown: false
+  };
+
+  function trackArticleView() {
+    donationState.articlesViewed++;
+    if (donationState.articlesViewed >= 2 && !donationState.popupShown) {
+      donationState.popupShown = true;
+      setTimeout(showDonationPopup, 1500);
+    }
+  }
+
+  function showDonationPopup() {
+    var popup = $("#donation-popup");
+    if (!popup) return;
+    popup.classList.add("visible");
+    // GA event: popup shown
+    if (typeof gtag === "function") {
+      gtag("event", "donation_popup_shown", { event_category: "donation" });
+    }
+  }
+
+  function closeDonationPopup(reason) {
+    var popup = $("#donation-popup");
+    if (!popup) return;
+    popup.classList.remove("visible");
+    // GA event: dismissed or gcash clicked
+    if (typeof gtag === "function") {
+      gtag("event", "donation_popup_" + reason, { event_category: "donation" });
+    }
+  }
+
+  function initDonationPopup() {
+    var closeBtn = $("#donation-popup-close");
+    var laterBtn = $("#donation-popup-later");
+    var gcashBtn = $("#donation-popup-gcash");
+    if (closeBtn) closeBtn.addEventListener("click", function () { closeDonationPopup("dismissed"); });
+    if (laterBtn) laterBtn.addEventListener("click", function () { closeDonationPopup("maybe_later"); });
+    if (gcashBtn) gcashBtn.addEventListener("click", function () {
+      if (typeof gtag === "function") {
+        gtag("event", "donation_gcash_clicked", { event_category: "donation" });
+      }
+    });
+  }
+
   // ---- INIT ----
   function fetchFollowerCount() {
     var el = $("#stat-followers");
@@ -1685,6 +1733,7 @@
     renderTagCloud();
     renderFilterTags();
     initEvents();
+    initDonationPopup();
     handleHashChange();
     fetchFollowerCount();
   }
