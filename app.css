@@ -1180,6 +1180,36 @@
   display: block;
 }
 
+/* Translation Toggle */
+.translate-toggle {
+  margin: 1rem 0 0.5rem;
+}
+.translate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 999px;
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.translate-btn:hover {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: rgba(99, 102, 241, 0.5);
+}
+.translate-btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.translate-btn svg {
+  flex-shrink: 0;
+}
+
 /* Article Body */
 .article-body {
   font-family: var(--font-body);

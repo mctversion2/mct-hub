@@ -228,6 +228,75 @@
     return div.innerHTML;
   }
 
+  // ── Translation Engine ──
+  function translateText(text, callback) {
+    var url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=tl&dt=t&q=' + encodeURIComponent(text);
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.onload = function () {
+      try {
+        var data = JSON.parse(xhr.responseText);
+        var result = '';
+        for (var i = 0; i < data[0].length; i++) {
+          if (data[0][i][0]) result += data[0][i][0];
+        }
+        callback(result);
+      } catch (e) {
+        callback(text); // fallback to original
+      }
+    };
+    xhr.onerror = function () { callback(text); };
+    xhr.send();
+  }
+
+  function translateArticleBody(bodyEl, doneCallback) {
+    // Collect all paragraph elements with text
+    var paragraphs = bodyEl.querySelectorAll('p');
+    if (paragraphs.length === 0) { doneCallback(bodyEl.innerHTML); return; }
+
+    // Batch paragraphs into chunks of ~4000 chars to stay under API limits
+    var batches = [];
+    var currentBatch = [];
+    var currentLen = 0;
+    var MAX_BATCH = 4000;
+    for (var i = 0; i < paragraphs.length; i++) {
+      var txt = paragraphs[i].textContent.trim();
+      if (!txt) continue;
+      if (currentLen + txt.length > MAX_BATCH && currentBatch.length > 0) {
+        batches.push(currentBatch.slice());
+        currentBatch = [];
+        currentLen = 0;
+      }
+      currentBatch.push({ el: paragraphs[i], text: txt });
+      currentLen += txt.length;
+    }
+    if (currentBatch.length > 0) batches.push(currentBatch);
+
+    var batchIdx = 0;
+    function processNextBatch() {
+      if (batchIdx >= batches.length) {
+        doneCallback(bodyEl.innerHTML);
+        return;
+      }
+      var batch = batches[batchIdx];
+      // Join with a separator that won't be translated
+      var separator = ' ||| ';
+      var combined = batch.map(function (b) { return b.text; }).join(separator);
+      translateText(combined, function (translated) {
+        var parts = translated.split(/\s*\|\|\|\s*/);
+        for (var j = 0; j < batch.length; j++) {
+          if (parts[j]) {
+            batch[j].el.textContent = parts[j];
+          }
+        }
+        batchIdx++;
+        // Small delay to avoid rate limiting
+        setTimeout(processNextBatch, 100);
+      });
+    }
+    processNextBatch();
+  }
+
   function toTitleCase(str) {
     if (!str) return str;
     // Only convert if the entire string is uppercase
@@ -1036,6 +1105,13 @@
           (meta.shares ? '<span class="article-info-divider"></span><span>' + meta.shares.toLocaleString() + ' shares</span>' : '') +
         '</div>' +
       '</div>' +
+      ((meta.category === 'News' || meta.category === 'Commentary') ?
+        '<div class="translate-toggle" id="translate-toggle">' +
+          '<button class="translate-btn" id="translate-btn">' +
+            '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 0 1 6.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>' +
+            '<span id="translate-btn-text">Basahin sa Filipino</span>' +
+          '</button>' +
+        '</div>' : '') +
       '<div class="article-body" id="article-body-content"><p style="opacity:0.5;">Loading article...</p></div>' +
       (meta.url ?
         '<a href="' + escapeHtml(meta.url) + '" target="_blank" rel="noopener noreferrer" class="article-source-link">' +
@@ -1070,6 +1146,41 @@
       var bodyEl = $("#article-body-content");
       if (bodyEl) {
         bodyEl.innerHTML = formatArticleText(text, meta.title);
+      }
+      // Set up translation toggle
+      var translateBtn = $("#translate-btn");
+      if (translateBtn) {
+        var isTranslated = false;
+        var originalHtml = null;
+        translateBtn.addEventListener('click', function () {
+          if (isTranslated) {
+            // Revert to English
+            bodyEl.innerHTML = originalHtml;
+            $("#translate-btn-text").textContent = 'Basahin sa Filipino';
+            isTranslated = false;
+            return;
+          }
+          // Save original
+          originalHtml = bodyEl.innerHTML;
+          // Check in-memory cache
+          var cacheKey = 'tl_' + id;
+          if (window._tlCache && window._tlCache[cacheKey]) {
+            bodyEl.innerHTML = window._tlCache[cacheKey];
+            $("#translate-btn-text").textContent = 'Read in English';
+            isTranslated = true;
+            return;
+          }
+          // Translate
+          $("#translate-btn-text").textContent = 'Translating...';
+          translateBtn.disabled = true;
+          translateArticleBody(bodyEl, function (translatedHtml) {
+            if (!window._tlCache) window._tlCache = {};
+            window._tlCache[cacheKey] = translatedHtml;
+            $("#translate-btn-text").textContent = 'Read in English';
+            translateBtn.disabled = false;
+            isTranslated = true;
+          });
+        });
       }
     });
 
