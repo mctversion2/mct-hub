@@ -1477,17 +1477,58 @@ async function getFileContent(filePath) {
 }
 
 async function getFileContentUTF8(filePath) {
-  // Use raw.githubusercontent.com for fast, reliable file reading (no API limits, no base64)
-  const rawUrl = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${filePath}`;
-  const rawRes = await fetch(rawUrl + '?t=' + Date.now()); // cache-bust
-  if (!rawRes.ok) throw new Error(`File not found: ${filePath} (${rawRes.status})`);
-  const content = await rawRes.text();
-
-  // Get SHA separately for update operations (only when needed)
+  let content = '';
   let sha = '';
+  const token = getToken();
+
+  // Method 1: Try raw.githubusercontent.com (fast, no auth, no API limits)
   try {
-    const token = getToken();
-    if (token) {
+    const rawUrl = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${filePath}`;
+    const rawRes = await fetch(rawUrl + '?t=' + Date.now());
+    if (rawRes.ok) {
+      content = await rawRes.text();
+    }
+  } catch(e) { /* fall through to method 2 */ }
+
+  // Method 2: If raw failed, try GitHub API with raw accept header
+  if (!content && token) {
+    try {
+      const apiRes = await fetch(`${API}/repos/${OWNER}/${REPO}/contents/${filePath}?ref=${BRANCH}`, {
+        headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3.raw' }
+      });
+      if (apiRes.ok) {
+        const text = await apiRes.text();
+        // Verify it's not a JSON error wrapper
+        if (text && !text.startsWith('{"message"')) {
+          content = text;
+        }
+      }
+    } catch(e) { /* fall through to method 3 */ }
+  }
+
+  // Method 3: GitHub API with base64 decoding (works for files < 1MB)
+  if (!content && token) {
+    try {
+      const apiRes = await fetch(`${API}/repos/${OWNER}/${REPO}/contents/${filePath}?ref=${BRANCH}`, {
+        headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+      });
+      if (apiRes.ok) {
+        const data = await apiRes.json();
+        if (data.content && data.encoding === 'base64') {
+          const bytes = Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0));
+          content = new TextDecoder('utf-8').decode(bytes);
+          sha = data.sha || '';
+        }
+        if (!sha && data.sha) sha = data.sha;
+      }
+    } catch(e) { /* all methods failed */ }
+  }
+
+  if (!content) throw new Error(`Could not load ${filePath} from any source`);
+
+  // Get SHA if we don't have it yet (needed for write operations)
+  if (!sha && token) {
+    try {
       const metaRes = await fetch(`${API}/repos/${OWNER}/${REPO}/contents/${filePath}?ref=${BRANCH}`, {
         headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
       });
@@ -1495,8 +1536,8 @@ async function getFileContentUTF8(filePath) {
         const meta = await metaRes.json();
         sha = meta.sha || '';
       }
-    }
-  } catch(e) { /* SHA fetch is non-critical */ }
+    } catch(e) { /* non-critical */ }
+  }
 
   return { content, sha };
 }
@@ -2176,12 +2217,16 @@ async function loadEvents(force = false) {
 // Parse the events-calendar.js file to extract the MCT_EVENTS array
 function parseEventsJS(jsContent) {
   try {
+    if (!jsContent || jsContent.length < 10) {
+      throw new Error('Empty or too short content (length: ' + (jsContent ? jsContent.length : 0) + ')');
+    }
     // Extract the array portion between [ and ];
     const start = jsContent.indexOf('[');
     const end = jsContent.lastIndexOf(']');
-    if (start === -1 || end === -1) throw new Error('Could not find MCT_EVENTS array');
+    if (start === -1 || end === -1) {
+      throw new Error('Could not find MCT_EVENTS array. Content starts with: ' + jsContent.substring(0, 80));
+    }
     const arrayStr = jsContent.substring(start, end + 1);
-    // Use Function constructor to safely parse (it's just data)
     const fn = new Function('return ' + arrayStr);
     return fn();
   } catch (e) {
