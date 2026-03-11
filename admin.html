@@ -1075,11 +1075,18 @@ function generateExcerpt(text) {
 async function ghFetch(path, options = {}) {
   const token = getToken();
   if (!token) throw new Error('No GitHub token configured');
-  const url = path.startsWith('http') ? path : `${API}/repos/${OWNER}/${REPO}/${path}`;
+  let url;
+  if (path.startsWith('http')) {
+    url = path;
+  } else if (path === '' || path === '/') {
+    url = `${API}/repos/${OWNER}/${REPO}`;
+  } else {
+    url = `${API}/repos/${OWNER}/${REPO}/${path}`;
+  }
   const res = await fetch(url, {
     ...options,
     headers: {
-      'Authorization': `token ${token}`,
+      'Authorization': `Bearer ${token}`,
       'Accept': 'application/vnd.github.v3+json',
       'Content-Type': 'application/json',
       ...(options.headers || {})
