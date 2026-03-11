@@ -1477,25 +1477,28 @@ async function getFileContent(filePath) {
 }
 
 async function getFileContentUTF8(filePath) {
-  const token = getToken();
-  // First try raw download — works for any file size, no base64 overhead
-  const rawRes = await fetch(`${API}/repos/${OWNER}/${REPO}/contents/${filePath}?ref=${BRANCH}`, {
-    headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3.raw' }
-  });
-  if (rawRes.ok) {
-    const content = await rawRes.text();
-    // Get SHA separately for update operations
-    const metaRes = await fetch(`${API}/repos/${OWNER}/${REPO}/contents/${filePath}?ref=${BRANCH}`, {
-      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
-    });
-    let sha = '';
-    if (metaRes.ok) {
-      const meta = await metaRes.json();
-      sha = meta.sha || '';
+  // Use raw.githubusercontent.com for fast, reliable file reading (no API limits, no base64)
+  const rawUrl = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${filePath}`;
+  const rawRes = await fetch(rawUrl + '?t=' + Date.now()); // cache-bust
+  if (!rawRes.ok) throw new Error(`File not found: ${filePath} (${rawRes.status})`);
+  const content = await rawRes.text();
+
+  // Get SHA separately for update operations (only when needed)
+  let sha = '';
+  try {
+    const token = getToken();
+    if (token) {
+      const metaRes = await fetch(`${API}/repos/${OWNER}/${REPO}/contents/${filePath}?ref=${BRANCH}`, {
+        headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+      });
+      if (metaRes.ok) {
+        const meta = await metaRes.json();
+        sha = meta.sha || '';
+      }
     }
-    return { content, sha };
-  }
-  throw new Error(`File not found: ${filePath} (${rawRes.status})`);
+  } catch(e) { /* SHA fetch is non-critical */ }
+
+  return { content, sha };
 }
 
 // Push multiple files in a single commit using Git Trees API
