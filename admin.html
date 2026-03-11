@@ -863,8 +863,18 @@ tr:hover td { background: var(--bg-hover); }
               <input type="text" id="field-tags" class="form-input" placeholder="e.g. politics, economy, opinion">
             </div>
             <div class="form-group">
-              <label for="field-image">Image URL (optional)</label>
-              <input type="text" id="field-image" class="form-input" placeholder="https://example.com/image.jpg">
+              <label for="field-image">Banner Image (optional)</label>
+              <div style="display:flex;gap:8px;align-items:center;">
+                <input type="text" id="field-image" class="form-input" placeholder="URL or upload an image" style="flex:1;">
+                <label class="btn btn-ghost" style="cursor:pointer;white-space:nowrap;flex-shrink:0;">
+                  Upload
+                  <input type="file" id="field-image-upload" accept="image/*" style="display:none;" onchange="handleArticleImageUpload(this)">
+                </label>
+              </div>
+              <div id="image-upload-preview" style="margin-top:8px;display:none;">
+                <img id="image-preview-img" style="max-width:200px;max-height:120px;border-radius:6px;border:1px solid var(--border);">
+                <button class="btn btn-ghost btn-sm" style="margin-left:8px;" onclick="clearImageUpload()">Remove</button>
+              </div>
             </div>
           </div>
           <div class="form-group">
@@ -1555,12 +1565,12 @@ async function pushFiles(files, commitMessage) {
   const currentCommit = await ghFetch(`git/commits/${currentCommitSha}`);
   const baseTreeSha = currentCommit.tree.sha;
 
-  // 3. Create blobs for each file
+  // 3. Create blobs for each file (supports utf-8 text and base64 binary)
   showProgress('Publishing', 'Uploading files...', 30);
   const blobPromises = files.map(f =>
     ghFetch('git/blobs', {
       method: 'POST',
-      body: JSON.stringify({ content: f.content, encoding: 'utf-8' })
+      body: JSON.stringify({ content: f.content, encoding: f.encoding || 'utf-8' })
     }).then(res => ({ path: f.path, sha: res.sha, mode: '100644', type: 'blob' }))
   );
   const treeItems = await Promise.all(blobPromises);
@@ -1908,6 +1918,7 @@ function resetForm() {
   document.getElementById('field-source').value = 'website';
   document.getElementById('field-tags').value = '';
   document.getElementById('field-image').value = '';
+  clearImageUpload();
   document.getElementById('field-text').value = '';
   document.getElementById('form-title').textContent = 'Create New Article';
   document.getElementById('form-subtitle').textContent = 'Write and publish a new article to the MCT portal';
@@ -1948,8 +1959,9 @@ function updateWordCount() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Clear old oversized cache that may be corrupted
+  // Clear old oversized caches that may be corrupted
   localStorage.removeItem('mct_articles_cache');
+  localStorage.removeItem('mct_events_cache');
 
   document.getElementById('field-text').addEventListener('input', updateWordCount);
   // Load token into settings field if present
@@ -1962,6 +1974,42 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!token) navigateTo('settings');
   else navigateTo('dashboard');
 });
+
+// ============================================================
+// Image Upload for Articles
+// ============================================================
+let pendingArticleImage = null; // { file, dataUrl, fileName }
+
+function handleArticleImageUpload(input) {
+  const file = input.files[0];
+  if (!file) return;
+  if (file.size > 5 * 1024 * 1024) { toast('Image too large (max 5MB)', 'error'); return; }
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    const dataUrl = e.target.result;
+    // Generate a filename based on timestamp
+    const ext = file.name.split('.').pop() || 'png';
+    const fileName = `img_${Date.now()}.${ext}`;
+    pendingArticleImage = { file, dataUrl, fileName };
+
+    // Show preview
+    document.getElementById('image-preview-img').src = dataUrl;
+    document.getElementById('image-upload-preview').style.display = 'flex';
+    document.getElementById('field-image').value = '';
+    document.getElementById('field-image').placeholder = fileName + ' (will upload on publish)';
+  };
+  reader.readAsDataURL(file);
+}
+
+function clearImageUpload() {
+  pendingArticleImage = null;
+  document.getElementById('image-upload-preview').style.display = 'none';
+  document.getElementById('image-preview-img').src = '';
+  document.getElementById('field-image').placeholder = 'URL or upload an image';
+  document.getElementById('field-image-upload').value = '';
+}
+
 
 // ============================================================
 // Publish / Update / Delete
@@ -1985,7 +2033,7 @@ async function publishArticle() {
   const excerpt = generateExcerpt(fullText);
 
   try {
-    showProgress('Publishing', 'Fetching latest articles from GitHub...', 5);
+    showProgress('Publishing', 'Fetching latest articles from GitHub...', 10);
 
     // Always fetch latest from GitHub
     const { content: rawContent } = await getFileContentUTF8('all_articles_unified.json');
@@ -2042,8 +2090,28 @@ async function publishArticle() {
     allArticles.forEach((a, i) => { a.id = 'art_' + i; });
 
     // Build files
-    showProgress('Publishing', 'Building data files...', 25);
+    showProgress('Publishing', 'Building data files...', 30);
     const files = buildDataFiles(allArticles);
+
+    // If there's an uploaded image, include it in the commit and update the article's image_url
+    if (pendingArticleImage) {
+      const base64 = pendingArticleImage.dataUrl.split(',')[1];
+      const ext = pendingArticleImage.fileName.split('.').pop() || 'png';
+      const imgPath = `images/img_${Date.now()}.${ext}`;
+      const imgUrl = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${imgPath}`;
+      files.push({ path: imgPath, content: base64, encoding: 'base64' });
+
+      // Update the article we just created/modified with the image URL
+      if (editingIndex >= 0 && editingIndex < allArticles.length) {
+        allArticles[editingIndex].image_url = imgUrl;
+      } else {
+        allArticles[allArticles.length - 1].image_url = imgUrl;
+      }
+      // Rebuild data files with updated image URL
+      files.length = 0;
+      buildDataFiles(allArticles).forEach(f => files.push(f));
+      files.push({ path: imgPath, content: base64, encoding: 'base64' });
+    }
 
     // Push all files in one commit
     await pushFiles(files, commitMsg);
