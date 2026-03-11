@@ -1477,10 +1477,37 @@ async function getFileContent(filePath) {
 }
 
 async function getFileContentUTF8(filePath) {
-  const data = await ghFetch(`contents/${filePath}?ref=${BRANCH}`);
-  const bytes = Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0));
+  const token = getToken();
+  const headers = { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' };
+  const res = await fetch(`${API}/repos/${OWNER}/${REPO}/contents/${filePath}?ref=${BRANCH}`, { headers });
+  if (res.ok) {
+    const data = await res.json();
+    // If content is present (file < 1MB), decode directly
+    if (data.content) {
+      const bytes = Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0));
+      const content = new TextDecoder('utf-8').decode(bytes);
+      return { content, sha: data.sha };
+    }
+    // Large file — use blob SHA
+    if (data.sha) {
+      const blob = await ghFetch(`git/blobs/${data.sha}`);
+      const bytes = Uint8Array.from(atob(blob.content.replace(/\n/g, '')), c => c.charCodeAt(0));
+      const content = new TextDecoder('utf-8').decode(bytes);
+      return { content, sha: data.sha };
+    }
+  }
+  // File might be > 1MB, try getting the SHA via trees then fetch blob
+  const pathParts = filePath.split('/');
+  const fileName = pathParts.pop();
+  const dirPath = pathParts.join('/');
+  const treePath = dirPath ? `contents/${dirPath}?ref=${BRANCH}` : `contents?ref=${BRANCH}`;
+  const listing = await ghFetch(treePath);
+  const fileEntry = (Array.isArray(listing) ? listing : []).find(f => f.name === fileName);
+  if (!fileEntry) throw new Error(`File not found: ${filePath}`);
+  const blob = await ghFetch(`git/blobs/${fileEntry.sha}`);
+  const bytes = Uint8Array.from(atob(blob.content.replace(/\n/g, '')), c => c.charCodeAt(0));
   const content = new TextDecoder('utf-8').decode(bytes);
-  return { content, sha: data.sha };
+  return { content, sha: fileEntry.sha };
 }
 
 // Push multiple files in a single commit using Git Trees API
