@@ -10260,24 +10260,5 @@ const ARTICLES_META = [
     "comments": 0,
     "shares": 0,
     "image_url": ""
-  },
-  {
-    "id": "art_465",
-    "title": "This is a test article",
-    "date": "2026-03-11",
-    "category": "Commentary",
-    "source": "website",
-    "tags": [
-      "test article"
-    ],
-    "excerpt": "test article,",
-    "word_count": 2,
-    "read_time": 1,
-    "url": "",
-    "fb_post_id": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0,
-    "image_url": ""
   }
 ];
