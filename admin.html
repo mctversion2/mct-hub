@@ -1668,7 +1668,11 @@ async function loadArticles(force = false) {
 
   try {
     const { content } = await getFileContentUTF8('all_articles_unified.json');
-    allArticles = JSON.parse(content);
+    const parsed = JSON.parse(content);
+    if (!Array.isArray(parsed)) {
+      throw new Error('Expected array but got ' + typeof parsed + (parsed && parsed.message ? ': ' + parsed.message : ''));
+    }
+    allArticles = parsed;
     filteredArticles = [...allArticles];
     return true;
   } catch (e) {
