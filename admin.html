@@ -797,9 +797,21 @@ tr:hover td { background: var(--bg-hover); }
         </div>
         <button class="btn btn-primary" onclick="navigateTo('create')">+ New Article</button>
       </div>
-      <div class="search-bar">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="articles-search" placeholder="Search articles..." oninput="filterArticles(this.value)">
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px;">
+        <div class="search-bar" style="flex:1;min-width:200px;margin-bottom:0;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="articles-search" placeholder="Search articles..." oninput="filterArticles(document.getElementById('articles-search').value)">
+        </div>
+        <select id="articles-source-filter" class="form-select" style="width:auto;min-width:140px;" onchange="filterArticles(document.getElementById('articles-search').value)">
+          <option value="">All Sources</option>
+          <option value="website">Website</option>
+          <option value="facebook">Facebook</option>
+          <option value="mct1_facebook">MCT1 Facebook</option>
+        </select>
+        <select id="articles-category-filter" class="form-select" style="width:auto;min-width:140px;" onchange="filterArticles(document.getElementById('articles-search').value)">
+          <option value="">All Categories</option>
+        </select>
+        <span class="text-dim text-sm" id="articles-count-label"></span>
       </div>
       <div class="card" style="padding:0;overflow:hidden;">
         <div class="table-wrap">
@@ -1616,7 +1628,7 @@ function navigateTo(page) {
   if (navBtn) navBtn.classList.add('active');
 
   if (page === 'dashboard') loadDashboard();
-  if (page === 'articles') renderArticleList();
+  if (page === 'articles') { sortFilteredArticles(); populateCategoryFilter(); renderArticleList(); }
   if (page === 'create' && editingIndex === -1) resetForm();
   if (page === 'events') loadEventsPage();
   if (page === 'analytics') loadAnalytics();
@@ -1808,7 +1820,16 @@ function dashboardSearch(query) {
 // Article List
 // ============================================================
 function renderArticleList() {
-  if (allArticles.length === 0 && getToken()) { loadArticles().then(() => renderArticleList()); return; }
+  if (allArticles.length === 0 && getToken()) {
+    loadArticles().then(() => {
+      sortFilteredArticles();
+      populateCategoryFilter();
+      const label = document.getElementById('articles-count-label');
+      if (label) label.textContent = `${filteredArticles.length} of ${allArticles.length} articles`;
+      renderArticleList();
+    });
+    return;
+  }
 
   const tbody = document.getElementById('articles-tbody');
   const start = (currentPage - 1) * ARTICLES_PER_PAGE;
@@ -1871,27 +1892,64 @@ function goPage(n) {
 
 function filterArticles(query) {
   currentPage = 1;
-  if (!query.trim()) { filteredArticles = [...allArticles]; }
-  else {
-    const q = query.toLowerCase();
-    filteredArticles = allArticles.filter(a =>
+  const q = (query || '').trim().toLowerCase();
+  const sourceFilter = document.getElementById('articles-source-filter')?.value || '';
+  const categoryFilter = document.getElementById('articles-category-filter')?.value || '';
+
+  filteredArticles = allArticles.filter(a => {
+    // Text search
+    if (q && !(
       (a.title || '').toLowerCase().includes(q) ||
       (a.category || '').toLowerCase().includes(q) ||
       (a.tags || []).some(t => t.toLowerCase().includes(q))
-    );
-  }
+    )) return false;
+    // Source filter
+    if (sourceFilter && (a.source || '') !== sourceFilter) return false;
+    // Category filter
+    if (categoryFilter && (a.category || '') !== categoryFilter) return false;
+    return true;
+  });
+
   sortFilteredArticles();
+  // Update count label
+  const label = document.getElementById('articles-count-label');
+  if (label) label.textContent = `${filteredArticles.length} of ${allArticles.length} articles`;
   renderArticleList();
+}
+
+function populateCategoryFilter() {
+  const cats = new Set();
+  allArticles.forEach(a => { if (a.category) cats.add(a.category); });
+  const select = document.getElementById('articles-category-filter');
+  if (!select) return;
+  const current = select.value;
+  select.innerHTML = '<option value="">All Categories</option>';
+  [...cats].sort().forEach(c => {
+    select.innerHTML += `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`;
+  });
+  select.value = current;
 }
 
 function sortArticles(field) {
   if (sortField === field) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
   else { sortField = field; sortDir = field === 'date' ? 'desc' : 'asc'; }
-
-  document.querySelectorAll('#page-articles th').forEach(th => th.classList.remove('sorted'));
-  // can't easily target, just re-render
+  currentPage = 1;
   sortFilteredArticles();
   renderArticleList();
+  updateSortIndicators();
+}
+
+function updateSortIndicators() {
+  document.querySelectorAll('#page-articles th[onclick]').forEach(th => {
+    const field = th.getAttribute('onclick').match(/sortArticles\('(.*?)'\)/)?.[1];
+    th.classList.toggle('sorted', field === sortField);
+    // Remove old arrows
+    const oldArrow = th.querySelector('.sort-arrow');
+    if (oldArrow) oldArrow.remove();
+    if (field === sortField) {
+      th.insertAdjacentHTML('beforeend', `<span class="sort-arrow" style="margin-left:4px;font-size:10px;">${sortDir === 'asc' ? '▲' : '▼'}</span>`);
+    }
+  });
 }
 
 function sortFilteredArticles() {
