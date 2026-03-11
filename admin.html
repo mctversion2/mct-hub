@@ -1663,28 +1663,13 @@ function clearCache() {
 async function loadArticles(force = false) {
   if (!getToken()) return false;
 
+  // Use in-memory cache (articles JSON is too large for localStorage)
   if (!force && allArticles.length > 0) return true;
-
-  // Try cache
-  if (!force) {
-    const cached = localStorage.getItem('mct_articles_cache');
-    if (cached) {
-      try {
-        const parsed = JSON.parse(cached);
-        if (parsed.ts && Date.now() - parsed.ts < 5 * 60 * 1000) {
-          allArticles = parsed.data;
-          filteredArticles = [...allArticles];
-          return true;
-        }
-      } catch(e) {}
-    }
-  }
 
   try {
     const { content } = await getFileContentUTF8('all_articles_unified.json');
     allArticles = JSON.parse(content);
     filteredArticles = [...allArticles];
-    localStorage.setItem('mct_articles_cache', JSON.stringify({ ts: Date.now(), data: allArticles }));
     return true;
   } catch (e) {
     toast('Failed to load articles: ' + e.message, 'error');
@@ -1915,6 +1900,9 @@ function updateWordCount() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Clear old oversized cache that may be corrupted
+  localStorage.removeItem('mct_articles_cache');
+
   document.getElementById('field-text').addEventListener('input', updateWordCount);
   // Load token into settings field if present
   const token = getToken();
@@ -2013,7 +2001,7 @@ async function publishArticle() {
     await pushFiles(files, commitMsg);
 
     // Update local cache
-    localStorage.setItem('mct_articles_cache', JSON.stringify({ ts: Date.now(), data: allArticles }));
+    // Cache kept in memory only (too large for localStorage)
     filteredArticles = [...allArticles];
 
     hideProgress();
@@ -2122,7 +2110,7 @@ async function confirmDelete() {
     // Push
     await pushFiles(files, `Delete article: ${title}`);
 
-    localStorage.setItem('mct_articles_cache', JSON.stringify({ ts: Date.now(), data: allArticles }));
+    // Cache kept in memory only (too large for localStorage)
     filteredArticles = [...allArticles];
 
     hideProgress();
@@ -3122,7 +3110,7 @@ async function applyFindReplace() {
     const files = buildDataFiles(allArticles);
     await pushFiles(files, `Cleanup: replace "${findText}" with "${replaceText}" (${changed} changes)`);
 
-    localStorage.setItem('mct_articles_cache', JSON.stringify({ ts: Date.now(), data: allArticles }));
+    // Cache kept in memory only (too large for localStorage)
     filteredArticles = [...allArticles];
 
     hideProgress();
