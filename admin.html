@@ -1996,7 +1996,7 @@ function editArticle(index) {
   document.getElementById('field-category').value = a.category || 'News';
   document.getElementById('field-source').value = a.source || 'website';
   document.getElementById('field-tags').value = (a.tags || []).join(', ');
-  document.getElementById('field-image').value = a.image_url || '';
+  document.getElementById('field-image').value = a.image || '';
   document.getElementById('field-text').value = a.full_text || a.text || '';
   document.getElementById('form-title').textContent = 'Edit Article';
   document.getElementById('form-subtitle').textContent = `Editing: ${a.title || 'Untitled'}`;
@@ -2115,7 +2115,7 @@ async function publishArticle() {
         text: fullText,
         word_count: wordCount,
         read_time: readTime,
-        image_url: imageUrl || existing.image_url || ''
+        image: imageUrl || existing.image || ''
       };
       commitMsg = `Update article: ${title}`;
     } else {
@@ -2134,7 +2134,7 @@ async function publishArticle() {
         word_count: wordCount,
         read_time: readTime,
         url: '',
-        image_url: imageUrl || '',
+        image: imageUrl || '',
         fb_post_id: '',
         reactions: 0,
         comments: 0,
@@ -2162,9 +2162,9 @@ async function publishArticle() {
 
       // Update the article we just created/modified with the image URL
       if (editingIndex >= 0 && editingIndex < allArticles.length) {
-        allArticles[editingIndex].image_url = imgUrl;
+        allArticles[editingIndex].image = imgUrl;
       } else {
-        allArticles[allArticles.length - 1].image_url = imgUrl;
+        allArticles[allArticles.length - 1].image = imgUrl;
       }
       // Rebuild data files with updated image URL
       files.length = 0;
@@ -2216,7 +2216,7 @@ function buildDataFiles(articles) {
     reactions: a.reactions || 0,
     comments: a.comments || 0,
     shares: a.shares || 0,
-    image_url: a.image_url || ''
+    image: a.image || ''
   }));
   files.push({
     path: 'articles-meta.js',
