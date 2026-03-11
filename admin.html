@@ -1,0 +1,2248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCT Admin Panel</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f0f14;
+  --bg-card: #1a1a24;
+  --bg-input: #23233a;
+  --bg-hover: #2a2a42;
+  --border: #2e2e48;
+  --text: #e8e8f0;
+  --text-dim: #9898b0;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --danger: #ef4444;
+  --danger-hover: #f87171;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --radius: 8px;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Layout */
+.app { display: flex; min-height: 100vh; }
+
+.sidebar {
+  width: 240px;
+  background: var(--bg-card);
+  border-right: 1px solid var(--border);
+  padding: 24px 0;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.sidebar-brand {
+  padding: 0 20px 24px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.sidebar-brand h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.3px;
+}
+
+.sidebar-brand p {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.15s;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font);
+}
+
+.nav-item:hover { background: var(--bg-hover); color: var(--text); }
+.nav-item.active { background: var(--bg-hover); color: var(--accent); border-right: 3px solid var(--accent); }
+.nav-item svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+.main-content {
+  flex: 1;
+  margin-left: 240px;
+  padding: 32px 40px;
+  max-width: 1200px;
+}
+
+/* Page header */
+.page-header {
+  margin-bottom: 28px;
+}
+
+.page-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.page-header p {
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+/* Stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.stat-card .label {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.stat-card .value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-primary { background: var(--accent); color: white; }
+.btn-primary:hover { background: var(--accent-hover); }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-danger { background: var(--danger); color: white; }
+.btn-danger:hover { background: var(--danger-hover); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+}
+.btn-ghost:hover { background: var(--bg-hover); color: var(--text); }
+
+.btn-sm { padding: 5px 10px; font-size: 13px; }
+
+/* Form elements */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+  transition: border-color 0.15s;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%239898b0' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+.form-textarea {
+  min-height: 200px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+/* Table */
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+
+th:hover { color: var(--text); }
+th.sorted { color: var(--accent); }
+
+td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+tr:hover td { background: var(--bg-hover); }
+
+.title-cell {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  background: var(--bg-hover);
+  color: var(--text-dim);
+  margin: 1px 2px;
+}
+
+.source-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.source-facebook { background: #1a3a5c; color: #60a5fa; }
+.source-website { background: #1a3c2a; color: #4ade80; }
+.source-mct1_facebook { background: #3a2a1a; color: #fbbf24; }
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-dim);
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 13px;
+}
+
+.pagination button:hover { background: var(--bg-hover); color: var(--text); }
+.pagination button.active { background: var(--accent); color: white; border-color: var(--accent); }
+.pagination button:disabled { opacity: 0.3; cursor: not-allowed; }
+
+/* Search */
+.search-bar {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 14px 10px 40px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+}
+
+.search-bar input:focus { outline: none; border-color: var(--accent); }
+
+.search-bar svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--text-dim);
+}
+
+/* Connection status */
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.status-dot.connected { background: var(--success); box-shadow: 0 0 6px var(--success); }
+.status-dot.disconnected { background: var(--danger); box-shadow: 0 0 6px var(--danger); }
+.status-dot.unknown { background: #666; }
+
+/* Toast */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toast {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  animation: slideIn 0.3s ease;
+  max-width: 400px;
+}
+
+.toast.success { background: #166534; color: #bbf7d0; border: 1px solid #22c55e; }
+.toast.error { background: #7f1d1d; color: #fecaca; border: 1px solid #ef4444; }
+.toast.info { background: #1e3a5f; color: #bfdbfe; border: 1px solid #3b82f6; }
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Progress overlay */
+.progress-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.progress-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 40px;
+  min-width: 380px;
+  text-align: center;
+}
+
+.progress-box h3 { margin-bottom: 16px; font-size: 18px; }
+
+.progress-bar-track {
+  width: 100%;
+  height: 6px;
+  background: var(--bg-input);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.progress-step {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9000;
+}
+
+.modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  min-width: 400px;
+  max-width: 500px;
+}
+
+.modal h3 { margin-bottom: 12px; font-size: 18px; }
+.modal p { color: var(--text-dim); font-size: 14px; margin-bottom: 20px; }
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Recent articles list */
+.recent-list { list-style: none; }
+
+.recent-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.recent-list li:last-child { border-bottom: none; }
+
+.recent-title {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 16px;
+}
+
+.recent-date { color: var(--text-dim); font-size: 13px; white-space: nowrap; }
+
+/* Helper */
+.hidden { display: none !important; }
+.mt-8 { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mb-16 { margin-bottom: 16px; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.text-dim { color: var(--text-dim); }
+.text-sm { font-size: 13px; }
+
+/* Month filter buttons */
+.month-filter-btn {
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+}
+.month-filter-btn:hover { background: var(--bg-hover); color: var(--text); }
+.month-filter-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+/* Event color swatches */
+.color-swatch {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.1);
+  vertical-align: middle;
+}
+
+.duration-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dur-day { background: #1a3c2a; color: #4ade80; }
+.dur-week { background: #1a3a5c; color: #60a5fa; }
+.dur-month { background: #3a2a1a; color: #fbbf24; }
+
+.banner-thumb {
+  width: 80px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #444; }
+
+/* Token input */
+.token-input-wrap {
+  position: relative;
+}
+.token-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 4px 8px;
+}
+.token-toggle:hover { color: var(--text); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .sidebar { width: 60px; padding: 16px 0; }
+  .sidebar-brand { padding: 0 10px 16px; }
+  .sidebar-brand h1 { font-size: 14px; }
+  .sidebar-brand p { display: none; }
+  .nav-item span { display: none; }
+  .nav-item { padding: 10px; justify-content: center; }
+  .main-content { margin-left: 60px; padding: 20px; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-brand">
+      <h1>MCT Admin</h1>
+      <p>Content Manager</p>
+    </div>
+    <button class="nav-item active" data-page="dashboard" onclick="navigateTo('dashboard')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      <span>Dashboard</span>
+    </button>
+    <button class="nav-item" data-page="articles" onclick="navigateTo('articles')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      <span>Articles</span>
+    </button>
+    <button class="nav-item" data-page="create" onclick="navigateTo('create')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+      <span>New Article</span>
+    </button>
+    <button class="nav-item" data-page="events" onclick="navigateTo('events')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Events</span>
+    </button>
+    <button class="nav-item" data-page="settings" onclick="navigateTo('settings')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      <span>Settings</span>
+    </button>
+  </nav>
+
+  <!-- Main content area -->
+  <main class="main-content">
+
+    <!-- DASHBOARD PAGE -->
+    <div id="page-dashboard" class="page">
+      <div class="page-header">
+        <h2>Dashboard</h2>
+        <p>Overview of your Morning Coffee Thoughts articles</p>
+      </div>
+      <div id="dashboard-loading" class="card" style="text-align:center;padding:40px;">
+        Loading articles from GitHub...
+      </div>
+      <div id="dashboard-content" class="hidden">
+        <div class="stats-grid" id="stats-grid"></div>
+        <div class="card">
+          <div class="flex-between mb-16">
+            <h3>Recently Added</h3>
+          </div>
+          <ul class="recent-list" id="recent-list"></ul>
+        </div>
+        <div class="card mt-16">
+          <div class="flex-between mb-16">
+            <h3>Quick Search</h3>
+          </div>
+          <div class="search-bar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="dashboard-search" placeholder="Search articles by title..." oninput="dashboardSearch(this.value)">
+          </div>
+          <ul class="recent-list" id="search-results"></ul>
+        </div>
+      </div>
+      <div id="dashboard-no-token" class="card hidden" style="text-align:center;padding:40px;">
+        <p style="margin-bottom:16px;">No GitHub token configured. Please set up your token in Settings first.</p>
+        <button class="btn btn-primary" onclick="navigateTo('settings')">Go to Settings</button>
+      </div>
+    </div>
+
+    <!-- ARTICLES PAGE -->
+    <div id="page-articles" class="page hidden">
+      <div class="page-header flex-between">
+        <div>
+          <h2>Articles</h2>
+          <p>Manage all your articles</p>
+        </div>
+        <button class="btn btn-primary" onclick="navigateTo('create')">+ New Article</button>
+      </div>
+      <div class="search-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="articles-search" placeholder="Search articles..." oninput="filterArticles(this.value)">
+      </div>
+      <div class="card" style="padding:0;overflow:hidden;">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th onclick="sortArticles('title')">Title</th>
+                <th onclick="sortArticles('category')">Category</th>
+                <th onclick="sortArticles('source')">Source</th>
+                <th onclick="sortArticles('date')" class="sorted">Date</th>
+                <th>Tags</th>
+                <th onclick="sortArticles('word_count')">Words</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="articles-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="pagination" id="articles-pagination"></div>
+    </div>
+
+    <!-- CREATE / EDIT PAGE -->
+    <div id="page-create" class="page hidden">
+      <div class="page-header">
+        <h2 id="form-title">Create New Article</h2>
+        <p id="form-subtitle">Write and publish a new article to the MCT portal</p>
+      </div>
+      <div class="card">
+        <form id="article-form" onsubmit="return false;">
+          <input type="hidden" id="edit-index" value="">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 24px;">
+            <div class="form-group">
+              <label for="field-title">Title</label>
+              <input type="text" id="field-title" class="form-input" required placeholder="Article title">
+            </div>
+            <div class="form-group">
+              <label for="field-date">Date</label>
+              <input type="date" id="field-date" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="field-category">Category</label>
+              <select id="field-category" class="form-select" required>
+                <option value="News">News</option>
+                <option value="Commentary">Commentary</option>
+                <option value="Opinion">Opinion</option>
+                <option value="Reflection">Reflection</option>
+                <option value="Coffee">Coffee</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="field-source">Source</label>
+              <select id="field-source" class="form-select" required>
+                <option value="website" selected>website</option>
+                <option value="facebook">facebook</option>
+                <option value="mct1_facebook">mct1_facebook</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="field-tags">Tags (comma-separated)</label>
+              <input type="text" id="field-tags" class="form-input" placeholder="e.g. politics, economy, opinion">
+            </div>
+            <div class="form-group">
+              <label for="field-image">Image URL (optional)</label>
+              <input type="text" id="field-image" class="form-input" placeholder="https://example.com/image.jpg">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="field-text">Article Text</label>
+            <textarea id="field-text" class="form-textarea" required placeholder="Write your article here..."></textarea>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center;">
+            <button type="button" class="btn btn-primary" id="publish-btn" onclick="publishArticle()">Publish Article</button>
+            <button type="button" class="btn btn-ghost" id="cancel-edit-btn" class="hidden" onclick="cancelEdit()">Cancel</button>
+            <span id="word-count-display" class="text-dim text-sm"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- EVENTS PAGE -->
+    <div id="page-events" class="page hidden">
+      <div class="page-header flex-between">
+        <div>
+          <h2>Events Manager</h2>
+          <p>Manage event banners that appear on the portal</p>
+        </div>
+        <button class="btn btn-primary" onclick="showEventForm()">+ New Event</button>
+      </div>
+
+      <div id="events-loading" class="card" style="text-align:center;padding:40px;">Loading events from GitHub...</div>
+      <div id="events-content" class="hidden">
+        <!-- Events stats -->
+        <div class="stats-grid" id="events-stats"></div>
+
+        <!-- Month filter -->
+        <div class="card" style="padding:12px 20px;margin-bottom:16px;">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <span class="text-dim text-sm" style="margin-right:4px;">Filter:</span>
+            <button class="btn btn-sm month-filter-btn active" data-month="0" onclick="filterEventsByMonth(0)">All</button>
+            <button class="btn btn-sm month-filter-btn" data-month="1" onclick="filterEventsByMonth(1)">Jan</button>
+            <button class="btn btn-sm month-filter-btn" data-month="2" onclick="filterEventsByMonth(2)">Feb</button>
+            <button class="btn btn-sm month-filter-btn" data-month="3" onclick="filterEventsByMonth(3)">Mar</button>
+            <button class="btn btn-sm month-filter-btn" data-month="4" onclick="filterEventsByMonth(4)">Apr</button>
+            <button class="btn btn-sm month-filter-btn" data-month="5" onclick="filterEventsByMonth(5)">May</button>
+            <button class="btn btn-sm month-filter-btn" data-month="6" onclick="filterEventsByMonth(6)">Jun</button>
+            <button class="btn btn-sm month-filter-btn" data-month="7" onclick="filterEventsByMonth(7)">Jul</button>
+            <button class="btn btn-sm month-filter-btn" data-month="8" onclick="filterEventsByMonth(8)">Aug</button>
+            <button class="btn btn-sm month-filter-btn" data-month="9" onclick="filterEventsByMonth(9)">Sep</button>
+            <button class="btn btn-sm month-filter-btn" data-month="10" onclick="filterEventsByMonth(10)">Oct</button>
+            <button class="btn btn-sm month-filter-btn" data-month="11" onclick="filterEventsByMonth(11)">Nov</button>
+            <button class="btn btn-sm month-filter-btn" data-month="12" onclick="filterEventsByMonth(12)">Dec</button>
+          </div>
+        </div>
+
+        <!-- Events table -->
+        <div class="card" style="padding:0;overflow:hidden;">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Event</th>
+                  <th>Period</th>
+                  <th>Duration</th>
+                  <th>Colors</th>
+                  <th>Banner</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="events-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Event form (hidden by default) -->
+      <div id="event-form-section" class="hidden">
+        <div class="card" style="margin-top:16px;">
+          <h3 id="event-form-title" style="margin-bottom:20px;">New Event</h3>
+          <form id="event-form" onsubmit="return false;">
+            <input type="hidden" id="event-edit-idx" value="-1">
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 24px;">
+              <div class="form-group">
+                <label for="evt-id">ID (slug)</label>
+                <input type="text" id="evt-id" class="form-input" placeholder="e.g. new-year, christmas" required>
+              </div>
+              <div class="form-group">
+                <label for="evt-emoji">Emoji</label>
+                <input type="text" id="evt-emoji" class="form-input" placeholder="e.g. 🎆" style="max-width:120px;">
+              </div>
+              <div class="form-group" style="grid-column:1/-1;">
+                <label for="evt-name">Name</label>
+                <input type="text" id="evt-name" class="form-input" placeholder="Event display title" required>
+              </div>
+              <div class="form-group" style="grid-column:1/-1;">
+                <label for="evt-subtitle">Subtitle</label>
+                <input type="text" id="evt-subtitle" class="form-input" placeholder="Secondary line / call to action">
+              </div>
+
+              <div class="form-group">
+                <label for="evt-start-month">Start Month (1-12)</label>
+                <input type="number" id="evt-start-month" class="form-input" min="1" max="12" required>
+              </div>
+              <div class="form-group">
+                <label for="evt-start-day">Start Day (1-31)</label>
+                <input type="number" id="evt-start-day" class="form-input" min="1" max="31" required>
+              </div>
+              <div class="form-group">
+                <label for="evt-end-month">End Month (1-12)</label>
+                <input type="number" id="evt-end-month" class="form-input" min="1" max="12" required>
+              </div>
+              <div class="form-group">
+                <label for="evt-end-day">End Day (1-31)</label>
+                <input type="number" id="evt-end-day" class="form-input" min="1" max="31" required>
+              </div>
+
+              <div class="form-group">
+                <label for="evt-duration">Duration (priority)</label>
+                <select id="evt-duration" class="form-select" required>
+                  <option value="day">Day</option>
+                  <option value="week">Week</option>
+                  <option value="month">Month</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>&nbsp;</label>
+                <p class="text-dim text-sm" style="margin-top:4px;">Day &gt; Week &gt; Month priority. Shorter events override longer ones when overlapping.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="evt-accent1">Accent Color</label>
+                <div style="display:flex;gap:8px;align-items:center;">
+                  <input type="color" id="evt-accent1" value="#6366f1" style="width:48px;height:36px;border:1px solid var(--border);border-radius:4px;background:var(--bg-input);cursor:pointer;">
+                  <input type="text" id="evt-accent1-hex" class="form-input" style="max-width:120px;" placeholder="#hex" oninput="document.getElementById('evt-accent1').value=this.value">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="evt-accent2">Accent Color 2</label>
+                <div style="display:flex;gap:8px;align-items:center;">
+                  <input type="color" id="evt-accent2" value="#4f46e5" style="width:48px;height:36px;border:1px solid var(--border);border-radius:4px;background:var(--bg-input);cursor:pointer;">
+                  <input type="text" id="evt-accent2-hex" class="form-input" style="max-width:120px;" placeholder="#hex" oninput="document.getElementById('evt-accent2').value=this.value">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="evt-text-color">Text Color</label>
+                <div style="display:flex;gap:8px;align-items:center;">
+                  <input type="color" id="evt-text-color" value="#ffffff" style="width:48px;height:36px;border:1px solid var(--border);border-radius:4px;background:var(--bg-input);cursor:pointer;">
+                  <input type="text" id="evt-text-color-hex" class="form-input" style="max-width:120px;" placeholder="#hex" oninput="document.getElementById('evt-text-color').value=this.value">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Preview</label>
+                <div id="evt-color-preview" style="height:50px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;">Banner Preview</div>
+              </div>
+
+              <div class="form-group" style="grid-column:1/-1;">
+                <label for="evt-image-prompt">Image Prompt (for AI generation)</label>
+                <textarea id="evt-image-prompt" class="form-textarea" style="min-height:80px;" placeholder="AI image generation prompt, e.g. 'Festive New Year celebration banner, golden fireworks...'"></textarea>
+              </div>
+
+              <div class="form-group" style="grid-column:1/-1;">
+                <label for="evt-banner-upload">Banner Image (upload)</label>
+                <div style="display:flex;gap:12px;align-items:center;">
+                  <input type="file" id="evt-banner-upload" accept="image/png,image/jpeg,image/webp" style="font-size:13px;">
+                  <span id="evt-banner-status" class="text-dim text-sm"></span>
+                </div>
+                <p class="text-dim text-sm mt-8">Upload a banner image (PNG/JPG/WebP). It will be saved as <code>events/event-{id}.png</code> on GitHub.</p>
+                <div id="evt-banner-preview" style="margin-top:12px;"></div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:12px;margin-top:12px;">
+              <button type="button" class="btn btn-primary" onclick="saveEvent()">Save Event</button>
+              <button type="button" class="btn btn-ghost" onclick="cancelEventForm()">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event delete confirmation modal -->
+    <div class="modal-overlay hidden" id="event-delete-modal">
+      <div class="modal">
+        <h3>Delete Event</h3>
+        <p>Are you sure you want to delete "<span id="event-delete-name"></span>"? This will remove it from the events calendar.</p>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" onclick="closeEventDeleteModal()">Cancel</button>
+          <button class="btn btn-danger" onclick="confirmEventDelete()">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SETTINGS PAGE -->
+    <div id="page-settings" class="page hidden">
+      <div class="page-header">
+        <h2>Settings</h2>
+        <p>Configure your GitHub connection</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:16px;">GitHub Connection</h3>
+        <div class="form-group">
+          <label for="setting-token">Personal Access Token</label>
+          <div class="token-input-wrap">
+            <input type="password" id="setting-token" class="form-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" style="padding-right:70px;">
+            <button class="token-toggle" onclick="toggleTokenVisibility()">Show</button>
+          </div>
+          <p class="text-dim text-sm mt-8">Requires <code>repo</code> scope. Token is stored locally in your browser only.</p>
+        </div>
+        <div class="form-group">
+          <label>Repository</label>
+          <input type="text" class="form-input" value="mctversion2/mct-hub" disabled style="opacity:0.6;">
+        </div>
+        <div class="form-group">
+          <label>Branch</label>
+          <input type="text" class="form-input" value="main" disabled style="opacity:0.6;">
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;margin-top:20px;">
+          <button class="btn btn-primary" onclick="saveToken()">Save Token</button>
+          <button class="btn btn-ghost" onclick="testConnection()">Test Connection</button>
+          <span id="connection-status">
+            <span class="status-dot unknown"></span>
+            <span class="text-sm">Not tested</span>
+          </span>
+        </div>
+      </div>
+      <div class="card mt-16">
+        <h3 style="margin-bottom:8px;">Data Management</h3>
+        <p class="text-dim text-sm mb-16">Reload article data from GitHub or clear local cache.</p>
+        <div style="display:flex;gap:12px;">
+          <button class="btn btn-ghost" onclick="loadArticles(true)">Reload from GitHub</button>
+          <button class="btn btn-ghost" onclick="clearCache()">Clear Local Cache</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- Toast container -->
+<div class="toast-container" id="toast-container"></div>
+
+<!-- Progress overlay (hidden by default) -->
+<div class="progress-overlay hidden" id="progress-overlay">
+  <div class="progress-box">
+    <h3 id="progress-title">Publishing...</h3>
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="progress-bar" style="width:0%"></div>
+    </div>
+    <p class="progress-step" id="progress-step">Preparing...</p>
+  </div>
+</div>
+
+<!-- Delete confirmation modal -->
+<div class="modal-overlay hidden" id="delete-modal">
+  <div class="modal">
+    <h3>Delete Article</h3>
+    <p>Are you sure you want to delete "<span id="delete-article-title"></span>"? This action cannot be undone.</p>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeDeleteModal()">Cancel</button>
+      <button class="btn btn-danger" id="confirm-delete-btn" onclick="confirmDelete()">Delete</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// State
+// ============================================================
+const OWNER = 'mctversion2';
+const REPO = 'mct-hub';
+const BRANCH = 'main';
+const API = 'https://api.github.com';
+const ARTICLES_PER_PAGE = 25;
+const ARTICLES_PER_CHUNK = 20;
+const META_SKIP_PATTERNS = [
+  /^\d+\s*min read/i,
+  /^morning coffee thoughts/i,
+  /^MCT/i,
+  /^published/i,
+  /^by\s/i,
+  /^share\s/i,
+  /^like\s/i,
+  /^comment\s/i
+];
+
+let allArticles = [];
+let filteredArticles = [];
+let currentPage = 1;
+let sortField = 'date';
+let sortDir = 'desc';
+let deleteTargetIndex = -1;
+let editingIndex = -1;
+
+// ============================================================
+// Utility
+// ============================================================
+function getToken() {
+  return localStorage.getItem('mct_github_token') || '';
+}
+
+function toast(message, type = 'info') {
+  const container = document.getElementById('toast-container');
+  const el = document.createElement('div');
+  el.className = `toast ${type}`;
+  el.textContent = message;
+  container.appendChild(el);
+  setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity 0.3s'; setTimeout(() => el.remove(), 300); }, 4000);
+}
+
+function showProgress(title, step, pct) {
+  const overlay = document.getElementById('progress-overlay');
+  overlay.classList.remove('hidden');
+  document.getElementById('progress-title').textContent = title;
+  document.getElementById('progress-step').textContent = step;
+  document.getElementById('progress-bar').style.width = pct + '%';
+}
+
+function hideProgress() {
+  document.getElementById('progress-overlay').classList.add('hidden');
+}
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  const d = new Date(dateStr + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+
+function todayStr() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+
+function countWords(text) {
+  if (!text) return 0;
+  return text.trim().split(/\s+/).filter(w => w.length > 0).length;
+}
+
+function generateExcerpt(text) {
+  if (!text) return '';
+  const lines = text.split('\n');
+  let cleanText = '';
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    let skip = false;
+    for (const pat of META_SKIP_PATTERNS) {
+      if (pat.test(trimmed)) { skip = true; break; }
+    }
+    if (!skip) { cleanText += (cleanText ? ' ' : '') + trimmed; }
+    if (cleanText.length >= 250) break;
+  }
+  if (cleanText.length <= 200) return cleanText;
+  const cut = cleanText.substring(0, 200);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > 100 ? cut.substring(0, lastSpace) : cut) + '...';
+}
+
+// ============================================================
+// GitHub API helpers
+// ============================================================
+async function ghFetch(path, options = {}) {
+  const token = getToken();
+  if (!token) throw new Error('No GitHub token configured');
+  const url = path.startsWith('http') ? path : `${API}/repos/${OWNER}/${REPO}/${path}`;
+  const res = await fetch(url, {
+    ...options,
+    headers: {
+      'Authorization': `token ${token}`,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json',
+      ...(options.headers || {})
+    }
+  });
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`GitHub API error ${res.status}: ${body}`);
+  }
+  return res.json();
+}
+
+async function getFileContent(filePath) {
+  const data = await ghFetch(`contents/${filePath}?ref=${BRANCH}`);
+  const content = atob(data.content.replace(/\n/g, ''));
+  return { content, sha: data.sha };
+}
+
+async function getFileContentUTF8(filePath) {
+  const data = await ghFetch(`contents/${filePath}?ref=${BRANCH}`);
+  const bytes = Uint8Array.from(atob(data.content.replace(/\n/g, '')), c => c.charCodeAt(0));
+  const content = new TextDecoder('utf-8').decode(bytes);
+  return { content, sha: data.sha };
+}
+
+// Push multiple files in a single commit using Git Trees API
+async function pushFiles(files, commitMessage) {
+  // files: [{path, content}, ...]
+
+  // 1. Get current commit SHA for main
+  showProgress('Publishing', 'Getting current branch state...', 10);
+  const ref = await ghFetch(`git/ref/heads/${BRANCH}`);
+  const currentCommitSha = ref.object.sha;
+
+  // 2. Get the tree SHA
+  const currentCommit = await ghFetch(`git/commits/${currentCommitSha}`);
+  const baseTreeSha = currentCommit.tree.sha;
+
+  // 3. Create blobs for each file
+  showProgress('Publishing', 'Uploading files...', 30);
+  const blobPromises = files.map(f =>
+    ghFetch('git/blobs', {
+      method: 'POST',
+      body: JSON.stringify({ content: f.content, encoding: 'utf-8' })
+    }).then(res => ({ path: f.path, sha: res.sha, mode: '100644', type: 'blob' }))
+  );
+  const treeItems = await Promise.all(blobPromises);
+
+  // 4. Create new tree
+  showProgress('Publishing', 'Building commit tree...', 60);
+  const newTree = await ghFetch('git/trees', {
+    method: 'POST',
+    body: JSON.stringify({ base_tree: baseTreeSha, tree: treeItems })
+  });
+
+  // 5. Create commit
+  showProgress('Publishing', 'Creating commit...', 80);
+  const newCommit = await ghFetch('git/commits', {
+    method: 'POST',
+    body: JSON.stringify({
+      message: commitMessage,
+      tree: newTree.sha,
+      parents: [currentCommitSha]
+    })
+  });
+
+  // 6. Update ref
+  showProgress('Publishing', 'Updating branch...', 95);
+  await ghFetch(`git/refs/heads/${BRANCH}`, {
+    method: 'PATCH',
+    body: JSON.stringify({ sha: newCommit.sha })
+  });
+
+  return newCommit.sha;
+}
+
+// ============================================================
+// Navigation
+// ============================================================
+function navigateTo(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+
+  document.getElementById(`page-${page}`).classList.remove('hidden');
+  const navBtn = document.querySelector(`.nav-item[data-page="${page}"]`);
+  if (navBtn) navBtn.classList.add('active');
+
+  if (page === 'dashboard') loadDashboard();
+  if (page === 'articles') renderArticleList();
+  if (page === 'create' && editingIndex === -1) resetForm();
+  if (page === 'events') loadEventsPage();
+}
+
+// ============================================================
+// Settings
+// ============================================================
+function saveToken() {
+  const token = document.getElementById('setting-token').value.trim();
+  if (!token) { toast('Please enter a token', 'error'); return; }
+  localStorage.setItem('mct_github_token', token);
+  toast('Token saved', 'success');
+  updateConnectionStatus('unknown', 'Saved, not tested');
+}
+
+async function testConnection() {
+  const token = document.getElementById('setting-token').value.trim() || getToken();
+  if (!token) { toast('No token to test', 'error'); return; }
+  localStorage.setItem('mct_github_token', token);
+
+  updateConnectionStatus('unknown', 'Testing...');
+  try {
+    const repo = await ghFetch(``, {});
+    updateConnectionStatus('connected', `Connected to ${repo.full_name}`);
+    toast('Connection successful!', 'success');
+  } catch (e) {
+    updateConnectionStatus('disconnected', 'Connection failed');
+    toast('Connection failed: ' + e.message, 'error');
+  }
+}
+
+function updateConnectionStatus(state, text) {
+  document.getElementById('connection-status').innerHTML =
+    `<span class="status-dot ${state}"></span><span class="text-sm">${escapeHtml(text)}</span>`;
+}
+
+function toggleTokenVisibility() {
+  const inp = document.getElementById('setting-token');
+  const btn = inp.nextElementSibling;
+  if (inp.type === 'password') { inp.type = 'text'; btn.textContent = 'Hide'; }
+  else { inp.type = 'password'; btn.textContent = 'Show'; }
+}
+
+function clearCache() {
+  allArticles = [];
+  filteredArticles = [];
+  localStorage.removeItem('mct_articles_cache');
+  toast('Cache cleared', 'info');
+}
+
+// ============================================================
+// Load articles
+// ============================================================
+async function loadArticles(force = false) {
+  if (!getToken()) return false;
+
+  if (!force && allArticles.length > 0) return true;
+
+  // Try cache
+  if (!force) {
+    const cached = localStorage.getItem('mct_articles_cache');
+    if (cached) {
+      try {
+        const parsed = JSON.parse(cached);
+        if (parsed.ts && Date.now() - parsed.ts < 5 * 60 * 1000) {
+          allArticles = parsed.data;
+          filteredArticles = [...allArticles];
+          return true;
+        }
+      } catch(e) {}
+    }
+  }
+
+  try {
+    const { content } = await getFileContentUTF8('all_articles_unified.json');
+    allArticles = JSON.parse(content);
+    filteredArticles = [...allArticles];
+    localStorage.setItem('mct_articles_cache', JSON.stringify({ ts: Date.now(), data: allArticles }));
+    return true;
+  } catch (e) {
+    toast('Failed to load articles: ' + e.message, 'error');
+    return false;
+  }
+}
+
+// ============================================================
+// Dashboard
+// ============================================================
+async function loadDashboard() {
+  const loading = document.getElementById('dashboard-loading');
+  const content = document.getElementById('dashboard-content');
+  const noToken = document.getElementById('dashboard-no-token');
+
+  if (!getToken()) {
+    loading.classList.add('hidden');
+    content.classList.add('hidden');
+    noToken.classList.remove('hidden');
+    return;
+  }
+
+  noToken.classList.add('hidden');
+  loading.classList.remove('hidden');
+  content.classList.add('hidden');
+
+  const ok = await loadArticles();
+  loading.classList.add('hidden');
+  if (!ok) return;
+
+  content.classList.remove('hidden');
+
+  // Stats
+  const sources = {};
+  allArticles.forEach(a => {
+    const s = a.source || 'unknown';
+    sources[s] = (sources[s] || 0) + 1;
+  });
+
+  let statsHtml = `<div class="stat-card"><div class="label">Total Articles</div><div class="value">${allArticles.length}</div></div>`;
+  for (const [src, count] of Object.entries(sources).sort((a,b) => b[1]-a[1])) {
+    statsHtml += `<div class="stat-card"><div class="label">${escapeHtml(src)}</div><div class="value">${count}</div></div>`;
+  }
+  document.getElementById('stats-grid').innerHTML = statsHtml;
+
+  // Recent articles
+  const sorted = [...allArticles].sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+  const recent = sorted.slice(0, 10);
+  let recentHtml = '';
+  recent.forEach(a => {
+    recentHtml += `<li><span class="recent-title">${escapeHtml(a.title || 'Untitled')}</span><span class="recent-date">${formatDate(a.date)}</span></li>`;
+  });
+  document.getElementById('recent-list').innerHTML = recentHtml || '<li class="text-dim">No articles found</li>';
+
+  document.getElementById('search-results').innerHTML = '';
+  document.getElementById('dashboard-search').value = '';
+}
+
+function dashboardSearch(query) {
+  const results = document.getElementById('search-results');
+  if (!query.trim()) { results.innerHTML = ''; return; }
+  const q = query.toLowerCase();
+  const matches = allArticles.filter(a => (a.title || '').toLowerCase().includes(q)).slice(0, 15);
+  if (matches.length === 0) { results.innerHTML = '<li class="text-dim">No matches</li>'; return; }
+  let html = '';
+  matches.forEach(a => {
+    const idx = allArticles.indexOf(a);
+    html += `<li>
+      <span class="recent-title" style="cursor:pointer;color:var(--accent);" onclick="editArticle(${idx})">${escapeHtml(a.title || 'Untitled')}</span>
+      <span class="recent-date">${formatDate(a.date)}</span>
+    </li>`;
+  });
+  results.innerHTML = html;
+}
+
+// ============================================================
+// Article List
+// ============================================================
+function renderArticleList() {
+  if (allArticles.length === 0 && getToken()) { loadArticles().then(() => renderArticleList()); return; }
+
+  const tbody = document.getElementById('articles-tbody');
+  const start = (currentPage - 1) * ARTICLES_PER_PAGE;
+  const page = filteredArticles.slice(start, start + ARTICLES_PER_PAGE);
+
+  let html = '';
+  page.forEach(a => {
+    const idx = allArticles.indexOf(a);
+    const srcClass = `source-${(a.source||'website').replace(/\s/g,'_')}`;
+    const tags = (a.tags || []).slice(0, 3).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
+    html += `<tr>
+      <td class="title-cell" title="${escapeHtml(a.title)}">${escapeHtml(a.title || 'Untitled')}</td>
+      <td>${escapeHtml(a.category || '')}</td>
+      <td><span class="source-badge ${srcClass}">${escapeHtml(a.source || '')}</span></td>
+      <td style="white-space:nowrap">${formatDate(a.date)}</td>
+      <td>${tags}</td>
+      <td>${a.word_count || ''}</td>
+      <td style="white-space:nowrap">
+        <button class="btn btn-ghost btn-sm" onclick="editArticle(${idx})">Edit</button>
+        <button class="btn btn-ghost btn-sm" style="color:var(--danger);" onclick="openDeleteModal(${idx})">Del</button>
+      </td>
+    </tr>`;
+  });
+  tbody.innerHTML = html || '<tr><td colspan="7" style="text-align:center;padding:30px;" class="text-dim">No articles found</td></tr>';
+
+  renderPagination();
+}
+
+function renderPagination() {
+  const total = Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE);
+  const container = document.getElementById('articles-pagination');
+  if (total <= 1) { container.innerHTML = ''; return; }
+
+  let html = `<button ${currentPage === 1 ? 'disabled' : ''} onclick="goPage(${currentPage-1})">Prev</button>`;
+
+  const maxShow = 7;
+  let start = Math.max(1, currentPage - 3);
+  let end = Math.min(total, start + maxShow - 1);
+  start = Math.max(1, end - maxShow + 1);
+
+  if (start > 1) html += `<button onclick="goPage(1)">1</button>`;
+  if (start > 2) html += `<span class="text-dim">...</span>`;
+
+  for (let i = start; i <= end; i++) {
+    html += `<button class="${i === currentPage ? 'active' : ''}" onclick="goPage(${i})">${i}</button>`;
+  }
+
+  if (end < total - 1) html += `<span class="text-dim">...</span>`;
+  if (end < total) html += `<button onclick="goPage(${total})">${total}</button>`;
+
+  html += `<button ${currentPage === total ? 'disabled' : ''} onclick="goPage(${currentPage+1})">Next</button>`;
+  container.innerHTML = html;
+}
+
+function goPage(n) {
+  currentPage = n;
+  renderArticleList();
+  window.scrollTo(0, 0);
+}
+
+function filterArticles(query) {
+  currentPage = 1;
+  if (!query.trim()) { filteredArticles = [...allArticles]; }
+  else {
+    const q = query.toLowerCase();
+    filteredArticles = allArticles.filter(a =>
+      (a.title || '').toLowerCase().includes(q) ||
+      (a.category || '').toLowerCase().includes(q) ||
+      (a.tags || []).some(t => t.toLowerCase().includes(q))
+    );
+  }
+  sortFilteredArticles();
+  renderArticleList();
+}
+
+function sortArticles(field) {
+  if (sortField === field) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+  else { sortField = field; sortDir = field === 'date' ? 'desc' : 'asc'; }
+
+  document.querySelectorAll('#page-articles th').forEach(th => th.classList.remove('sorted'));
+  // can't easily target, just re-render
+  sortFilteredArticles();
+  renderArticleList();
+}
+
+function sortFilteredArticles() {
+  filteredArticles.sort((a, b) => {
+    let va = a[sortField] || '';
+    let vb = b[sortField] || '';
+    if (sortField === 'word_count') { va = va || 0; vb = vb || 0; return sortDir === 'asc' ? va - vb : vb - va; }
+    if (typeof va === 'string') va = va.toLowerCase();
+    if (typeof vb === 'string') vb = vb.toLowerCase();
+    if (va < vb) return sortDir === 'asc' ? -1 : 1;
+    if (va > vb) return sortDir === 'asc' ? 1 : -1;
+    return 0;
+  });
+}
+
+// ============================================================
+// Create / Edit Form
+// ============================================================
+function resetForm() {
+  editingIndex = -1;
+  document.getElementById('edit-index').value = '';
+  document.getElementById('field-title').value = '';
+  document.getElementById('field-date').value = todayStr();
+  document.getElementById('field-category').value = 'News';
+  document.getElementById('field-source').value = 'website';
+  document.getElementById('field-tags').value = '';
+  document.getElementById('field-image').value = '';
+  document.getElementById('field-text').value = '';
+  document.getElementById('form-title').textContent = 'Create New Article';
+  document.getElementById('form-subtitle').textContent = 'Write and publish a new article to the MCT portal';
+  document.getElementById('publish-btn').textContent = 'Publish Article';
+  document.getElementById('cancel-edit-btn').classList.add('hidden');
+  updateWordCount();
+}
+
+function editArticle(index) {
+  const a = allArticles[index];
+  if (!a) return;
+  editingIndex = index;
+  document.getElementById('edit-index').value = index;
+  document.getElementById('field-title').value = a.title || '';
+  document.getElementById('field-date').value = a.date || '';
+  document.getElementById('field-category').value = a.category || 'News';
+  document.getElementById('field-source').value = a.source || 'website';
+  document.getElementById('field-tags').value = (a.tags || []).join(', ');
+  document.getElementById('field-image').value = a.image_url || '';
+  document.getElementById('field-text').value = a.full_text || a.text || '';
+  document.getElementById('form-title').textContent = 'Edit Article';
+  document.getElementById('form-subtitle').textContent = `Editing: ${a.title || 'Untitled'}`;
+  document.getElementById('publish-btn').textContent = 'Update Article';
+  document.getElementById('cancel-edit-btn').classList.remove('hidden');
+  updateWordCount();
+  navigateTo('create');
+}
+
+function cancelEdit() {
+  resetForm();
+  navigateTo('articles');
+}
+
+function updateWordCount() {
+  const text = document.getElementById('field-text').value;
+  const wc = countWords(text);
+  document.getElementById('word-count-display').textContent = wc > 0 ? `${wc} words, ~${Math.ceil(wc/200)} min read` : '';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('field-text').addEventListener('input', updateWordCount);
+  // Load token into settings field if present
+  const token = getToken();
+  if (token) document.getElementById('setting-token').value = token;
+  // Set default date
+  document.getElementById('field-date').value = todayStr();
+
+  // Navigate to settings if no token, else dashboard
+  if (!token) navigateTo('settings');
+  else navigateTo('dashboard');
+});
+
+// ============================================================
+// Publish / Update / Delete
+// ============================================================
+async function publishArticle() {
+  const title = document.getElementById('field-title').value.trim();
+  const date = document.getElementById('field-date').value;
+  const category = document.getElementById('field-category').value;
+  const source = document.getElementById('field-source').value;
+  const tagsStr = document.getElementById('field-tags').value;
+  const imageUrl = document.getElementById('field-image').value.trim();
+  const fullText = document.getElementById('field-text').value.trim();
+
+  if (!title) { toast('Title is required', 'error'); return; }
+  if (!date) { toast('Date is required', 'error'); return; }
+  if (!fullText) { toast('Article text is required', 'error'); return; }
+
+  const tags = tagsStr ? tagsStr.split(',').map(t => t.trim()).filter(t => t) : [];
+  const wordCount = countWords(fullText);
+  const readTime = Math.ceil(wordCount / 200);
+  const excerpt = generateExcerpt(fullText);
+
+  try {
+    showProgress('Publishing', 'Fetching latest articles from GitHub...', 5);
+
+    // Always fetch latest from GitHub
+    const { content: rawContent } = await getFileContentUTF8('all_articles_unified.json');
+    allArticles = JSON.parse(rawContent);
+
+    let commitMsg;
+
+    if (editingIndex >= 0 && editingIndex < allArticles.length) {
+      // Update existing
+      const existing = allArticles[editingIndex];
+      allArticles[editingIndex] = {
+        ...existing,
+        title,
+        date,
+        category,
+        source,
+        tags,
+        excerpt,
+        full_text: fullText,
+        text: fullText,
+        word_count: wordCount,
+        read_time: readTime,
+        image_url: imageUrl || existing.image_url || ''
+      };
+      commitMsg = `Update article: ${title}`;
+    } else {
+      // Create new
+      const newId = 'art_' + allArticles.length;
+      const newArticle = {
+        id: newId,
+        title,
+        date,
+        category,
+        source,
+        tags,
+        excerpt,
+        full_text: fullText,
+        text: fullText,
+        word_count: wordCount,
+        read_time: readTime,
+        url: '',
+        image_url: imageUrl || '',
+        fb_post_id: '',
+        reactions: 0,
+        comments: 0,
+        shares: 0
+      };
+      allArticles.push(newArticle);
+      commitMsg = `Add article: ${title}`;
+    }
+
+    // Reassign IDs to ensure sequential
+    showProgress('Publishing', 'Reassigning article IDs...', 15);
+    allArticles.forEach((a, i) => { a.id = 'art_' + i; });
+
+    // Build files
+    showProgress('Publishing', 'Building data files...', 25);
+    const files = buildDataFiles(allArticles);
+
+    // Push all files in one commit
+    await pushFiles(files, commitMsg);
+
+    // Update local cache
+    localStorage.setItem('mct_articles_cache', JSON.stringify({ ts: Date.now(), data: allArticles }));
+    filteredArticles = [...allArticles];
+
+    hideProgress();
+    toast(editingIndex >= 0 ? 'Article updated and published!' : 'New article published!', 'success');
+    resetForm();
+    navigateTo('articles');
+
+  } catch (e) {
+    hideProgress();
+    toast('Publish failed: ' + e.message, 'error');
+    console.error(e);
+  }
+}
+
+function buildDataFiles(articles) {
+  const files = [];
+
+  // 1. all_articles_unified.json
+  files.push({
+    path: 'all_articles_unified.json',
+    content: JSON.stringify(articles, null, 2)
+  });
+
+  // 2. articles-meta.js
+  const meta = articles.map(a => ({
+    id: a.id,
+    title: a.title || '',
+    date: a.date || '',
+    category: a.category || '',
+    source: a.source || '',
+    tags: a.tags || [],
+    excerpt: a.excerpt || '',
+    word_count: a.word_count || 0,
+    read_time: a.read_time || 0,
+    url: a.url || '',
+    fb_post_id: a.fb_post_id || '',
+    reactions: a.reactions || 0,
+    comments: a.comments || 0,
+    shares: a.shares || 0,
+    image_url: a.image_url || ''
+  }));
+  files.push({
+    path: 'articles-meta.js',
+    content: 'const ARTICLES_META = ' + JSON.stringify(meta, null, 2) + ';'
+  });
+
+  // 3. chunks/text-N.json
+  const totalChunks = Math.ceil(articles.length / ARTICLES_PER_CHUNK);
+  for (let i = 0; i < totalChunks; i++) {
+    const chunk = {};
+    const startIdx = i * ARTICLES_PER_CHUNK;
+    const endIdx = Math.min(startIdx + ARTICLES_PER_CHUNK, articles.length);
+    for (let j = startIdx; j < endIdx; j++) {
+      chunk[String(j)] = articles[j].full_text || articles[j].text || '';
+    }
+    files.push({
+      path: `chunks/text-${i}.json`,
+      content: JSON.stringify(chunk, null, 2)
+    });
+  }
+
+  return files;
+}
+
+// Delete
+function openDeleteModal(index) {
+  deleteTargetIndex = index;
+  const a = allArticles[index];
+  document.getElementById('delete-article-title').textContent = a ? (a.title || 'Untitled') : '';
+  document.getElementById('delete-modal').classList.remove('hidden');
+}
+
+function closeDeleteModal() {
+  deleteTargetIndex = -1;
+  document.getElementById('delete-modal').classList.add('hidden');
+}
+
+async function confirmDelete() {
+  if (deleteTargetIndex < 0) return;
+  const title = allArticles[deleteTargetIndex]?.title || 'Untitled';
+  closeDeleteModal();
+
+  try {
+    showProgress('Deleting', 'Fetching latest articles from GitHub...', 5);
+
+    // Fetch latest
+    const { content: rawContent } = await getFileContentUTF8('all_articles_unified.json');
+    allArticles = JSON.parse(rawContent);
+
+    if (deleteTargetIndex >= allArticles.length) {
+      hideProgress();
+      toast('Article not found (index out of bounds)', 'error');
+      return;
+    }
+
+    allArticles.splice(deleteTargetIndex, 1);
+
+    // Reassign IDs
+    showProgress('Deleting', 'Reassigning article IDs...', 15);
+    allArticles.forEach((a, i) => { a.id = 'art_' + i; });
+
+    // Build files
+    showProgress('Deleting', 'Building data files...', 25);
+    const files = buildDataFiles(allArticles);
+
+    // Push
+    await pushFiles(files, `Delete article: ${title}`);
+
+    localStorage.setItem('mct_articles_cache', JSON.stringify({ ts: Date.now(), data: allArticles }));
+    filteredArticles = [...allArticles];
+
+    hideProgress();
+    toast('Article deleted', 'success');
+    renderArticleList();
+
+  } catch (e) {
+    hideProgress();
+    toast('Delete failed: ' + e.message, 'error');
+    console.error(e);
+  }
+}
+
+// ============================================================
+// Events Manager
+// ============================================================
+let allEvents = [];
+let filteredEvents = [];
+let eventsFilterMonth = 0;
+let eventDeleteTargetIdx = -1;
+let pendingBannerFile = null;
+
+const MONTH_NAMES = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+async function loadEvents(force = false) {
+  if (!getToken()) return false;
+  if (!force && allEvents.length > 0) return true;
+
+  // Try cache
+  if (!force) {
+    const cached = localStorage.getItem('mct_events_cache');
+    if (cached) {
+      try {
+        const parsed = JSON.parse(cached);
+        if (parsed.ts && Date.now() - parsed.ts < 5 * 60 * 1000) {
+          allEvents = parsed.data;
+          filteredEvents = [...allEvents];
+          return true;
+        }
+      } catch(e) {}
+    }
+  }
+
+  try {
+    const { content } = await getFileContentUTF8('events-calendar.js');
+    allEvents = parseEventsJS(content);
+    filteredEvents = [...allEvents];
+    localStorage.setItem('mct_events_cache', JSON.stringify({ ts: Date.now(), data: allEvents }));
+    return true;
+  } catch (e) {
+    toast('Failed to load events: ' + e.message, 'error');
+    return false;
+  }
+}
+
+// Parse the events-calendar.js file to extract the MCT_EVENTS array
+function parseEventsJS(jsContent) {
+  try {
+    // Extract the array portion between [ and ];
+    const start = jsContent.indexOf('[');
+    const end = jsContent.lastIndexOf(']');
+    if (start === -1 || end === -1) throw new Error('Could not find MCT_EVENTS array');
+    const arrayStr = jsContent.substring(start, end + 1);
+    // Use Function constructor to safely parse (it's just data)
+    const fn = new Function('return ' + arrayStr);
+    return fn();
+  } catch (e) {
+    console.error('Parse error:', e);
+    throw new Error('Failed to parse events-calendar.js: ' + e.message);
+  }
+}
+
+// Serialize events back to events-calendar.js format
+function serializeEventsJS(events) {
+  let js = `/**
+ * MCT Event Calendar — "Google Doodle"-style event banner system.
+ *
+ * PRIORITY SYSTEM:
+ *   When multiple events overlap, the SHORTEST-duration event wins.
+ *   1-day events > 1-week events > 1-month events > generic banner.
+ *
+ * Each event defines:
+ *   id          – unique slug (also used for banner image filename: event-{id}.png)
+ *   name        – display title for the banner
+ *   subtitle    – secondary line / call to action
+ *   startMonth, startDay  – when the banner begins (inclusive)
+ *   endMonth, endDay      – when the banner ends (inclusive)
+ *   duration    – "day" | "week" | "month" — controls priority
+ *   accentColor – primary gradient color for the banner
+ *   accentColor2– secondary gradient color
+ *   textColor   – text color over the gradient
+ *   emoji       – decorative emoji
+ *   imagePrompt – AI image generation prompt (used by cron)
+ *
+ * Month: 1-12, Day: 1-31. All dates in Asia/Manila timezone.
+ */
+
+const MCT_EVENTS = [\n`;
+
+  // Group events by month for readability
+  const byMonth = {};
+  events.forEach(e => {
+    const m = e.startMonth || 1;
+    if (!byMonth[m]) byMonth[m] = [];
+    byMonth[m].push(e);
+  });
+
+  const monthLabels = ['','JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];
+  let first = true;
+
+  for (let m = 1; m <= 12; m++) {
+    if (!byMonth[m] || byMonth[m].length === 0) continue;
+    if (!first) js += '\n';
+    js += `\n  // ═══════════════════════════════════════════════════\n  // ── ${monthLabels[m]} ──\n  // ═══════════════════════════════════════════════════\n`;
+    first = false;
+
+    byMonth[m].forEach(e => {
+      js += '  {\n';
+      js += `    id: ${JSON.stringify(e.id)},\n`;
+      js += `    name: ${JSON.stringify(e.name)},\n`;
+      js += `    subtitle: ${JSON.stringify(e.subtitle || '')},\n`;
+      js += `    startMonth: ${e.startMonth}, startDay: ${e.startDay}, endMonth: ${e.endMonth}, endDay: ${e.endDay},\n`;
+      js += `    duration: ${JSON.stringify(e.duration)},\n`;
+      js += `    accentColor: ${JSON.stringify(e.accentColor)}, accentColor2: ${JSON.stringify(e.accentColor2)}, textColor: ${JSON.stringify(e.textColor)}, emoji: ${JSON.stringify(e.emoji || '')},\n`;
+      js += `    imagePrompt: ${JSON.stringify(e.imagePrompt || '')}\n`;
+      js += '  },\n';
+    });
+  }
+
+  js += '];\n';
+  return js;
+}
+
+async function loadEventsPage() {
+  const loading = document.getElementById('events-loading');
+  const content = document.getElementById('events-content');
+
+  if (!getToken()) {
+    loading.innerHTML = '<p style="margin-bottom:16px;">No GitHub token configured.</p><button class="btn btn-primary" onclick="navigateTo(\'settings\')">Go to Settings</button>';
+    loading.classList.remove('hidden');
+    content.classList.add('hidden');
+    return;
+  }
+
+  loading.classList.remove('hidden');
+  content.classList.add('hidden');
+  document.getElementById('event-form-section').classList.add('hidden');
+
+  const ok = await loadEvents();
+  loading.classList.add('hidden');
+  if (!ok) return;
+
+  content.classList.remove('hidden');
+
+  // Stats
+  const dayCount = allEvents.filter(e => e.duration === 'day').length;
+  const weekCount = allEvents.filter(e => e.duration === 'week').length;
+  const monthCount = allEvents.filter(e => e.duration === 'month').length;
+
+  document.getElementById('events-stats').innerHTML = `
+    <div class="stat-card"><div class="label">Total Events</div><div class="value">${allEvents.length}</div></div>
+    <div class="stat-card"><div class="label">Day Events</div><div class="value">${dayCount}</div></div>
+    <div class="stat-card"><div class="label">Week Events</div><div class="value">${weekCount}</div></div>
+    <div class="stat-card"><div class="label">Month Events</div><div class="value">${monthCount}</div></div>
+  `;
+
+  renderEventsTable();
+}
+
+function filterEventsByMonth(month) {
+  eventsFilterMonth = month;
+  document.querySelectorAll('.month-filter-btn').forEach(b => {
+    b.classList.toggle('active', parseInt(b.dataset.month) === month);
+  });
+  if (month === 0) {
+    filteredEvents = [...allEvents];
+  } else {
+    filteredEvents = allEvents.filter(e => e.startMonth === month || e.endMonth === month);
+  }
+  renderEventsTable();
+}
+
+function renderEventsTable() {
+  const tbody = document.getElementById('events-tbody');
+  if (filteredEvents.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;padding:30px;" class="text-dim">No events found</td></tr>';
+    return;
+  }
+
+  let html = '';
+  filteredEvents.forEach(e => {
+    const idx = allEvents.indexOf(e);
+    const period = `${MONTH_NAMES[e.startMonth]} ${e.startDay} – ${MONTH_NAMES[e.endMonth]} ${e.endDay}`;
+    const durClass = `dur-${e.duration}`;
+    const bannerUrl = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/events/event-${e.id}.png`;
+    html += `<tr>
+      <td>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:18px;">${e.emoji || ''}</span>
+          <div>
+            <div style="font-weight:500;">${escapeHtml(e.name)}</div>
+            <div class="text-dim text-sm" style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(e.subtitle || '')}</div>
+          </div>
+        </div>
+      </td>
+      <td style="white-space:nowrap;">${period}</td>
+      <td><span class="duration-badge ${durClass}">${e.duration}</span></td>
+      <td>
+        <div style="display:flex;gap:4px;">
+          <span class="color-swatch" style="background:${e.accentColor};" title="${e.accentColor}"></span>
+          <span class="color-swatch" style="background:${e.accentColor2};" title="${e.accentColor2}"></span>
+          <span class="color-swatch" style="background:${e.textColor};" title="Text: ${e.textColor}"></span>
+        </div>
+      </td>
+      <td><img class="banner-thumb" src="${bannerUrl}" onerror="this.style.display='none'" alt=""></td>
+      <td style="white-space:nowrap;">
+        <button class="btn btn-ghost btn-sm" onclick="editEvent(${idx})">Edit</button>
+        <button class="btn btn-ghost btn-sm" style="color:var(--danger);" onclick="openEventDeleteModal(${idx})">Del</button>
+      </td>
+    </tr>`;
+  });
+  tbody.innerHTML = html;
+}
+
+function showEventForm(idx) {
+  document.getElementById('event-form-section').classList.remove('hidden');
+  document.getElementById('events-content').classList.add('hidden');
+
+  if (typeof idx === 'number' && idx >= 0) {
+    // Edit mode
+    const e = allEvents[idx];
+    document.getElementById('event-form-title').textContent = 'Edit Event';
+    document.getElementById('event-edit-idx').value = idx;
+    document.getElementById('evt-id').value = e.id || '';
+    document.getElementById('evt-id').disabled = true; // Don't change ID on edit
+    document.getElementById('evt-name').value = e.name || '';
+    document.getElementById('evt-subtitle').value = e.subtitle || '';
+    document.getElementById('evt-emoji').value = e.emoji || '';
+    document.getElementById('evt-start-month').value = e.startMonth || '';
+    document.getElementById('evt-start-day').value = e.startDay || '';
+    document.getElementById('evt-end-month').value = e.endMonth || '';
+    document.getElementById('evt-end-day').value = e.endDay || '';
+    document.getElementById('evt-duration').value = e.duration || 'day';
+    document.getElementById('evt-accent1').value = e.accentColor || '#6366f1';
+    document.getElementById('evt-accent1-hex').value = e.accentColor || '';
+    document.getElementById('evt-accent2').value = e.accentColor2 || '#4f46e5';
+    document.getElementById('evt-accent2-hex').value = e.accentColor2 || '';
+    document.getElementById('evt-text-color').value = e.textColor || '#ffffff';
+    document.getElementById('evt-text-color-hex').value = e.textColor || '';
+    document.getElementById('evt-image-prompt').value = e.imagePrompt || '';
+    document.getElementById('evt-banner-upload').value = '';
+    document.getElementById('evt-banner-status').textContent = '';
+
+    // Show current banner
+    const bannerUrl = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/events/event-${e.id}.png`;
+    document.getElementById('evt-banner-preview').innerHTML = `<img src="${bannerUrl}" onerror="this.parentElement.innerHTML='<span class=text-dim>No current banner</span>'" style="max-width:400px;height:auto;border-radius:8px;border:1px solid var(--border);">`;
+  } else {
+    // New mode
+    document.getElementById('event-form-title').textContent = 'New Event';
+    document.getElementById('event-edit-idx').value = -1;
+    document.getElementById('evt-id').value = '';
+    document.getElementById('evt-id').disabled = false;
+    document.getElementById('evt-name').value = '';
+    document.getElementById('evt-subtitle').value = '';
+    document.getElementById('evt-emoji').value = '';
+    document.getElementById('evt-start-month').value = '';
+    document.getElementById('evt-start-day').value = '';
+    document.getElementById('evt-end-month').value = '';
+    document.getElementById('evt-end-day').value = '';
+    document.getElementById('evt-duration').value = 'day';
+    document.getElementById('evt-accent1').value = '#6366f1';
+    document.getElementById('evt-accent1-hex').value = '';
+    document.getElementById('evt-accent2').value = '#4f46e5';
+    document.getElementById('evt-accent2-hex').value = '';
+    document.getElementById('evt-text-color').value = '#ffffff';
+    document.getElementById('evt-text-color-hex').value = '';
+    document.getElementById('evt-image-prompt').value = '';
+    document.getElementById('evt-banner-upload').value = '';
+    document.getElementById('evt-banner-status').textContent = '';
+    document.getElementById('evt-banner-preview').innerHTML = '';
+  }
+
+  pendingBannerFile = null;
+  updateColorPreview();
+  window.scrollTo(0, 0);
+}
+
+function editEvent(idx) {
+  showEventForm(idx);
+}
+
+function cancelEventForm() {
+  document.getElementById('event-form-section').classList.add('hidden');
+  document.getElementById('events-content').classList.remove('hidden');
+  document.getElementById('evt-id').disabled = false;
+  pendingBannerFile = null;
+}
+
+function updateColorPreview() {
+  const c1 = document.getElementById('evt-accent1').value;
+  const c2 = document.getElementById('evt-accent2').value;
+  const tc = document.getElementById('evt-text-color').value;
+  const preview = document.getElementById('evt-color-preview');
+  if (preview) {
+    preview.style.background = `linear-gradient(135deg, ${c1}, ${c2})`;
+    preview.style.color = tc;
+  }
+}
+
+// Sync color pickers with hex inputs
+['evt-accent1', 'evt-accent2', 'evt-text-color'].forEach(id => {
+  const picker = document.getElementById(id);
+  const hex = document.getElementById(id + '-hex');
+  if (picker) {
+    picker.addEventListener('input', () => {
+      hex.value = picker.value;
+      updateColorPreview();
+    });
+  }
+  if (hex) {
+    hex.addEventListener('input', () => {
+      if (/^#[0-9a-fA-F]{6}$/.test(hex.value)) {
+        picker.value = hex.value;
+      }
+      updateColorPreview();
+    });
+  }
+});
+
+// Banner file selection
+document.getElementById('evt-banner-upload').addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  if (!file) { pendingBannerFile = null; return; }
+
+  if (file.size > 5 * 1024 * 1024) {
+    toast('Image too large (max 5MB)', 'error');
+    e.target.value = '';
+    pendingBannerFile = null;
+    return;
+  }
+
+  pendingBannerFile = file;
+  document.getElementById('evt-banner-status').textContent = `Selected: ${file.name} (${(file.size/1024).toFixed(0)} KB)`;
+
+  // Preview
+  const reader = new FileReader();
+  reader.onload = function(ev) {
+    document.getElementById('evt-banner-preview').innerHTML = `<img src="${ev.target.result}" style="max-width:400px;height:auto;border-radius:8px;border:1px solid var(--border);">`;
+  };
+  reader.readAsDataURL(file);
+});
+
+async function saveEvent() {
+  const editIdx = parseInt(document.getElementById('event-edit-idx').value);
+  const isEdit = editIdx >= 0;
+
+  const id = document.getElementById('evt-id').value.trim().toLowerCase().replace(/[^a-z0-9-]/g, '-');
+  const name = document.getElementById('evt-name').value.trim();
+  const subtitle = document.getElementById('evt-subtitle').value.trim();
+  const emoji = document.getElementById('evt-emoji').value.trim();
+  const startMonth = parseInt(document.getElementById('evt-start-month').value);
+  const startDay = parseInt(document.getElementById('evt-start-day').value);
+  const endMonth = parseInt(document.getElementById('evt-end-month').value);
+  const endDay = parseInt(document.getElementById('evt-end-day').value);
+  const duration = document.getElementById('evt-duration').value;
+  const accentColor = document.getElementById('evt-accent1').value;
+  const accentColor2 = document.getElementById('evt-accent2').value;
+  const textColor = document.getElementById('evt-text-color').value;
+  const imagePrompt = document.getElementById('evt-image-prompt').value.trim();
+
+  // Validation
+  if (!id) { toast('Event ID is required', 'error'); return; }
+  if (!name) { toast('Event name is required', 'error'); return; }
+  if (!startMonth || !startDay || !endMonth || !endDay) { toast('Start and end dates are required', 'error'); return; }
+  if (startMonth < 1 || startMonth > 12 || endMonth < 1 || endMonth > 12) { toast('Month must be 1-12', 'error'); return; }
+  if (startDay < 1 || startDay > 31 || endDay < 1 || endDay > 31) { toast('Day must be 1-31', 'error'); return; }
+
+  // Check for duplicate ID (only on create)
+  if (!isEdit && allEvents.some(e => e.id === id)) {
+    toast('An event with this ID already exists', 'error');
+    return;
+  }
+
+  const eventObj = {
+    id, name, subtitle, emoji,
+    startMonth, startDay, endMonth, endDay,
+    duration, accentColor, accentColor2, textColor,
+    imagePrompt
+  };
+
+  try {
+    showProgress('Saving Event', 'Fetching latest events from GitHub...', 5);
+
+    // Fetch latest from GitHub
+    const { content: rawContent } = await getFileContentUTF8('events-calendar.js');
+    allEvents = parseEventsJS(rawContent);
+
+    if (isEdit) {
+      if (editIdx >= allEvents.length) {
+        hideProgress();
+        toast('Event not found (index out of bounds)', 'error');
+        return;
+      }
+      allEvents[editIdx] = eventObj;
+    } else {
+      allEvents.push(eventObj);
+    }
+
+    // Sort events by startMonth, startDay
+    allEvents.sort((a, b) => {
+      if (a.startMonth !== b.startMonth) return a.startMonth - b.startMonth;
+      return a.startDay - b.startDay;
+    });
+
+    showProgress('Saving Event', 'Building events file...', 25);
+    const eventsJS = serializeEventsJS(allEvents);
+
+    // Prepare files to push
+    const files = [{ path: 'events-calendar.js', content: eventsJS }];
+
+    // Handle banner upload if present
+    if (pendingBannerFile) {
+      showProgress('Saving Event', 'Uploading banner image...', 40);
+      const base64 = await fileToBase64(pendingBannerFile);
+      // Upload banner as separate blob (binary)
+      const blobRes = await ghFetch('git/blobs', {
+        method: 'POST',
+        body: JSON.stringify({ content: base64, encoding: 'base64' })
+      });
+
+      // We need to do a separate commit for the binary file using the Trees API
+      showProgress('Saving Event', 'Committing banner image...', 55);
+
+      // Get current commit
+      const ref = await ghFetch(`git/ref/heads/${BRANCH}`);
+      const currentCommitSha = ref.object.sha;
+      const currentCommit = await ghFetch(`git/commits/${currentCommitSha}`);
+      const baseTreeSha = currentCommit.tree.sha;
+
+      // Create text blobs for events-calendar.js
+      const textBlob = await ghFetch('git/blobs', {
+        method: 'POST',
+        body: JSON.stringify({ content: eventsJS, encoding: 'utf-8' })
+      });
+
+      // Build tree with both the JS file and the image
+      const treeItems = [
+        { path: 'events-calendar.js', sha: textBlob.sha, mode: '100644', type: 'blob' },
+        { path: `events/event-${id}.png`, sha: blobRes.sha, mode: '100644', type: 'blob' }
+      ];
+
+      showProgress('Saving Event', 'Creating commit...', 75);
+      const newTree = await ghFetch('git/trees', {
+        method: 'POST',
+        body: JSON.stringify({ base_tree: baseTreeSha, tree: treeItems })
+      });
+
+      const newCommit = await ghFetch('git/commits', {
+        method: 'POST',
+        body: JSON.stringify({
+          message: `${isEdit ? 'Update' : 'Add'} event: ${name} (with banner)`,
+          tree: newTree.sha,
+          parents: [currentCommitSha]
+        })
+      });
+
+      showProgress('Saving Event', 'Updating branch...', 90);
+      await ghFetch(`git/refs/heads/${BRANCH}`, {
+        method: 'PATCH',
+        body: JSON.stringify({ sha: newCommit.sha })
+      });
+    } else {
+      // No banner — just push the events-calendar.js
+      await pushFiles(files, `${isEdit ? 'Update' : 'Add'} event: ${name}`);
+    }
+
+    // Update caches
+    filteredEvents = [...allEvents];
+    localStorage.setItem('mct_events_cache', JSON.stringify({ ts: Date.now(), data: allEvents }));
+
+    hideProgress();
+    toast(isEdit ? 'Event updated!' : 'Event created!', 'success');
+    pendingBannerFile = null;
+    document.getElementById('evt-id').disabled = false;
+    cancelEventForm();
+    renderEventsTable();
+    // Refresh stats
+    loadEventsPage();
+
+  } catch (e) {
+    hideProgress();
+    toast('Save failed: ' + e.message, 'error');
+    console.error(e);
+  }
+}
+
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const base64 = reader.result.split(',')[1];
+      resolve(base64);
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+function openEventDeleteModal(idx) {
+  eventDeleteTargetIdx = idx;
+  const e = allEvents[idx];
+  document.getElementById('event-delete-name').textContent = e ? (e.name || 'Untitled') : '';
+  document.getElementById('event-delete-modal').classList.remove('hidden');
+}
+
+function closeEventDeleteModal() {
+  eventDeleteTargetIdx = -1;
+  document.getElementById('event-delete-modal').classList.add('hidden');
+}
+
+async function confirmEventDelete() {
+  if (eventDeleteTargetIdx < 0) return;
+  const name = allEvents[eventDeleteTargetIdx]?.name || 'Untitled';
+  closeEventDeleteModal();
+
+  try {
+    showProgress('Deleting Event', 'Fetching latest events...', 5);
+
+    const { content: rawContent } = await getFileContentUTF8('events-calendar.js');
+    allEvents = parseEventsJS(rawContent);
+
+    if (eventDeleteTargetIdx >= allEvents.length) {
+      hideProgress();
+      toast('Event not found', 'error');
+      return;
+    }
+
+    allEvents.splice(eventDeleteTargetIdx, 1);
+
+    showProgress('Deleting Event', 'Building events file...', 30);
+    const eventsJS = serializeEventsJS(allEvents);
+    const files = [{ path: 'events-calendar.js', content: eventsJS }];
+
+    await pushFiles(files, `Delete event: ${name}`);
+
+    filteredEvents = [...allEvents];
+    localStorage.setItem('mct_events_cache', JSON.stringify({ ts: Date.now(), data: allEvents }));
+
+    hideProgress();
+    toast('Event deleted', 'success');
+    loadEventsPage();
+
+  } catch (e) {
+    hideProgress();
+    toast('Delete failed: ' + e.message, 'error');
+    console.error(e);
+  }
+}
+</script>
+</body>
+</html>
