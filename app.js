@@ -1020,12 +1020,11 @@
       '</a>' +
       articleImgHtml +
       '<div class="article-header">' +
-        '<div class="card-meta">' +
-          '<span class="category-badge ' + getCategoryClass(meta.category) + '">' + escapeHtml(meta.category) + '</span>' +
-          (meta.tags ? meta.tags.map(function (t) {
+        (meta.tags && meta.tags.length ? '<div class="card-meta">' +
+          meta.tags.map(function (t) {
             return '<button class="tag-chip" data-tag="' + escapeHtml(t) + '" style="font-size:var(--text-xs);padding:2px 8px;">' + escapeHtml(t) + '</button>';
-          }).join('') : '') +
-        '</div>' +
+          }).join('') +
+        '</div>' : '') +
         '<h1 class="article-heading">' + escapeHtml(toTitleCase(meta.title)) + '</h1>' +
         '<div class="article-info">' +
           (meta.date ? '<span>' + formatDate(meta.date) + '</span><span class="article-info-divider"></span>' : '') +

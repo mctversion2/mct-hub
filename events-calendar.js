@@ -172,6 +172,15 @@ const MCT_EVENTS = [
     imagePrompt: "International Women's Day banner, powerful Filipina women leading march, purple and magenta tones, raised fists, flowers and banners, empowerment and solidarity, no text, cinematic wide"
   },
   {
+    id: "duterte-arrest-anniversary",
+    name: "One Year Since the Duterte Arrest",
+    subtitle: "March 11, 2025 — the day a former president was arrested on an ICC warrant for crimes against humanity",
+    startMonth: 3, startDay: 11, endMonth: 3, endDay: 11,
+    duration: "day",
+    accentColor: "#1c1917", accentColor2: "#0c0a09", textColor: "#d6d3d1", emoji: "⚖️",
+    imagePrompt: "Somber editorial banner, silhouette of a figure being escorted through an airport terminal by law enforcement, cool blue and steel gray tones, harsh fluorescent lighting, aircraft visible through window, heavy institutional atmosphere, cinematic wide, no text"
+  },
+  {
     id: "world-water-day",
     name: "World Water Day",
     subtitle: "Every drop counts — clean water for every Filipino",
