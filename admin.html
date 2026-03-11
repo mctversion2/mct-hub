@@ -1284,6 +1284,7 @@ If this work has value to you, a small contribution through GCash helps keep it 
             <button class="token-toggle" onclick="toggleTokenVisibility()">Show</button>
           </div>
           <p class="text-dim text-sm mt-8">Requires <code>repo</code> scope. Token is stored locally in your browser only.</p>
+          <p class="text-dim text-sm" style="margin-top:6px;"><a href="https://github.com/settings/tokens/new?scopes=repo&description=MCT+Admin+Panel" target="_blank" style="color:var(--accent);">Click here to generate a token</a> — check the <strong>repo</strong> box, then scroll down and click "Generate token".</p>
         </div>
         <div class="form-group">
           <label>Repository</label>
@@ -1568,13 +1569,53 @@ function saveToken() {
 
 async function testConnection() {
   const token = document.getElementById('setting-token').value.trim() || getToken();
-  if (!token) { toast('No token to test', 'error'); return; }
+  if (!token) { toast('No token to test — please enter your token first', 'error'); return; }
   localStorage.setItem('mct_github_token', token);
 
   updateConnectionStatus('unknown', 'Testing...');
   try {
-    const repo = await ghFetch(``, {});
-    updateConnectionStatus('connected', `Connected to ${repo.full_name}`);
+    // Step 1: Check if token is valid at all
+    const userRes = await fetch('https://api.github.com/user', {
+      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!userRes.ok) {
+      if (userRes.status === 401) {
+        updateConnectionStatus('disconnected', 'Invalid token');
+        toast('Token is invalid or expired. Please generate a new one.', 'error');
+        return;
+      }
+      throw new Error(`Auth check failed: ${userRes.status}`);
+    }
+    const user = await userRes.json();
+
+    // Step 2: Check if token can access the repo
+    const repoRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}`, {
+      headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!repoRes.ok) {
+      if (repoRes.status === 403) {
+        updateConnectionStatus('disconnected', 'Token lacks repo access');
+        toast(`Token works for @${user.login} but lacks the "repo" scope. Please generate a new token with the repo checkbox checked.`, 'error');
+        return;
+      }
+      if (repoRes.status === 404) {
+        updateConnectionStatus('disconnected', 'Repo not found for this account');
+        toast(`Logged in as @${user.login} but cannot find ${OWNER}/${REPO}. Make sure this account has access to the repo.`, 'error');
+        return;
+      }
+      throw new Error(`Repo check failed: ${repoRes.status}`);
+    }
+    const repo = await repoRes.json();
+
+    // Step 3: Check write permission
+    const canPush = repo.permissions && repo.permissions.push;
+    if (!canPush) {
+      updateConnectionStatus('disconnected', 'Read-only access');
+      toast(`Connected as @${user.login} but you only have read access. You need write/push permission.`, 'error');
+      return;
+    }
+
+    updateConnectionStatus('connected', `Connected as @${user.login} to ${repo.full_name}`);
     toast('Connection successful!', 'success');
   } catch (e) {
     updateConnectionStatus('disconnected', 'Connection failed');
