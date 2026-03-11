@@ -871,6 +871,7 @@ tr:hover td { background: var(--bg-hover); }
                   <input type="file" id="field-image-upload" accept="image/*" style="display:none;" onchange="handleArticleImageUpload(this)">
                 </label>
               </div>
+              <p class="text-dim text-sm mt-8">Recommended: 1200×630px, max 5MB. PNG or JPG.</p>
               <div id="image-upload-preview" style="margin-top:8px;display:none;">
                 <img id="image-preview-img" style="max-width:200px;max-height:120px;border-radius:6px;border:1px solid var(--border);">
                 <button class="btn btn-ghost btn-sm" style="margin-left:8px;" onclick="clearImageUpload()">Remove</button>
@@ -1037,7 +1038,7 @@ tr:hover td { background: var(--bg-hover); }
                   <input type="file" id="evt-banner-upload" accept="image/png,image/jpeg,image/webp" style="font-size:13px;">
                   <span id="evt-banner-status" class="text-dim text-sm"></span>
                 </div>
-                <p class="text-dim text-sm mt-8">Upload a banner image (PNG/JPG/WebP). It will be saved as <code>events/event-{id}.png</code> on GitHub.</p>
+                <p class="text-dim text-sm mt-8">Recommended: 1200×630px, max 5MB. PNG/JPG/WebP. Saved as <code>events/event-{id}.png</code> on GitHub.</p>
                 <div id="evt-banner-preview" style="margin-top:12px;"></div>
               </div>
             </div>
