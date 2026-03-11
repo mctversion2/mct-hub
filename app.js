@@ -1111,6 +1111,10 @@
             '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 0 1 6.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>' +
             '<span id="translate-btn-text">Basahin sa Filipino</span>' +
           '</button>' +
+          '<div class="translate-disclaimer" id="translate-disclaimer" style="display:none;">' +
+            '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>' +
+            '<span>This is a machine translation. It may get context, attribution, or meaning wrong. For accuracy, always refer to the English version.</span>' +
+          '</div>' +
         '</div>' : '') +
       '<div class="article-body" id="article-body-content"><p style="opacity:0.5;">Loading article...</p></div>' +
       (meta.url ?
@@ -1157,6 +1161,8 @@
             // Revert to English
             bodyEl.innerHTML = originalHtml;
             $("#translate-btn-text").textContent = 'Basahin sa Filipino';
+            var disc = $("#translate-disclaimer");
+            if (disc) disc.style.display = 'none';
             isTranslated = false;
             return;
           }
@@ -1167,6 +1173,8 @@
           if (window._tlCache && window._tlCache[cacheKey]) {
             bodyEl.innerHTML = window._tlCache[cacheKey];
             $("#translate-btn-text").textContent = 'Read in English';
+            var disc2 = $("#translate-disclaimer");
+            if (disc2) disc2.style.display = 'flex';
             isTranslated = true;
             return;
           }
@@ -1177,6 +1185,8 @@
             if (!window._tlCache) window._tlCache = {};
             window._tlCache[cacheKey] = translatedHtml;
             $("#translate-btn-text").textContent = 'Read in English';
+            var disc = $("#translate-disclaimer");
+            if (disc) disc.style.display = 'flex';
             translateBtn.disabled = false;
             isTranslated = true;
           });

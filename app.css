@@ -1209,6 +1209,26 @@
 .translate-btn svg {
   flex-shrink: 0;
 }
+.translate-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: rgba(234, 179, 8, 0.08);
+  border: 1px solid rgba(234, 179, 8, 0.25);
+  border-radius: 8px;
+  color: #eab308;
+  font-size: var(--text-xs);
+  line-height: 1.5;
+}
+.translate-disclaimer svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.translate-disclaimer span {
+  color: var(--color-muted);
+}
 
 /* Article Body */
 .article-body {
