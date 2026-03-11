@@ -328,11 +328,11 @@
       return;
     }
     var a = articles[0];
-    var heroImgHtml = a.image
-      ? '<div class="hero-image"><img src="' + escapeHtml(a.image) + '" alt="" loading="eager" onerror="this.parentNode.style.display=\'none\'"></div>'
+    var heroImgHtml = a.image_url
+      ? '<div class="hero-image"><img src="' + escapeHtml(a.image_url) + '" alt="" loading="eager" onerror="this.parentNode.style.display=\'none\'"></div>'
       : '';
     section.innerHTML =
-      '<div class="hero-card ' + (a.image ? 'has-image' : '') + '" data-article="' + a.id + '">' +
+      '<div class="hero-card ' + (a.image_url ? 'has-image' : '') + '" data-article="' + a.id + '">' +
         '<div class="hero-top">' +
           heroImgHtml +
           '<div class="hero-text">' +
@@ -429,11 +429,11 @@
 
   // ---- RENDER: ARTICLE CARDS ----
   function renderArticleCard(a) {
-    var imgHtml = a.image
-      ? '<div class="card-image"><img src="' + escapeHtml(a.image) + '" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>'
+    var imgHtml = a.image_url
+      ? '<div class="card-image"><img src="' + escapeHtml(a.image_url) + '" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>'
       : '';
     return (
-      '<div class="article-card ' + (a.image ? 'has-image' : '') + '" data-article="' + a.id + '">' +
+      '<div class="article-card ' + (a.image_url ? 'has-image' : '') + '" data-article="' + a.id + '">' +
         imgHtml +
         '<div class="card-content">' +
           '<div class="card-meta">' +
@@ -1077,8 +1077,8 @@
 
     var relatedHtml = renderRelatedArticles(meta);
 
-    var articleImgHtml = meta.image
-      ? '<div class="article-cover"><img src="' + escapeHtml(meta.image) + '" alt="" loading="eager" onerror="this.parentNode.style.display=\'none\'"></div>'
+    var articleImgHtml = meta.image_url
+      ? '<div class="article-cover"><img src="' + escapeHtml(meta.image_url) + '" alt="" loading="eager" onerror="this.parentNode.style.display=\'none\'"></div>'
       : '';
 
     // Show article shell immediately with loading state for body
@@ -1234,8 +1234,8 @@
     var html = '<div class="related-section"><p class="related-title">Related Articles</p><div class="related-grid">';
     top.forEach(function (c) {
       var a = c.article;
-      var relImgHtml = a.image
-        ? '<div class="related-image"><img src="' + escapeHtml(a.image) + '" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>'
+      var relImgHtml = a.image_url
+        ? '<div class="related-image"><img src="' + escapeHtml(a.image_url) + '" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>'
         : '';
       html +=
         '<div class="related-item" data-article="' + a.id + '">' +
