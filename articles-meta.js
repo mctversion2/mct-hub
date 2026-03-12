@@ -36,7 +36,7 @@ const ARTICLES_META = [
       "Saudi"
     ],
     "excerpt": "Kazem Gharibabadi, a senior Iranian Foreign Ministry official, went on state television late Monday and said the Islamic Republic had turned down ceasefire proposals from China, France, Russia, and other nations.",
-    "word_count": 877,
+    "word_count": 853,
     "read_time": 5,
     "url": "https://www.facebook.com/morningcoffeethoughts2/posts/pfbid02V1uMVqRsgFerqKxxFGFASBYXEKRxTsVjbXrG2DhWSA9MNzg9VLpzod92ir4C5ghkl",
     "fb_post_id": "",
@@ -56,7 +56,7 @@ const ARTICLES_META = [
       "Military & Defense"
     ],
     "excerpt": "On February 28, a Tomahawk cruise missile destroyed the Shajarah Tayyebeh elementary school in Minab, southern Iran. A preliminary US military investigation has now found that American forces were responsible for that strike. The New York Times broke the story on March 11,...",
-    "word_count": 873,
+    "word_count": 858,
     "read_time": 5,
     "url": "https://www.facebook.com/morningcoffeethoughts2/posts/pfbid02ma5VgTRJ4iQGCQD3KcPdkpNVxiUxVgMTDYrKoVn8x7Zf3HkGvDVVn1hKNRArrjnVl",
     "fb_post_id": "",
@@ -78,7 +78,7 @@ const ARTICLES_META = [
       "Lacson"
     ],
     "excerpt": "Senator Rodante Marcoleta's Statement of Contributions and Expenditures for the 2025 midterm elections declares that he received exactly zero campaign contributions.",
-    "word_count": 636,
+    "word_count": 613,
     "read_time": 4,
     "url": "https://www.facebook.com/morningcoffeethoughts2/posts/pfbid0kMRLUZ1GqiZ65CSoK29FPSjnP2apL2yAWFKJa4HKwu3rrrvHoapiXBRr9SyLNHpRl",
     "fb_post_id": "",
@@ -99,7 +99,7 @@ const ARTICLES_META = [
       "Budget"
     ],
     "excerpt": "Three things happened on Wednesday, March 11, and they happened fast.",
-    "word_count": 824,
+    "word_count": 805,
     "read_time": 5,
     "url": "https://www.facebook.com/morningcoffeethoughts2/posts/pfbid02KLzyQw7PaAXKi1eG5hkDvMeHCCCS6EuAFKuTpcSW24KMSkLGD2F7RQvubpwRTdJ4l",
     "fb_post_id": "",
