@@ -6,18 +6,15 @@ const ARTICLES_META = [
     "category": "Commentary",
     "source": "facebook",
     "tags": [
-      "Economy",
-      "Military & Defense",
       "China",
-      "Elections",
-      "Media & Press Freedom",
-      "Budget",
+      "Espionage",
       "West Philippine Sea",
-      "Espionage"
+      "Marcoleta",
+      "Lacson"
     ],
-    "excerpt": "**Date/Time:** Thursday, March 12, 2026 at 8:21 AM (Philippine Time) / March 12, 2026 ~12:21 AM UTC **Qualifies:** YES - Red square emoji **Word Count:** ~3,000 words (substantial - over 500 words) **Has Image:** YES (Senate chamber)",
-    "word_count": 1214,
-    "read_time": 7,
+    "excerpt": "Three Filipinos got caught passing classified military information to Chinese intelligence. The National Security Council confirmed it on March 4. They confessed. They cooperated. The NSC and AFP called it a foreign-funded spy network that they had managed to dismantle. And yet...",
+    "word_count": 1088,
+    "read_time": 6,
     "url": "https://www.facebook.com/morningcoffeethoughts2/posts/pfbid02L9dfsUP9yzkWCsBrmTgZ6EBznm4W8WQLBFsUmE5PQ542mo6Z2VBJaMtFs3RnSUail",
     "fb_post_id": "",
     "reactions": 0,
@@ -32,14 +29,11 @@ const ARTICLES_META = [
     "category": "News",
     "source": "facebook",
     "tags": [
-      "Economy",
       "Iran",
-      "Military & Defense",
-      "China",
+      "Economy",
       "OFW",
-      "Elections",
-      "Media & Press Freedom",
-      "Labor"
+      "Gulf",
+      "Saudi"
     ],
     "excerpt": "Kazem Gharibabadi, a senior Iranian Foreign Ministry official, went on state television late Monday and said the Islamic Republic had turned down ceasefire proposals from China, France, Russia, and other nations.",
     "word_count": 877,
@@ -53,21 +47,15 @@ const ARTICLES_META = [
   },
   {
     "id": "art_467",
-    "title": "US MILITARY CONFIRMS IT BOMBED AN IRANIAN ELEMENTARY SCHOOL. 175 CHILDREN AND TEACHERS ARE DEAD",
+    "title": "US MILITARY CONFIRMS IT BOMBED AN IRANIAN ELEMENTARY SCHOOL",
     "date": "2026-03-12",
     "category": "News",
     "source": "facebook",
     "tags": [
-      "Economy",
       "Iran",
-      "Military & Defense",
-      "OFW",
-      "Media & Press Freedom",
-      "Labor",
-      "Espionage",
-      "Gulf"
+      "Military & Defense"
     ],
-    "excerpt": "On February 28, a Tomahawk cruise missile destroyed the Shajarah Tayyebeh elementary school in Minab, southern Iran. A preliminary US military investigation has now found that American forces were responsible for that strike. The New York Times broke the story on March 11, confirmed by Reuters, CBS...",
+    "excerpt": "On February 28, a Tomahawk cruise missile destroyed the Shajarah Tayyebeh elementary school in Minab, southern Iran. A preliminary US military investigation has now found that American forces were responsible for that strike. The New York Times broke the story on March 11,...",
     "word_count": 873,
     "read_time": 5,
     "url": "https://www.facebook.com/morningcoffeethoughts2/posts/pfbid02ma5VgTRJ4iQGCQD3KcPdkpNVxiUxVgMTDYrKoVn8x7Zf3HkGvDVVn1hKNRArrjnVl",
@@ -84,16 +72,12 @@ const ARTICLES_META = [
     "category": "News",
     "source": "facebook",
     "tags": [
-      "Military & Defense",
-      "Corruption",
-      "China",
-      "Judiciary",
       "Elections",
-      "West Philippine Sea",
-      "Inquirer",
-      "Marcoleta"
+      "Corruption",
+      "Marcoleta",
+      "Lacson"
     ],
-    "excerpt": "Senator Rodante Marcoleta's Statement of Contributions and Expenditures for the 2025 midterm elections declares that he received exactly zero campaign contributions. His reported campaign spending: P112,857,951.44.",
+    "excerpt": "Senator Rodante Marcoleta's Statement of Contributions and Expenditures for the 2025 midterm elections declares that he received exactly zero campaign contributions.",
     "word_count": 636,
     "read_time": 4,
     "url": "https://www.facebook.com/morningcoffeethoughts2/posts/pfbid0kMRLUZ1GqiZ65CSoK29FPSjnP2apL2yAWFKJa4HKwu3rrrvHoapiXBRr9SyLNHpRl",
@@ -110,16 +94,11 @@ const ARTICLES_META = [
     "category": "News",
     "source": "facebook",
     "tags": [
-      "Marcos",
       "Economy",
-      "Iran",
-      "Elections",
-      "Media & Press Freedom",
-      "Budget",
-      "Gulf",
-      "Reuters"
+      "Marcos",
+      "Budget"
     ],
-    "excerpt": "Three things happened on Wednesday, March 11, and they happened fast. The House of Representatives approved House Bill No. 8414 on second reading through a voice vote, moving a proposal to grant President Ferdinand Marcos Jr. the power to suspend or reduce excise taxes on fuel one step from final...",
+    "excerpt": "Three things happened on Wednesday, March 11, and they happened fast.",
     "word_count": 824,
     "read_time": 5,
     "url": "https://www.facebook.com/morningcoffeethoughts2/posts/pfbid02KLzyQw7PaAXKi1eG5hkDvMeHCCCS6EuAFKuTpcSW24KMSkLGD2F7RQvubpwRTdJ4l",
