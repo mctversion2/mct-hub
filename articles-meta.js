@@ -533,7 +533,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 869,
+    "word_count": 847,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121094659092788",
     "fb_post_id": "893376663850463_122121094659092788",
@@ -556,7 +556,7 @@ const ARTICLES_META = [
       "Duterte"
     ],
     "excerpt": "",
-    "word_count": 806,
+    "word_count": 777,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121092811092788",
     "fb_post_id": "893376663850463_122121092811092788",
@@ -579,7 +579,7 @@ const ARTICLES_META = [
       "Arabia"
     ],
     "excerpt": "",
-    "word_count": 1064,
+    "word_count": 1037,
     "read_time": 6,
     "url": "https://www.facebook.com/122120826315092788/posts/122121090561092788",
     "fb_post_id": "893376663850463_122121090561092788",
@@ -621,7 +621,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 722,
+    "word_count": 700,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121085869092788",
     "fb_post_id": "893376663850463_122121085869092788",
@@ -640,7 +640,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 643,
+    "word_count": 618,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121085005092788",
     "fb_post_id": "893376663850463_122121085005092788",
@@ -659,7 +659,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 677,
+    "word_count": 655,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121084291092788",
     "fb_post_id": "893376663850463_122121084291092788",
@@ -681,7 +681,7 @@ const ARTICLES_META = [
       "Infrastructure"
     ],
     "excerpt": "",
-    "word_count": 758,
+    "word_count": 728,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121082293092788",
     "fb_post_id": "893376663850463_122121082293092788",
@@ -704,7 +704,7 @@ const ARTICLES_META = [
       "Media & Press Freedom"
     ],
     "excerpt": "",
-    "word_count": 822,
+    "word_count": 794,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121081693092788",
     "fb_post_id": "893376663850463_122121081693092788",
@@ -726,7 +726,7 @@ const ARTICLES_META = [
       "Iran"
     ],
     "excerpt": "",
-    "word_count": 733,
+    "word_count": 706,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121077097092788",
     "fb_post_id": "893376663850463_122121077097092788",
@@ -748,7 +748,7 @@ const ARTICLES_META = [
       "Media & Press Freedom"
     ],
     "excerpt": "",
-    "word_count": 786,
+    "word_count": 761,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121067449092788",
     "fb_post_id": "893376663850463_122121067449092788",
@@ -771,7 +771,7 @@ const ARTICLES_META = [
       "Bahrain"
     ],
     "excerpt": "",
-    "word_count": 866,
+    "word_count": 837,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121064827092788",
     "fb_post_id": "893376663850463_122121064827092788",
@@ -794,7 +794,7 @@ const ARTICLES_META = [
       "OFW"
     ],
     "excerpt": "",
-    "word_count": 895,
+    "word_count": 871,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121063213092788",
     "fb_post_id": "893376663850463_122121063213092788",
@@ -813,7 +813,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 849,
+    "word_count": 820,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121057207092788",
     "fb_post_id": "893376663850463_122121057207092788",
@@ -836,7 +836,7 @@ const ARTICLES_META = [
       "DPWH Scandal"
     ],
     "excerpt": "",
-    "word_count": 772,
+    "word_count": 747,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121053043092788",
     "fb_post_id": "893376663850463_122121053043092788",
@@ -856,7 +856,7 @@ const ARTICLES_META = [
       "OFW"
     ],
     "excerpt": "",
-    "word_count": 1015,
+    "word_count": 993,
     "read_time": 6,
     "url": "https://www.facebook.com/122120826315092788/posts/122121042171092788",
     "fb_post_id": "893376663850463_122121042171092788",
@@ -875,7 +875,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 970,
+    "word_count": 945,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121037251092788",
     "fb_post_id": "893376663850463_122121037251092788",
@@ -895,7 +895,7 @@ const ARTICLES_META = [
       "Marcos"
     ],
     "excerpt": "",
-    "word_count": 907,
+    "word_count": 876,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121031557092788",
     "fb_post_id": "893376663850463_122121031557092788",
@@ -917,7 +917,7 @@ const ARTICLES_META = [
       "Media & Press Freedom"
     ],
     "excerpt": "",
-    "word_count": 834,
+    "word_count": 807,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121030501092788",
     "fb_post_id": "893376663850463_122121030501092788",
@@ -940,7 +940,7 @@ const ARTICLES_META = [
       "Military & Defense"
     ],
     "excerpt": "",
-    "word_count": 820,
+    "word_count": 798,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121027309092788",
     "fb_post_id": "893376663850463_122121027309092788",
@@ -2105,7 +2105,7 @@ const ARTICLES_META = [
       "Budget"
     ],
     "excerpt": "",
-    "word_count": 1909,
+    "word_count": 1900,
     "read_time": 10,
     "url": "https://www.morningcoffeethoughts.org/the-audacity-of-mediocrity-sara-dutertes-presidential-delusion",
     "fb_post_id": "",
@@ -2284,7 +2284,7 @@ const ARTICLES_META = [
       "Drug War"
     ],
     "excerpt": "",
-    "word_count": 1494,
+    "word_count": 1488,
     "read_time": 8,
     "url": "https://www.facebook.com/122120826315092788/posts/122118203919092788",
     "fb_post_id": "893376663850463_122118203919092788",
@@ -2371,7 +2371,7 @@ const ARTICLES_META = [
       "Labor"
     ],
     "excerpt": "",
-    "word_count": 2549,
+    "word_count": 2542,
     "read_time": 13,
     "url": "https://www.morningcoffeethoughts.org/flowers-on-the-feed-motels-in-real-life-a-valentines-day-essay",
     "fb_post_id": "",
@@ -3249,7 +3249,7 @@ const ARTICLES_META = [
       "DPWH Scandal"
     ],
     "excerpt": "",
-    "word_count": 2880,
+    "word_count": 2875,
     "read_time": 15,
     "url": "https://www.facebook.com/122120826315092788/posts/122115326745092788",
     "fb_post_id": "893376663850463_122115326745092788",
@@ -3836,7 +3836,7 @@ const ARTICLES_META = [
       "Ombudsman"
     ],
     "excerpt": "",
-    "word_count": 2743,
+    "word_count": 2734,
     "read_time": 14,
     "url": "https://www.facebook.com/122120826315092788/posts/122114123985092788",
     "fb_post_id": "893376663850463_122114123985092788",
@@ -4084,7 +4084,7 @@ const ARTICLES_META = [
       "Marcos"
     ],
     "excerpt": "",
-    "word_count": 1827,
+    "word_count": 1821,
     "read_time": 10,
     "url": "https://www.facebook.com/122120826315092788/posts/122113135185092788",
     "fb_post_id": "893376663850463_122113135185092788",
@@ -4193,7 +4193,7 @@ const ARTICLES_META = [
       "Elections"
     ],
     "excerpt": "",
-    "word_count": 1138,
+    "word_count": 1134,
     "read_time": 6,
     "url": "https://www.facebook.com/122120826315092788/posts/122112693099092788",
     "fb_post_id": "893376663850463_122112693099092788",
@@ -4368,7 +4368,7 @@ const ARTICLES_META = [
       "Rizal"
     ],
     "excerpt": "",
-    "word_count": 892,
+    "word_count": 885,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122112267975092788",
     "fb_post_id": "893376663850463_122112267975092788",
@@ -4601,7 +4601,7 @@ const ARTICLES_META = [
       "Philippine Politics"
     ],
     "excerpt": "",
-    "word_count": 541,
+    "word_count": 536,
     "read_time": 3,
     "url": "https://www.facebook.com/122120826315092788/posts/122111636385092788",
     "fb_post_id": "893376663850463_122111636385092788",
@@ -4976,7 +4976,7 @@ const ARTICLES_META = [
       "Corruption"
     ],
     "excerpt": "",
-    "word_count": 1094,
+    "word_count": 1091,
     "read_time": 6,
     "url": "https://www.facebook.com/122120826315092788/posts/122110721853092788",
     "fb_post_id": "893376663850463_122110721853092788",
@@ -5668,7 +5668,7 @@ const ARTICLES_META = [
       "Mindanao"
     ],
     "excerpt": "",
-    "word_count": 664,
+    "word_count": 662,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122108472753092788",
     "fb_post_id": "893376663850463_122108472753092788",
@@ -5930,7 +5930,7 @@ const ARTICLES_META = [
       "Disinformation"
     ],
     "excerpt": "",
-    "word_count": 969,
+    "word_count": 964,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122107919163092788",
     "fb_post_id": "893376663850463_122107919163092788",
@@ -6136,7 +6136,7 @@ const ARTICLES_META = [
       "Austria"
     ],
     "excerpt": "",
-    "word_count": 1277,
+    "word_count": 1274,
     "read_time": 7,
     "url": "https://www.facebook.com/122120826315092788/posts/122107606395092788",
     "fb_post_id": "893376663850463_122107606395092788",
@@ -6158,7 +6158,7 @@ const ARTICLES_META = [
       "Supreme"
     ],
     "excerpt": "",
-    "word_count": 787,
+    "word_count": 782,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122107573569092788",
     "fb_post_id": "893376663850463_122107573569092788",
@@ -6999,7 +6999,7 @@ const ARTICLES_META = [
       "Military & Defense"
     ],
     "excerpt": "",
-    "word_count": 1715,
+    "word_count": 1705,
     "read_time": 9,
     "url": "https://www.morningcoffeethoughts.org/what-the-duterte-destabilization-saga-reveals-about-philippine-politics",
     "fb_post_id": "",
@@ -7407,7 +7407,7 @@ const ARTICLES_META = [
       "Health"
     ],
     "excerpt": "",
-    "word_count": 2943,
+    "word_count": 2933,
     "read_time": 15,
     "url": "https://www.morningcoffeethoughts.org/resetting-the-government-a-risk-the-philippines-cant-afford",
     "fb_post_id": "",
@@ -7568,7 +7568,7 @@ const ARTICLES_META = [
       "DPWH Scandal"
     ],
     "excerpt": "",
-    "word_count": 2118,
+    "word_count": 2106,
     "read_time": 11,
     "url": "https://www.morningcoffeethoughts.org/mayor-benjie-magalong-and-the-mayors-who-chose-risk-over-comfort",
     "fb_post_id": "",
@@ -8597,7 +8597,7 @@ const ARTICLES_META = [
       "Inquirer"
     ],
     "excerpt": "",
-    "word_count": 2186,
+    "word_count": 2174,
     "read_time": 11,
     "url": "https://www.morningcoffeethoughts.org/bong-revilla-budots-and-the-fall-of-gimmick-politics-in-the-philippines](https://www.morningcoffeethoughts.org/bong-revilla-budots-and-the-fall-of-gimmick-politics-in-the-philippines",
     "fb_post_id": "",
@@ -8620,7 +8620,7 @@ const ARTICLES_META = [
       "Marcos"
     ],
     "excerpt": "",
-    "word_count": 3165,
+    "word_count": 3150,
     "read_time": 16,
     "url": "https://www.morningcoffeethoughts.org/how-the-dds-contribute-to-the-ruin-of-the-philippinesand-why-it-still-matters",
     "fb_post_id": "",
@@ -9065,7 +9065,7 @@ const ARTICLES_META = [
       "ICC"
     ],
     "excerpt": "",
-    "word_count": 2203,
+    "word_count": 2193,
     "read_time": 12,
     "url": "https://www.morningcoffeethoughts.org/you-think-duterte-is-the-only-problem-think-again",
     "fb_post_id": "",
@@ -9262,7 +9262,7 @@ const ARTICLES_META = [
       "Assisted"
     ],
     "excerpt": "",
-    "word_count": 3367,
+    "word_count": 3354,
     "read_time": 17,
     "url": "https://www.morningcoffeethoughts.org/the-no-ai-dilemma-why-upwork-clients-should-rethink-their-stance-on-ai-assisted-writers",
     "fb_post_id": "",
@@ -9568,7 +9568,7 @@ const ARTICLES_META = [
       "Setsuko"
     ],
     "excerpt": "",
-    "word_count": 1686,
+    "word_count": 1672,
     "read_time": 9,
     "url": "https://www.morningcoffeethoughts.org/why-i-hate-grave-of-the-fireflies-a-beautiful-pain-that-haunts-me",
     "fb_post_id": "",
@@ -9710,7 +9710,7 @@ const ARTICLES_META = [
       "Labor"
     ],
     "excerpt": "",
-    "word_count": 1777,
+    "word_count": 1766,
     "read_time": 9,
     "url": "https://www.morningcoffeethoughts.org/mastering-discovery-calls-a-freelancers-guide-to-finding-the-right-projects",
     "fb_post_id": "",
@@ -9836,7 +9836,7 @@ const ARTICLES_META = [
       "Freelancers"
     ],
     "excerpt": "",
-    "word_count": 992,
+    "word_count": 937,
     "read_time": 5,
     "url": "https://www.morningcoffeethoughts.org/freelancers-dilemma-upwork-paypal-and-the-waiting-game",
     "fb_post_id": "",
@@ -9897,7 +9897,7 @@ const ARTICLES_META = [
       "Philippine Politics"
     ],
     "excerpt": "",
-    "word_count": 1024,
+    "word_count": 1017,
     "read_time": 6,
     "url": "https://www.morningcoffeethoughts.org/the-blinking-cursor-and-the-silent-garden",
     "fb_post_id": "",
