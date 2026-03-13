@@ -10369,5 +10369,103 @@ const ARTICLES_META = [
     "comments": 0,
     "shares": 0,
     "image": ""
+  },
+  {
+    "id": "art_470",
+    "title": "UNEMPLOYMENT RATE SURGES TO 5.8% IN JANUARY",
+    "date": "2026-03-13",
+    "tags": [
+      "Economy",
+      "Government"
+    ],
+    "image": "https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/651183906_122121522201092788_127082889480615591_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGkodMqfQmXfUjZBiIPfp0mAByYNya21GYAHJg3JrbUZmoMpZVRaXSgsViDGHnYP8M&_nc_ohc=B25IkAQVm98Q7kNvwEbgCx4&_nc_oc=AdlvODnjNNutfugtpMvtiJUpEY8BiViW8z6nMLdOfKYp1746y5rHjCGo_sn7YYxVQDbmEWCR_YUw0GBZ3VwK-YLN&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=SmupOQfJRA1bMuRUPZAfKg&_nc_ss=8&oh=00_AfwZvJTVi97T0RaOuuOrFrV3eYmRFsPs60CYEAOVsSSPvw&oe=69B97D7D",
+    "excerpt": "How fast can a labor market collapse? In December, the Philippine Statistics Authority reported a 4.4% unemployment rate.",
+    "word_count": 523
+  },
+  {
+    "id": "art_471",
+    "title": "FRASCO OUT AS DOT CHIEF, NAMED PRESIDENTIAL ADVISER FOR SUSTAINABLE AND RESILIENT COMMUNITIES",
+    "date": "2026-03-13",
+    "tags": [
+      "Government",
+      "Tourism",
+      "ASEAN"
+    ],
+    "image": "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/650785712_122121494001092788_2025905995941163597_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGLIplersHdlLuuzkQsUJScvp12fy2Bmze-nXZ_LYGbN5e4BxlSgwiX-gQxgL2BQ1Q&_nc_ohc=nQ4TqZsFlWIQ7kNvwHnuW0w&_nc_oc=AdlGYmZEORHdm5_8S0N-SZLShg3U3rtyWF18aAAvL-jL85dSYS9xbK0_q_Qv49aiwNmkB84f7Lho680ZmpI7CIaR&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=ByER9f8wXBx72C9-xJ1QXw&_nc_ss=8&oh=00_Afw3lsNUJKeSFvk6T7369cJ-Di0sKufdz6kwQxAamZxjnw&oe=69B97003",
+    "excerpt": "The Palace said she did not resign. That was the first thing they made clear.",
+    "word_count": 762
+  },
+  {
+    "id": "art_472",
+    "title": "DSWD ALLOCATES P30 BILLION FOR CASH AID AS FUEL PRICES KEEP CLIMBING",
+    "date": "2026-03-13",
+    "tags": [
+      "Social Welfare",
+      "Energy",
+      "Government"
+    ],
+    "image": "https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/649270003_122121523491092788_8920628481958969439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGf6CQOY-lrEAUfpAunYwN89Enx23T3mPH0SfHbdPeY8YiWC0mKbTPrHWHSwK-qsn8&_nc_ohc=eFZNtEWGC8MQ7kNvwERTIOt&_nc_oc=AdlIkhc0dKxtctV63ImY2Qo1ubhodk-XiWosktVm10zvXnUn1d1m6ermM0fGdbSuiaGZhFRb-vHJGqD82YRBTqbI&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&_nc_gid=PXZpn7KMJhm6iHIAHC4Fww&_nc_ss=8&oh=00_Afy41bNqOInAumqGLPhwJC_KrIwoZsdqQncMRUxcFQuDxw&oe=69B97853",
+    "excerpt": "The Department of Social Welfare and Development is setting aside P30 billion from its Assistance to Individuals in Crisis Situation (AICS) budget for cash aid to Filipinos affected by the ongoing ...",
+    "word_count": 567
+  },
+  {
+    "id": "art_473",
+    "title": "IRAN'S NEW SUPREME LEADER SPEAKS \u2014 BUT NEVER APPEARS ON CAMERA",
+    "date": "2026-03-12",
+    "tags": [
+      "Iran"
+    ],
+    "image": "https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/651043983_122121492021092788_3176084473020910436_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEavPjh4qw5ppul9-c_urulqsaey0A10maqxp7LQDXSZjOo0bIjYg3ooPQOvtUuSWk&_nc_ohc=KE9eg-lkACEQ7kNvwENkFq8&_nc_oc=AdnEd5fFu5DEMM4bdj6Tn8N0UewxIaaERZZbenUe2SqwOaSGhA4Y_Pd2lY8sj6pfiKUD0jPUcfMd53gtIWpI8Vdt&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=km__hARk_oGkVNCpN03aaA&_nc_ss=8&oh=00_AfwCP5SXNaKvmX5IpyzL5u5Nz2fXrwKXxGjn9hXgb3dTRg&oe=69B99B1A",
+    "excerpt": "Nobody saw his face. On Day 13 of the Iran war, Mojtaba Khamenei \u2014 the man who now holds the title of Supreme Leader of Iran \u2014 issued his first public statement since taking office.",
+    "word_count": 722
+  },
+  {
+    "id": "art_474",
+    "title": "ELECTRICITY SPOT MARKET PRICES COULD JUMP 59% IN APRIL",
+    "date": "2026-03-13",
+    "tags": [
+      "Energy",
+      "Economy"
+    ],
+    "image": "https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/650320089_122121490455092788_5629957926495304520_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHGMZ1EtE8wtIsQjJ4DylSK30rCGczmOY7fSsIZzOY5jq4cLov7oKgapPTfMuW9Ats&_nc_ohc=SaWtgRT1-_4Q7kNvwHyIqNY&_nc_oc=Adnst8PZPwyETZvswQZli0Zhq2tEnHfxZzNAapF90YeW49R7PFtkyBl3paAafOTQNuMeTCDU--ijwA2uM9jsWb_D&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=NDGffQj3TW0wSVQFgwJRvA&_nc_ss=8&oh=00_AfzPlV2CJCZuj0PL3aCSRptHT9AdU6rFZhREAwqu-xtGDg&oe=69B9919D",
+    "excerpt": "P7.93 per kilowatt-hour. That is the upper-end scenario from IEMOP simulations of what market-clearing prices could reach in the Wholesale Electricity Spot Market (WESM) in April.",
+    "word_count": 623
+  },
+  {
+    "id": "art_475",
+    "title": "SANDIGANBAYAN DENIES ESTRADA'S BID FOR PDAF INVESTIGATION RECORDS",
+    "date": "2026-03-13",
+    "tags": [
+      "Corruption",
+      "Judiciary",
+      "Senate"
+    ],
+    "image": "https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/650207215_122121525915092788_695278897447656184_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFcN41OyI1yg9RWyVmuieK_vBd6AJQDKAu8F3oAlAMoCwoGOfg7A5eg_gLpEPUyfaI&_nc_ohc=PJQD5EUYrfYQ7kNvwHjDZoh&_nc_oc=AdnKFejRA9k8l2-R3AAjvDnGaYI1X7YXsQGwqMOdK_WD0A74IX8Y4oYgyA8_Ys57uyInWQaRcGaBZgTZXvJtksfj&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=D0D8zkM_vcvTOTKyLYNlow&_nc_ss=8&oh=00_AfygTxgtZqAqRm2_8sPTUI70CJWTVX_bPMQZKpidgH8DNg&oe=69B97DB5",
+    "excerpt": "Senator Jinggoy Estrada wanted access to the preliminary investigation records of the Ombudsman. The Sandiganbayan said no \u2014 twice.",
+    "word_count": 571
+  },
+  {
+    "id": "art_476",
+    "title": "HOW TO FACT-CHECK LIKE YOU'RE TRYING TO LOSE AN ARGUMENT",
+    "date": "2026-03-12",
+    "tags": [
+      "Media"
+    ],
+    "image": "",
+    "excerpt": "A follower sent me an email last week asking if I could share the fact-checking technique I actually use every time I write. So here it is.",
+    "word_count": 921
+  },
+  {
+    "id": "art_477",
+    "title": "AN OPEN LETTER TO SENATOR PING LACSON AND SENATE PRESIDENT TITO SOTTO",
+    "date": "2026-03-13",
+    "tags": [
+      "Senate",
+      "Corruption",
+      "Government"
+    ],
+    "image": "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/650769998_122121497715092788_4458995671161592511_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFkv46EOAoJh90t7PxpkjSbUtIMetKpnNRS0gx60qmc1AG-OneTlDAmqTZNnch6Ro4&_nc_ohc=RVasbJwW_ycQ7kNvwHF_UfO&_nc_oc=Adm9DIxNFkdJ0MVzy_Ler2wGDvQilp-xb_BMdr1Tvo4wT265JC_XZWISPilZFsYUlje47gsIiNi4UqRrd6lZZbIx&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=UnG2W2dAn5bCjfVIaRULBQ&_nc_ss=8&oh=00_AfyTdL9KnWJXAG35cqqtkFttQEplLKs88DkmyfhPKlcguA&oe=69B97842",
+    "excerpt": "Senator Panfilo \"Ping\" Lacson, Chairman, Senate Blue Ribbon Committee",
+    "word_count": 857
   }
 ];
