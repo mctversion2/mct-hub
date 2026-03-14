@@ -156,7 +156,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_7",
-    "title": "THE WORLD'S BIGGEST OIL EMERGENCY DECISION IN 13 YEARS IS ABOUT TO BE MADE \u2014 AND EVERY PUMP PRICE IN THE PHILIPPINES DEPENDS ON IT",
+    "title": "THE WORLD'S BIGGEST OIL EMERGENCY DECISION IN 13 YEARS IS ABOUT TO BE MADE — AND EVERY PUMP PRICE IN THE PHILIPPINES DEPENDS ON IT",
     "date": "2026-03-11",
     "category": "News",
     "source": "facebook",
@@ -177,7 +177,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_8",
-    "title": "AN IRANIAN MISSILE ENTERED NATO AIRSPACE AND NATO SHOT IT DOWN \u2014 THE WAR IS NO LONGER CONTAINED TO THE MIDDLE EAST",
+    "title": "AN IRANIAN MISSILE ENTERED NATO AIRSPACE AND NATO SHOT IT DOWN — THE WAR IS NO LONGER CONTAINED TO THE MIDDLE EAST",
     "date": "2026-03-11",
     "category": "News",
     "source": "facebook",
@@ -218,7 +218,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_10",
-    "title": "ONE YEAR SINCE THE ARREST THAT CHANGED THE PHILIPPINES \u2014 DUTERTE STILL IN THE HAGUE AS ICC CLOSES EVERY EXIT",
+    "title": "ONE YEAR SINCE THE ARREST THAT CHANGED THE PHILIPPINES — DUTERTE STILL IN THE HAGUE AS ICC CLOSES EVERY EXIT",
     "date": "2026-03-10",
     "category": "News",
     "source": "facebook",
@@ -480,7 +480,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_22",
-    "title": "Pa-rant lang sandali\u2026",
+    "title": "Pa-rant lang sandali…",
     "date": "2026-03-09",
     "category": "News",
     "source": "facebook",
@@ -715,7 +715,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_33",
-    "title": "DMW EXPANDS WAR RISK ZONE TO ENTIRE PERSIAN GULF \u2014 2.1 MILLION FILIPINOS IN MIDDLE EAST, NEARLY 2,000 SEEKING REPATRIATION",
+    "title": "DMW EXPANDS WAR RISK ZONE TO ENTIRE PERSIAN GULF — 2.1 MILLION FILIPINOS IN MIDDLE EAST, NEARLY 2,000 SEEKING REPATRIATION",
     "date": "2026-03-09",
     "category": "News",
     "source": "facebook",
@@ -782,7 +782,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_36",
-    "title": "P52.8 BILLION \u2014 THAT IS WHAT SENATOR HONTIVEROS SAYS THE GOVERNMENT NEEDS TO SURVIVE THE OIL CRISIS",
+    "title": "P52.8 BILLION — THAT IS WHAT SENATOR HONTIVEROS SAYS THE GOVERNMENT NEEDS TO SURVIVE THE OIL CRISIS",
     "date": "2026-03-09",
     "category": "News",
     "source": "facebook",
@@ -1105,7 +1105,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_51",
-    "title": "WHEN THE LIGHTS GO OUT: HOW CINEMAS ARE DYING, FROM LOUIE\u2019S THX TO MAGNOLIA",
+    "title": "WHEN THE LIGHTS GO OUT: HOW CINEMAS ARE DYING, FROM LOUIE’S THX TO MAGNOLIA",
     "date": "2026-03-08",
     "category": "Commentary",
     "source": "website",
@@ -1124,7 +1124,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_52",
-    "title": "DMW DECLARES PERSIAN GULF, STRAIT OF HORMUZ, AND GULF OF OMAN AS WARLIKE OPERATIONS AREAS \u2014 FILIPINO SEAFARERS CAN NOW LEGALLY REFUSE TO SAIL",
+    "title": "DMW DECLARES PERSIAN GULF, STRAIT OF HORMUZ, AND GULF OF OMAN AS WARLIKE OPERATIONS AREAS — FILIPINO SEAFARERS CAN NOW LEGALLY REFUSE TO SAIL",
     "date": "2026-03-08",
     "category": "News",
     "source": "facebook",
@@ -1214,7 +1214,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_56",
-    "title": "SENATOR JINGGOY ESTRADA ASKS GILAS WOMEN PROSPECT ELIZABETH MEANS IF SHE HAS A FILIPINO BOYFRIEND DURING NATURALIZATION HEARING \u2014 DEFENDS IT AS \"NOTHING MALICIOUS\"",
+    "title": "SENATOR JINGGOY ESTRADA ASKS GILAS WOMEN PROSPECT ELIZABETH MEANS IF SHE HAS A FILIPINO BOYFRIEND DURING NATURALIZATION HEARING — DEFENDS IT AS \"NOTHING MALICIOUS\"",
     "date": "2026-03-07",
     "category": "News",
     "source": "facebook",
@@ -1390,7 +1390,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_64",
-    "title": "BONG REVILLA IS BEHIND BARS AGAIN \u2014 THIS TIME FOR THE BIGGEST CORRUPTION SCANDAL IN PHILIPPINE HISTORY",
+    "title": "BONG REVILLA IS BEHIND BARS AGAIN — THIS TIME FOR THE BIGGEST CORRUPTION SCANDAL IN PHILIPPINE HISTORY",
     "date": "2026-03-07",
     "category": "News",
     "source": "facebook",
@@ -1459,7 +1459,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_67",
-    "title": "CHINA KNEW WHEN PHILIPPINE SHIPS WERE COMING TO AYUNGIN SHOAL \u2014 PCG NOW CONFIRMS IT",
+    "title": "CHINA KNEW WHEN PHILIPPINE SHIPS WERE COMING TO AYUNGIN SHOAL — PCG NOW CONFIRMS IT",
     "date": "2026-03-07",
     "category": "Update",
     "source": "facebook",
@@ -1777,7 +1777,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_81",
-    "title": "\u201cFROM HEARING ROOM TO HANDBAG HOAX IN 48 HOURS\u201d",
+    "title": "“FROM HEARING ROOM TO HANDBAG HOAX IN 48 HOURS”",
     "date": "2026-02-27",
     "category": "Commentary",
     "source": "facebook",
@@ -1935,7 +1935,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_88",
-    "title": "PANELO\u2019S LOW BAR FOR \u201cGOOD LAWYERING\u201d",
+    "title": "PANELO’S LOW BAR FOR “GOOD LAWYERING”",
     "date": "2026-02-23",
     "category": "Commentary",
     "source": "facebook",
@@ -2003,7 +2003,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_91",
-    "title": "On the Moral Balcony: A Kakampink Self\u2011Examination",
+    "title": "On the Moral Balcony: A Kakampink Self‑Examination",
     "date": "2026-02-21",
     "category": "Commentary",
     "source": "website",
@@ -2071,7 +2071,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_94",
-    "title": "What I Got Wrong in \u2018Sara Duterte\u2019s Vice Presidential Accomplishments\u2019",
+    "title": "What I Got Wrong in ‘Sara Duterte’s Vice Presidential Accomplishments’",
     "date": "2026-02-19",
     "category": "Commentary",
     "source": "website",
@@ -2204,7 +2204,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_100",
-    "title": "TOPACIO SAYS \u201cILLEGAL\u201d \u2014 OF COURSE HE DOES",
+    "title": "TOPACIO SAYS “ILLEGAL” — OF COURSE HE DOES",
     "date": "2026-02-15",
     "category": "Commentary",
     "source": "facebook",
@@ -2227,7 +2227,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_101",
-    "title": "THE CO\u2011PERPETRATORS OF DUTERTE\u2019S DRUG WAR: HOW THE BLOOD YEARS WERE ORGANIZED",
+    "title": "THE CO‑PERPETRATORS OF DUTERTE’S DRUG WAR: HOW THE BLOOD YEARS WERE ORGANIZED",
     "date": "2026-02-15",
     "category": "Commentary",
     "source": "facebook",
@@ -2250,7 +2250,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_102",
-    "title": "THE NEW FAVORITE LINE: \u201cWALA AKONG KINALAMAN DIYAN\u201d",
+    "title": "THE NEW FAVORITE LINE: “WALA AKONG KINALAMAN DIYAN”",
     "date": "2026-02-15",
     "category": "Commentary",
     "source": "facebook",
@@ -2295,7 +2295,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_104",
-    "title": "THE ICC BLOWBACK ISN\u2019T JUST ABOUT DUTERTE",
+    "title": "THE ICC BLOWBACK ISN’T JUST ABOUT DUTERTE",
     "date": "2026-02-14",
     "category": "Commentary",
     "source": "facebook",
@@ -2451,7 +2451,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_111",
-    "title": "THE FAKE \u201cDEBATE CHAMPION\u201d OF THE WEST PHILIPPINE SEA",
+    "title": "THE FAKE “DEBATE CHAMPION” OF THE WEST PHILIPPINE SEA",
     "date": "2026-02-11",
     "category": "Commentary",
     "source": "facebook",
@@ -3283,7 +3283,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_148",
-    "title": "MARCOS FACES THREE IMPEACHMENT COMPLAINTS\u2014AND THE FIRST ONE MIGHT BLOCK THE OTHERS",
+    "title": "MARCOS FACES THREE IMPEACHMENT COMPLAINTS—AND THE FIRST ONE MIGHT BLOCK THE OTHERS",
     "date": "2026-01-22",
     "category": "Commentary",
     "source": "facebook",
@@ -3466,7 +3466,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_156",
-    "title": "WHAT HAPPENED AT YESTERDAY'S SENATE BLUE RIBBON HEARING \u2013 PART 2: A SHALLOW FIRST LOOK",
+    "title": "WHAT HAPPENED AT YESTERDAY'S SENATE BLUE RIBBON HEARING – PART 2: A SHALLOW FIRST LOOK",
     "date": "2026-01-20",
     "category": "Commentary",
     "source": "facebook",
@@ -3649,7 +3649,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_164",
-    "title": "WHEN \u201cTWO SIDES\u201d SHRINKS YOUR BRAIN",
+    "title": "WHEN “TWO SIDES” SHRINKS YOUR BRAIN",
     "date": "2026-01-15",
     "category": "Commentary",
     "source": "facebook",
@@ -3763,7 +3763,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_169",
-    "title": "HOW \u201cHONORABLE\u201d GOT STUCK ON OUR POLITICIANS",
+    "title": "HOW “HONORABLE” GOT STUCK ON OUR POLITICIANS",
     "date": "2026-01-14",
     "category": "Commentary",
     "source": "facebook",
@@ -3805,7 +3805,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_171",
-    "title": "\u201cHi MCT. I just wanted to ask: Why are you not talking to the mass market? Why do you write for people na nakaka intindi na?\u201d",
+    "title": "“Hi MCT. I just wanted to ask: Why are you not talking to the mass market? Why do you write for people na nakaka intindi na?”",
     "date": "2026-01-14",
     "category": "Commentary",
     "source": "facebook",
@@ -3936,7 +3936,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_177",
-    "title": "Henry Alcantara\u2019s \u201cwalang kasalanan\u201d turn: what it really does to the flood control cases",
+    "title": "Henry Alcantara’s “walang kasalanan” turn: what it really does to the flood control cases",
     "date": "2026-01-10",
     "category": "Commentary",
     "source": "facebook",
@@ -4139,7 +4139,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_186",
-    "title": "When \u201cI\u2019m Not Aware\u201d Becomes An Insult",
+    "title": "When “I’m Not Aware” Becomes An Insult",
     "date": "2026-01-05",
     "category": "Commentary",
     "source": "facebook",
@@ -4204,7 +4204,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_189",
-    "title": "My Meta Account Was Hacked\u2014And My Panicked Fixes Made Everything Worse",
+    "title": "My Meta Account Was Hacked—And My Panicked Fixes Made Everything Worse",
     "date": "2026-01-04",
     "category": "Commentary",
     "source": "facebook",
@@ -4294,7 +4294,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_193",
-    "title": "Philippine Politics in 2026: One Citizen\u2019s Take",
+    "title": "Philippine Politics in 2026: One Citizen’s Take",
     "date": "2026-01-02",
     "category": "Commentary",
     "source": "facebook",
@@ -4317,7 +4317,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_194",
-    "title": "\u20b11.5 million break bonus daw.",
+    "title": "₱1.5 million break bonus daw.",
     "date": "2026-01-02",
     "category": "Commentary",
     "source": "facebook",
@@ -4359,7 +4359,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_196",
-    "title": "When \u201cpag-asa ng bayan\u201d looks like clout",
+    "title": "When “pag-asa ng bayan” looks like clout",
     "date": "2026-01-01",
     "category": "Commentary",
     "source": "facebook",
@@ -4399,7 +4399,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_198",
-    "title": "1. Ano ba talaga \u2018yung 12.9B?",
+    "title": "1. Ano ba talaga ‘yung 12.9B?",
     "date": "2025-12-31",
     "category": "Commentary",
     "source": "facebook",
@@ -4508,7 +4508,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_203",
-    "title": "December 2025: The Anti\u2011Dynasty Bill\u2019s \u201cBig Moment\u201d That Wasn\u2019t",
+    "title": "December 2025: The Anti‑Dynasty Bill’s “Big Moment” That Wasn’t",
     "date": "2025-12-29",
     "category": "Commentary",
     "source": "facebook",
@@ -4574,7 +4574,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_206",
-    "title": "I\u2019ve always been deeply curious about the story of Fr. Juan Severino Mallari.",
+    "title": "I’ve always been deeply curious about the story of Fr. Juan Severino Mallari.",
     "date": "2025-12-27",
     "category": "Commentary",
     "source": "facebook",
@@ -4830,7 +4830,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_218",
-    "title": "When \u201cGood Faith\u201d Becomes a Get-Out-of-Jail-Free Card",
+    "title": "When “Good Faith” Becomes a Get-Out-of-Jail-Free Card",
     "date": "2025-12-24",
     "category": "Commentary",
     "source": "facebook",
@@ -4876,7 +4876,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_220",
-    "title": "Hi MCT. Curious lang ako \u2013 why does your writing look ChatGPT?",
+    "title": "Hi MCT. Curious lang ako – why does your writing look ChatGPT?",
     "date": "2025-12-23",
     "category": "Commentary",
     "source": "facebook",
@@ -5075,7 +5075,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_229",
-    "title": "Why a Priest\u2019s Past Became the Easiest Way to Dodge \u20b1612.5 Million",
+    "title": "Why a Priest’s Past Became the Easiest Way to Dodge ₱612.5 Million",
     "date": "2025-12-16",
     "category": "Commentary",
     "source": "facebook",
@@ -5121,7 +5121,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_231",
-    "title": "The Messy War of \u201cPolitical Commentators\u201d: Guanzon, Heydarian, Sasot, Magno, Llamas, Falcis",
+    "title": "The Messy War of “Political Commentators”: Guanzon, Heydarian, Sasot, Magno, Llamas, Falcis",
     "date": "2025-12-16",
     "category": "Commentary",
     "source": "facebook",
@@ -5144,7 +5144,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_232",
-    "title": "Vince Dizon\u2019s Budget Deadlock: From Admitting Overpricing to Asking for the Money Back",
+    "title": "Vince Dizon’s Budget Deadlock: From Admitting Overpricing to Asking for the Money Back",
     "date": "2025-12-15",
     "category": "Commentary",
     "source": "facebook",
@@ -5325,7 +5325,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_240",
-    "title": "The noise feels\u2026 thin.",
+    "title": "The noise feels… thin.",
     "date": "2025-12-12",
     "category": "Commentary",
     "source": "facebook",
@@ -5482,7 +5482,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_247",
-    "title": "\u25fb\ufe0f When the Numbers Stop Making Sense",
+    "title": "◻️ When the Numbers Stop Making Sense",
     "date": "2025-12-10",
     "category": "Commentary",
     "source": "facebook",
@@ -5964,7 +5964,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_269",
-    "title": "An Open Letter to Senate President Tito Sotto: End the Senate\u2019s \u201cNo Work, No Pay\u201d Exemption",
+    "title": "An Open Letter to Senate President Tito Sotto: End the Senate’s “No Work, No Pay” Exemption",
     "date": "2025-12-02",
     "category": "Commentary",
     "source": "facebook",
@@ -6032,7 +6032,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_272",
-    "title": "The Gardiola Files: When a \u201cWorkers\u2019 Representative\u201d Turns Billionaire Contractor",
+    "title": "The Gardiola Files: When a “Workers’ Representative” Turns Billionaire Contractor",
     "date": "2025-12-01",
     "category": "Commentary",
     "source": "facebook",
@@ -6055,7 +6055,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_273",
-    "title": "Breaking Down Leandro Leviste\u2019s Defense of Kiko Barzaga",
+    "title": "Breaking Down Leandro Leviste’s Defense of Kiko Barzaga",
     "date": "2025-12-01",
     "category": "Breaking",
     "source": "facebook",
@@ -6078,7 +6078,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_274",
-    "title": "Deconstructing Marcoleta\u2019s Hollow Defense",
+    "title": "Deconstructing Marcoleta’s Hollow Defense",
     "date": "2025-12-01",
     "category": "Commentary",
     "source": "facebook",
@@ -6215,7 +6215,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_280",
-    "title": "Omar Duterte\u2019s \u201cInhumane\u201d Complaint",
+    "title": "Omar Duterte’s “Inhumane” Complaint",
     "date": "2025-11-28",
     "category": "Commentary",
     "source": "facebook",
@@ -6238,7 +6238,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_281",
-    "title": "The Humanitarian Paradox: Duterte\u2019s War to \u201cSave\u201d Children and His Plea for Mercy",
+    "title": "The Humanitarian Paradox: Duterte’s War to “Save” Children and His Plea for Mercy",
     "date": "2025-11-28",
     "category": "Commentary",
     "source": "facebook",
@@ -6352,7 +6352,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_286",
-    "title": "The Zaldy Co\u2013Rodrigo Duterte Connection: An Alliance of Convenience, a Partnership of Plunder",
+    "title": "The Zaldy Co–Rodrigo Duterte Connection: An Alliance of Convenience, a Partnership of Plunder",
     "date": "2025-11-25",
     "category": "Commentary",
     "source": "website",
@@ -6582,7 +6582,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_296",
-    "title": "Philippines, ICC, and Justice: The Debate Over Bato dela Rosa\u2019s Arrest",
+    "title": "Philippines, ICC, and Justice: The Debate Over Bato dela Rosa’s Arrest",
     "date": "2025-11-10",
     "category": "Commentary",
     "source": "website",
@@ -6789,7 +6789,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_305",
-    "title": "\u201cDapat May Makulong\u201d: A Country Wishing for Justice",
+    "title": "“Dapat May Makulong”: A Country Wishing for Justice",
     "date": "2025-11-06",
     "category": "Commentary",
     "source": "website",
@@ -6810,7 +6810,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_306",
-    "title": "My Facebook Feed Thinks I\u2019m a DDS Supporter \u2014 and How I\u2019m Fighting Back",
+    "title": "My Facebook Feed Thinks I’m a DDS Supporter — and How I’m Fighting Back",
     "date": "2025-11-02",
     "category": "Commentary",
     "source": "website",
@@ -6919,7 +6919,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_311",
-    "title": "Breaking Down Chiz Escudero\u2019s SALN Against Heart Evangelista\u2019s Luxury Lifestyle",
+    "title": "Breaking Down Chiz Escudero’s SALN Against Heart Evangelista’s Luxury Lifestyle",
     "date": "2025-10-29",
     "category": "Commentary",
     "source": "website",
@@ -6964,7 +6964,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_313",
-    "title": "The Preacher\u2019s Paradox: Joel Villanueva\u2019s JIL Anniversary Claims and the Record He Can\u2019t Ignore",
+    "title": "The Preacher’s Paradox: Joel Villanueva’s JIL Anniversary Claims and the Record He Can’t Ignore",
     "date": "2025-10-20",
     "category": "Commentary",
     "source": "website",
@@ -6987,7 +6987,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_314",
-    "title": "What the Duterte \u201cDestabilization\u201d Saga Reveals About Philippine Politics",
+    "title": "What the Duterte “Destabilization” Saga Reveals About Philippine Politics",
     "date": "2025-10-20",
     "category": "Commentary",
     "source": "website",
@@ -7329,7 +7329,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_329",
-    "title": "Why Jesus Crispin \u201cBoying\u201d Remulla Should Not Be Ombudsman: A Dangerous Seven-Year Mistake",
+    "title": "Why Jesus Crispin “Boying” Remulla Should Not Be Ombudsman: A Dangerous Seven-Year Mistake",
     "date": "2025-10-07",
     "category": "Commentary",
     "source": "website",
@@ -7395,7 +7395,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_332",
-    "title": "Resetting the Government: A Risk The Philippines Can\u2019t Afford",
+    "title": "Resetting the Government: A Risk The Philippines Can’t Afford",
     "date": "2025-09-30",
     "category": "Commentary",
     "source": "website",
@@ -7441,7 +7441,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_334",
-    "title": "The Futile Exercise: Sara Duterte\u2019s Strategic Martyrdom Campaign for 2028",
+    "title": "The Futile Exercise: Sara Duterte’s Strategic Martyrdom Campaign for 2028",
     "date": "2025-09-26",
     "category": "Commentary",
     "source": "website",
@@ -7464,7 +7464,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_335",
-    "title": "Swimming With Crocodiles: Vince Dizon\u2019s Impossible DPWH Mission",
+    "title": "Swimming With Crocodiles: Vince Dizon’s Impossible DPWH Mission",
     "date": "2025-09-22",
     "category": "Commentary",
     "source": "website",
@@ -7510,7 +7510,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_337",
-    "title": "Who Should Investigate DPWH? The People\u2019s Slate vs. the Blue Ribbon Farce",
+    "title": "Who Should Investigate DPWH? The People’s Slate vs. the Blue Ribbon Farce",
     "date": "2025-09-06",
     "category": "Commentary",
     "source": "website",
@@ -7600,7 +7600,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_341",
-    "title": "\u201cI Did It for My Country\u201d: The Double-Edged Sword of Nationalist Justification",
+    "title": "“I Did It for My Country”: The Double-Edged Sword of Nationalist Justification",
     "date": "2025-08-22",
     "category": "Commentary",
     "source": "website",
@@ -7689,7 +7689,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_345",
-    "title": "Sara Duterte\u2019s Educational Critique: The Hypocrisy That Writes Itself",
+    "title": "Sara Duterte’s Educational Critique: The Hypocrisy That Writes Itself",
     "date": "2025-08-18",
     "category": "Commentary",
     "source": "website",
@@ -7802,7 +7802,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_350",
-    "title": "Topic Request: What\u2019s the Story Behind the \u20b1142.7 Billion Budget Insertion?",
+    "title": "Topic Request: What’s the Story Behind the ₱142.7 Billion Budget Insertion?",
     "date": "2025-07-23",
     "category": "Commentary",
     "source": "website",
@@ -7848,7 +7848,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_352",
-    "title": "Ping Lacson Is Back\u2014And Frankly, We Need Him More Than Ever",
+    "title": "Ping Lacson Is Back—And Frankly, We Need Him More Than Ever",
     "date": "2025-07-22",
     "category": "Commentary",
     "source": "website",
@@ -7870,7 +7870,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_353",
-    "title": "Bongbong Marcos Through the Lens of Niccol\u00f2 Machiavelli\u2019s The Prince",
+    "title": "Bongbong Marcos Through the Lens of Niccolò Machiavelli’s The Prince",
     "date": "2025-07-21",
     "category": "Commentary",
     "source": "website",
@@ -7960,7 +7960,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_357",
-    "title": "Every Time We Shrug, Corruption Wins: How Vote-Buying Costs the Philippines \u20b1700B a Year",
+    "title": "Every Time We Shrug, Corruption Wins: How Vote-Buying Costs the Philippines ₱700B a Year",
     "date": "2025-07-14",
     "category": "Commentary",
     "source": "website",
@@ -8004,7 +8004,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_359",
-    "title": "Topic Request: The Philippines\u2019 National Debt Story",
+    "title": "Topic Request: The Philippines’ National Debt Story",
     "date": "2025-07-13",
     "category": "Commentary",
     "source": "website",
@@ -8025,7 +8025,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_360",
-    "title": "The Mayors Rejecting Confidential Funds\u2014and the Message They Send",
+    "title": "The Mayors Rejecting Confidential Funds—and the Message They Send",
     "date": "2025-07-12",
     "category": "Commentary",
     "source": "website",
@@ -8092,7 +8092,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_363",
-    "title": "CAYETANO\u2019S DUTERTE REPATRIATION MOVE",
+    "title": "CAYETANO’S DUTERTE REPATRIATION MOVE",
     "date": "2025-07-11",
     "category": "Commentary",
     "source": "website",
@@ -8160,7 +8160,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_366",
-    "title": "Even Friendly Reporters Aren\u2019t Safe: What Eden Santos\u2019 Ban Says About Press Freedom",
+    "title": "Even Friendly Reporters Aren’t Safe: What Eden Santos’ Ban Says About Press Freedom",
     "date": "2025-07-07",
     "category": "Commentary",
     "source": "website",
@@ -8183,7 +8183,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_367",
-    "title": "The Silence That Spoke Too Loud: Where the \u201cBam and Kiko Joining the Majority\u201d Story Really Began",
+    "title": "The Silence That Spoke Too Loud: Where the “Bam and Kiko Joining the Majority” Story Really Began",
     "date": "2025-07-06",
     "category": "Commentary",
     "source": "website",
@@ -8226,7 +8226,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_369",
-    "title": "What Is the Joint BPI Account Between Rodrigo and Sara That They Don\u2019t Want Investigated?",
+    "title": "What Is the Joint BPI Account Between Rodrigo and Sara That They Don’t Want Investigated?",
     "date": "2025-06-28",
     "category": "Commentary",
     "source": "website",
@@ -8294,7 +8294,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_372",
-    "title": "Is Morality Really Subjective? A Reflection on Pura Luka Vega\u2019s Statement",
+    "title": "Is Morality Really Subjective? A Reflection on Pura Luka Vega’s Statement",
     "date": "2025-06-27",
     "category": "Commentary",
     "source": "website",
@@ -8361,7 +8361,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_375",
-    "title": "Sara Duterte\u2019s Downfall: Why I Pity Her, But Can\u2019t Support Her",
+    "title": "Sara Duterte’s Downfall: Why I Pity Her, But Can’t Support Her",
     "date": "2025-06-26",
     "category": "Commentary",
     "source": "website",
@@ -8384,7 +8384,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_376",
-    "title": "Fact-Checking Sara Duterte\u2019s Melbourne Posturing (Even If It Makes Me Grit My Teeth)",
+    "title": "Fact-Checking Sara Duterte’s Melbourne Posturing (Even If It Makes Me Grit My Teeth)",
     "date": "2025-06-23",
     "category": "Commentary",
     "source": "website",
@@ -8495,7 +8495,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_381",
-    "title": "Bong Revilla\u2019s Lawsuit Plan: Just Because You Can, Doesn\u2019t Mean You Should",
+    "title": "Bong Revilla’s Lawsuit Plan: Just Because You Can, Doesn’t Mean You Should",
     "date": "2025-05-27",
     "category": "Commentary",
     "source": "website",
@@ -8518,7 +8518,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_382",
-    "title": "Unipink Isn\u2019t Unity\u2014It\u2019s Exhaustion in Disguise",
+    "title": "Unipink Isn’t Unity—It’s Exhaustion in Disguise",
     "date": "2025-05-27",
     "category": "Commentary",
     "source": "website",
@@ -8608,7 +8608,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_386",
-    "title": "How the DDS Contribute to the Ruin of the Philippines\u2014and Why It Still Matters",
+    "title": "How the DDS Contribute to the Ruin of the Philippines—and Why It Still Matters",
     "date": "2025-04-21",
     "category": "Commentary",
     "source": "website",
@@ -8677,7 +8677,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_389",
-    "title": "The Torture and Death of Archimedes Trajano: Imee Marcos\u2019 Role and the Quest for Justice",
+    "title": "The Torture and Death of Archimedes Trajano: Imee Marcos’ Role and the Quest for Justice",
     "date": "2025-04-17",
     "category": "Commentary",
     "source": "website",
@@ -8985,7 +8985,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_403",
-    "title": "Harry Roque Wants Asylum \u2014 The Netherlands Should Say No",
+    "title": "Harry Roque Wants Asylum — The Netherlands Should Say No",
     "date": "2025-03-22",
     "category": "Commentary",
     "source": "website",
@@ -9008,7 +9008,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_404",
-    "title": "When \u2018My Truth\u2019 Becomes Fake News: How \u2018Daw\u2019 Fuels Misinformation in the Philippines",
+    "title": "When ‘My Truth’ Becomes Fake News: How ‘Daw’ Fuels Misinformation in the Philippines",
     "date": "2025-03-22",
     "category": "Commentary",
     "source": "website",
@@ -9122,7 +9122,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_409",
-    "title": "The VAT on Electricity That Shouldn\u2019t Be There",
+    "title": "The VAT on Electricity That Shouldn’t Be There",
     "date": "2025-03-02",
     "category": "Commentary",
     "source": "website",
@@ -9143,7 +9143,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_410",
-    "title": "The Boomerang Effect: Why Sara Duterte\u2019s Words Always Come Back to Haunt Her",
+    "title": "The Boomerang Effect: Why Sara Duterte’s Words Always Come Back to Haunt Her",
     "date": "2025-02-28",
     "category": "Commentary",
     "source": "website",
@@ -9166,7 +9166,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_411",
-    "title": "Who Gets to Exist? America\u2019s Erasure of LGBTQ+ Rights",
+    "title": "Who Gets to Exist? America’s Erasure of LGBTQ+ Rights",
     "date": "2025-02-26",
     "category": "Commentary",
     "source": "website",
@@ -9273,7 +9273,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_416",
-    "title": "Faith in the Face of Suffering: Wrestling with the Question That Won\u2019t Go Away",
+    "title": "Faith in the Face of Suffering: Wrestling with the Question That Won’t Go Away",
     "date": "2025-02-16",
     "category": "Commentary",
     "source": "website",
@@ -9331,7 +9331,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_419",
-    "title": "France's \u20ac10 Billion AI Investment in Supercomputer ()",
+    "title": "France's €10 Billion AI Investment in Supercomputer ()",
     "date": "2025-02-12",
     "category": "Commentary",
     "source": "website",
@@ -9463,7 +9463,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_425",
-    "title": "Tired of Loving a Country That Won\u2019t Love Itself",
+    "title": "Tired of Loving a Country That Won’t Love Itself",
     "date": "2025-02-01",
     "category": "Commentary",
     "source": "website",
@@ -9619,7 +9619,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_433",
-    "title": "Scope Creep in Freelancing: Let\u2019s Talk About That \"One More Thing\"",
+    "title": "Scope Creep in Freelancing: Let’s Talk About That \"One More Thing\"",
     "date": "2025-01-12",
     "category": "Commentary",
     "source": "website",
@@ -9701,7 +9701,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_437",
-    "title": "Mastering Discovery Calls: A Freelancer\u2019s Guide to Finding the Right Projects ()",
+    "title": "Mastering Discovery Calls: A Freelancer’s Guide to Finding the Right Projects ()",
     "date": "2024-12-13",
     "category": "Commentary",
     "source": "website",
@@ -9782,7 +9782,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_441",
-    "title": "Sara Duterte\u2019s Downfall: A Front-Row Seat to Political Chaos",
+    "title": "Sara Duterte’s Downfall: A Front-Row Seat to Political Chaos",
     "date": "2024-11-26",
     "category": "Commentary",
     "source": "website",
@@ -9827,7 +9827,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_443",
-    "title": "Freelancer\u2019s Dilemma: Upwork, PayPal, and the Waiting Game |",
+    "title": "Freelancer’s Dilemma: Upwork, PayPal, and the Waiting Game |",
     "date": "2024-11-25",
     "category": "Commentary",
     "source": "website",
@@ -10003,7 +10003,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_452",
-    "title": "Don\u2019t Give Up on Freelancing Just Yet: My Story and Why You Should Hang On",
+    "title": "Don’t Give Up on Freelancing Just Yet: My Story and Why You Should Hang On",
     "date": "2024-11-15",
     "category": "Commentary",
     "source": "website",
@@ -10022,7 +10022,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_453",
-    "title": "Is Freelancing Still Worth It in 2025? Let\u2019s Get Real",
+    "title": "Is Freelancing Still Worth It in 2025? Let’s Get Real",
     "date": "2024-11-12",
     "category": "Commentary",
     "source": "website",
@@ -10042,7 +10042,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_454",
-    "title": "The Reality of Freelance Life\u2014Beyond the Myths and Digital Chaos",
+    "title": "The Reality of Freelance Life—Beyond the Myths and Digital Chaos",
     "date": "2024-11-10",
     "category": "Commentary",
     "source": "website",
@@ -10084,7 +10084,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_456",
-    "title": "A Reflection on America\u2019s Crossroads",
+    "title": "A Reflection on America’s Crossroads",
     "date": "2024-11-10",
     "category": "Commentary",
     "source": "website",
@@ -10106,7 +10106,7 @@ const ARTICLES_META = [
   },
   {
     "id": "art_457",
-    "title": "Freelance Content Writers Are Back in High Demand, Here\u2019s Why ()",
+    "title": "Freelance Content Writers Are Back in High Demand, Here’s Why ()",
     "date": "2024-11-08",
     "category": "Commentary",
     "source": "website",
@@ -10369,186 +10369,5 @@ const ARTICLES_META = [
     "comments": 0,
     "shares": 0,
     "image": ""
-  },
-  {
-    "id": "art_470",
-    "title": "The House With Two Rooms: The Duality Of Sara Duterte\u2019s Faith And Fury",
-    "date": "2026-03-14",
-    "category": "Commentary",
-    "source": "website",
-    "tags": [
-      "sara duterte"
-    ],
-    "excerpt": "Last year, I wrote that for many Filipinos, faith and politics live in the same house but in different rooms. We know the way to the \"God room\" by heart: Sunday mass, novena, rosary, fiesta,...",
-    "word_count": 2326,
-    "read_time": 12,
-    "url": "",
-    "fb_post_id": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0,
-    "image": "https://raw.githubusercontent.com/mctversion2/mct-hub/main/images/img_1773481822210.jpg"
-  },
-  {
-    "id": "art_471",
-    "title": "UNEMPLOYMENT RATE SURGES TO 5.8% IN JANUARY",
-    "date": "2026-03-13",
-    "tags": [
-      "Economy",
-      "Government"
-    ],
-    "image": "https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/651183906_122121522201092788_127082889480615591_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGkodMqfQmXfUjZBiIPfp0mAByYNya21GYAHJg3JrbUZmoMpZVRaXSgsViDGHnYP8M&_nc_ohc=B25IkAQVm98Q7kNvwEbgCx4&_nc_oc=AdlvODnjNNutfugtpMvtiJUpEY8BiViW8z6nMLdOfKYp1746y5rHjCGo_sn7YYxVQDbmEWCR_YUw0GBZ3VwK-YLN&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=SmupOQfJRA1bMuRUPZAfKg&_nc_ss=8&oh=00_AfwZvJTVi97T0RaOuuOrFrV3eYmRFsPs60CYEAOVsSSPvw&oe=69B97D7D",
-    "excerpt": "How fast can a labor market collapse? In December, the Philippine Statistics Authority reported a 4.4% unemployment rate.",
-    "word_count": 523,
-    "read_time": 3,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_472",
-    "title": "FRASCO OUT AS DOT CHIEF, NAMED PRESIDENTIAL ADVISER FOR SUSTAINABLE AND RESILIENT COMMUNITIES",
-    "date": "2026-03-13",
-    "tags": [
-      "Government",
-      "Tourism",
-      "ASEAN"
-    ],
-    "image": "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/650785712_122121494001092788_2025905995941163597_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGLIplersHdlLuuzkQsUJScvp12fy2Bmze-nXZ_LYGbN5e4BxlSgwiX-gQxgL2BQ1Q&_nc_ohc=nQ4TqZsFlWIQ7kNvwHnuW0w&_nc_oc=AdlGYmZEORHdm5_8S0N-SZLShg3U3rtyWF18aAAvL-jL85dSYS9xbK0_q_Qv49aiwNmkB84f7Lho680ZmpI7CIaR&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=ByER9f8wXBx72C9-xJ1QXw&_nc_ss=8&oh=00_Afw3lsNUJKeSFvk6T7369cJ-Di0sKufdz6kwQxAamZxjnw&oe=69B97003",
-    "excerpt": "The Palace said she did not resign. That was the first thing they made clear.",
-    "word_count": 762,
-    "read_time": 4,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_473",
-    "title": "DSWD ALLOCATES P30 BILLION FOR CASH AID AS FUEL PRICES KEEP CLIMBING",
-    "date": "2026-03-13",
-    "tags": [
-      "Social Welfare",
-      "Energy",
-      "Government"
-    ],
-    "image": "https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/649270003_122121523491092788_8920628481958969439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGf6CQOY-lrEAUfpAunYwN89Enx23T3mPH0SfHbdPeY8YiWC0mKbTPrHWHSwK-qsn8&_nc_ohc=eFZNtEWGC8MQ7kNvwERTIOt&_nc_oc=AdlIkhc0dKxtctV63ImY2Qo1ubhodk-XiWosktVm10zvXnUn1d1m6ermM0fGdbSuiaGZhFRb-vHJGqD82YRBTqbI&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&_nc_gid=PXZpn7KMJhm6iHIAHC4Fww&_nc_ss=8&oh=00_Afy41bNqOInAumqGLPhwJC_KrIwoZsdqQncMRUxcFQuDxw&oe=69B97853",
-    "excerpt": "The Department of Social Welfare and Development is setting aside P30 billion from its Assistance to Individuals in Crisis Situation (AICS) budget for cash aid to Filipinos affected by the ongoing ...",
-    "word_count": 567,
-    "read_time": 3,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_474",
-    "title": "IRAN'S NEW SUPREME LEADER SPEAKS \u2014 BUT NEVER APPEARS ON CAMERA",
-    "date": "2026-03-12",
-    "tags": [
-      "Iran"
-    ],
-    "image": "https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/651043983_122121492021092788_3176084473020910436_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEavPjh4qw5ppul9-c_urulqsaey0A10maqxp7LQDXSZjOo0bIjYg3ooPQOvtUuSWk&_nc_ohc=KE9eg-lkACEQ7kNvwENkFq8&_nc_oc=AdnEd5fFu5DEMM4bdj6Tn8N0UewxIaaERZZbenUe2SqwOaSGhA4Y_Pd2lY8sj6pfiKUD0jPUcfMd53gtIWpI8Vdt&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=km__hARk_oGkVNCpN03aaA&_nc_ss=8&oh=00_AfwCP5SXNaKvmX5IpyzL5u5Nz2fXrwKXxGjn9hXgb3dTRg&oe=69B99B1A",
-    "excerpt": "Nobody saw his face. On Day 13 of the Iran war, Mojtaba Khamenei \u2014 the man who now holds the title of Supreme Leader of Iran \u2014 issued his first public statement since taking office.",
-    "word_count": 722,
-    "read_time": 4,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_475",
-    "title": "ELECTRICITY SPOT MARKET PRICES COULD JUMP 59% IN APRIL",
-    "date": "2026-03-13",
-    "tags": [
-      "Energy",
-      "Economy"
-    ],
-    "image": "https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/650320089_122121490455092788_5629957926495304520_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHGMZ1EtE8wtIsQjJ4DylSK30rCGczmOY7fSsIZzOY5jq4cLov7oKgapPTfMuW9Ats&_nc_ohc=SaWtgRT1-_4Q7kNvwHyIqNY&_nc_oc=Adnst8PZPwyETZvswQZli0Zhq2tEnHfxZzNAapF90YeW49R7PFtkyBl3paAafOTQNuMeTCDU--ijwA2uM9jsWb_D&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=NDGffQj3TW0wSVQFgwJRvA&_nc_ss=8&oh=00_AfzPlV2CJCZuj0PL3aCSRptHT9AdU6rFZhREAwqu-xtGDg&oe=69B9919D",
-    "excerpt": "P7.93 per kilowatt-hour. That is the upper-end scenario from IEMOP simulations of what market-clearing prices could reach in the Wholesale Electricity Spot Market (WESM) in April.",
-    "word_count": 623,
-    "read_time": 4,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_476",
-    "title": "SANDIGANBAYAN DENIES ESTRADA'S BID FOR PDAF INVESTIGATION RECORDS",
-    "date": "2026-03-13",
-    "tags": [
-      "Corruption",
-      "Judiciary",
-      "Senate"
-    ],
-    "image": "https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/650207215_122121525915092788_695278897447656184_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFcN41OyI1yg9RWyVmuieK_vBd6AJQDKAu8F3oAlAMoCwoGOfg7A5eg_gLpEPUyfaI&_nc_ohc=PJQD5EUYrfYQ7kNvwHjDZoh&_nc_oc=AdnKFejRA9k8l2-R3AAjvDnGaYI1X7YXsQGwqMOdK_WD0A74IX8Y4oYgyA8_Ys57uyInWQaRcGaBZgTZXvJtksfj&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=D0D8zkM_vcvTOTKyLYNlow&_nc_ss=8&oh=00_AfygTxgtZqAqRm2_8sPTUI70CJWTVX_bPMQZKpidgH8DNg&oe=69B97DB5",
-    "excerpt": "Senator Jinggoy Estrada wanted access to the preliminary investigation records of the Ombudsman. The Sandiganbayan said no \u2014 twice.",
-    "word_count": 571,
-    "read_time": 3,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_477",
-    "title": "HOW TO FACT-CHECK LIKE YOU'RE TRYING TO LOSE AN ARGUMENT",
-    "date": "2026-03-12",
-    "tags": [
-      "Media"
-    ],
-    "image": "",
-    "excerpt": "A follower sent me an email last week asking if I could share the fact-checking technique I actually use every time I write. So here it is.",
-    "word_count": 921,
-    "read_time": 5,
-    "category": "Commentary",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_478",
-    "title": "AN OPEN LETTER TO SENATOR PING LACSON AND SENATE PRESIDENT TITO SOTTO",
-    "date": "2026-03-13",
-    "tags": [
-      "Senate",
-      "Corruption",
-      "Government"
-    ],
-    "image": "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/650769998_122121497715092788_4458995671161592511_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFkv46EOAoJh90t7PxpkjSbUtIMetKpnNRS0gx60qmc1AG-OneTlDAmqTZNnch6Ro4&_nc_ohc=RVasbJwW_ycQ7kNvwHF_UfO&_nc_oc=Adm9DIxNFkdJ0MVzy_Ler2wGDvQilp-xb_BMdr1Tvo4wT265JC_XZWISPilZFsYUlje47gsIiNi4UqRrd6lZZbIx&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=UnG2W2dAn5bCjfVIaRULBQ&_nc_ss=8&oh=00_AfyTdL9KnWJXAG35cqqtkFttQEplLKs88DkmyfhPKlcguA&oe=69B97842",
-    "excerpt": "Senator Panfilo \"Ping\" Lacson, Chairman, Senate Blue Ribbon Committee",
-    "word_count": 857,
-    "read_time": 5,
-    "category": "Commentary",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
   }
 ];
