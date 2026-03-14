@@ -1,6 +1,6 @@
 const ARTICLES_META = [
   {
-    "id": "art_465",
+    "id": "art_0",
     "title": "SPIES, SENATORS, AND THE LAWS WE STILL DON'T HAVE",
     "date": "2026-03-12",
     "category": "Commentary",
@@ -13,7 +13,7 @@ const ARTICLES_META = [
       "Lacson"
     ],
     "excerpt": "Three Filipinos got caught passing classified military information to Chinese intelligence. The National Security Council confirmed it on March 4. They confessed. They cooperated. The NSC and AFP called it a foreign-funded spy network that they had managed to dismantle. And yet...",
-    "word_count": 2788,
+    "word_count": 1088,
     "read_time": 6,
     "url": "https://www.facebook.com/morningcoffeethoughts2/posts/pfbid02L9dfsUP9yzkWCsBrmTgZ6EBznm4W8WQLBFsUmE5PQ542mo6Z2VBJaMtFs3RnSUail",
     "fb_post_id": "",
@@ -23,7 +23,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/650119716_122121393831092788_2509087126636124015_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=101&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=TcGP5YkPSdsQ7kNvwHl6Xka&_nc_oc=AdkUOBWw0g0wxPl33d78PwWTbCJflin050f-ZzW1sr9xSd9ns9_h46qZNCVN-3uPDZ4&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=VSVX3Jj4j6qL6AcSvjyaFw&_nc_ss=8&oh=00_AfxGHWl6UlzF292H-eJtw5Rk5xvkZdAW2ZeqBdoU3GEV4g&oe=69B7EFA2"
   },
   {
-    "id": "art_466",
+    "id": "art_1",
     "title": "IRAN REJECTS CEASEFIRE OFFERS FROM CHINA, FRANCE, AND RUSSIA",
     "date": "2026-03-12",
     "category": "News",
@@ -46,7 +46,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649287929_122121389193092788_8225756385892428405_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=101&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=7hPVzfnvq_sQ7kNvwHFgG8j&_nc_oc=AdlOKx1Yu1lFOdI2t2bJEBhuNuZUoJlERO9mwwYenyDx6WYF57zrPk8CHkPHO7R2aUA&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=yDME5nQH-GF6oAcz_cubVg&_nc_ss=8&oh=00_AfwsQiOraslLDt9qINss3K0W03TJ7TzLDn6e8eSzFr6zew&oe=69B7F178"
   },
   {
-    "id": "art_467",
+    "id": "art_2",
     "title": "US MILITARY CONFIRMS IT BOMBED AN IRANIAN ELEMENTARY SCHOOL",
     "date": "2026-03-12",
     "category": "News",
@@ -66,7 +66,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649776935_122121383109092788_7713039228165297768_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=104&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=oZC_zgCRX_UQ7kNvwHpDbD8&_nc_oc=AdmT02MbHyyE0Vg0v5c7iBAoyuvWzsviQgZoTWMgIFC_TeEcE6oNFlNn7fyjVLN10MA&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=HJfZJYhrbWpCmSUAyLJZRw&_nc_ss=8&oh=00_AfzUcckOQpBRS9chLXrHsCW68FAnwBsZGr3dVeF-TZv_yQ&oe=69B7F180"
   },
   {
-    "id": "art_468",
+    "id": "art_3",
     "title": "COMELEC SAYS \"COMPLICATIONS\" ARE HOLDING UP ITS RESOLUTION ON MARCOLETA'S CAMPAIGN FINANCES",
     "date": "2026-03-12",
     "category": "News",
@@ -88,7 +88,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649142049_122121391299092788_8024086773578983347_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=108&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=4IsguUc80P8Q7kNvwHyZUss&_nc_oc=AdkxRnCyBHk4BzJ9CVA0JzHqaphRxmlSN_-1GJ6kJrF1rHtoAfDA70iLz8ZHesUjE6I&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=tL-IMmpc33XfIe9nVbQC8A&_nc_ss=8&oh=00_Afz1_ilbql-BSGE6JgG4DpeKG8o5JuC45MWn2sTYkJzhYQ&oe=69B7DAC4"
   },
   {
-    "id": "art_469",
+    "id": "art_4",
     "title": "THE FUEL EXCISE BILL JUST CLEARED ITS BIGGEST LEGISLATIVE HURDLE YET",
     "date": "2026-03-11",
     "category": "News",
@@ -109,7 +109,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649220011_122121333849092788_3842360548368023615_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=109&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=pO3iBUlxGgIQ7kNvwFgh0oC&_nc_oc=AdmWpthzE-3DpZo-1cAyuVSYQMyYSnWyyjSEQ3m3sBCwkwiKRoa2KFg271FDjAS33_k&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=i1FuugqNKsjpoC7gQqrN4A&_nc_ss=8&oh=00_AfwqLXAAf95vBvJ_fq1BAzZtnHcx-y5y9tGmOHw5zEeLWw&oe=69B7E462"
   },
   {
-    "id": "art_0",
+    "id": "art_5",
     "title": "THE STRAIT OF HORMUZ, EXPLAINED: WHAT EVERY FILIPINO NEEDS TO UNDERSTAND ABOUT THE WATERWAY THAT CONTROLS OUR FUEL PRICES",
     "date": "2026-03-11",
     "category": "Commentary",
@@ -129,10 +129,10 @@ const ARTICLES_META = [
     "reactions": 1,
     "comments": 0,
     "shares": 0,
-    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/650729453_122121272829092788_1531424377719648135_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=104&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=FSL89tnqrncQ7kNvwG-FCHy&_nc_oc=Adk6Z2F8LnDN7Tn701MswWH7obgHVzUbf0xYIfWW9SimJnB-jmgjo8P1DKS4Aft-Po8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=mfVG1fSRSMkNXURhSh58zQ&_nc_ss=8&oh=00_AfwfHXu3_nHTRI_oo-H7CKlhE6MqeezBAHRsnAmaoT76Zg&oe=69B70604"
+    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/650729453_122121272829092788_1531424377719648135_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGVKch5OQ0t4zUkLnudPUaeFzCCw7ltCTMXMILDuW0JM4JFVrbnze3LbGrspSiW3kU&_nc_ohc=FSL89tnqrncQ7kNvwG-FCHy&_nc_oc=Adk6Z2F8LnDN7Tn701MswWH7obgHVzUbf0xYIfWW9SimJnB-jmgjo8P1DKS4Aft-Po8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=1BAxGLLIDwGphOYccbtyGA&_nc_tpa=Q5bMBQGKllDb-wclxlf_0ZaOnRNhvkq7fZKxkfPelxMcT26mQxkTOQKqlcPWI75aqzLfFkYncJsprWwSWw&oh=00_Afyd0RMcd7eq8mQhWkjVKjloxghGO8i4A3-_FyiE6Z5QnQ&oe=69B69584"
   },
   {
-    "id": "art_1",
+    "id": "art_6",
     "title": "THE PHILIPPINES IS SENDING CHARTER FLIGHTS INTO THE MIDDLE EAST TO BRING ITS WORKERS HOME",
     "date": "2026-03-11",
     "category": "News",
@@ -152,11 +152,11 @@ const ARTICLES_META = [
     "reactions": 6,
     "comments": 1,
     "shares": 1,
-    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649752619_122121272037092788_2960993709385828043_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=103&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=nzPDbyXcTksQ7kNvwHnKBD7&_nc_oc=AdnEVkroY2ZjFZJ3ibl4cEisr2cy2AcnECPBj04WsD-w-XBDq-H3RxW0a7e8nh7p8VE&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=MDjTDAJHA80K9l1Ap2zHWw&_nc_ss=8&oh=00_Afzcnlh-IHVjycz3zlins4L-lkXe6pALyRm7IbdEhKuPSQ&oe=69B6F15E"
+    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649752619_122121272037092788_2960993709385828043_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFkeIB-J3slbZaB78Wgduss8PIYghJ3iSjw8hiCEneJKAQLdAXk1L9nIjeW8moEQW8&_nc_ohc=nzPDbyXcTksQ7kNvwHnKBD7&_nc_oc=AdnEVkroY2ZjFZJ3ibl4cEisr2cy2AcnECPBj04WsD-w-XBDq-H3RxW0a7e8nh7p8VE&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=1BAxGLLIDwGphOYccbtyGA&_nc_tpa=Q5bMBQGdkiFgLW3qMMZjNfixlDkujxW-ZpCMbKzJ7Ac4PTKLI0Lm1lajC80VdobOeI-6ceREBJE5pY8kiw&oh=00_Afy9_aRdCaxwzRAXdXya_3KeQYLgayJ0WyCpFSGtRT_fAw&oe=69B680DE"
   },
   {
-    "id": "art_2",
-    "title": "THE WORLD'S BIGGEST OIL EMERGENCY DECISION IN 13 YEARS IS ABOUT TO BE MADE \u2014 AND EVERY PUMP PRICE IN THE PHILIPPINES DEPENDS ON IT",
+    "id": "art_7",
+    "title": "THE WORLD'S BIGGEST OIL EMERGENCY DECISION IN 13 YEARS IS ABOUT TO BE MADE — AND EVERY PUMP PRICE IN THE PHILIPPINES DEPENDS ON IT",
     "date": "2026-03-11",
     "category": "News",
     "source": "facebook",
@@ -173,11 +173,11 @@ const ARTICLES_META = [
     "reactions": 16,
     "comments": 0,
     "shares": 3,
-    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647547604_122121269889092788_4607030807623641332_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=103&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=oHz7Bz1JJboQ7kNvwHrwqa8&_nc_oc=AdnnxWGiO1q5ae4OseZOqeXiBdR-vdFxewkJ2IHwyqd_k2RQpVCaT4ZSbXdZDp90zDc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=qGUvM3CwWZPId6kMVtNtgg&_nc_ss=8&oh=00_AfzJ8gKheJpzPcovwhmBOLlx7cT6oP2TLnqmQOxczT-Fmw&oe=69B709BB"
+    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647547604_122121269889092788_4607030807623641332_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFSajmGckwud1X0ZW-nxRVV06kWfvsT8L_TqRZ--xPwv0DyrRnQhHVpnboQVYC041w&_nc_ohc=wuel3MSh_EcQ7kNvwGKGRdm&_nc_oc=Adkkyho9wIcLoZ1WsVLg77_zDpBdxAyg3wYzik5rHSS6_ORKlapwEmxmce-PnfdTF18&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=1BAxGLLIDwGphOYccbtyGA&_nc_tpa=Q5bMBQErXszRW8kvVUqlAGFDKikh4o5HErS9JDOjviH7nj12dRzT-pwhOAh5-rVHdS4WCnNLaNE86ltOcg&oh=00_AfwJSISUFOmQE9hnnwK0dM7jlUqnXkd_uGSBEXO93v9IHw&oe=69B6993B"
   },
   {
-    "id": "art_3",
-    "title": "AN IRANIAN MISSILE ENTERED NATO AIRSPACE AND NATO SHOT IT DOWN \u2014 THE WAR IS NO LONGER CONTAINED TO THE MIDDLE EAST",
+    "id": "art_8",
+    "title": "AN IRANIAN MISSILE ENTERED NATO AIRSPACE AND NATO SHOT IT DOWN — THE WAR IS NO LONGER CONTAINED TO THE MIDDLE EAST",
     "date": "2026-03-11",
     "category": "News",
     "source": "facebook",
@@ -194,10 +194,10 @@ const ARTICLES_META = [
     "reactions": 32,
     "comments": 0,
     "shares": 7,
-    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649545455_122121268479092788_9157361315783401302_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=102&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=rQvHKf60VrkQ7kNvwG-9j-i&_nc_oc=AdlIoKbGzSv9TIXW2qVbw1XEjIUdotauudMxLVp3zzKAAIauWvr7joBWnSDtYG5PW8E&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=46Q41mnkyqZT_mcDWMHjrA&_nc_ss=8&oh=00_AfyrDscDdyV013nFyFI0q5tNycie4v5j1Y3GOQBS1lLdUg&oe=69B6D458"
+    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649545455_122121268479092788_9157361315783401302_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFknCFbSsiQ9UB1OE-Pe529oFvEG4F7dkWgW8QbgXt2RRtnqH9nacSc47tdOpK99JI&_nc_ohc=qNEYAdx12r0Q7kNvwEPlpbs&_nc_oc=AdmjHYMG7Izg2R2ESqraSh3yaizlF_jdMsS5jtNv6FsIje0cmKCBNMazJlG1XpHlcZ4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=1BAxGLLIDwGphOYccbtyGA&_nc_tpa=Q5bMBQHksNA59rKeNNMh9XeUAE16qhxxDhbUV08OThPr0mCieC8LbUpF1Q98BBgMDp1JhRMwLxi8Op1ALQ&oh=00_AfwyUJC02aq8yL50Gm0d14kSRa-c5JF6zk1ErJcwlRxT_w&oe=69B69C18"
   },
   {
-    "id": "art_4",
+    "id": "art_9",
     "title": "A FILIPINO SEAFARER IS MISSING AFTER MISSILES SANK A RESCUE TUGBOAT IN THE STRAIT OF HORMUZ",
     "date": "2026-03-10",
     "category": "News",
@@ -214,11 +214,11 @@ const ARTICLES_META = [
     "reactions": 27,
     "comments": 0,
     "shares": 1,
-    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647097403_122121265245092788_6668003689337792399_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=105&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=zYuDKbjMPZYQ7kNvwF3dSPO&_nc_oc=AdktcpJAV-7OGNb9TfnfeeIPBT4wLylKI0spoG7OaqKLZsslY8dSUAHhPjh7Avd79fo&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=hjK--8d8ddCpvMQM2gRZpQ&_nc_ss=8&oh=00_AfyPG9s2unU0mHSC18pz3f5tIvG4TlsRz5TyJk833779jA&oe=69B6E6C5"
+    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647097403_122121265245092788_6668003689337792399_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEgVbNXrFB3050zz6w28pB1C7dr0-05sIoLt2vT7TmwipVQNENtytZprg95sfXw72s&_nc_ohc=zYuDKbjMPZYQ7kNvwF3dSPO&_nc_oc=AdktcpJAV-7OGNb9TfnfeeIPBT4wLylKI0spoG7OaqKLZsslY8dSUAHhPjh7Avd79fo&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=1BAxGLLIDwGphOYccbtyGA&_nc_tpa=Q5bMBQEy7Ltkw3W0IdTht-A8Gv2Ozx8ALoCIMvK0oH5xf-NQECD38J3eSMz7FDG5au3RU2_W5OoFjM6X1A&oh=00_AfzufrY0DYNA86sIGpdrpuebeASAWn8HVYcNbyz1UEI73Q&oe=69B67645"
   },
   {
-    "id": "art_5",
-    "title": "ONE YEAR SINCE THE ARREST THAT CHANGED THE PHILIPPINES \u2014 DUTERTE STILL IN THE HAGUE AS ICC CLOSES EVERY EXIT",
+    "id": "art_10",
+    "title": "ONE YEAR SINCE THE ARREST THAT CHANGED THE PHILIPPINES — DUTERTE STILL IN THE HAGUE AS ICC CLOSES EVERY EXIT",
     "date": "2026-03-10",
     "category": "News",
     "source": "facebook",
@@ -234,10 +234,10 @@ const ARTICLES_META = [
     "reactions": 60,
     "comments": 2,
     "shares": 10,
-    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649989739_122121268137092788_1809655299359463523_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=106&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=AfXM2TDqxhcQ7kNvwHoFBbP&_nc_oc=Adl6wlwClIxZg3tSX17kfRQ1bK6P8SnPYmrZf76UVCzchtIu-VHmpFVNhq94Qt59k9E&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=1Le09-LkOZ9DUsep3RkvdQ&_nc_ss=8&oh=00_AfyZJtQaqgrtkEn1pi1Lml37afz9hC3A7ZLVWReUHWFdzg&oe=69B70342"
+    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649989739_122121268137092788_1809655299359463523_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEF3agQQuMi_kL-C_a3MoCluZvclUPWkmq5m9yVQ9aSaiv1oIM5dlz5xGhg43RMxWE&_nc_ohc=AfXM2TDqxhcQ7kNvwHoFBbP&_nc_oc=Adl6wlwClIxZg3tSX17kfRQ1bK6P8SnPYmrZf76UVCzchtIu-VHmpFVNhq94Qt59k9E&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=1BAxGLLIDwGphOYccbtyGA&_nc_tpa=Q5bMBQEsN3FfmTgaR5cZ0ZRx7O7makLszdSt0JhxV99rdnD3DMfF_9FgQoK-O9kjgdBBCk_dbXwaf7qoBw&oh=00_AfzDYG1UhEOUbC8d0q9mKF2_isJ0Bfjotlwfkoeqo99NXg&oe=69B692C2"
   },
   {
-    "id": "art_6",
+    "id": "art_11",
     "title": "IRANIAN DRONES SHUT DOWN THE MIDDLE EAST'S LARGEST OIL REFINERY AS HORMUZ SHIPPING COLLAPSES 97 PERCENT",
     "date": "2026-03-10",
     "category": "News",
@@ -254,10 +254,10 @@ const ARTICLES_META = [
     "reactions": 94,
     "comments": 2,
     "shares": 17,
-    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/650101682_122121262179092788_4984203209958558503_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=108&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=vtu7DizIzqIQ7kNvwHtkxOo&_nc_oc=Adl3ob-4Hd5CYdadgbRgI8O-6HTsgxFHgzjLZG9g_JKYGxLxjfv4wY-AYhQcGLzoEzo&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=wJ16yqG8sItBxm0ruXea8Q&_nc_ss=8&oh=00_Afy1qwbU6AIGsuurJ6cwQ9u4TDy3zVph2WzNJdHC2ldYgA&oe=69B6E5DC"
+    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/650101682_122121262179092788_4984203209958558503_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeG5WcwJsB4a63F52ZE3lNaOLJnd16u3oCYsmd3Xq7egJg8Oi9lZ3lXGA3ZKf8CozI8&_nc_ohc=vtu7DizIzqIQ7kNvwHtkxOo&_nc_oc=Adl3ob-4Hd5CYdadgbRgI8O-6HTsgxFHgzjLZG9g_JKYGxLxjfv4wY-AYhQcGLzoEzo&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=1BAxGLLIDwGphOYccbtyGA&_nc_tpa=Q5bMBQGvkNaqsw4VSP3Pl1pNULoytfQY2NSqDyApu-VQ8VLg5B1poSxRJctFrMB1ozCdW3D0mnFZEH8apA&oh=00_AfzPQdItz-47BrCPAuqPOs0uOJ_3f6JVG0WsDSCMi2fOjQ&oe=69B6755C"
   },
   {
-    "id": "art_7",
+    "id": "art_12",
     "title": "AFP NAMES CHINESE INTELLIGENCE HANDLER BEHIND FILIPINO SPY RING THAT LEAKED WEST PHILIPPINE SEA OPERATIONS",
     "date": "2026-03-10",
     "category": "Coffee",
@@ -277,10 +277,10 @@ const ARTICLES_META = [
     "reactions": 65,
     "comments": 6,
     "shares": 10,
-    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649244934_122121261231092788_8926296408970907872_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=103&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=SqplGe4o1qgQ7kNvwFBpXso&_nc_oc=Adku-qxhCY2it1g8nJ_HitMchfEqtaNt55SwqI69QWNgRiEcVvzCiwXqgwxpr3jDWeA&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=-mZivTO-BC_wY3HuI-LZ9Q&_nc_ss=8&oh=00_AfxRc15bjufeZvmZpO0NQph4wcRmuDCGLTz1Zlli45yPbg&oe=69B6F343"
+    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649244934_122121261231092788_8926296408970907872_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeERcUhzKZFwWt4C71uHmqkWI3PVyt9aeQEjc9XK31p5Af0bjnymftlgrwtYmeb6U1Y&_nc_ohc=SqplGe4o1qgQ7kNvwFBpXso&_nc_oc=Adku-qxhCY2it1g8nJ_HitMchfEqtaNt55SwqI69QWNgRiEcVvzCiwXqgwxpr3jDWeA&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=1BAxGLLIDwGphOYccbtyGA&_nc_tpa=Q5bMBQFNBnDffXRxdsuLTU5CF_YLpW9lLNelAsMkMdRgvBmgJ5VnXJduMgi_SSzmotsoLmBBY4pGqz4_zA&oh=00_AfyTb8SWxpJwpW0OVTifakGREoQovu-fhWymrAaCWjSeLw&oe=69B682C3"
   },
   {
-    "id": "art_8",
+    "id": "art_13",
     "title": "PALACE FIRES BACK AT IMEE MARCOS OVER ICC RESOLUTION AS DUTERTE MARKS ONE YEAR IN THE HAGUE",
     "date": "2026-03-10",
     "category": "News",
@@ -299,10 +299,10 @@ const ARTICLES_META = [
     "reactions": 53,
     "comments": 4,
     "shares": 3,
-    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649839962_122121260259092788_8775047093815870444_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=105&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=ip3aTcnr2G8Q7kNvwGKFMkQ&_nc_oc=AdnhPPj-Ja7F9y5Ip5Ja50I2SBKurtUIeVergcjjv7_GZoTAvjRqFYauyhHHoFh_B3o&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=UzlbF6MELc2B3v23p2OtkQ&_nc_ss=8&oh=00_Afzs4z69B4EGpAa1Whfz3S3vHuXumuNhCsffwdJfCm0QgQ&oe=69B6D5DF"
+    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649839962_122121260259092788_8775047093815870444_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGfy13nuL6ri-25KkpWy23Z2X58ejYiGxTZfnx6NiIbFI5ZSlroPXabeEnXijfkBig&_nc_ohc=ip3aTcnr2G8Q7kNvwGKFMkQ&_nc_oc=AdnhPPj-Ja7F9y5Ip5Ja50I2SBKurtUIeVergcjjv7_GZoTAvjRqFYauyhHHoFh_B3o&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=1BAxGLLIDwGphOYccbtyGA&_nc_tpa=Q5bMBQEeo_SqZnSr17LbW4k-fndW15BGiv-RQnbL2EB76QXXGsyydDaIFQ35CjXNHhRnSFcSp9HL5XYQDQ&oh=00_AfwAN5zRc_1zc35khjwtskgVQuudjJ4VuIiH7zCVq0XRUA&oe=69B69D9F"
   },
   {
-    "id": "art_9",
+    "id": "art_14",
     "title": "DON'T LOSE SIGHT OF THE REAL ISSUE",
     "date": "2026-03-10",
     "category": "Commentary",
@@ -322,10 +322,10 @@ const ARTICLES_META = [
     "reactions": 135,
     "comments": 6,
     "shares": 10,
-    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649322976_122121205701092788_4855427156878999855_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=100&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=riKG6pJs1TYQ7kNvwHPxfxv&_nc_oc=AdlV9QDJ_HoR2CnEaDRS8ZKvW6eGcHo2iE5VK5KVewQAMGLx5OWFnoPQGopPwN-Y_5M&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=pD-pNamTCENqfBryyn6heA&_nc_ss=8&oh=00_AfytXGVuzXpjSTeuGSlKPTQ4tcs0qX_cDHNl7HxafWgacg&oe=69B6F2AB"
+    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649322976_122121205701092788_4855427156878999855_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFCU1cnQQdex4ACXbpm2s-d-u7y0StD8cb67vLRK0PxxqYY4Jda8zqGaj-NupGi46c&_nc_ohc=riKG6pJs1TYQ7kNvwHPxfxv&_nc_oc=AdlV9QDJ_HoR2CnEaDRS8ZKvW6eGcHo2iE5VK5KVewQAMGLx5OWFnoPQGopPwN-Y_5M&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Fuy1M7KxOR5z9IeN08yDjQ&_nc_tpa=Q5bMBQFcgXtbQdSBLVbFucvkDxMJxjPmdY6-V7MP_KAmpPNkA7jphjDenjGRyEtCIKu7F8GLnyJsu3IqgQ&oh=00_AfxprF6AVqylk4FuTdEHJYJDtKIyjsnSbZwBQ4er16sBHQ&oe=69B6822B"
   },
   {
-    "id": "art_10",
+    "id": "art_15",
     "title": "LACSON CONFRONTS MARCOLETA ON SENATE FLOOR OVER WEST PHILIPPINE SEA STANCE AND DISCAYA TIES",
     "date": "2026-03-10",
     "category": "News",
@@ -345,10 +345,10 @@ const ARTICLES_META = [
     "reactions": 432,
     "comments": 31,
     "shares": 48,
-    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649336002_122121203835092788_7739372045561454445_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=100&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=DnzdHKU-f-cQ7kNvwH_9tid&_nc_oc=AdmrFACrMun6WlsLYoI5neEra4F7wUnaOsL9b4QVU8N_OvVYmUXmI3Wm4kzkQR0WPOg&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=DwvO6bjI_rZvjzo0xaRdyQ&_nc_ss=8&oh=00_AfytQVEbUomRhLL_616dVk6RWxHxgHr0rlpmon51Sf5EEg&oe=69B6F3C7"
+    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649336002_122121203835092788_7739372045561454445_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGm-QnFveT2kDw1Em_JMv1kjZF9ke5zzj2NkX2R7nPOPcaGCKeLf40tja5g9u9Sjbw&_nc_ohc=DnzdHKU-f-cQ7kNvwH_9tid&_nc_oc=AdmrFACrMun6WlsLYoI5neEra4F7wUnaOsL9b4QVU8N_OvVYmUXmI3Wm4kzkQR0WPOg&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Fuy1M7KxOR5z9IeN08yDjQ&_nc_tpa=Q5bMBQG4s4B8krX4zDxYmlgtCGEZ-KFQauBRHNchfP4NZS6A1AZVjmT4NV6_h6aOoyZ6IIhTbp2XtkUyog&oh=00_AfzQuSdNqTa4IjUAtjSxLsgAvvOvVQ5bCixdJSgLT4qEuA&oe=69B68347"
   },
   {
-    "id": "art_11",
+    "id": "art_16",
     "title": "MARCOS FORMALLY ASKS CONGRESS FOR EMERGENCY POWERS TO CUT FUEL EXCISE TAX",
     "date": "2026-03-10",
     "category": "News",
@@ -366,10 +366,10 @@ const ARTICLES_META = [
     "reactions": 47,
     "comments": 3,
     "shares": 3,
-    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648470256_122121198231092788_3412594495726024194_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=111&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=IeFLKQ_gDaEQ7kNvwHxZjnc&_nc_oc=AdnvOVf4FomRKHSRL606wJ4VHJR2Nga6-JTd6qnZsG4FmDlNqjITepn_PCpaxlMZDuM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=f2E636ccrD2P2q0U50Gwhg&_nc_ss=8&oh=00_AfxRXzdX7vmsdUdsZ-ja6qaM5HdGyGKPYok27ydxU54y9g&oe=69B7010E"
+    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648470256_122121198231092788_3412594495726024194_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeE4yBpD3ndrDFNWBAZKkqzaETpG7xlsYJIROkbvGWxgkimJOtRy5i9fJ_6ZJs2Od1w&_nc_ohc=IeFLKQ_gDaEQ7kNvwHxZjnc&_nc_oc=AdnvOVf4FomRKHSRL606wJ4VHJR2Nga6-JTd6qnZsG4FmDlNqjITepn_PCpaxlMZDuM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Fuy1M7KxOR5z9IeN08yDjQ&_nc_tpa=Q5bMBQG8R5GJtZ0A9hJOkRGmqM7nfpC4U-Mn7VU8GH3iFSFBcoYXfF3b-RS5C-nnrZC1mM_zMTgtm4eLrg&oh=00_AfxsYGMq8KmHeYlfM1r7Tu826oqhZCq9wHFy9FAooVwelw&oe=69B6584E"
   },
   {
-    "id": "art_12",
+    "id": "art_17",
     "title": "OIL CRASHES 10 PERCENT AFTER TRUMP THREATENS IRAN WITH \"TWENTY TIMES HARDER\" RETALIATION OVER HORMUZ BLOCKADE",
     "date": "2026-03-10",
     "category": "News",
@@ -387,10 +387,10 @@ const ARTICLES_META = [
     "reactions": 51,
     "comments": 3,
     "shares": 5,
-    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648897781_122121196089092788_4338444884302518779_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=108&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=02xU8LKBOIgQ7kNvwFVK-Tf&_nc_oc=AdkbusF9ozdndUuBOwCdyg4R7sj1I59TNwzursn3Bnbeh5-_T2XbqZSMToVFgkV07PE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=jpOdKLCB0VGP0XwM0PXzOw&_nc_ss=8&oh=00_Afx-9ZU-2Pjb1l6D861ISq0w-N0M5gWbpNj3j8u9wfzjPA&oe=69B6EA53"
+    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648897781_122121196089092788_4338444884302518779_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFi4rq7tW77W1jpk94ebyrLxX99UWYdGprFf31RZh0amjSZhTLR2neJMs1wA80B0YY&_nc_ohc=02xU8LKBOIgQ7kNvwFVK-Tf&_nc_oc=AdkbusF9ozdndUuBOwCdyg4R7sj1I59TNwzursn3Bnbeh5-_T2XbqZSMToVFgkV07PE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Fuy1M7KxOR5z9IeN08yDjQ&_nc_tpa=Q5bMBQFUTVELKDVQdMR01WsjvQ2qLlk61aPZLGk_k0hebY1MLOrv5fBl4W54PVcHggmKascSWBsShZ-zwQ&oh=00_Afw-Vv9pT-KETYibdXk7NitZPJ3pJ2MAWMG7qF_0ZV5KGQ&oe=69B679D3"
   },
   {
-    "id": "art_13",
+    "id": "art_18",
     "title": "HOUSE PANEL APPROVES BILL GIVING MARCOS POWER TO SUSPEND FUEL EXCISE TAX DURING CRISES",
     "date": "2026-03-10",
     "category": "News",
@@ -408,10 +408,10 @@ const ARTICLES_META = [
     "reactions": 20,
     "comments": 0,
     "shares": 4,
-    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649132600_122121194055092788_2334452097050999168_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=110&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=FSfCq_kSJx8Q7kNvwFAwwc8&_nc_oc=AdlV9XAYfOmQ0S8tBLe_z-yOneXsMykn2KVaj7vm8E3BrF4Vww7R_DL7u7tUaV4wzus&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=Fs2Jf0Alv1ZEDXjJoHH7FQ&_nc_ss=8&oh=00_Afzg-MHX4WmlaxazHEzkwRsujkirMf0QojpPNWWe_i_XvA&oe=69B6F2B0"
+    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649132600_122121194055092788_2334452097050999168_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGoFbS6-r_FOVP9vHJKHvQ8RiR-Yvkb1wVGJH5i-RvXBeYAX8vgz4ozFWycZIoiIDQ&_nc_ohc=V0fiQHtEbt4Q7kNvwHbpCJP&_nc_oc=AdncpOa_F45uKkhbwjZijq2sxEm5JMjeYWHh6_xLX1sc6PqsLlH5IYzPPhbcwOk1_XI&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Fuy1M7KxOR5z9IeN08yDjQ&_nc_tpa=Q5bMBQG3r4xvCmeorCJvn8Xh6jFzXwA-7d5Ks3tDgm5Vcjy7JcOGYbujKafskm5_JW2aGIv6M3cf1PeTUw&oh=00_Afzgsw1N93TtqxutRx4O_3fd48Rh0W-AhDRmqesrcmYcdw&oe=69B68230"
   },
   {
-    "id": "art_14",
+    "id": "art_19",
     "title": "SOLICITOR GENERAL ASKS SUPREME COURT TO ACQUIT MARIA RESSA IN CYBER LIBEL CASE, CITING PRESCRIPTION",
     "date": "2026-03-10",
     "category": "News",
@@ -431,10 +431,10 @@ const ARTICLES_META = [
     "reactions": 280,
     "comments": 7,
     "shares": 17,
-    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/647454564_122121192957092788_1749011818739319093_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1143&ctp=p600x600&_nc_cat=104&ccb=1-7&_nc_sid=3b1b4a&_nc_ohc=BcIjXcOIVH4Q7kNvwHPSaUB&_nc_oc=AdnG9fPeSFp73EiuQ6GtWQLwe8dUyJgQKkiEn63vA516kDT0CEQeQ8FDGAc0wgRlcA8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=qYmAgkN6AOiI-FiYtRgkRQ&_nc_ss=8&oh=00_AfyOiw-1AJPjh1N5zz3rMGuJoAECDCg8AuMU0GcT4CBGEw&oe=69B6EAAF"
+    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/647454564_122121192957092788_1749011818739319093_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFdjU2B4LAgOWMDJwj6jIDm24WnFMbPsInbhacUxs-wiWJq734cqfH1VVbpMgxsI1M&_nc_ohc=a3pzfzlpZIwQ7kNvwHU1qP7&_nc_oc=AdkT7X1zzulyyW08byyRx0QgZiV9x5-X3Xp6GQzxN9TcnQJPNTUCzXl9dqkj1WQ7IiY&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Fuy1M7KxOR5z9IeN08yDjQ&_nc_tpa=Q5bMBQHjk3WTpXU03H42IpqFkVep9D-89EqWmIiqpm8lSBXpqc-yZHRqsC7kPevXM0GQ-UqXXCgRt-BvnA&oh=00_Afw-aBlDmQ96lNkmlF0taiONbGJ3s6u4j9AB5Qmed6Nv2A&oe=69B67A2F"
   },
   {
-    "id": "art_15",
+    "id": "art_20",
     "title": "SHE OPENED HER MOUTH AGAIN. NOW EVERYTHING'S ON FIRE.",
     "date": "2026-03-10",
     "category": "Commentary",
@@ -454,10 +454,10 @@ const ARTICLES_META = [
     "reactions": 1206,
     "comments": 62,
     "shares": 306,
-    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648671927_122121145179092788_6377982781793550398_n.jpg?stp=dst-jpg_tt6&cstp=mx299x168&ctp=s299x168&_nc_cat=101&ccb=1-7&_nc_sid=295ae4&_nc_ohc=bVP1ghstJ9AQ7kNvwEGP7ED&_nc_oc=AdmCcHJsAL2q8agV0WpU_7IDR6zvygE2WIl5oKDM1vvdgP8cICH15NXmoRZwtSRcGng&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=SvjcaKoqyvUXrvcxh7Bx3A&_nc_ss=8&oh=00_AfzCwf9tMKcYogyfeNBe0KaY-fiZ-FRuOkjXmOqfZ4D7uw&oe=69B6F6DD"
+    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648671927_122121145179092788_6377982781793550398_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeEieceUCdHtcddw_WwY15mHc3WIpUKuJaBzdYilQq4loFQXHyLo5gALx2uqUroONok&_nc_ohc=3ZnAekAlgVAQ7kNvwEag9S9&_nc_oc=AdlDBMYSu5LNhECUk6z1bJvijrDsYr8huZR8E-FwpIe-iWYfJLD16w2IfXCyCJwJ3Os&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Fuy1M7KxOR5z9IeN08yDjQ&_nc_tpa=Q5bMBQG7jgrQqGQMR4jmFjyvkquzWxJ6qaoeasiMrssWVCzxl0oGGRVru5S0W1CL-5PTtFjNR7CmT1BQmQ&oh=00_AfzV3gKoGfTg8IgqVc9T-4n5Gt2aOhh7KQcs4FWD10iYuQ&oe=69B6865D"
   },
   {
-    "id": "art_16",
+    "id": "art_21",
     "title": "PINAGPAPALIWANAG ANG MGA GAS STATIONS NA NANANAMAMANTALA, AND THEN WHAT?",
     "date": "2026-03-09",
     "category": "Commentary",
@@ -476,11 +476,11 @@ const ARTICLES_META = [
     "reactions": 102,
     "comments": 4,
     "shares": 34,
-    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648101114_122121141747092788_322125775270358948_n.jpg?stp=dst-jpg_tt6&cstp=mx1376x768&ctp=p600x600&_nc_cat=100&ccb=1-7&_nc_sid=295ae4&_nc_ohc=6lUEvm3EnUcQ7kNvwHvXVaZ&_nc_oc=AdmgF8PHn6DJg5IS2ckuMJHKoxc-rnUSWYFOayBWaLfK_yGsan8isszSMYAYIKAoky8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&_nc_gid=3AufLYS91amLo6qj43n-oQ&_nc_ss=8&oh=00_Afy1ISNJP7w3yjEQp1f9sXCKP2tUo5tNUIza5_mNBaOZEA&oe=69B6D620"
+    "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648101114_122121141747092788_322125775270358948_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeFYxZ6N6spi62x6ekAKk0DpdQR68LtAf5t1BHrwu0B_m6TmxXgSwWrEUoQNKrXq-ws&_nc_ohc=6lUEvm3EnUcQ7kNvwHvXVaZ&_nc_oc=AdmgF8PHn6DJg5IS2ckuMJHKoxc-rnUSWYFOayBWaLfK_yGsan8isszSMYAYIKAoky8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Fuy1M7KxOR5z9IeN08yDjQ&_nc_tpa=Q5bMBQEAJqrXSJhVDHVpJQGxf7xKRguVNEjKyndcJ30iJBIAke_MGbSs7nSecbe_Qu-hZ34cMJkv0R5dxw&oh=00_AfyuLFhWJvHJDjxrjKfURtCGCjYXY_vAYLRui2L5Dh8eQw&oe=69B665A0"
   },
   {
-    "id": "art_17",
-    "title": "Pa-rant lang sandali\u2026",
+    "id": "art_22",
+    "title": "Pa-rant lang sandali…",
     "date": "2026-03-09",
     "category": "News",
     "source": "facebook",
@@ -495,10 +495,10 @@ const ARTICLES_META = [
     "reactions": 687,
     "comments": 40,
     "shares": 200,
-    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648385721_122121136761092788_5028476700811861839_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1118&ctp=p600x600&_nc_cat=109&ccb=1-7&_nc_sid=295ae4&_nc_ohc=3p6N_fMo0EEQ7kNvwHoW9yb&_nc_oc=Adk0iVZ_pepbBcXwdp9qFPALwbJTD4uvDRk0ajTuHKpy1EsTaTJeZ3huyzI_f8hmDbw&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=dw4JFSKijuJprXC8xFEtbA&_nc_ss=8&oh=00_AfzSvgeu56EPAvWvNd1JngclpGf_GJGMH_7oLPh0Vecs3A&oe=69B6E59A"
+    "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648385721_122121136761092788_5028476700811861839_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeHPLIcjp-v6S9fhzjYsQ28Cz-IT5z5nOWvP4hPnPmc5a_VgvM43sA892WQPZQLcD0U&_nc_ohc=3p6N_fMo0EEQ7kNvwHoW9yb&_nc_oc=Adk0iVZ_pepbBcXwdp9qFPALwbJTD4uvDRk0ajTuHKpy1EsTaTJeZ3huyzI_f8hmDbw&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Fuy1M7KxOR5z9IeN08yDjQ&_nc_tpa=Q5bMBQHA1wmk_tfd-MJrPrmqZk4aO6UvASz60GFRzCTesb_-Xns9l04p0QTsaTfkAA3FVtOLEPvZJUJtLw&oh=00_Afy6XF0LE8RUXL7qJyVLcPJFr6cjuTqRQnfYow3K1GMoBw&oe=69B6751A"
   },
   {
-    "id": "art_18",
+    "id": "art_23",
     "title": "IRAQ'S OIL OUTPUT CRASHES 70 PERCENT AS STRAIT OF HORMUZ BLOCKADE CHOKES OPEC'S SECOND-LARGEST PRODUCER",
     "date": "2026-03-09",
     "category": "News",
@@ -520,7 +520,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649254143_122121103599092788_4508103181932695083_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFbv28pVxJSYXx_or00WSZ397C5Ag-Cs1v3sLkCD4KzW4KxLcbdOsVERnM0lrMK6sI&_nc_ohc=B2BCjHoOgYYQ7kNvwG98tPt&_nc_oc=Adkkcr5eAWOEfogeC2wzQlhiOVAwNmjMkyXBHibXgWSwcv8uvKKBqssgA9GGPGskWXM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=ZkZGHudxl_dlbkI3x2bRGA&_nc_tpa=Q5bMBQGORx09wLKjnoEWLcZgQ6iUqwz9naiJM-siCgAX9xyeFkVWyMxPJWqwHIvQA0tQsfSKZKf0JUMejQ&oh=00_Afwh5uMDa2H_KBwc2-rUNHdvywhzDVeuP-4rmYH1gWHR3w&oe=69B4ADF5"
   },
   {
-    "id": "art_19",
+    "id": "art_24",
     "title": "P7 BILLION SHORT: THE REPATRIATION MATH FOR 1,979 OFWS AS THE MIDDLE EAST BURNS",
     "date": "2026-03-09",
     "category": "News",
@@ -533,7 +533,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 847,
+    "word_count": 869,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121094659092788",
     "fb_post_id": "893376663850463_122121094659092788",
@@ -543,7 +543,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/647373463_122121094641092788_5300682846673672092_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGXFIKJ2-bitslHVdLA16LR9yOxm-ig7Mn3I7Gb6KDsyd7OkVfKWzBogdSN-Ai375k&_nc_ohc=n3adQ42fLzsQ7kNvwGvUr6P&_nc_oc=AdndFcLXHEMIVW8pw-ZCZch7qhZDvRzt-uKi7RORibxGRDlYYHPLiC_QX6zpCC1zPb8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=igOgkDRL9ii211bq2B3Itg&_nc_tpa=Q5bMBQFDeXVlrBIz_TQaIzv3ViE0q5Dti9fwRDxPG3v3QNOH0QqLfO47H856GQfNja1e5CvUXJrM7W2ISg&oh=00_Afwr-714WsczIe48rzARalz6MuMjbp0NXaldU-TMZU7dBQ&oe=69B497DB"
   },
   {
-    "id": "art_20",
+    "id": "art_25",
     "title": "FIVE OFFICIALS NOW SUING THE 18 EX-MARINES AS CATAPANG FILES AT DOJ AND DE LIMA HITS BACK WITH CYBERLIBEL AND PERJURY CHARGES",
     "date": "2026-03-09",
     "category": "News",
@@ -556,7 +556,7 @@ const ARTICLES_META = [
       "Duterte"
     ],
     "excerpt": "",
-    "word_count": 777,
+    "word_count": 806,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121092811092788",
     "fb_post_id": "893376663850463_122121092811092788",
@@ -566,7 +566,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648650230_122121092793092788_3684285619525348683_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHrMKxkSJ4eGITJV3EmCOe7RGRo5Q3S1dNEZGjlDdLV02iu9ukQngKe0b5BJoNxjO4&_nc_ohc=LWBVUqXcuCwQ7kNvwGF3Phw&_nc_oc=AdmAkvZURF8n5zh13HRgEFhO89NkiiuxKZTp736b9YLvZA1bo2wpwIQt3PqbZ7DN6eI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=pVkcvYKzOC5petOX3k-bAw&_nc_tpa=Q5bMBQH5PZaFLd6pP3Rk6d7qKjhMR-sJzj_ivmIC8G3MKUmoSNpiZ4mOf7T_LuH37f84gkeuAhT0uFuFyQ&oh=00_AfxBtRAsDzjkTAJ0dpEG4VqnqQkTauUBkpfq_OTXzKNqtw&oe=69B4ACDF"
   },
   {
-    "id": "art_21",
+    "id": "art_26",
     "title": "US ORDERS DIPLOMATS OUT OF SAUDI ARABIA AS OIL SMASHES PAST $111 AND THE IRAN WAR ENTERS WEEK TWO",
     "date": "2026-03-09",
     "category": "News",
@@ -579,7 +579,7 @@ const ARTICLES_META = [
       "Arabia"
     ],
     "excerpt": "",
-    "word_count": 1037,
+    "word_count": 1064,
     "read_time": 6,
     "url": "https://www.facebook.com/122120826315092788/posts/122121090561092788",
     "fb_post_id": "893376663850463_122121090561092788",
@@ -589,7 +589,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/647665227_122121090543092788_5819469883301342850_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFnhpmHZ5bsqZLb9KiB8VhIiaf6lGc0KKKJp_qUZzQoooyggdJbe1PYnilhqmgEom8&_nc_ohc=V_tmRPCZmlYQ7kNvwGXXhmb&_nc_oc=AdlHUxcYQrJ9EUZ1a4WNjsOObAXgFYYHO2Kk9KVYMSNwBTWMq7WacVwd6JP3N78v-vE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=BvAfk2vRDijkJVLrVEQt2A&_nc_tpa=Q5bMBQHlpyUH8I2rfxA8kuH9I3DG06LHGEOJzxJ6Y5sqTHU-mMcmfeKta579kiKFNYyrBdF86WfhaTJUbg&oh=00_Afya8L9elh2R6mW0sBd8FQxXlKjLa9BOAgfP0TF0qlwjxQ&oe=69B47CFB"
   },
   {
-    "id": "art_22",
+    "id": "art_27",
     "title": "PALACE PRESS OFFICER CLAIRE CASTRO FIRES BACK AT SARA DUTERTE OVER REPATRIATION CRITICISM: \"THE PROBLEM WITH THOSE WHO DO NOT STUDY\"",
     "date": "2026-03-09",
     "category": "News",
@@ -612,7 +612,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648735057_122121086487092788_874233435426363373_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHrTDdPlEn6aYd5bG9WP8bsVA1ijqUEgOpUDWKOpQSA6sGb7qn4dNshuD28MphFjd4&_nc_ohc=0n2hgtXpv2kQ7kNvwFEwVW2&_nc_oc=AdlNBuxutKoJR6OtF-O2-MoZTJq0lPtHp2mYxUfwcFeSgntW9BKR7aqVwrRo7U3CguI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=JWwB7T0RLaiklAAX_psoqA&_nc_tpa=Q5bMBQFOi1s5cVaRLoL5nkDHUyYRdrvFGE2NK4dPtSltyPUk5-XG1HaEnWJSsOXmL_emEMbMCwrhW9CzBA&oh=00_Afwi5pFxhCAyFtRatfk4hxF-yhdxJ1NpYcYg0_c2p3FkvA&oe=69B47F6A"
   },
   {
-    "id": "art_23",
+    "id": "art_28",
     "title": "SUSPENDING FUEL EXCISE TAX WOULD COST THE PHILIPPINES P136 BILLION IN 2026, DOF TELLS HOUSE HEARING",
     "date": "2026-03-09",
     "category": "News",
@@ -621,7 +621,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 700,
+    "word_count": 722,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121085869092788",
     "fb_post_id": "893376663850463_122121085869092788",
@@ -631,7 +631,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/645969028_122121085851092788_1681785019842083824_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEO23GQYgzW7FktAXJkwJgyQisViInL8xJCKxWIicvzEj5CXmvmdmb5_S94SB7geT0&_nc_ohc=diY0lB0P0MsQ7kNvwHIr-dP&_nc_oc=AdliaHDRbInjJLOeZN0NeaLDRkHh28O-DAiPbU4f8dcrWkxOFKoqF2X8ZfB_LxxJ-U4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=argOZLtxVzwvGe4fBnG2TQ&_nc_tpa=Q5bMBQG4OD8TOXMax1WjNiUVgvyR1ng519umIWv3Ti4vYH-LIbEYwLrmb0Wnb-3XjB3WGOhrAqD6wasz5A&oh=00_AfyYG_N0MEAmNN55h9sGoYR1gFUSvcdwOuLEBsXdjerWMg&oe=69B4B240"
   },
   {
-    "id": "art_24",
+    "id": "art_29",
     "title": "PSEI CRASHES BELOW 6,000 FOR FIRST TIME SINCE 2020 AS PESO FALLS TO ALL-TIME LOW P59.50 AGAINST THE DOLLAR",
     "date": "2026-03-09",
     "category": "News",
@@ -640,7 +640,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 618,
+    "word_count": 643,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121085005092788",
     "fb_post_id": "893376663850463_122121085005092788",
@@ -650,7 +650,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649136590_122121084963092788_4646270196164103545_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeE-wt5KARLqamfCd5Vli7VMhfAaNbb8lnKF8Bo1tvyWcu2W5vp5HtTBTDoXO9kPysw&_nc_ohc=z35d0GdfY3sQ7kNvwGD44Ks&_nc_oc=AdkIA9MvGCuWty-4ZZEmIadxfNq9OBJjrClHksMhuoaKqXXzY7JEqV0VVyFx3FbEMdg&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=ZXNDLtSMTYa895Q4cDt9gg&_nc_tpa=Q5bMBQFZRkS4qu82lIGvl1VahztmXnrOWLTRjrFHgmnbY3r-fCpLOa3Am32ZNivpxLCfksRYfbIwufJRCw&oh=00_AfwDmnkgXSUqULAH4zF57Xpkt42Vtyrr-0-P-VLlMbzFtA&oe=69B49ED7"
   },
   {
-    "id": "art_25",
+    "id": "art_30",
     "title": "SHELL LEADS WITH P24.25 DIESEL HIKE AS OIL COMPANIES ANNOUNCE STAGGERED PRICE INCREASES STARTING MARCH 10",
     "date": "2026-03-09",
     "category": "News",
@@ -659,7 +659,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 655,
+    "word_count": 677,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121084291092788",
     "fb_post_id": "893376663850463_122121084291092788",
@@ -669,7 +669,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648235977_122121084231092788_5295683594098102590_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFw41Jes1zZmMLMxygsotxxTUNiFt3M7zRNQ2IW3czvNBweR-9rta1cRY2di-xud9U&_nc_ohc=3m9HEX6jl_gQ7kNvwEhZ5ix&_nc_oc=AdnHGD9oZpBl_ty600c521sopXipw_rAPN_IT6U0PMavKb7sYx2_a2VRG99FBYQHoDo&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=tKvfzeEXIC0nGUGGsB_k9A&_nc_tpa=Q5bMBQG32YetcZ0WvDtQupjmnVhFE1FO8EltPihX1WbwlegasE9mFxvflVxIuVZ7gDeOU7O5sEN30EHhaA&oh=00_AfzJEqFRLIHjATir38rAtBU7xE9454PhUE-yS2F0d7JkeA&oe=69B48059"
   },
   {
-    "id": "art_26",
+    "id": "art_31",
     "title": "IRAN WAR DAY 11: ISRAEL CLAIMS 75 PERCENT OF IRAN MISSILE LAUNCHERS DESTROYED AS CHINA DEMANDS IMMEDIATE CEASEFIRE AND PHILIPPINE FUEL PRICES SURGE",
     "date": "2026-03-09",
     "category": "News",
@@ -681,7 +681,7 @@ const ARTICLES_META = [
       "Infrastructure"
     ],
     "excerpt": "",
-    "word_count": 728,
+    "word_count": 758,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121082293092788",
     "fb_post_id": "893376663850463_122121082293092788",
@@ -691,7 +691,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649044275_122121082263092788_1751669271461551444_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFcmnV_kS_ZMSQwWOu94OqY5CsthIRusNLkKy2EhG6w0pDkV2hIp9HG3BhPqi7tQkQ&_nc_ohc=6fGT0jYhW2cQ7kNvwGQ_TzI&_nc_oc=Admgi_YqjBQk2A6_RZ6qno1GRAsVmgWBatiVg7KNZ8dgcZo9ydDnyFMhiObCQjf0MiM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=NOSNXRvAJx1we2Mdbyf_3g&_nc_tpa=Q5bMBQGQGZtvNRJOP9Bi7YEbFJ7diR3pI4BKI3o4UkNOrJ1Yf7n-v6BReLH2bDozRskX5xlPAgdX1Xt6Lw&oh=00_AfzftKR33fwFTE1ZJv8Q7mjICQ5WtphQPzshtp415gMGiQ&oe=69B4B321"
   },
   {
-    "id": "art_27",
+    "id": "art_32",
     "title": "NBI ISSUES SUBPOENAS TO 18 ALLEGED BAGMEN OF ZALDY CO, SAYS UP TO 38 MAY TESTIFY IN FLOOD CONTROL KICKBACK PROBE",
     "date": "2026-03-09",
     "category": "News",
@@ -704,7 +704,7 @@ const ARTICLES_META = [
       "Media & Press Freedom"
     ],
     "excerpt": "",
-    "word_count": 794,
+    "word_count": 822,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121081693092788",
     "fb_post_id": "893376663850463_122121081693092788",
@@ -714,8 +714,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/644252069_122121081675092788_5148576446797855889_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEXqMRnAzE4Wvxpe60LbbPJ5cIay5nkKE7lwhrLmeQoTs0JE1ke6CCrdH15XlBaMqs&_nc_ohc=vtTKPBY-J5QQ7kNvwFvgs0r&_nc_oc=Adk6vaV3KTngsIZu6d5yCh86k3CpAkiIEWFO52jYj9si_uqQinCRoV4wZDpktJsnC8k&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=MSKk-HOK__D_Lmk7DuTFng&_nc_tpa=Q5bMBQEWLz5Q6IEIF9Wa-QO8AO01uIq3ZcqeOs2d_GONNngF-j21bV_HbzeSyuh8NlhcFTQoiXsFQVHE-w&oh=00_AfwrGMXI5AEoab0eKPmblr4Fkrj0FWgUMVOnaPQ_IThuGg&oe=69B47EFC"
   },
   {
-    "id": "art_28",
-    "title": "DMW EXPANDS WAR RISK ZONE TO ENTIRE PERSIAN GULF \u2014 2.1 MILLION FILIPINOS IN MIDDLE EAST, NEARLY 2,000 SEEKING REPATRIATION",
+    "id": "art_33",
+    "title": "DMW EXPANDS WAR RISK ZONE TO ENTIRE PERSIAN GULF — 2.1 MILLION FILIPINOS IN MIDDLE EAST, NEARLY 2,000 SEEKING REPATRIATION",
     "date": "2026-03-09",
     "category": "News",
     "source": "facebook",
@@ -726,7 +726,7 @@ const ARTICLES_META = [
       "Iran"
     ],
     "excerpt": "",
-    "word_count": 706,
+    "word_count": 733,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121077097092788",
     "fb_post_id": "893376663850463_122121077097092788",
@@ -736,7 +736,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647010881_122121077061092788_4238899432929911394_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEoVakt2Ch0bLzfWr2H2v7Cp0ePoEhf7L2nR4-gSF_svcSzTFNo69jCiipj4IhhLUg&_nc_ohc=PZocIGfhk5oQ7kNvwFhtxVf&_nc_oc=Adl5Y04ZHnbI5nte0_s7IODKOMtho_mvZeweaNmHmztJyDuHn9A8PyOuQ1-XoRL0qWc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=aKv0qtp_kfun-_yDVo_4aA&_nc_tpa=Q5bMBQFjjJSX03AgWuacjp8J1CEE7JjMUpyVBACnRDXK4Bq_qpHXaj_JFgbC651t9ZY3JOKzK7P97D7pyg&oh=00_AfzK2Tpo9-CkdstfOdANJJnhCnBPcAVcOfElP0z452YSLA&oe=69B48F74"
   },
   {
-    "id": "art_29",
+    "id": "art_34",
     "title": "SANDIGANBAYAN ORDERS SEIZURE OF 16 PROPERTIES OWNED BY FORMER CONGRESSMAN ZALDY CO IN P289 MILLION FLOOD CONTROL GRAFT CASE",
     "date": "2026-03-09",
     "category": "News",
@@ -748,7 +748,7 @@ const ARTICLES_META = [
       "Media & Press Freedom"
     ],
     "excerpt": "",
-    "word_count": 761,
+    "word_count": 786,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121067449092788",
     "fb_post_id": "893376663850463_122121067449092788",
@@ -758,7 +758,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/646233042_122121067413092788_4915948404910820437_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHgdL3ZAQDZL7UfHeFC27UMPwkeVnUOai4_CR5WdQ5qLqGUe8hKBGQx5mshldKjxqA&_nc_ohc=1HxkV0dCRuoQ7kNvwFgKf9s&_nc_oc=AdlMUsPEEiqUigXTc6Z-NBd5JZndFbBjdYbV2YJ1-Pcb5lDFJYG03qPJ-GVdpEnBgcg&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=xW2T-9HsXCJ5u5U-hWTRFw&_nc_tpa=Q5bMBQFzLy6eJYOB3z0sSqOGiwmKGV9DbeyGguylAVaSgTdvCQraW3gbrCzMcyu-Q7kLhk0G29gv_Z4kKA&oh=00_AfxrUBwODN1pAnoPX1nibTVpem292W0kdSJFY0EcqvB5Ww&oe=69B4A838"
   },
   {
-    "id": "art_30",
+    "id": "art_35",
     "title": "MOJTABA KHAMENEI IS NOW SUPREME LEADER OF IRAN AND HIS FIRST ACT WAS TO ORDER MISSILES FIRED AT ISRAEL AND THE GULF",
     "date": "2026-03-09",
     "category": "News",
@@ -771,7 +771,7 @@ const ARTICLES_META = [
       "Bahrain"
     ],
     "excerpt": "",
-    "word_count": 837,
+    "word_count": 866,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121064827092788",
     "fb_post_id": "893376663850463_122121064827092788",
@@ -781,8 +781,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/646890577_122121064809092788_4193618667822167589_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFyE8bT7CZ0iLkSFjWDqnGFmd7oiSJpmgCZ3uiJImmaAK0_CeFojsQe6I23eoUZ9f8&_nc_ohc=DyvFQlI_Pv0Q7kNvwH9FxSk&_nc_oc=AdnomaW4n94syFpOSEtCvdyavnB0wsra_slqR_PYDf8qbs0pKc-50pgHB17KfP0A8nA&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=t4DbHD8LBI6Qmgag_tL7EA&_nc_tpa=Q5bMBQF9XTkGKSIhOPYFfang_hms49qLnkxXZPV1rnoZ23YsnL2gPDt-A4p_cKXEscb60qVDtQLkv4xm5A&oh=00_AfyoE0CefqdjOa0k2L_AG6cwiCHX3nzUbiy_eKG8RZM2ww&oe=69B4A014"
   },
   {
-    "id": "art_31",
-    "title": "P52.8 BILLION \u2014 THAT IS WHAT SENATOR HONTIVEROS SAYS THE GOVERNMENT NEEDS TO SURVIVE THE OIL CRISIS",
+    "id": "art_36",
+    "title": "P52.8 BILLION — THAT IS WHAT SENATOR HONTIVEROS SAYS THE GOVERNMENT NEEDS TO SURVIVE THE OIL CRISIS",
     "date": "2026-03-09",
     "category": "News",
     "source": "facebook",
@@ -794,7 +794,7 @@ const ARTICLES_META = [
       "OFW"
     ],
     "excerpt": "",
-    "word_count": 871,
+    "word_count": 895,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121063213092788",
     "fb_post_id": "893376663850463_122121063213092788",
@@ -804,7 +804,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648511818_122121066759092788_3247730700910424721_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeH0BzfJnkuRet7F3T338dVbD56YHuVoivsPnpge5WiK-xBKdN1eOnR7juZdVmw24rI&_nc_ohc=nulXyH2AwTEQ7kNvwE3fdiS&_nc_oc=AdnGizxAHQoMNON1q064xIyWttUFarbLnwiQx9RZAqc-6ZKfqJ-ePSYxQ-6m3hqzWzI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=HbTeeRV148v14CY4wQX5LQ&_nc_tpa=Q5bMBQHilSyMtsk40icdBf1NqxtgHBDFXZEdGn4QkvY66Wr1RWZf24pKeVYk2JZUEZ8-dRaabMuBpyf0YQ&oh=00_AfwCZ6oE2IjOKkQftX8erQr2rtfgIX5ZcLcl1HJkdi2yEw&oe=69B4ABEB"
   },
   {
-    "id": "art_32",
+    "id": "art_37",
     "title": "THE EXACT NUMBERS ARE IN: DIESEL WILL JUMP UP TO P24.25 PER LITER THIS WEEK AND THE GOVERNMENT JUST SAID IT COULD REACH P96",
     "date": "2026-03-09",
     "category": "News",
@@ -813,7 +813,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 820,
+    "word_count": 849,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121057207092788",
     "fb_post_id": "893376663850463_122121057207092788",
@@ -823,7 +823,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649405160_122121057189092788_5038997534970998173_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFLDN3gzcrzeM9wgtdBVjzYzzNjcFMf-BDPM2NwUx_4EEypnE6cXZBj4yxnU9NgTj8&_nc_ohc=-X0MgyXYxWEQ7kNvwHacJnD&_nc_oc=AdmuAB6r_EMNumFok7PPvLQxOUv_2P1bjYVPP3XW4CcezR9ynVMJJRwbyjY-7KwNvnA&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=QkHlrS4gwlWdsTsNDLnKZw&_nc_tpa=Q5bMBQFFggBP_24vNu5drPAocT0g7lZkGnpxQJMIoMmkgx15ffHGjPtR2VS3J0at-hZ6dPYUG8gnZ43nrw&oh=00_Afx71TTZVHoHIR8h4CVbgAg_az59tZDzGND-BjDxhtKbMg&oe=69B48E1A"
   },
   {
-    "id": "art_33",
+    "id": "art_38",
     "title": "DE LIMA AND A MAGSAYSAY AWARDEE WALK INTO THE NBI TO FILE CHARGES AGAINST THE 18 WHO ACCUSED THEM",
     "date": "2026-03-09",
     "category": "Coffee",
@@ -836,7 +836,7 @@ const ARTICLES_META = [
       "DPWH Scandal"
     ],
     "excerpt": "",
-    "word_count": 747,
+    "word_count": 772,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122121053043092788",
     "fb_post_id": "893376663850463_122121053043092788",
@@ -846,7 +846,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649047984_122121053025092788_85472767197164759_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGkfetvlQ0aLhZlBuq8-qL_oOpzpu6DGneg6nOm7oMadySfjo3rKWeb5Mcq9cWTFOc&_nc_ohc=MFlcNv-7mksQ7kNvwFftheS&_nc_oc=AdmJ6YywO7vBq2NTt4dhdO1hsGQgyBb4zDXPVZJefB9qdNcFwj8aLpclGkj2jlFOXO4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=Y83IQ3_f051c_-CExLbnig&_nc_tpa=Q5bMBQH77RON7qOomYqXYoLf4u9uEQyJ3FY2fx-gnTV0PAmoI2VJ2FIlgIY6rknbviwplduPeXA8NGxU6g&oh=00_AfzdO7UiZtM2ny2-YIQjSPoPyrSTnoxVoRIhFAfKxFw4hQ&oe=69B4A471"
   },
   {
-    "id": "art_34",
+    "id": "art_39",
     "title": "THE PHILIPPINE PESO CRASHES TO 59.7 PER DOLLAR AND THE PNP IS NOW ARRESTING FUEL HOARDERS",
     "date": "2026-03-09",
     "category": "News",
@@ -856,7 +856,7 @@ const ARTICLES_META = [
       "OFW"
     ],
     "excerpt": "",
-    "word_count": 993,
+    "word_count": 1015,
     "read_time": 6,
     "url": "https://www.facebook.com/122120826315092788/posts/122121042171092788",
     "fb_post_id": "893376663850463_122121042171092788",
@@ -866,7 +866,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/649223497_122121042153092788_2733013900614886242_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeH6jPFg42iJybMsmL91URTOumh-HrrtSd26aH4euu1J3aLz2_5tSnSQMXu6q0cvzlE&_nc_ohc=lGF-BQTFJ0AQ7kNvwEGgM-v&_nc_oc=AdlcwkLxWMSTzTkB5RuJLT44zBrcdCMWpTSBfh7724kh_ik78TborlYTRrKErnParjs&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=tnVezCONgo9RUl3wY6Kfhw&_nc_tpa=Q5bMBQHVr-eIkY5A7_9TnM5GXm2MK_t7QMY4__B4RUbUEIgifcw5RP72wSEeEIlc8lMJCKKp9MF8RGQVLw&oh=00_AfxejRkWs4w567MLcBjiL-rKfYIDhOOvKr9hXTl1Ew-MqA&oe=69B499E0"
   },
   {
-    "id": "art_35",
+    "id": "art_40",
     "title": "ASIAN STOCK MARKETS CRASH AS OIL BREACHES $100 A BARREL AND THE BSP'S RATE HIKE TRIGGER IS NOW LIVE",
     "date": "2026-03-09",
     "category": "News",
@@ -875,7 +875,7 @@ const ARTICLES_META = [
       "Economy"
     ],
     "excerpt": "",
-    "word_count": 945,
+    "word_count": 970,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121037251092788",
     "fb_post_id": "893376663850463_122121037251092788",
@@ -885,7 +885,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648538714_122121037173092788_750106020385301735_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGaheyaGWA1LbABjC6DAw59_fRRyDEMFkL99FHIMQwWQg02tjvk9EQ0ezuGhaDlRz4&_nc_ohc=_NVwMdxTcjMQ7kNvwG2m9_T&_nc_oc=AdkjBaIZSCxLBjIXf_VVhkAzyLl9mzZumbYJswvA8fMnvs4hcX5Of-cM7UF7mI5e3GY&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=z5O93jSpzJ0nBYzP5UsYJA&_nc_tpa=Q5bMBQElTgpI3I-L97C57G2CKySH_U6-30zhGO_SXmphN6XMRtVpvsyG0s-Fj2wo2lHKcdvLps7TqpzEMw&oh=00_Afx4MdgcwaKdw2f9djiY_jGgx5gpOEqcxaao3HMWGTHvew&oe=69B4A3A5"
   },
   {
-    "id": "art_36",
+    "id": "art_41",
     "title": "54 GAS STATIONS NOW FACE GOVERNMENT ACTION FOR ILLEGAL PRICE HIKES AS KUWAIT SHUTS DOWN OIL PRODUCTION AND MARCOS SENDS EMERGENCY POWERS REQUEST TO CONGRESS",
     "date": "2026-03-09",
     "category": "News",
@@ -895,7 +895,7 @@ const ARTICLES_META = [
       "Marcos"
     ],
     "excerpt": "",
-    "word_count": 876,
+    "word_count": 907,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121031557092788",
     "fb_post_id": "893376663850463_122121031557092788",
@@ -905,7 +905,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648045405_122121031533092788_1622199653938390492_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGuR0hGbxXWjFqGc4Vm4VWsbsm1Tpae0JRuybVOlp7QlM1DagjIRQQ5LrwlYq5Ccug&_nc_ohc=NWGTvo1Pa7kQ7kNvwExRLrn&_nc_oc=AdkVdIlw-uBZBiZvDZVavGdPnt2lATE8-nMpvnef9veLYb6gUzpn_X4TGgRkMP9tXjU&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=8mFZD6asHxKwY0CUUtjRyA&_nc_tpa=Q5bMBQEPYJCdYWW0OWlcB0DMW_vBzJN_7rCgI7MPsKgCMX87j9GVVGx36padtJu77zTc40yiativc4mYGw&oh=00_AfwfpDAWPg-7NDylXl_zr_eQ7S7bjNOEDmuOeE-hQn_7tw&oe=69B48511"
   },
   {
-    "id": "art_37",
+    "id": "art_42",
     "title": "MARCOS IS IN NEW YORK TO ASK THE WORLD FOR PEACE WHILE 2 MILLION FILIPINOS WAIT IN A WAR ZONE",
     "date": "2026-03-09",
     "category": "News",
@@ -917,7 +917,7 @@ const ARTICLES_META = [
       "Media & Press Freedom"
     ],
     "excerpt": "",
-    "word_count": 807,
+    "word_count": 834,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121030501092788",
     "fb_post_id": "893376663850463_122121030501092788",
@@ -927,7 +927,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/645310159_122121030465092788_4301498622271096366_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeETnS9t091eJoQ7yH1wUFJmZE1dko0aV7NkTV2SjRpXs4McMMJdwpEhK9uXL_JqtQs&_nc_ohc=xOG1egFhkeYQ7kNvwHbSt2K&_nc_oc=AdkhkyycX-WDMrw5J8tFP78T-ucIivlqbm8rrxZIDm_mB_beAiQZAa4a4topdmmh9fo&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=JS17PwTCXIYdWoVv3Tc9Bw&_nc_tpa=Q5bMBQH-WMAp_UzoHqwqOe1sjqVCOk1wHVGWHUQMH80a_6Bo8sSP8tjukm20uYzwn3EgRilAGMMK9uJJ3Q&oh=00_Afzzy2nwA0Pg7V8ujinm_tb_2cXBkxFKMB4PfugShy6z6w&oe=69B48282"
   },
   {
-    "id": "art_38",
+    "id": "art_43",
     "title": "THE IRAN WAR JUST CROSSED INTO CIVILIAN INFRASTRUCTURE AND SAUDI ARABIA IS COUNTING ITS FIRST DEAD",
     "date": "2026-03-09",
     "category": "News",
@@ -940,7 +940,7 @@ const ARTICLES_META = [
       "Military & Defense"
     ],
     "excerpt": "",
-    "word_count": 798,
+    "word_count": 820,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122121027309092788",
     "fb_post_id": "893376663850463_122121027309092788",
@@ -950,7 +950,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/646873412_122121027279092788_8952158199439090575_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEyHA5V5gJt8pvDN7qL4gl2AAjB_CGCa9YACMH8IYJr1mv2qBr4YVZzvGygLGMRe3M&_nc_ohc=W2tidcOXQ7oQ7kNvwGXtQrT&_nc_oc=Adm5ygBqG4VYtmHZR_acvbdwNA8p56NhTDguA3XLjMQ0JCT0FPKPyUE835dBL3KaS44&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=y4lK2FHp-oqFSU0YO5TtDg&_nc_tpa=Q5bMBQGEXyCk8K-tb17uG2ykGbVdOw-XbEXdKi2NxXJFWRCZlNyyNJDSe9XbelKu62mlUARyFcVm6qgmzw&oh=00_AfyoeiYGcpFgyXeAdkHRMNUIgOFzQjnbZ41LirkuXTq3VA&oe=69B49DE3"
   },
   {
-    "id": "art_39",
+    "id": "art_44",
     "title": "THE SUPREME COURT JUST JOINED THE 4-DAY WORKWEEK AND NOW ALL THREE BRANCHES OF GOVERNMENT ARE ON ENERGY CONSERVATION MODE",
     "date": "2026-03-08",
     "category": "News",
@@ -973,7 +973,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648369762_122121023781092788_1177124961145694302_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEO9dpRkDjI0c3JXBNmLWW6NRZ3Vie5_TQ1FndWJ7n9NMc7SNxe-aIS0MAXpek1abA&_nc_ohc=uhGCq_wMXmEQ7kNvwFNPGO9&_nc_oc=AdkRLPBF4LVNzZpnmNFKAxgcTsd3JAYkfzcABVcFEmGj74R_tj8WBOR09CuE_14Q4CY&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=M9JygV6IerNDf6c6NvA_lg&_nc_tpa=Q5bMBQG48S0qDWLO-Y8LtSXumQE5zduGenJWulVDh3WPqZSzEHwEfA66KrHptZMTvXg88KsmokZIfOTtBA&oh=00_AfzqzY3q4L_hJnyXB06RtquOxZjSe37GJMRLAaiJHD42bw&oe=69B3BFF5"
   },
   {
-    "id": "art_40",
+    "id": "art_45",
     "title": "CRUDE OIL JUST CROSSED $100 A BARREL AND THE BIGGEST FUEL PRICE HIKE IN PHILIPPINE HISTORY IS COMING ON TUESDAY",
     "date": "2026-03-08",
     "category": "News",
@@ -995,7 +995,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648784207_122121022749092788_134195166919527933_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeF1O0Wf0dJ51sMudghbnfUnh1x2UTnZ7SWHXHZROdntJdc3fTXw2_w4HDfubxiMMbg&_nc_ohc=qob-Fw8MfVgQ7kNvwGUvrlS&_nc_oc=AdnIREKRNVMWk_Rtdi7aW4ziyjQUAqrDiGcR00EKMJNuYvULcaG950ZOfPBARLRI0nk&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=M9JygV6IerNDf6c6NvA_lg&_nc_tpa=Q5bMBQGnvuJ--fZ5Fe0uetQfBcEz1f59iCSRF1TdsNy5r6fwEAy7fQbbAdR0eX061yZSucKA6BUlT4Kmew&oh=00_AfzXXB3yGrinMEhfPlxvRYwnWL8PwYcOv9pLt-7s66kWHA&oe=69B3E44C"
   },
   {
-    "id": "art_41",
+    "id": "art_46",
     "title": "THE CENTRAL BANK JUST WARNED IT MAY HAVE TO RAISE INTEREST RATES IF OIL HITS $100",
     "date": "2026-03-08",
     "category": "News",
@@ -1017,7 +1017,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648623823_122121014049092788_8563113181404055330_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEomw70-yuoRazepq-oQ7y7pFlLC4FVOPKkWUsLgVU48jDDNa_4fCavAmbr4sXFiKk&_nc_ohc=faot92EvcusQ7kNvwG2GDz1&_nc_oc=AdlSSQil2V6QTQnV0Xz-l7l_MYipD9hUBQzL8f7IZ6G1tuUykObeLayFKnbmZ9NRo7k&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=waoVa44aSEmaiJTUdz21WQ&_nc_tpa=Q5bMBQFqVS9ngHWhejfAY6kO04F7uGPPOW4fhnEXmPPWXrS2cBTz0E6brnIV4thE3YIrcXmLoU5zIcNIPA&oh=00_AfxqCOjHDLbWVJ1Ba_3ZuzDGp176alItVYnEO4JEybbTqA&oe=69B3CE0A"
   },
   {
-    "id": "art_42",
+    "id": "art_47",
     "title": "IRAN'S ASSEMBLY OF EXPERTS SAYS IT HAS CHOSEN A NEW SUPREME LEADER AS THE WAR ENTERS DAY 10",
     "date": "2026-03-08",
     "category": "News",
@@ -1040,7 +1040,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/646885535_122121003045092788_3735640338426843010_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeErNNt6DctftWWU3_Ylrw4xX4VR3AOAkS5fhVHcA4CRLnRfIElS20ne3HkNnSF4MZw&_nc_ohc=eP_FX2RYkCUQ7kNvwH7Ew-g&_nc_oc=AdlkqLlHve3VaPMeqEMec22xRfOmsUymT4DEB1o2DCkhMtVp-o8QiILX4846xQudcWM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=iDT9_JGPBTUESMrdNszjnw&_nc_tpa=Q5bMBQFjAOqWN_dDY2_jyQnR0j8MjA409kqoDk_BD4h02jEDFIlfL4gw1subtWAPmL1BEzCx2WDegd1l8A&oh=00_AfwT-Lf2D6bdDuGfMP5ZWhVpgJDAMnoY4N-JH7r7AEGPAw&oe=69B39DC0"
   },
   {
-    "id": "art_43",
+    "id": "art_48",
     "title": "ICC PROSECUTION DEMANDS ANSWERS ON SIX FILIPINO LAWYERS IN DUTERTE DEFENSE TEAM",
     "date": "2026-03-08",
     "category": "News",
@@ -1061,7 +1061,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647773050_122120994507092788_5786839514933167426_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=hdtDimRsVE0Q7kNvwHYWknC&_nc_oc=AdnN9FAWhjpx8HT7763HON0VI-h30g1fS9GvjemjISsPogfvHpGE0FMCFZT5gntYRtw&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=oiQLCnlVw-jv4gb6RSZs6A&_nc_tpa=Q5bMBQEA8eOI0O2Dq9w31oV7rAU7svgpdOxlK2-Ml2TxOyV-QmBLpuJ6MFU4jhpGO-NqTcjBI2-NzEHgYQ&oh=00_AfyEo4qZp2KbfyGsJxUHXCCyckJMD-PY826BySMZfzRofg&oe=69B39016"
   },
   {
-    "id": "art_44",
+    "id": "art_49",
     "title": "IRAN WAR DAY 9: ISRAEL AND THE US STRIKE OIL INFRASTRUCTURE FOR THE FIRST TIME AS TEHRAN BURNS",
     "date": "2026-03-08",
     "category": "News",
@@ -1084,7 +1084,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648397629_122120978313092788_6579843824679593026_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=3aHN8R_wSM8Q7kNvwFAjC0q&_nc_oc=Adkf0zYdKtVfR7Mx7Gvm5lVkb7KP5j-M-7y9dgeCNE_F1zJypDwMOdKKO21y8BG4lUA&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Q27Bs2aATijrJqBR1eallg&_nc_tpa=Q5bMBQGg55nPnoleHwtJj1JpUwAh5ll5cBajCdj8anqHtKmX4RZdCH5Fx0Bn8cORE-UToCodvD2S-JykYQ&oh=00_AfwAnl-7fWs9OBlum1ojbxtWYyBc_b4HPixhC4xa6ZJI2A&oe=69B34A71"
   },
   {
-    "id": "art_45",
+    "id": "art_50",
     "title": "THE DAY BEFORE THE BIGGEST FUEL PRICE HIKE IN PHILIPPINE HISTORY, THE DAMAGE IS ALREADY SPREADING",
     "date": "2026-03-08",
     "category": "News",
@@ -1104,8 +1104,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648831818_122120975451092788_4717805658674939800_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=nSHy6IEO1KEQ7kNvwGdwKNm&_nc_oc=Adl-Tlbuhz0dOt7dUiFlTVXM_VRX9CntzlaBFIVm0UZs5UvqSXlr4PVrtu1_IDHOaGE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKIiGfEEAAAA&_nc_gid=Q27Bs2aATijrJqBR1eallg&_nc_tpa=Q5bMBQGDKKazDYbXaGex0KJTXKYxD4NZimAaTPN6_Dmd1BM_r-DyfLJgWzlKSSJ4ps2N2oDr2MwgZcmlzA&oh=00_Afy74kyg70u10BNAiceNZN2Nn8es-TOp-jx4xXuuC2yQxA&oe=69B364A6"
   },
   {
-    "id": "art_46",
-    "title": "WHEN THE LIGHTS GO OUT: HOW CINEMAS ARE DYING, FROM LOUIE\u2019S THX TO MAGNOLIA",
+    "id": "art_51",
+    "title": "WHEN THE LIGHTS GO OUT: HOW CINEMAS ARE DYING, FROM LOUIE’S THX TO MAGNOLIA",
     "date": "2026-03-08",
     "category": "Commentary",
     "source": "website",
@@ -1123,8 +1123,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/gemini_generated_image_j6xqpzj6xqpzj6xq-fdmtpb8pzwYbeDvy.jpg"
   },
   {
-    "id": "art_47",
-    "title": "DMW DECLARES PERSIAN GULF, STRAIT OF HORMUZ, AND GULF OF OMAN AS WARLIKE OPERATIONS AREAS \u2014 FILIPINO SEAFARERS CAN NOW LEGALLY REFUSE TO SAIL",
+    "id": "art_52",
+    "title": "DMW DECLARES PERSIAN GULF, STRAIT OF HORMUZ, AND GULF OF OMAN AS WARLIKE OPERATIONS AREAS — FILIPINO SEAFARERS CAN NOW LEGALLY REFUSE TO SAIL",
     "date": "2026-03-08",
     "category": "News",
     "source": "facebook",
@@ -1146,7 +1146,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648681757_122120935419092788_9199364610428947945_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=WLngluUBfOUQ7kNvwGoP3BD&_nc_oc=Adk1gzpheekJ3g54WVtFub5Ia2doN8XyWoMlXGxKbQzcMDei6Nok7-DpqeIF1585PYQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=AI6LyOICGQQuDUBTGDDRoQ&_nc_tpa=Q5bMBQE0XiL-FKbCkT1cSaiipr16wiYJuGEFSZtklaGSrQE7CDVTwpftVYvj4VOqDLjeL3kMPq9PZyITmQ&oh=00_AfwEqMcti-vUgpP7tDyxA0iMi-dr1gsDGH8UDRycFVhucg&oe=69B2C375"
   },
   {
-    "id": "art_48",
+    "id": "art_53",
     "title": "LAWYER FERDINAND TOPACIO ADMITS LUSTING AFTER CONGRESSWOMAN SARAH ELAGO ON LIVE RADIO, FACES DISBARMENT THREAT",
     "date": "2026-03-07",
     "category": "News",
@@ -1169,7 +1169,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/646827724_122120902665092788_3664895449242865564_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=fksgRdZHBDEQ7kNvwEtz0vw&_nc_oc=Adns-xxoD6GXsM4_HUulhJUnKObfDs2dEQ4YOL6wD_LbLV7-CDIE2YeQ2UjNVLs1Gqo&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=2n9Dt_Edt0ktZLER9U4n0Q&_nc_tpa=Q5bMBQFtGqnI0tXdu5CwBn7srd9TYoPcA9qkZzRWLhRuDfXIdLx9-AyEJvU7uifjAAG9uzaaHjR7Y0ZpUQ&oh=00_AfzyL-4gOSu14JOZFM-TubDvwVJaE2seZ5jh0dCOUHPBnA&oe=69B29145"
   },
   {
-    "id": "art_49",
+    "id": "art_54",
     "title": "MARCOS ORDERS FOUR-DAY WORKWEEK FOR ALL GOVERNMENT OFFICES STARTING MARCH 9",
     "date": "2026-03-07",
     "category": "News",
@@ -1190,7 +1190,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/646817764_122120886363092788_6951261086856715095_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=1uIjc86Df3UQ7kNvwFUWrTq&_nc_oc=AdlTjnMZzoAxb9XfDndhkxPkUcpvTNu3QJRHo7cbfDU0vtU3LziTPqF3XcXY8q5nnY4&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=3mgp9uz_psBdIHLNBlSWnQ&_nc_tpa=Q5bMBQHYxVPXklCqlSY4FxSg_mKA655P6Bz8wxGytwRHd_6MxEjOcBL1BAbidllgDvwU184LWfuzXgBzoA&oh=00_AfwM2VQm43eiIRlqEGFiCR4aaGviFCpj-8JyRPe3GckcLg&oe=69B29E40"
   },
   {
-    "id": "art_50",
+    "id": "art_55",
     "title": "NINE WOMEN FILE CRIMINAL COMPLAINT AGAINST REP. SUNTAY AT OMBUDSMAN; HOUSE ORDERS ETHICS PROBE",
     "date": "2026-03-07",
     "category": "News",
@@ -1213,8 +1213,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/646877300_122120877051092788_9154018338002494005_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=YLwqPyLEylAQ7kNvwGqV1ml&_nc_oc=AdmANaWuqKHDH29ukbTJAuLv3CsqtvMkHebeQ8VoBE4yQAKgUEYuvrwDCd_ORHzDP3w&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=ZyWLb_ca8Gtho3bIV9vRvg&_nc_tpa=Q5bMBQHxnTf6clVTt1IYDPMG0jBAT7Ut1KgwjsvZooIlXizr0DcLUVsEqx9hDzsWItCgyiWeCBNa5RVKlg&oh=00_AfwkE60XnXtrNa-N2iiNmad8w6COOr_HT3a_CAimmCBslw&oe=69B29B76"
   },
   {
-    "id": "art_51",
-    "title": "SENATOR JINGGOY ESTRADA ASKS GILAS WOMEN PROSPECT ELIZABETH MEANS IF SHE HAS A FILIPINO BOYFRIEND DURING NATURALIZATION HEARING \u2014 DEFENDS IT AS \"NOTHING MALICIOUS\"",
+    "id": "art_56",
+    "title": "SENATOR JINGGOY ESTRADA ASKS GILAS WOMEN PROSPECT ELIZABETH MEANS IF SHE HAS A FILIPINO BOYFRIEND DURING NATURALIZATION HEARING — DEFENDS IT AS \"NOTHING MALICIOUS\"",
     "date": "2026-03-07",
     "category": "News",
     "source": "facebook",
@@ -1236,7 +1236,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647476464_122120876487092788_7025174938699218626_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=ZGh9SuENC1IQ7kNvwEHWS0G&_nc_oc=AdlF5Wy-7pOi73ypX8nTuKv2TsJcoBqHbITcArDYZzia-0vY-TFDw7X9LUDXTUPUa5s&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=bJJnOfKChucSkHAu6sJD3Q&_nc_tpa=Q5bMBQHcDTk7KCtp60RRgc43Vhr2ae7vmBf3mOMrc-4zg0v4YuqYoMWZmidk-toZIhw8KXO2y7fJlT4nBA&oh=00_Afyc3V-i1fa-AURQYTaeVVfAKoSDgRuktCgl9dhdjXl2uA&oe=69B28458"
   },
   {
-    "id": "art_52",
+    "id": "art_57",
     "title": "DIESEL HEADING TO P80 OR BEYOND: THE RECORD MARCH 10 FUEL HIKE, PNOC'S RESERVE BID, AND THE SPR BILL THAT COULD HAVE PREVENTED THIS",
     "date": "2026-03-07",
     "category": "News",
@@ -1258,7 +1258,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/645632150_122120871165092788_1075971564338928804_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=mNnKSAcnFvIQ7kNvwEJAkqV&_nc_oc=AdmQfm-p__QPDiJk4zjEPv55oUYmz_n-C3J41aH-zhVtUh_WIRBUPWM8K29oNGLs0ao&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=YBTyX1_CNPozAgGh3G0s0A&_nc_tpa=Q5bMBQFeSNKCr3i3m8Z-ciDaPs1uO9-BnKXWzaW6PR5WXOYAj8b2ptZQRFpM_epryNZJ2VH3QB6JDAycuQ&oh=00_AfxCezDVeMVKA_N3bbMaOvExKTrOABTNuFbUuFNgysVJ5A&oe=69B29F34"
   },
   {
-    "id": "art_53",
+    "id": "art_58",
     "title": "DOE ORDERS ALL OIL COMPANIES AND GAS STATIONS TO COMPLY WITH FUEL PRICING RULES, DEPLOYS PNP FOR NATIONWIDE MONITORING",
     "date": "2026-03-07",
     "category": "News",
@@ -1277,7 +1277,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/646282754_122120868777092788_2863788858425922877_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=5fBj_4mD1QQQ7kNvwESSGvY&_nc_oc=AdkERSfgH0NQdOjkyzxKChuep7FqpQbWQmO3-mHp1aljfWb0qHpZz_TAbw6qIhtydFQ&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=rVN5ntP9pwH_vnEO1r1d8A&_nc_tpa=Q5bMBQF4Lw9f6DiXb66eLvjIDKWKFGosO06OKF-hkAqGBP2vtXMtYgbdl_szVkiL5P771a7oRSUo6CzaKg&oh=00_AfyPFGu4mHBZ3K_GKWCykj6JolvRZUIhVgs-k2xPDZP9QA&oe=69B2933A"
   },
   {
-    "id": "art_54",
+    "id": "art_59",
     "title": "CORRECTION | March 7, 2026: This article has been updated to reflect that of the 299 Filipino nationals aboard Emirates Flight EK336, only 23 were confirmed OFWs. The majority were stranded tourists and regular travelers. The original version did not make this distinction clear. The date of arrival has also been corrected to March 5.",
     "date": "2026-03-07",
     "category": "News",
@@ -1299,7 +1299,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647511424_122120865777092788_4585489194954533499_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=xvQ6hayaPVEQ7kNvwF-cNni&_nc_oc=AdmSonQKOzEHQ6DrDN7LBQWaELoNjJNu0o0x2bMJwPNy5L0XqS-MoPO0yipMxFu5QaA&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=2GuSnwsdkw08s3ciEJJy6g&_nc_tpa=Q5bMBQFm2V2E9ahIqWab99FHu8GdyD_r2eZP4Ujqi7U8XC1AEKC2U7Rt0JNFgC_bDWQwcM5Lv7Elig1VNA&oh=00_AfzfaTYCyAmCwpdSkibfgR-SRkK073TrfT66tsgcARdb2g&oe=69B2B1CA"
   },
   {
-    "id": "art_55",
+    "id": "art_60",
     "title": "SARA DUTERTE RELEASES VIDEO MESSAGE ON OIL CRISIS, TELLS GOVERNMENT AGENCIES TO ACT NOW ON FUEL AND FOOD PRICES",
     "date": "2026-03-07",
     "category": "News",
@@ -1322,7 +1322,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/648991672_122120860179092788_4859516003153399890_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=ctygsdypM3YQ7kNvwFgu7VM&_nc_oc=AdmIu3jPcHLbzNaCz84Lv9BePEIlMegeJpu1lwfIj7sLbjdnSY900ZONvvno-LLyrvE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=3Oo8EP92ok8tfYeMsNHlaw&_nc_tpa=Q5bMBQHKoOG_XnzLnvWDCcplqS_qrkyQc9AT9sE1CDGQ80YeQ8jcdwX508BCWZ_5E-5SpUK8K47XotR8fw&oh=00_AfwTi82DO1vuhNHu4qVf_qNLwFl-TxHan3MKYwb_XayQGQ&oe=69B29943"
   },
   {
-    "id": "art_56",
+    "id": "art_61",
     "title": "SARA DUTERTE SAYS MARCOS LIED TO HER FACE ABOUT THE IMPEACHMENT, THEN WHISPERED \"I'LL TAKE CARE OF YOU\"",
     "date": "2026-03-07",
     "category": "News",
@@ -1344,7 +1344,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/649205526_122120858679092788_6603193478977469485_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_ohc=CvmfulMIwDAQ7kNvwGDw6aJ&_nc_oc=AdnMRb86gWpqETcq4ymy9ZnJk3axkVjna2gd7h6W0nbqYnliWJbyEjpd_AojwFZgRTY&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=mkU6Hdpp9TciPkBlIv6Umg&_nc_tpa=Q5bMBQE-yqB5q2cWKBBWm2ZTEIvPIl-HVCF9RhPbD-hZuq4k65ZsumE8umcZofJvJaxbdiE0lyLHhEnS_g&oh=00_AfxmagO62Jdjf9BB_8ghhi7jD2w2Ffc5fj2MOzYqO0DgVw&oe=69B28E96"
   },
   {
-    "id": "art_57",
+    "id": "art_62",
     "title": "ANNE CURTIS REJECTS CONGRESSMAN'S NON-APOLOGY AFTER LEWD REMARKS IN CONGRESS, LEGAL ACTION ON THE TABLE",
     "date": "2026-03-07",
     "category": "News",
@@ -1367,7 +1367,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647497649_122120853765092788_833485454067031159_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=EpBZxdQivoEQ7kNvwFy9PDf&_nc_oc=Adnqu3D-aauLy2dOGR4rP6rZyaQ-OQ-IMqbz0LNhsY-mOoWqnrY46-MephYyiwxC0xE&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKIiGfEEAAAA&_nc_gid=TmNXFyhkovGBCdsJ69uduA&_nc_tpa=Q5bMBQGKDwBNItLoftvHtDbnRJrDa6jzMPjutleZ-jSBRGGD6SewoRjwTQIdkXPYeywIIu5oYURhWxucDw&oh=00_Afw0VkYu1LgCMuC-KsAFi7zDESPbn3BeiU_203c4hWLQwQ&oe=69B2AA9B"
   },
   {
-    "id": "art_58",
+    "id": "art_63",
     "title": "FILIPINO OFWS AND THE MIDDLE EAST CRISIS: WHAT THE REPATRIATION NUMBERS ACTUALLY LOOK LIKE",
     "date": "2026-03-07",
     "category": "News",
@@ -1389,8 +1389,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648641221_122120809797092788_6223844109832283204_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=fKDICj4e0XUQ7kNvwFrNx7T&_nc_oc=Adn84a5J6ZP1GorAnFGU7EdeCxE6WHkpUkVquDVCnqViW64V6HC399JzwabbbNsQZ2o&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQEBntJRCQLzWDQ46E1pDP7nDszsrFCg6PfSivd1IxfpXg9x5IgJEjh76h1Fe0z3eguoxy-THjEXsg&oh=00_AfwTAG9IkmKQ4dBKKevzkpuX5EkDIJQ7Fc8nNSEwdqt4uw&oe=69B1C1F9"
   },
   {
-    "id": "art_59",
-    "title": "BONG REVILLA IS BEHIND BARS AGAIN \u2014 THIS TIME FOR THE BIGGEST CORRUPTION SCANDAL IN PHILIPPINE HISTORY",
+    "id": "art_64",
+    "title": "BONG REVILLA IS BEHIND BARS AGAIN — THIS TIME FOR THE BIGGEST CORRUPTION SCANDAL IN PHILIPPINE HISTORY",
     "date": "2026-03-07",
     "category": "News",
     "source": "facebook",
@@ -1412,7 +1412,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648648882_122120809383092788_6236748344934151698_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=2p64ku5lg2kQ7kNvwGwBhlK&_nc_oc=AdkB54RQxt0TTn0ffQiGG0R456eoBGoKsMVWtMHsqbTBgb2RrWJMmM7vg83Ka47dUgM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQHqG8EklDKXQg-Ok2JtXYVSxMB6K0p0BYvG7w4hEjxNDgDTK2HkwIRZ5isPoPwm7vu7lTUQFGaY1A&oh=00_AfzR_Adzgkm0UFK-ABSLUWAIh4OV4LbGzld5GMUGp7hiOA&oe=69B1D006"
   },
   {
-    "id": "art_60",
+    "id": "art_65",
     "title": "BALIKATAN 2026: JAPAN SENDS 1,000 TROOPS, MARKING A HISTORIC SHIFT IN THE PHILIPPINES' SECURITY ARCHITECTURE",
     "date": "2026-03-07",
     "category": "News",
@@ -1435,7 +1435,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647261856_122120808531092788_7829530612590742461_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_ohc=Nc988DPd6_QQ7kNvwHGmtKL&_nc_oc=AdlQtxAjvj3Rf2M_s_AQfKkwtgivpzALfKgVQjNdxyLEbbtVfKOhl6g87PRRjA2w2iY&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQGU9E1MAbBgVPsIbfADqNNFYhq2qHuP-Qz2y4lscnYv-tTQ-gC3l-6KJ89_syzqqLKDH7gl2lg0KQ&oh=00_Afy5Hzw9_xAHNncE0wJql7tOA7zz_mvSFWo9CgHWf_GVOA&oe=69B1BD2E"
   },
   {
-    "id": "art_61",
+    "id": "art_66",
     "title": "PHILIPPINES AND SOUTH KOREA SIGN 10 AGREEMENTS ON DEFENSE, AI, NUCLEAR ENERGY, AND MORE AS MARCOS HOSTS PRESIDENT LEE JAE MY",
     "date": "2026-03-07",
     "category": "News",
@@ -1458,8 +1458,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/645660478_122120808087092788_9188651068607327520_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=B8D6axn3XEcQ7kNvwFTSOYW&_nc_oc=Adn5i3lS1nqhPxCGjrHS-QKtLv1pO8Ty4gRazgzTsdeBOP_rKP6V4O0V7pM6TsuRYzs&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQHDQNqhw9StunNCr8mi86U0e4EnwSV9uHZoZZPpGc6Yeji5QVCMWKqR6ly_OnLa_s1xJts9t_6oPg&oh=00_AfwqBABFz6x1DNfSncsZsvQ6XP5KTm0yvqghfmquD2_AtQ&oe=69B1D8B5"
   },
   {
-    "id": "art_62",
-    "title": "CHINA KNEW WHEN PHILIPPINE SHIPS WERE COMING TO AYUNGIN SHOAL \u2014 PCG NOW CONFIRMS IT",
+    "id": "art_67",
+    "title": "CHINA KNEW WHEN PHILIPPINE SHIPS WERE COMING TO AYUNGIN SHOAL — PCG NOW CONFIRMS IT",
     "date": "2026-03-07",
     "category": "Update",
     "source": "facebook",
@@ -1481,7 +1481,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/645322187_122120808033092788_1762644887535908070_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=UaTW5cA986IQ7kNvwH8jHRL&_nc_oc=Adk2oFP9_dQy-AgT5Be7lZZv2AB1Tf9S8ez1EewN42tIbi4QLjIJGJmpibBPx40BhMM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQGhbz444WwXb1noQD3vhlLEHPnzTGwQecu1SrRj4QPo74abXCsui61RcLPtspRY3r1Z27ZT1u9Y_A&oh=00_AfzE4nWM8PuGNC1yd7SPNxtFcU9HXtkaLpwdvjFapq19IA&oe=69B1B279"
   },
   {
-    "id": "art_63",
+    "id": "art_68",
     "title": "SARA DUTERTE IMPEACHMENT: HOUSE PANEL VOTES 54-1 ON SUBSTANCE, SETS 10-DAY DEADLINE FOR RESPONSE",
     "date": "2026-03-07",
     "category": "News",
@@ -1504,7 +1504,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648979522_122120807979092788_5471542320348283165_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=SFyUCFpjl20Q7kNvwEpTAOD&_nc_oc=Adl_a6Tl4pkyVhAGruvqjpSDhA17YSIm-EIArs8IVHjkflGbebEmsewiPjBH5xLXkf0&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQHZWCAuMn8cl88Pwe1tdqR7b6WXrJO-GVKMyI2g_lu3DS1xiCgSPPb4l8ov48haWb_odULvJY8-pg&oh=00_AfxFUBaYKtbu9U8yKVvd_CHJZ3_agWmltjO3GL2YiP5UGQ&oe=69B1D691"
   },
   {
-    "id": "art_64",
+    "id": "art_69",
     "title": "ICC APPEALS CHAMBER UPHOLDS RODRIGO DUTERTE'S DETENTION, REJECTS RELEASE BID",
     "date": "2026-03-07",
     "category": "News",
@@ -1527,7 +1527,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647146881_122120806977092788_8149139212503769269_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_ohc=C5FlqRanAzUQ7kNvwFrBp7a&_nc_oc=AdntK5TCR8RrNkzvGZaDJKoNbmRRXj0TlBFNECl1dGUHnpsxfgo416tjED-u0N2ba50&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQGuj-1aYBV5iShaihh3S3zXWt77i6mAVtS1iU7a1GB0bq09TexX_FT_12gmR50HY1qFEfPEzQov7Q&oh=00_AfzruJvrTO0s4g27dWIVk38WHwYpAO0xfXQuOwSDQ3Y9_A&oe=69B1D42E"
   },
   {
-    "id": "art_65",
+    "id": "art_70",
     "title": "PHILIPPINES FUEL CRISIS: DIESEL COULD SURGE P20/LITER ON MARCH 10 AS MARCOS SEEKS EMERGENCY POWERS AND ORDERS 4-DAY WORKWEEK",
     "date": "2026-03-07",
     "category": "News",
@@ -1547,7 +1547,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648747174_122120800815092788_2227472476807710865_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=CjG24PkIyGAQ7kNvwFVR4V3&_nc_oc=Admp2lFtGVUyZ5VfrGh5-OkLSOKKBba8d8Y6eLhtBK-dxql72DvSd-eD-u-XsF5qSgU&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQFr_wASTEPQfeJYUyd_hgzMs6bqsZrrosuu_aX8ICM4MoE35-GxscowrHfySZogj5LqEQwOkWsZYQ&oh=00_Afxqr9NckRSmBcLbI5q_6uPtDDj0atLcDkf0b0rzYatZ8g&oe=69B1D552"
   },
   {
-    "id": "art_66",
+    "id": "art_71",
     "title": "AN OPEN LETTER TO THE INTEGRATED BAR OF THE PHILIPPINES: WHERE IS YOUR VOICE?",
     "date": "2026-03-07",
     "category": "Commentary",
@@ -1570,7 +1570,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/646344502_122120780853092788_2428725838795850963_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=zWmhMNkdDKgQ7kNvwHcucPP&_nc_oc=AdmFxN2cq0C7wj5VrUoD5OcvFk5YIDHyQFvH_sJf6RGGlvPPVcVljiEi7K-BYuK2140&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQGTwNnI2z4AaylHR-vjFq3ih5rQft3FDk5JMRyjAZXy9GoxIGKeenyQ_oOyoJUsFyiMqWtBtc3QFg&oh=00_AfzH2JYY3FgEfuv8Xui-T_uwiKajBoMI0oBHxuxgCZ9Dxw&oe=69B1B6AD"
   },
   {
-    "id": "art_67",
+    "id": "art_72",
     "title": "WHAT HAPPENS TO A FILIPINO WHO SPIES FOR CHINA?",
     "date": "2026-03-06",
     "category": "Commentary",
@@ -1593,7 +1593,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/647417751_122120776245092788_3058980265544848457_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=3eYpe-2iCkoQ7kNvwF0-DfB&_nc_oc=AdkJas3myEvww7emffzQjr8cF57-Q9xOB0xKAERm9Nttr3RmfYb38xJWEqX5Ft8Qqnw&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQHmLaacTpmkWQEplRAI_xiDhf5NaUJWlEZxB5vq7WR5fjMQZnXv174SdqPW7Cuxu8-cGMTdz4XZZw&oh=00_AfwPZRm38Cnp5EQKUyRCCLVeqLy-RmBk5oueAbbLAIg5JA&oe=69B1C93D"
   },
   {
-    "id": "art_68",
+    "id": "art_73",
     "title": "BEFORE ANYTHING ELSE: WHY THIS PIECE WAS TAKEN DOWN",
     "date": "2026-03-04",
     "category": "Commentary",
@@ -1616,7 +1616,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/648168996_122120539221092788_7150816231763828079_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=X7ILdrxZWz0Q7kNvwFcXMN5&_nc_oc=AdmrHcgM60CbnZDEBJhGo6S9leaaHOZQFSeWMLC6yc1JtkNi7ny7Jd_IHAMF9QVwDgA&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQGXK1kvjO2TFc0fHxlJbvb5f_QuPAsz6LCh3gnjT8VVoVvQ02oKJMNjm3eVwYisTmBK3mZMI0MmVA&oh=00_AfwEocDIGLNNtSPExo_J4DTvrWNyONxmFNVWbAdIjV4XzQ&oe=69B1BA18"
   },
   {
-    "id": "art_69",
+    "id": "art_74",
     "title": "Bong Suntay: DDS Congressman and the Trail He Leaves Behind",
     "date": "2026-03-03",
     "category": "Commentary",
@@ -1639,7 +1639,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/645332557_122120378787092788_7848665253851025673_n.jpg?stp=cp1_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=FtEUdjwtpDQQ7kNvwE55j7d&_nc_oc=AdlHFTGzgC27ZJZ3_c0x09055oVhjSi5HSW3d_BeXutbS4mFWaPR3J-ZwI8u3EoazWQ&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQG9UNM8FCBI4V3sxenAs53iEg0KVumDnLljYXSWVoeVBslEdnsMhu91WvigA7ITkFiLWH9k7KwJKA&oh=00_AfzHxRHFB0j8LMVa08iiMtxn-JlbCPNb98VMmVQ-IEJq6g&oe=69B1CD43"
   },
   {
-    "id": "art_70",
+    "id": "art_75",
     "title": "The Baseline Nobody Should Be Proud Of",
     "date": "2026-03-03",
     "category": "Commentary",
@@ -1662,7 +1662,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/644236163_122120311905092788_795697203129182530_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=d3Tg7LTpWhMQ7kNvwG3J1RU&_nc_oc=Adl83Jg28NjYMsdZ3FGvRmPhmsIRBknMXtboauLLmcegKORIqLY_Whh9uRT2J3do-YA&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQEjfrCgBVbXDcmnKGuZOFKzoAVWJ2LhdEa-dq3TIBNtH1OW8mHXe4-VgGHujkvBLcgS9lcvXeOvyA&oh=00_AfxMZfkogLydxDZztkVkizI5EWiut-FzT29JyoCqTZN27g&oe=69B1B97A"
   },
   {
-    "id": "art_71",
+    "id": "art_76",
     "title": "WHERE THE DPWH SCANDAL STANDS RIGHT NOW",
     "date": "2026-03-01",
     "category": "Commentary",
@@ -1685,7 +1685,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/643885074_122120110413092788_11631189817303702_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=-9d5uPtobl4Q7kNvwGW6BOW&_nc_oc=Adl6Gkt_fhfym4Dl5O1pfKIOeVpDVVu4J6kG7VLXItceGmWVMOR_YpU7JLSiK9xVYC4&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQFJtAFK6gofXdFtdaOYPBK-TsR1kw6ViYd_tjk1eeaV08l67WmZd3frgn7m8xLyIdgPdnlq8ftI1Q&oh=00_AfxEDCCatYrmNLKPL6E-0TSHNwVle8kw8wm0Bz1j7FRjyg&oe=69B1C293"
   },
   {
-    "id": "art_72",
+    "id": "art_77",
     "title": "THE DDS DAMAGE QUESTION: WHAT THE LAW SAYS, WHAT IT DOESN'T, AND WHAT WE CAN ACTUALLY DO",
     "date": "2026-03-01",
     "category": "Commentary",
@@ -1708,7 +1708,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/643878455_122120095239092788_9026751145385937755_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=7lbo3MqVykEQ7kNvwHeQcis&_nc_oc=AdktyYR_hA4gPAdgIuuuloHmoJN88XFDpB8oxPoYUVmhe_RfsFlzmHZcuUcyyZpaQwE&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQGP3iEALR7jpxSmWN5S3EyzDAHgj7dC4Ze7L2NavF948vF7vK9xj1IiZRaG9w61GtKiiNiP0vDBLw&oh=00_AfzUcQVp8FSBcLs5IdRyiejK7MtupYkdqC15zT0yF_t5sA&oe=69B1D37B"
   },
   {
-    "id": "art_73",
+    "id": "art_78",
     "title": "THE US AND ISRAEL JUST BOMBED IRAN. HERE'S WHAT YOU NEED TO KNOW.",
     "date": "2026-03-01",
     "category": "Commentary",
@@ -1731,7 +1731,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/644149814_122120090271092788_8443174569200641074_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=gJ0C06FGfSsQ7kNvwE5RZ0u&_nc_oc=AdmST0J0ZEfM8kqnNqJJVhSG5D3GFgee8p0IXNeqmqfmX6Piy_5SzoOpzG45xpxcwYc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQEIezyKMsOy9VW5RRakm5RLDqC01rxBx-vsmfTM1tMMRKk2qOeXROF-uyaJ4Hxf98JenxtE7STRWw&oh=00_AfygRhUXg44se2Ie92Kfcnu_RcBbxL5j9M8Mzbm7Fic75w&oe=69B1C1AA"
   },
   {
-    "id": "art_74",
+    "id": "art_79",
     "title": "SB 1901: THE ANTI-DYNASTY BILL THAT BARELY TOUCHES DYNASTIES",
     "date": "2026-02-28",
     "category": "Commentary",
@@ -1754,7 +1754,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/641496467_122119989027092788_5387024337684765259_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=s9mYmxMa85UQ7kNvwFq2pj-&_nc_oc=AdneopTPwH0tkvaTCqgAkbPUQ3627f73LDnu2g2y7JmkF5dfsXGij48rFjExd5hoGzY&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQGxQbxfkL5AALJzyzK2iM5u9o25iJ_S7WEzDDhzHCywVBEZSLd49oyzUxzffixvhyile1XmD_9WHg&oh=00_AfzuKXA4g8f7BCSoz_s6aYHF17LRZzXsgrDC8ua5UK3yTw&oe=69B1D3F0"
   },
   {
-    "id": "art_75",
+    "id": "art_80",
     "title": "PROSECUTION: FROM DAVAO EXPERIMENT TO NATIONAL MACHINE",
     "date": "2026-02-27",
     "category": "Commentary",
@@ -1776,8 +1776,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/642789691_122119929861092788_2625901598954509630_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=R1bzVwr2aGMQ7kNvwGIIo-K&_nc_oc=AdkY8vJtsLHV0x_mMNKQeYSx2Rg8VAoLy5R1Cwr_8nRT2tC3w5QJtfu5Oh9mg7VFzKM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQGnJtxJf_TZy4j4ca9Q609je8Dh3FuqsG6Urw3hIzhtCeNfTRk4_us6QMVMIWWgpBIsjcGUG6FJGQ&oh=00_Afy_4RIKJTYAvK9C8i6iXrBSPxVlrDVksKtCyzkGnH0jrg&oe=69B1B2C7"
   },
   {
-    "id": "art_76",
-    "title": "\u201cFROM HEARING ROOM TO HANDBAG HOAX IN 48 HOURS\u201d",
+    "id": "art_81",
+    "title": "“FROM HEARING ROOM TO HANDBAG HOAX IN 48 HOURS”",
     "date": "2026-02-27",
     "category": "Commentary",
     "source": "facebook",
@@ -1799,7 +1799,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/642815217_122119801983092788_726748377423823240_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=cGgLos1evIUQ7kNvwHQI0wH&_nc_oc=Adlf6AOafg5381e5uqENl0I3NzD958HcwdcDR5VjBqNbiIOYQRyV2nvctCODeWFtLvE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQEt1tM832h41c8Xhh-pfxi23fTgNSFQK7TIwVoM8_17DBvKzXAz0N1WI5qOpquDokV5127iR7WaRA&oh=00_Afzy54yYlhh_e58UrS5iSzV_Lzm6DYyilDLR2OyG1XriXw&oe=69B1CBE6"
   },
   {
-    "id": "art_77",
+    "id": "art_82",
     "title": "SENATE RESOLUTION 307: WHEN THOSE IN THE DOCK WRITE THE RULES",
     "date": "2026-02-26",
     "category": "Commentary",
@@ -1822,7 +1822,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/642374586_122119640223092788_3666459139997881880_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=BNTWBeWMC-sQ7kNvwGTy-w_&_nc_oc=AdnX5ctzjZT3d--KdhIdoy3KB0U0Gc_05Hf4oCvtXrVc9E28cC-IblEHaM8MrYLoYSk&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQGWZCHtfeouMvLFCBx1RNMlFMIrd08KBOMbwyvOCcOLJAqQbGitijq1mVDiE1K4QSDBj8revbrNMA&oh=00_Afw5fHx2BM15AiLX62135phKXKL8Y8eAfZ13dfL3jTyGAA&oe=69B1BB22"
   },
   {
-    "id": "art_78",
+    "id": "art_83",
     "title": "THE SUITCASE SCANDAL: DISSECTING THE TIMING AND THE PLAYERS BEHIND THE P805-BILLION BRIBERY CLAIMS",
     "date": "2026-02-25",
     "category": "Commentary",
@@ -1845,7 +1845,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/640262342_122119627599092788_7022728955801111987_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=6RMoAB9F7NMQ7kNvwHUuiKV&_nc_oc=AdlpS0wqsXIDVuRTOrCF32qQvzuUlaTIBDRhZXH1TXQoY6n-GzRWlm8TvCwNXdjPrU8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQHxwU60mm_QxQp-1U-LtUbIxEdIpI5AYFe0GgkSpYLHN5a0h6D2FD5pP6HDkAxL4xBUbEl_MKBgog&oh=00_Afy722LQAi1VWMFFOl0BWm1WhPTdYsnOEdwEAB25dhZ2hA&oe=69B1C6BE"
   },
   {
-    "id": "art_79",
+    "id": "art_84",
     "title": "THE RESET THAT NEVER REALLY RESET",
     "date": "2026-02-25",
     "category": "Commentary",
@@ -1868,7 +1868,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/641367236_122119519971092788_8432813108546091623_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=iAnHOm-RxEIQ7kNvwFYzRE-&_nc_oc=Adl8HYN7phEmfjpl1YH6S0Vxth3VYdaVAeZDQ83Fh1-ZovtLSkjbU2aGJJ5Ipscblfg&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQHROf2shm9fhEU_hNYQwKI1kVdnDZ_RNlCVGvzskItkPukuwf8xgEMvDcwg0zayMqDo-jCkW4zeRw&oh=00_AfzGLHrs6nPWMEXRHx66-1Q4c_PsX7jJ9ZwbHDv7WaIp1Q&oe=69B1DB91"
   },
   {
-    "id": "art_80",
+    "id": "art_85",
     "title": "THE LAST BOAT AND THE ISLAND OF SCREAMS",
     "date": "2026-02-24",
     "category": "Commentary",
@@ -1890,7 +1890,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/640360042_122119474911092788_2621541847958517126_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=dTj0wziveLgQ7kNvwFq06st&_nc_oc=AdkK_kyIo5-PRCZTPpMrgApFly1367Teyb3NQZFKHhu2zWWSGtARbiHp3nZoSsI4oy8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=JwRuMU7GxS2i5RRn3Xkp8g&_nc_tpa=Q5bMBQFbWPZpD_rLCdwWA8zpV8tWCzOv2UoepmnKSY2HlrNwa8_IBYUfCUfgwVvtzSUw96ao0HX20KHJgQ&oh=00_AfwobMI5ov3i3fFaNKB56lQNAHWJzPWCkYCk1yARzrCxtQ&oe=69B1AE9A"
   },
   {
-    "id": "art_81",
+    "id": "art_86",
     "title": "WRONG COURT, WRONG ANALOGY",
     "date": "2026-02-24",
     "category": "Commentary",
@@ -1913,7 +1913,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/641161536_122119400511092788_66436681372747730_n.jpg?stp=cp1_dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=yQ84T8GT784Q7kNvwEPwsWv&_nc_oc=AdlsBUsITSyHfg-HJYCTLRO5xdxCYieGB1khdkFPr0mZpCrfqAlBIBkN0g6rZkKmDIY&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQF_GCkfduKo_g7Dbmlt0QFajZZxsZLbZAGRIILo2ZgABd2M6KcRa-EcTczjuVwmNSolbsO_SMSsrg&oh=00_Afw1FklcTwX-7aZDc97OLAd3t6iGhsFO_np8OlGnVJd04A&oe=69B1B092"
   },
   {
-    "id": "art_82",
+    "id": "art_87",
     "title": "Anti-dynasty Fight: Twelve Senators, A Second-Degree Ban, And What It Still Misses",
     "date": "2026-02-24",
     "category": "Commentary",
@@ -1934,8 +1934,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/gemini_generated_image_qew269qew269qew2-x2S62SpISXsnLmtk.jpg"
   },
   {
-    "id": "art_83",
-    "title": "PANELO\u2019S LOW BAR FOR \u201cGOOD LAWYERING\u201d",
+    "id": "art_88",
+    "title": "PANELO’S LOW BAR FOR “GOOD LAWYERING”",
     "date": "2026-02-23",
     "category": "Commentary",
     "source": "facebook",
@@ -1957,7 +1957,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/641561232_122119383825092788_7001936850967690441_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=6qjwCYV95VoQ7kNvwGibtQo&_nc_oc=AdmqOYL8H3D3BaLFZHYc4-QUVo_802zoHqLkl2zBVqumBN8WYbr51Nj1gmoj-VNhFPQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQHjUCj-9LLpPt4RTrDcI2haxksxuNq-H8_4QUT5UjfVdTEncvkHAHr6S06ktnvj28q2eoJ_n2zqaA&oh=00_AfzuNsi1_3QXUm_7cnaNpl0UD9ZUVyMyQLl86rUPvP5F2A&oe=69B1D2DE"
   },
   {
-    "id": "art_84",
+    "id": "art_89",
     "title": "THE HARD RULE: 16 OF 24",
     "date": "2026-02-23",
     "category": "Commentary",
@@ -1979,7 +1979,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/641155512_122119253595092788_6975971149397035743_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=WLlJhR3UF3QQ7kNvwEcHtZt&_nc_oc=AdkPaazhP_fxhK6T25491dk5q81JabVlP-L5wtuybLW48kd37QKcg2jpo4wRcnhOcao&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQFPT_UpkHbi3KRBJbixiyzlGl1c8G1XC3HE8nmK3HgFoNZbUVljMtCajf_m_60sIJbz2ZM8O92MvA&oh=00_AfzsqJPPFhN8OYldpfts5t6OtsKk5DJGIfpP3PG_mQXtng&oe=69B1CEE0"
   },
   {
-    "id": "art_85",
+    "id": "art_90",
     "title": "Fact-Checking Darryl Yap's Post on VP Sara Duterte's DepEd Record ()",
     "date": "2026-02-22",
     "category": "Commentary",
@@ -2002,8 +2002,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/gemini_generated_image_ge4vwge4vwge4vwg-ujW3wcrqhOLH9yEq.jpg"
   },
   {
-    "id": "art_86",
-    "title": "On the Moral Balcony: A Kakampink Self\u2011Examination",
+    "id": "art_91",
+    "title": "On the Moral Balcony: A Kakampink Self‑Examination",
     "date": "2026-02-21",
     "category": "Commentary",
     "source": "website",
@@ -2024,7 +2024,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/gemini_generated_image_s3pqars3pqars3pq-7qeJ5FQrzM0skn8b.jpg"
   },
   {
-    "id": "art_87",
+    "id": "art_92",
     "title": "Alvin Aragon, Submission, and the Old Theology That Still Hurts Women",
     "date": "2026-02-21",
     "category": "Commentary",
@@ -2047,7 +2047,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/alvin-aragon-1771411953-k2hjpxThq1WeLI6q.jpg"
   },
   {
-    "id": "art_88",
+    "id": "art_93",
     "title": "WHILE YOU'RE CELEBRATING FAKE ACHIEVEMENTS, REAL CORRUPTION IS HAPPENING",
     "date": "2026-02-20",
     "category": "Commentary",
@@ -2070,8 +2070,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/635512515_122118924903092788_4225861967315268163_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=mzoQOT6m4CkQ7kNvwFq88jF&_nc_oc=AdmXVpM5-fm8Gku2ZbWsLJ8UoCgWcOFE1vfB3o_QasHCFIqhqMAwHMKqrV15wm6_nrk&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQHczwzPW2LSt-bY3BxeG4oiLcqS7A18QxezECoA3etkKQdr21huOdjBUL_6SbxYhe6u9DGbMVbAhA&oh=00_AfyQ7KbBWeDkq8PjD5Ii1vT2fcGXqlLcbPKtJF7mmboCpg&oe=69B1B252"
   },
   {
-    "id": "art_89",
-    "title": "What I Got Wrong in \u2018Sara Duterte\u2019s Vice Presidential Accomplishments\u2019",
+    "id": "art_94",
+    "title": "What I Got Wrong in ‘Sara Duterte’s Vice Presidential Accomplishments’",
     "date": "2026-02-19",
     "category": "Commentary",
     "source": "website",
@@ -2092,7 +2092,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/gemini_generated_image_pcfm81pcfm81pcfm-XGJoJcLSf3aEUJpv.jpg"
   },
   {
-    "id": "art_90",
+    "id": "art_95",
     "title": "THE AUDACITY OF MEDIOCRITY: SARA DUTERTE'S PRESIDENTIAL DELUSION",
     "date": "2026-02-19",
     "category": "Commentary",
@@ -2105,7 +2105,7 @@ const ARTICLES_META = [
       "Budget"
     ],
     "excerpt": "",
-    "word_count": 1900,
+    "word_count": 1909,
     "read_time": 10,
     "url": "https://www.morningcoffeethoughts.org/the-audacity-of-mediocrity-sara-dutertes-presidential-delusion",
     "fb_post_id": "",
@@ -2115,7 +2115,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/images-Xnkd2iWhFaykbSYb.jpeg"
   },
   {
-    "id": "art_91",
+    "id": "art_96",
     "title": "When State Policy Makes Murder Legal",
     "date": "2026-02-17",
     "category": "Commentary",
@@ -2138,7 +2138,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/637707403_122118613617092788_9140172291991192732_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=YbYNdujcmM4Q7kNvwEXKHzo&_nc_oc=Adld0r996eqORVK2VjrlqoLncTMhgVQ61c00QJ8lIO6mO1ep1D7LE3Wb7Rp-eZ8UbfU&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQGGj2RC5BdBgleg6-OSizaCKZbFB5LzSAqavyyb7ciUo35XVd6WsuWFBkjDuJLyAr1fHS5nvwDlsg&oh=00_AfwAM8srnIERDwxf3Idg0etby4XsMtDqsM5OQwaENDdZLg&oe=69B1B5C0"
   },
   {
-    "id": "art_92",
+    "id": "art_97",
     "title": "ARE WE JUST MOVING VACATION DATES, OR REWRITING CHILDHOOD?",
     "date": "2026-02-16",
     "category": "Commentary",
@@ -2158,7 +2158,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/635010480_122118467997092788_1889941407709376013_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=EML9YQ5SY_cQ7kNvwEbYwHn&_nc_oc=AdluUA1HjAaKR_JykL7Z34CLOS78nG0K2qEmEX8rj3Tu-eEY6UcXS2uwUK83yMN3MFM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQHJ2pdfr4WEzKQaCPrF-6Px2Gc6J-zgsI2W_5DGiO0vZoVOpBNEW31CZtMtKiGGMz86gmm3SQ9PSg&oh=00_AfyM8451sBYJEINwToBbTOmkqaPoztJbt7OOQSqCEhz9qg&oe=69B1AD42"
   },
   {
-    "id": "art_93",
+    "id": "art_98",
     "title": "The Patutsada Politics (An MCT Reflection)",
     "date": "2026-02-16",
     "category": "Commentary",
@@ -2181,7 +2181,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/634917058_122118438069092788_2408943966731661992_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=5zDPtG-MNBYQ7kNvwELHNC7&_nc_oc=AdnvOHxNQObouR3bEafHin0dHaEyhlPq7jrdSW_HlZ0bNHHiqVDGkXmgZHfQJiP4n4k&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQE7JhwGoxBVoarbh8fYviA6PcRhNZSJ5fuKBj015PEk1R40bL9Ppy2jQZhb6i3QigBtksG-f2hn3w&oh=00_AfxBV7YOMquRcw_0LGJUl2KKT35EO1Hb1SNsfVjw6hiLGg&oe=69B1AD72"
   },
   {
-    "id": "art_94",
+    "id": "art_99",
     "title": "THE EMAIL AND THE NUMBERS",
     "date": "2026-02-16",
     "category": "Commentary",
@@ -2203,8 +2203,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/636954107_122118375501092788_8175909292968225797_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=-4AL2hGgkWwQ7kNvwHXP_g7&_nc_oc=AdmXxAowKJYgOVvntEbluCpmDxTe9FudYwp_cGNdANaPXdJqvq0SQLqYKkFdlkU1WH0&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQHyw80oMC-NM7I8mc3qqgjX_nzY9o0E3G9L1JAgbthPRHqwqKNhnAgh5vQzfn96WZzvkQXev9NsoQ&oh=00_Afy2Hs6xVzvxLjnNTAS1euZuW7hXRBzKWtK6qwRwXBgwhg&oe=69B1B202"
   },
   {
-    "id": "art_95",
-    "title": "TOPACIO SAYS \u201cILLEGAL\u201d \u2014 OF COURSE HE DOES",
+    "id": "art_100",
+    "title": "TOPACIO SAYS “ILLEGAL” — OF COURSE HE DOES",
     "date": "2026-02-15",
     "category": "Commentary",
     "source": "facebook",
@@ -2226,8 +2226,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/634044009_122118337401092788_1333072110411669139_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=QA0mGTqSQOwQ7kNvwGEqkl-&_nc_oc=AdnlZKTiQNRSu3axnHgqVWuPR4yrztfvRsLjMLO5MPLNKPNH9LSTb8ZoyLKdNheNXwk&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQE5m3rrXijHKaw6Zcs2qJWIhphdE_JHyhsKQlTVKFkEQxrOH6VvN0FaBd_Rqg2GKQTddKh1G-VOkw&oh=00_AfyUqJFEVghHJQoRExiFTajSCV1fTVfrA91MBIdbRZ4_Ww&oe=69B1D0F1"
   },
   {
-    "id": "art_96",
-    "title": "THE CO\u2011PERPETRATORS OF DUTERTE\u2019S DRUG WAR: HOW THE BLOOD YEARS WERE ORGANIZED",
+    "id": "art_101",
+    "title": "THE CO‑PERPETRATORS OF DUTERTE’S DRUG WAR: HOW THE BLOOD YEARS WERE ORGANIZED",
     "date": "2026-02-15",
     "category": "Commentary",
     "source": "facebook",
@@ -2249,8 +2249,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/634741454_122118268959092788_8313200862837213177_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=DYi3N8gdHMwQ7kNvwH2Ocht&_nc_oc=AdmKgWILSleeFz7AD1z684u61ESrBhCQTqUAE2Xl0NCl9Mdu9gRZgfRby657ICoaneE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQFRTcUPTWQw-we4Rnacq8ybp3WqReREQh0OK6tuZ6vIrMMtOSr8tEnxh3nMp43UqfFSAmmeGFsmDA&oh=00_AfxiBWYP6PlfwqCsLbXfF6i91IzPt-783Fz6gPNxR2EF7Q&oe=69B1B784"
   },
   {
-    "id": "art_97",
-    "title": "THE NEW FAVORITE LINE: \u201cWALA AKONG KINALAMAN DIYAN\u201d",
+    "id": "art_102",
+    "title": "THE NEW FAVORITE LINE: “WALA AKONG KINALAMAN DIYAN”",
     "date": "2026-02-15",
     "category": "Commentary",
     "source": "facebook",
@@ -2272,7 +2272,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/636772488_122118214827092788_3323770613223860032_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=uW83NosTKK4Q7kNvwFdayeD&_nc_oc=AdmuS9Z4lNMGCNeLV1NlEn4cDf1olKHUvqex8aLYLtiK0ygKo-8Z5gQ5FkzlD0e6Tus&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQGtiLo_h5fVMTsSoiE8JB-PBrsK9gBDHswgFdd6oJvApZDTBeUV4g6k48Nc2HFmaDP25ax96TAwgg&oh=00_Afyn-CwyMM2LrF_HDKLhcBeFlv_jQ1ZCZ-QhrZn-jdIXtw&oe=69B1B199"
   },
   {
-    "id": "art_98",
+    "id": "art_103",
     "title": "THE HABIT OF PROTECTING THEIR OWN",
     "date": "2026-02-15",
     "category": "Commentary",
@@ -2284,7 +2284,7 @@ const ARTICLES_META = [
       "Drug War"
     ],
     "excerpt": "",
-    "word_count": 1488,
+    "word_count": 1494,
     "read_time": 8,
     "url": "https://www.facebook.com/122120826315092788/posts/122118203919092788",
     "fb_post_id": "893376663850463_122118203919092788",
@@ -2294,8 +2294,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/635204852_122118202635092788_4085614724312659557_n.jpg?stp=cp1_dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ZTHBEOXI83kQ7kNvwGuo7Ee&_nc_oc=AdmX4HX2lbiwif_3ieSB5b4pMOHAznvfgr0e22vICMOPwb9A4BdPVQAba9Y24yyNTFs&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQGb_QjqB5NRG7scVEXMbPtWR4cvOIvrTQVQLU_pXlwMX1TaZR53Q7Ymf7iyow0gCM_dHlp3OnNgOw&oh=00_Afw4V_uUd0eUvxjAbvQK3MzQJMTnXY0eMEvnC4_IvBN5Sw&oe=69B1E1E8"
   },
   {
-    "id": "art_99",
-    "title": "THE ICC BLOWBACK ISN\u2019T JUST ABOUT DUTERTE",
+    "id": "art_104",
+    "title": "THE ICC BLOWBACK ISN’T JUST ABOUT DUTERTE",
     "date": "2026-02-14",
     "category": "Commentary",
     "source": "facebook",
@@ -2317,7 +2317,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/635707558_122118086199092788_5626406707213594537_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=TkFHl6xSiXEQ7kNvwGMhyZ9&_nc_oc=AdknH4Q1RKPcDO4_Gg85RUgMpAuge5OVL2gP19PvmoV13yBV5V2ATbwkp6jeV_T1S3M&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQF1PsCPhW2mW5WspCsQZqMJvUyeKI6P8g47ivPMHf1eW74yGN-5mvMgQ8MRiegmMiKZhLnb-E_iWg&oh=00_AfyfSaPKm-7FhN_3fZy3iV-GoGJr8gewSn4OUQxH4OBn3g&oe=69B1ABE4"
   },
   {
-    "id": "art_100",
+    "id": "art_105",
     "title": "Why is Sara Duterte Not Included in the list of Co-perpetrators?",
     "date": "2026-02-14",
     "category": "Commentary",
@@ -2338,7 +2338,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/629785797_122118080715092788_2513827199796816465_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=tCOOb1NoBQUQ7kNvwFLumHr&_nc_oc=AdmLkKiHuidDkWPIu4eEXOVrDwFK7WvUSNdJQ0IRqw61XGQVF3es0goEYip2526da58&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQELNKUEPPjCY5RGfaTzJ94zxd5IKkNeVdAR34XZNmW6oB4-hVXuLwgcJPjZCTveEb3vjs2uxa0s3g&oh=00_AfxvIYLJfxTqyODzETo2UNCjwahY7Rm4b8m23ydHIR_GrA&oe=69B1C7BC"
   },
   {
-    "id": "art_101",
+    "id": "art_106",
     "title": "FROM DAVAO TEMPLATE TO NATIONAL POLICY",
     "date": "2026-02-14",
     "category": "Commentary",
@@ -2360,7 +2360,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/633436959_122118078933092788_6265411103686496939_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=f0IScl2eBZwQ7kNvwFkbH2d&_nc_oc=AdmRKCOzad3RMNQ5WYBwsnauV_UT7gfZBqi0WKZz3M8jZl5G7p4WfIYhDlrKP6Fd81I&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQH2RgP41ztNMqnzmsf4MyDquwg_oW5qpNKrsp4UBLXI5KH4ytQFftb3lp4mJ4lLCGhkPvQigGwViQ&oh=00_AfzMriuPVZ8P17sSdtbZnZY2ho2ftCYyvyAACx9JC9OXDA&oe=69B1C9D5"
   },
   {
-    "id": "art_102",
+    "id": "art_107",
     "title": "Valentine's Day in the Philippines: Beyond Flowers (Flowers on the Feed, Motels in Real Life: A Valentine's Day Essay)",
     "date": "2026-02-14",
     "category": "Commentary",
@@ -2371,7 +2371,7 @@ const ARTICLES_META = [
       "Labor"
     ],
     "excerpt": "",
-    "word_count": 2542,
+    "word_count": 2549,
     "read_time": 13,
     "url": "https://www.morningcoffeethoughts.org/flowers-on-the-feed-motels-in-real-life-a-valentines-day-essay",
     "fb_post_id": "",
@@ -2381,7 +2381,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/gemini_generated_image_4guzpi4guzpi4guz-8s4J3CMYcjYlYdZx.jpg"
   },
   {
-    "id": "art_103",
+    "id": "art_108",
     "title": "THE GREAT PATOLA: HOW THE CHINESE EMBASSY IN MANILA TURNED INTO A FULL-TIME REPLY GUY",
     "date": "2026-02-13",
     "category": "Commentary",
@@ -2404,7 +2404,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/634030918_122117921175092788_712830271713094063_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=3KexVsdYIfMQ7kNvwGBq2g5&_nc_oc=AdmKVJwhzpLBD51LcGfPOmt2wDvP_7z7aCCnaRLc43fsdsK22FApc2txaWWqjz0Su9k&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQGdENZSeH5Vk8b-dnytsn54YVEfDgZcEh3aLAeuSS2HCPT5b2kaeLBTG6yda19uR6N6dAol7EGBzw&oh=00_Afwbnph3FZDigo87pq6AJhCTsOC_jhZ9M0H0mmqadlnZfQ&oe=69B1E14B"
   },
   {
-    "id": "art_104",
+    "id": "art_109",
     "title": "WHAT TREASON FEELS LIKE VS WHAT THE LAW SAYS",
     "date": "2026-02-13",
     "category": "Commentary",
@@ -2427,7 +2427,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/633509765_122117916957092788_7354380811725257913_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=M4LYR58wLF4Q7kNvwFOjk2S&_nc_oc=AdlAQyj8JO17nUriNRVAKx8DvGJsa9HBfvkGhHPLf-tnSf4DSREuXCrbYgmKTh8BqwQ&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQED6j5FLNgX89ZY2fvKdQ6tYIvMtYvnBQwlrL55PCqj8kU7nEdOZBQhnw1IJGTQLfhKupJpXlS6qw&oh=00_Afwaz85QwYJ-L42OoYTBNpErzXPSSkG4eO9S0GU7Guf3Hg&oe=69B1E251"
   },
   {
-    "id": "art_105",
+    "id": "art_110",
     "title": "SWS SURVEY ON SARA DUTERTE: MAKE IT MAKE SENSE",
     "date": "2026-02-12",
     "category": "Commentary",
@@ -2450,8 +2450,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/632565457_122117766375092788_41487068378511535_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=ZDqOqL0nljkQ7kNvwGVowmS&_nc_oc=AdkTwNhexBXRIL-QpsY0UMuIuW3qdrq0DVsYvOmeSaA6Sb1ZTWZ8jUoLSLsANrUbkaE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQH2CvccdvW-rbl62bvvqMxiIt5dAnwV47MqOpWWOkvmwasCUB6U0C27RUwwM8R_yCm836RqqJkYyw&oh=00_AfxpDMO38Pz8t4KSWmAdpOhCM8ukYsGw56Jxdd9pYwMtBg&oe=69B1D578"
   },
   {
-    "id": "art_106",
-    "title": "THE FAKE \u201cDEBATE CHAMPION\u201d OF THE WEST PHILIPPINE SEA",
+    "id": "art_111",
+    "title": "THE FAKE “DEBATE CHAMPION” OF THE WEST PHILIPPINE SEA",
     "date": "2026-02-11",
     "category": "Commentary",
     "source": "facebook",
@@ -2472,7 +2472,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/628029414_122117651451092788_5889815090626895080_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=HPSgnMdeZQkQ7kNvwHj1CxA&_nc_oc=Adnx2-Ml2Clb0MMc2G168m4jTnNYaKMdivK4pLSfAvIWkqyQuwvHy2RZDzooK2MjEi8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=FHFuZZN0Qd3eu5zHQUG-DA&_nc_tpa=Q5bMBQGrowsUxwi5CqvXL57eKECVLv4GAz8HJMyW0EwZYNrzJqy_O10VECzc1RAbHU1RP9RZrz85whQ6Bg&oh=00_AfwVojNAEn-OvcwbnUYyVhuLX2z9hfHrvx43J1Vzoq_Z5w&oe=69B1B6D5"
   },
   {
-    "id": "art_107",
+    "id": "art_112",
     "title": "We Helped Clean Up a Monster: The Philippines Inside the Epstein Files",
     "date": "2026-02-11",
     "category": "Commentary",
@@ -2495,7 +2495,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/gemini_generated_image_s3v2eps3v2eps3v2-K2PUIIy6rhnZrug0.jpg"
   },
   {
-    "id": "art_108",
+    "id": "art_113",
     "title": "When Alan Cayetano Got Mad at a Cartoon and Not at China",
     "date": "2026-02-10",
     "category": "Commentary",
@@ -2518,7 +2518,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/gemini_generated_image_2vj4lb2vj4lb2vj4-BssMAj5IBmzLzD7G.jpg"
   },
   {
-    "id": "art_109",
+    "id": "art_114",
     "title": "DO YOU WANT WAR?",
     "date": "2026-02-09",
     "category": "Commentary",
@@ -2540,7 +2540,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/629216500_122117463237092788_6265356741169776879_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=1GtsEQ13y60Q7kNvwFLIaAc&_nc_oc=AdmjXUX2bc9rQ-Ou-Y8TKWX_b7xlikO2fqvH3BCIHbxOdICLYsLnUL4IceycHXmWmuc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQG9h8cPxzyvOcx3AyPkDvWoBFtlwyy658KkScGQzkFLBfhWJc8KCggoel-TU8tOp40sN32EJm5QIA&oh=00_AfyMd04d18ctjEhuOMEE8RjhLBHrqa2AZ9omMb8cIsIQKQ&oe=69B1CC06"
   },
   {
-    "id": "art_110",
+    "id": "art_115",
     "title": "WHEN A SENATOR PLAYS WITH YOUR NAME",
     "date": "2026-02-09",
     "category": "Commentary",
@@ -2562,7 +2562,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/628444950_122117416197092788_1009636183316090294_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=pc9Kpq2tiJsQ7kNvwG8HrPi&_nc_oc=AdlLxNsVT8dHxCQhvlSG0HOHES8j0PyVUxbcAWj29vDnen1mvF7sCakSrTeAo6aJGC4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQFs-bbCLk3aPp6JqYYhMvy04Y94idPhirxkv9oxvXsToh5eIzP7Q0--SZiKpwjGq23CngztCEPiAA&oh=00_Afy7kM4JsdIjDBOo-tHNTw3uc0mYdQhNqZshMGJJFZ6Vcg&oe=69B1C295"
   },
   {
-    "id": "art_111",
+    "id": "art_116",
     "title": "Marcoleta Wants Us to Give Up Islands. Batongbacal Just Explained Why That's National Suicide.",
     "date": "2026-02-09",
     "category": "Commentary",
@@ -2585,7 +2585,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/630521552_122117385549092788_2039900701601558645_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=saAH8jF0RPIQ7kNvwGuxDOx&_nc_oc=Adl2TGnOb7GOeuuRH3ZAnyWCGEei2UpNyoLF2myu79tV7JP91POiojZK7tnlv7gdyfs&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQG53NmKDimcofAGLCuORmajRcgp7bwGDN2PS25mtXWP0hOx3FnPyIzVDuC9VVfutomIjc5Xknx0hg&oh=00_AfzzULLw7R02pnrB9lsh8jhNyyaei9n7-qPAjh9spg0UwA&oe=69B1E391"
   },
   {
-    "id": "art_112",
+    "id": "art_117",
     "title": "PAYING FOR NOTHING: THE GRIM REALITY OF A FILIPINO TAXPAYER",
     "date": "2026-02-07",
     "category": "Commentary",
@@ -2608,7 +2608,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/628110863_122117257311092788_2327650467978290479_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=rCuva1yuZEwQ7kNvwEthEEs&_nc_oc=AdlhMcbiqzAH8UQVmYrCclPq8YIE21fr6Vup4sGO_o5538pN9kLMg9dJkF8dtH1Eq1o&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQF0M8y_Xu4wgecJ4erXxR6lGYLdWPC-xfn4WLfUeU_LbgNGET42V_lIuvZlR7cgiHBDmGJYq4aNnw&oh=00_AfxOnKq1jhawy2ZU2Kz4kP_REYBGUHx_T7fBCaa6Yb3i6Q&oe=69B1DECE"
   },
   {
-    "id": "art_113",
+    "id": "art_118",
     "title": "JUSTICE ADOLF AZCUNA AND OUR CONFUSED REPUBLIC",
     "date": "2026-02-06",
     "category": "Commentary",
@@ -2631,7 +2631,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/628760674_122117031501092788_242293127522622481_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=THWU9fXx2YEQ7kNvwFOOxVj&_nc_oc=AdlCKmCmFuMtIdOnUFb3d3PKCHN7nuyWycSRqLTSjZfMCSzbszrRE6eLOSJqOTDbRUE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQECtXvNIA--sEkY3LRYRj8H34a8_vgQMduCq17xdlQ7I17EY0kjyClNT6dNNm594cCrgzfTA7h58w&oh=00_Afz7_FuAKteUWjY-7gfPSsVm7lVs3C5wPdPV8WysDGIhxQ&oe=69B1B980"
   },
   {
-    "id": "art_114",
+    "id": "art_119",
     "title": "42-1: THE HOUSE DECIDES ON MARCOS",
     "date": "2026-02-05",
     "category": "Commentary",
@@ -2654,7 +2654,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/626745920_122116903797092788_9177401378930786882_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=__8xkwunJlsQ7kNvwHh3-y4&_nc_oc=AdmRSjiG-szCuGV1aXOa7X0Od6IBLFYBnfmTV_ALX18BYGXamhkAbsb5j4c-ZVnTu5I&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQFs9wdeEHc-JqtDVvD6E6sZ6R4GPXuOvOTIKlvViAAR3kj5XvMuhqiblG-d-bCDshYEKtrZFkOIzQ&oh=00_AfwSIBdyQL3gRxBQlRnGNPaRXAOySx4gTBQmmr0EjiDbWA&oe=69B1CB8A"
   },
   {
-    "id": "art_115",
+    "id": "art_120",
     "title": "WHEN DYNASTIES PROMISE TO LIMIT THEMSELVES",
     "date": "2026-02-05",
     "category": "Commentary",
@@ -2676,7 +2676,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/625895061_122116895595092788_7152279783852179894_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=sgx0KLuiuAAQ7kNvwEJvPmw&_nc_oc=AdksX0Kl0b5rCzBJt80YqwJZaZerWz_q70rJrvY2tDZVrw6-bjp00vzX0MaSe1vpCBY&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQH3iOlmN5pLtJOu8XvPJH_QcRx9OZhRWsSD0l7GsUS6KA3iGtIrKBQnbGgXyfvCUOeCPVNWR0jwJQ&oh=00_AfxjZzvwHaPB2-gERQRVSPI00z409KD1hOgn9l7r-Y5rxQ&oe=69B1B92F"
   },
   {
-    "id": "art_116",
+    "id": "art_121",
     "title": "THE SEAT, THE JOKE, THE WARNING",
     "date": "2026-02-05",
     "category": "Commentary",
@@ -2698,7 +2698,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/626150903_122116890675092788_2777348798311550762_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=dMZ-vKTLyhYQ7kNvwHDmjgg&_nc_oc=AdnGI51GdeMzl5kxATpvr0wixoubZ0FhjwCzehwgizPYnusO0ld-MAgdglmBGGR-W9E&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQHz7X0lbrHGkfL5PZmmdPmU1jkGDjR8WfdNOsDW01C32v2uRpEjjy0fQW0TiZ5WAdA_C1dqkSi9ew&oh=00_AfzwlTWo8wM3JqLZdInjXrYp-bBmiwzaKQ1Q78eUOmsh1w&oe=69B1C99F"
   },
   {
-    "id": "art_117",
+    "id": "art_122",
     "title": "FIRST HEARING ON ELECTORAL REFORMS",
     "date": "2026-02-04",
     "category": "Commentary",
@@ -2718,7 +2718,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/625235412_122116886205092788_5655137567656664276_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=nLyBXZp3JA8Q7kNvwFEmVYi&_nc_oc=AdkqJRg3Al8z_fgh9sUx8sXrsvLTJWMnBbJYIrXxXeOclBEUDTDfMgW199lRiCD4MYE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQE0JVqO3m8MRZWBc0dJRktpde4ROqYA_NVJTL8-r4i8CcnWRep7K6pXooHFGIlISSg8H0ZYXclveQ&oh=00_AfxYzqTaCp3Oy8i7FutCxNURFn32D9MA_Oim_cLtlCJDFA&oe=69B1CED7"
   },
   {
-    "id": "art_118",
+    "id": "art_123",
     "title": "When PNG Becomes Embassy Closure",
     "date": "2026-02-04",
     "category": "Commentary",
@@ -2741,7 +2741,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/625121491_122116848243092788_686158894905963520_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=a96ofCI6m3UQ7kNvwGNfvwY&_nc_oc=AdlfVvPrAKQxfYCuYinr-IBfjKNXfN3uPNiHRaOLnbm1WUw1BzJhVT1PeYyBvWGvL1o&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQHF8-TuCXPpk7_s7hcv0Px1Z8Wjq6keRYzDB5KtmpM4OODSZRIdTjoD9bT-Z8v1dTVEK4tQLkTenA&oh=00_Afwyz9CGzJ7DvLjteRE7DH078TGjFtSwqTCtvwdxXnv3rg&oe=69B1D008"
   },
   {
-    "id": "art_119",
+    "id": "art_124",
     "title": "The Marvic Leonen Question",
     "date": "2026-02-04",
     "category": "Commentary",
@@ -2764,7 +2764,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/625583064_122116776873092788_8088107226123330068_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=_vVkyLx45R0Q7kNvwErpJiL&_nc_oc=Adn-85AmxxYL1K5K3lpj206PacIP5ep4GEz1-xFIABFcjYEeKNDKZY63CQdiSMG--Fk&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQGBRcdqJL0wuKDmUuk9_n1CBtvqY7RaeiuvAqM1rCVQeRR_85xuqbSluEqNj9NQW_GrHmVqGg_y-w&oh=00_AfzYlDomjlPwvwwFEy8R-fVduOLxoGEuhRSyM8PHrW63qQ&oe=69B1D93A"
   },
   {
-    "id": "art_120",
+    "id": "art_125",
     "title": "The First Thing You Notice Is The Math",
     "date": "2026-02-03",
     "category": "Commentary",
@@ -2787,7 +2787,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/626231545_122116772229092788_3958030357365822702_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=3m3CY-Jgu9UQ7kNvwEcU7gK&_nc_oc=AdlIqg76FUC51Be7fpOAaSAsznLnhfyoygQhtBGdBG8pk6N2qZIYYVUTq3y8jb9RRJA&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQGuYWUe6RAtoEJNVzgS5EnuEYhcIZdKpWxgzvPuvG4pl3VnKlEfIGrpXKCXtxUrc3SY3YMbNqZT_Q&oh=00_AfwWZ0LR2tEh4ZEb21nAuCxNB34g-R6g-AI3NNnBPou96w&oe=69B1D555"
   },
   {
-    "id": "art_121",
+    "id": "art_126",
     "title": "IS ERWIN TULFO FIT TO LEAD THE FOREIGN AFFAIRS COMMITTEE?",
     "date": "2026-02-03",
     "category": "Commentary",
@@ -2810,7 +2810,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/625093260_122116639725092788_4314215610419592631_n.webp?stp=dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=8W9-bsVz3ygQ7kNvwGshBff&_nc_oc=Adn-v6APLUuvoTtVCIVOLyEDwlGGNtjTmNj70Tpwr5P97ogeOg8pFB39VNU02mlTSAc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQFO7Ik2IysQJjQZ6Lepk_O4Oi6E5cWNosxUZ-odPVEhDOW7cLLlr8xi1qUdNbJgt394OaOJVyRSkA&oh=00_AfyAmM5yQAdHsCq0G8qC8P9CO2JNlPJW_oewe3z6WN_bnQ&oe=69B1E029"
   },
   {
-    "id": "art_122",
+    "id": "art_127",
     "title": "The TNTrio Movement and Why Manual Counting Matters",
     "date": "2026-02-01",
     "category": "Commentary",
@@ -2833,7 +2833,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/625274387_122116395933092788_4783460119801057801_n.webp?stp=dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_ohc=W3PEJFdlf6MQ7kNvwExjsyb&_nc_oc=AdmDp9XBbMuNDmYwdIJ-_5kwqliZeW1NNI2ku8_yYzC8bvK6p_AlDAmT1Eo15UvulLw&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQGRKeRuTVR86VYgmXfSA-C_xft_DaG9NQuGJ0YwNKPjgQff6K9-neapSQrq08rYHEqMUyxNAYa11w&oh=00_AfwRwPJqLiX-YYAZbTB3NkjfbRBFQMqdE7coPdYRgpQ3Dg&oe=69B1AC8F"
   },
   {
-    "id": "art_123",
+    "id": "art_128",
     "title": "Thanks for the comment po. I hope you dont mind if I turn it into a post.",
     "date": "2026-02-01",
     "category": "Commentary",
@@ -2854,7 +2854,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/624215447_122116502913092788_6566601994706400358_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=n_t5-dfvw4cQ7kNvwFbpfcP&_nc_oc=AdmBGGMmfD4TVCTUloJmnb4-KvlZL8Fk-JCEmBx0fzs2yNriwXFGNTJx7Tj6D6mgfPI&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=aYbjWlDaMJwaP8HVnUEIJw&_nc_tpa=Q5bMBQEm1cjp6YCJnFBMnh7KqLA4FFzdFz4A5nPw5nUc6ouWCzK8ryiq-qgRNJh2zg3yzb_lrEJSiMZm1Q&oh=00_AfxyCVIIPufyUasxcSas0QtqKZI95dnYHibsAtFKFqGNuw&oe=69B2A72B"
   },
   {
-    "id": "art_124",
+    "id": "art_129",
     "title": "WHY IS CAMILLE VILLAR SILENT ON THE DUPAX DEL NORTE MINING CASE?",
     "date": "2026-01-31",
     "category": "Commentary",
@@ -2877,7 +2877,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/unnamed-4--2-n7sC2fArkBWwddQD.jpg"
   },
   {
-    "id": "art_125",
+    "id": "art_130",
     "title": "Mariel Was Right, But Not The Way She Meant It",
     "date": "2026-01-30",
     "category": "Commentary",
@@ -2900,7 +2900,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/622790857_122116277553092788_4411049769427423155_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=dMo7NXJ7P2IQ7kNvwESMcJz&_nc_oc=AdkXKQrx_rJVmMKR9MYMt_2XZj3YxYY5qhLlRpc5kakfe2EqaFKkEjK_OYPfaA8jrN0&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQF3ao-w-VZxCy2cOUhLvmkh8t7JcWfKKZNBz6QN5-uLjG4F5LfUaD60KMExyEsi1dgOf5IMPP1oiA&oh=00_AfwR8f2ASrMWcQHgQ_cEuzNNFado9j9m6_a04viaAiafDg&oe=69B1E26F"
   },
   {
-    "id": "art_126",
+    "id": "art_131",
     "title": "WHAT HAPPENS IF SARA DUTERTE RESIGNS BEFORE IMPEACHMENT?",
     "date": "2026-01-30",
     "category": "Commentary",
@@ -2923,7 +2923,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/623115476_122116195647092788_4650788277170616929_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_ohc=u-A4TNQjXwcQ7kNvwEUE6cB&_nc_oc=AdlioLvM-NmFC4PQuFWpRxBaNfxr09RXU4jZswR9d5J1hCyty8JH_zXivELQHJSXb7Q&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQH8djXv4FEGCIp5tBJAC1TV1Ykl8YBfeS9BGqNcL1IcfHom0FTFdhhxxA9DqYNdrqINNgADxNKCyg&oh=00_AfxNweYs36ZxgkB3s8ORjkERbqHz_JFaw_GytQigzPIQsg&oe=69B1C329"
   },
   {
-    "id": "art_127",
+    "id": "art_132",
     "title": "WHEN \"IMPOSSIBLE DREAM\" SOUNDS LIKE GIVING UP: SOTTO'S STATEMENT AND WHAT IT SAYS ABOUT LEADERSHIP",
     "date": "2026-01-30",
     "category": "Commentary",
@@ -2946,7 +2946,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/624620676_122116184655092788_1969171214816432508_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=gP3F5O_nydAQ7kNvwFi463i&_nc_oc=AdnE18FjNL9lN6GDe4nYLBFt9iAWvrDjsZM203UvUxqrcg82Gdkpdr97iO5qyOow8xw&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQHCFjTYlLZ9MexHeN-q4vFcyQ7G9OnW2O0eXcL4AY78uS3iADdsVWZlEHsFD_22FvM-boPNfyT1kg&oh=00_AfxdIPCax0slyf0nWnQ548COq5zoo338lH8Q9PPCjK6QLA&oe=69B1DFE1"
   },
   {
-    "id": "art_128",
+    "id": "art_133",
     "title": "WHAT I'VE BEEN THINKING SINCE THEN",
     "date": "2026-01-29",
     "category": "Commentary",
@@ -2966,7 +2966,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/623354679_122116102353092788_5412703267647995853_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=smUe1ZXvoTQQ7kNvwHh8QcL&_nc_oc=AdnTmhXlo_6FYfyeog7NC54HeiLXJHK11L6p5ExBQmWXIb_Gcks903DYaM_Vow65x3s&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQE8mL25_2okSkVDALky9wWGBs9B45N5aVhacJkA9pItcYGUbkEC7ryS0fKUJ7hHDVDy09ubwlAjVA&oh=00_AfzvstoHpRwOQHCYViB4Gx9ml8fazgv3RvSsvX7cZnpKTg&oe=69B1BD2D"
   },
   {
-    "id": "art_129",
+    "id": "art_134",
     "title": "WHY AREN'T WE DOING ANYTHING ABOUT TRAITORS IN THE GOVERNMENT?",
     "date": "2026-01-29",
     "category": "Commentary",
@@ -2989,7 +2989,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/623377578_122116096239092788_1658098349750023785_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=vbDJYKAeihQQ7kNvwFjapyV&_nc_oc=Adnv6oUsbfe8nIM-XNuvNQCcjqYTCOV-SRwlVCH5RxxGv25hb0g95OH05OwLwtf7Umo&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQHxLgSlVXgzfOFuTiZV4X7fwgbUzG5MLyFLlR9V3BDdEFyi20ewUi6nWs9BLv-JdW1-Yq73EGuMtA&oh=00_AfzIn5Q8SCop1DjO4EWhEXJVi-ql2wdTx0EKfkyKKV4zHw&oe=69B1BC20"
   },
   {
-    "id": "art_130",
+    "id": "art_135",
     "title": "A COUNTRY OF 110 MILLION, AND 248 INSPECTORS",
     "date": "2026-01-28",
     "category": "Commentary",
@@ -3012,7 +3012,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/622723163_122115955833092788_7704310671828675045_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_ohc=uqQzdUWUtI4Q7kNvwF3Aozi&_nc_oc=Admzp3gbO0suT-e8L5AjFulqpoD9vgo70A8bZyVN7bMpVBPJvOszEmRJvpdm0s0RqVM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQFWZpHkJQ1rX1HaUI31iGjy8PPwLqD1-vg4x9J-ZVpcddH7KUguWc59g9kF7T5c9C2HatwMtnsT9g&oh=00_AfzRj_o2ezSwF0Rj18V-k9rbB8LMioTgpIHsIk8dCQAaUg&oe=69B1C66A"
   },
   {
-    "id": "art_131",
+    "id": "art_136",
     "title": "THE SENATORS WHO KEEP BENDING TO CHINA",
     "date": "2026-01-27",
     "category": "Commentary",
@@ -3035,7 +3035,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/619265081_122115829017092788_4757079863660951483_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Es0zKTQ2-C0Q7kNvwH6PnxM&_nc_oc=Adl3Mhlde6Y113-y7OHR1QVd0ly1-GA7cVj6_ZOckLL_WZI3wxDFL52cdpyyjmkIUGk&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQEF-Tmz87nh2Fduq-4wADvF6yy-vAoa2LFqe8Ib25Dk348F5UmEs3393MG1cVytyHNI-JnK_caVsg&oh=00_Afz4OeOKlZO0RuOiTLMhId5myKS085S_azfI1uhkHc5iNQ&oe=69B1E0AE"
   },
   {
-    "id": "art_132",
+    "id": "art_137",
     "title": "China's Lost Art of Winning: Xi Jinping Diplomacy Failure In The South China Sea",
     "date": "2026-01-27",
     "category": "Commentary",
@@ -3058,7 +3058,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/xi_jinping_swinging_hammer_at_four_crumbling_pillars__diplomacy-_military_leadership-_soft_power-_institutional_wisdom._gritty_comic_style-_blood_red_background-1DnR8NRMR1LRgtlV.png"
   },
   {
-    "id": "art_133",
+    "id": "art_138",
     "title": "The Chinese Tourist Gambit: Why The Marcos Administration Is Courting Beijing Amid Lessons Unlearned",
     "date": "2026-01-27",
     "category": "Commentary",
@@ -3081,7 +3081,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/gemini_generated_image_ckpq4jckpq4jckpq-6zxfU0c6F48uW8Bv.png"
   },
   {
-    "id": "art_134",
+    "id": "art_139",
     "title": "WHY WE ALL NEED TO KEEP CRITICIZING CHINA",
     "date": "2026-01-26",
     "category": "Commentary",
@@ -3103,7 +3103,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/622757570_122115696711092788_6886479733050730349_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=QGw7HZSdACYQ7kNvwExO6ke&_nc_oc=Adl1LXQCmWRVr836aItnNljLGAksXTOXIqiL8RWAIGjRDQXH7TkMid98Wp6B_lgRLi0&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQERW_baqReJJ3IlC42AYJV7gTBhEmzpSuWr1LrBl2YSN4VlOpB6xwzpEekOD5ZrLgbAN8ZllflEWQ&oh=00_Afxm55qyfBY4eR5CvyjxaUt_VHf2fqYyRBicqKKAMYvd6w&oe=69B1B46D"
   },
   {
-    "id": "art_135",
+    "id": "art_140",
     "title": "WHY THE IDEA IS TEMPTING",
     "date": "2026-01-26",
     "category": "Commentary",
@@ -3126,7 +3126,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/619767754_122115669081092788_8857028941569148139_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=4jAWCPR6FMgQ7kNvwFS-O07&_nc_oc=Adm-YjhXWPUQ8GPPX70rKrIjQy3jnf1W1v10hSdjmogvjrkyjL5DzBO_sZxaCGkvoWo&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQHjGEISmEpSV66DzFjn8w2OhOLGFLKp0cK6JetOrFIHqDZZo1BKOEs2n5nDnCOkli1prWheWKL__A&oh=00_AfxqnEoZFT-NltyOD_25DL9N9I9eoSdlZX55s7nTx5PYDQ&oe=69B1DB39"
   },
   {
-    "id": "art_136",
+    "id": "art_141",
     "title": "Basurang Bayan: Why Waste Segregation in the Philippines Keeps Failing (and What We Can Actually Do About It)",
     "date": "2026-01-25",
     "category": "Commentary",
@@ -3149,7 +3149,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/620043714_122115656595092788_5852948083483689121_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=M9jpi0dhCb4Q7kNvwHFLr9h&_nc_oc=AdlswCOLAThs_AL1QpZVMJ5MLv6UK82wVYvmLEV0hwI0dYwZaHoosUWrZ7slK-0VpXM&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQHJ4IIHXuUTJxwGm4HWZuGgDGHhWwwJGitLa_OEFOFOcnDK2pB8lYZ6-nTytA6_GnGv12jtAJMGtA&oh=00_Afyb8310tLrfyITs6i97xbpQGxp9Hrl0J6d1Xj9BMYV8PQ&oe=69B1D38A"
   },
   {
-    "id": "art_137",
+    "id": "art_142",
     "title": "MY STREET, MY NEIGHBOR, AND THE \"BASURERO\" THEY AVOIDED",
     "date": "2026-01-25",
     "category": "Commentary",
@@ -3168,7 +3168,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/618839810_122115618201092788_667469484365039351_n.jpg?stp=cp1_dst-jpg_s960x960_tt6&_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=XGxpZ_H5GL8Q7kNvwGbbN33&_nc_oc=AdnItx1sLW68CeaIXAHVq_p0dKR74D59dL5BirY1sDNd9u6CjbBwHObneYzNLrtivug&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQFpeGNRXoBypCkLKapxCvRiOr17CJe2KpGqpvkTdogH9D02h7YI_otrJFO68Z5hvRAjj1v9IvMDGA&oh=00_AfyCaME7himTfnX00h5o-ULYii2yAOL6aeKsxUmItjmUKQ&oe=69B1B04A"
   },
   {
-    "id": "art_138",
+    "id": "art_143",
     "title": "From MCT:",
     "date": "2026-01-25",
     "category": "Commentary",
@@ -3191,7 +3191,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/619626491_122115553389092788_8037648139159536357_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=3DsNTo_AM8UQ7kNvwGocr-7&_nc_oc=AdkVGSGMnzJJ9V6QZHSm6UsFEhw-oSifXvLE5VBAutwaSX8Xsj0CerFysy-3IonBWRo&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQHsf0qzoaWBO2NoSaHPAOc__QQ_t1-n2jM7qfOWU39OamQewR-021h1ofXQtQHku-MRbYW5Mt_Rew&oh=00_AfzQkXMRgiiKiFlVnM0VReYbKY_hYi2fWolUUvT3p0Z15w&oe=69B1BA8D"
   },
   {
-    "id": "art_139",
+    "id": "art_144",
     "title": "CAN FREEDOM OF EXPRESSION REALLY SAVE YOU FROM SEDITION CHARGES?",
     "date": "2026-01-24",
     "category": "Commentary",
@@ -3213,7 +3213,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/618610844_122115445971092788_1774856807945334025_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_ohc=MyqXVIgw964Q7kNvwGAkvEo&_nc_oc=Adl6lQh9ipsJeiCvjjQ6bUb2jL50VOgoYeS30I2BOmlRq1GVmmUglKNWEaeqxTdBqac&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=AtjmMMNHapEgaJzSShibRw&_nc_tpa=Q5bMBQHgsE9_-ZXXBuPA4GDLTVsfChvDzbBNvyQXZYCUsRFFjtQ1KHmexfNSvGSLbGvl9rB147-9EKs19A&oh=00_Afzk7HLeovBIyqpOMdVZIyc2e_2fTvp0_xB5-XRhXRrs-w&oe=69B1B18D"
   },
   {
-    "id": "art_140",
+    "id": "art_145",
     "title": "MISSING A DILG CHIEF I DIDN'T EXPECT TO MISS",
     "date": "2026-01-24",
     "category": "Commentary",
@@ -3236,7 +3236,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/621683360_122115431361092788_4350585007984113219_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=5wLZeTgE9AAQ7kNvwEjd9iu&_nc_oc=AdmqNwUJEX5slETtxpteLa-Bhq73OJLLT5s6r1gv7_EifHeCAnZ7eCVfzEtTsZtDGDI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQFfy9Or2sqpr4W55qbHIaZ0laTPXFTyPYEPGc4pXdMQNOeN0HhDl25S7eqd4KyYEJ2s8d2o7Nm3sQ&oh=00_Afx_AMfmJj8E6pcd-nSu8YQIs_GoACCCggGuEzWkC165zw&oe=69B1C50E"
   },
   {
-    "id": "art_141",
+    "id": "art_146",
     "title": "THE: WHO SIGNED THE COMPLAINT",
     "date": "2026-01-23",
     "category": "Commentary",
@@ -3249,7 +3249,7 @@ const ARTICLES_META = [
       "DPWH Scandal"
     ],
     "excerpt": "",
-    "word_count": 2875,
+    "word_count": 2880,
     "read_time": 15,
     "url": "https://www.facebook.com/122120826315092788/posts/122115326745092788",
     "fb_post_id": "893376663850463_122115326745092788",
@@ -3259,7 +3259,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/616832955_122115323595092788_3159840069022276002_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_ohc=zrxo3w40MrcQ7kNvwFRpfck&_nc_oc=AdnSU1QQ-WTrDGROuuUtg4W4e9Mbmfr2TbkdVC7AevXptQmU4g-R4kjztzWOKym1n1A&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQHUzzbYzq8IyPwE9ddtm8qMC_IkgBVJ-77j5YbvvLPAOkJzo3KMyOzUBhq3uxyKWz8_wZ_gMURNoQ&oh=00_AfwoQEEV-5AnR7fID41OOo1Pre37nsoDWfUCJc3A37MARw&oe=69B1D012"
   },
   {
-    "id": "art_142",
+    "id": "art_147",
     "title": "SARA DUTERTE IS A LIVE PR CASE STUDY",
     "date": "2026-01-23",
     "category": "Commentary",
@@ -3282,8 +3282,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/617055098_122115319917092788_8352866746655065087_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=iMQec-MJ7jwQ7kNvwG4ktze&_nc_oc=AdmWY_X54lde_YloOYYZnuQ2jxf5xvhmf_5tr-rWDoNgfRZ04g9YxW6OlM2WnRTtFiU&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQHdMYH7MM6pde2-Uf4ZQfkuNsd4BZMHPv5KOWfz0gF8i5dtqrdBX0M3XpEWRLfK1kj1g3N6udOj8A&oh=00_AfwdTjMTR6Ka9e0QrCPIw9VSGua7xV1q-xPYXhmkFWhWUw&oe=69B1C545"
   },
   {
-    "id": "art_143",
-    "title": "MARCOS FACES THREE IMPEACHMENT COMPLAINTS\u2014AND THE FIRST ONE MIGHT BLOCK THE OTHERS",
+    "id": "art_148",
+    "title": "MARCOS FACES THREE IMPEACHMENT COMPLAINTS—AND THE FIRST ONE MIGHT BLOCK THE OTHERS",
     "date": "2026-01-22",
     "category": "Commentary",
     "source": "facebook",
@@ -3305,7 +3305,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/616827660_122115194535092788_7250100124041001606_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=dDz0RGJgmZEQ7kNvwEI4o3W&_nc_oc=AdmefAuymWrAvXRkCoBN97EuXH0k7TqSldtb9vw2pB6LoI-S8fVni7WUW3tjDhM0lag&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQF_FWOET2IBX5k36AhqTNzn5cGJrVMVkMlUy1h-7I1pLnA3m6-cAYlHRB51GycWFmBli2itKN5nyQ&oh=00_AfwruoimLFZN4nc-CUE78CcXN9inB7MRF6HO0s28T16OEA&oe=69B1E287"
   },
   {
-    "id": "art_144",
+    "id": "art_149",
     "title": "THE FLOOD CONTROL SCAM IS A MANUAL FOR PROTECTING BIG FISH",
     "date": "2026-01-22",
     "category": "Commentary",
@@ -3328,7 +3328,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/619106885_122115167715092788_6347434890655960313_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=-Ncvg3W94RAQ7kNvwFQS5AT&_nc_oc=AdnJYQcQTRgvtyMrmdHKQQuwcGvwrttO0u4T0QYVzcuVRFw4hyMJ3_QwUoVoCxoEfro&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQHi3Pb3qNKqDmPq4NL0JB5rQW0pfcOQwz6pnNAlQQV35rw7ABCoep5bE5mWpe9zZjTh1-7CXanY3w&oh=00_AfxLu9r-3ZsaAh_AwgOsHJAG-3j2rqeZsbWLkXRhbz_IAw&oe=69B1CCD9"
   },
   {
-    "id": "art_145",
+    "id": "art_150",
     "title": "THE FLOOD CONTROL JAIL",
     "date": "2026-01-21",
     "category": "Commentary",
@@ -3351,7 +3351,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/616543764_122115080217092788_8817522770899058359_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=SJVDL_D05wcQ7kNvwF-yavV&_nc_oc=AdnzTeLmJC-7cOgntMuSg7nsInktShcbrW-dqclHjG8K5PvYYID10_tz3Ul-iVrUTp4&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQFOVGxHlKJkr-shu09PuDyKuT_cSCcR23dQjr79gl92u567ROD-Q4btoO537488t7y0ZEYHcAhsQg&oh=00_Afw15zurdKPJ_RTWmVn5mBP0bV20hdu5mD7B7IoujGr1aw&oe=69B1C46A"
   },
   {
-    "id": "art_146",
+    "id": "art_151",
     "title": "CAN SARA JUST KEEP QUIET?",
     "date": "2026-01-21",
     "category": "Commentary",
@@ -3374,7 +3374,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/616832174_122115070863092788_5135669569349717618_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=mwlA0kk1M1AQ7kNvwEJKQUD&_nc_oc=Adkx-Gsbl_utPmTnD_f8jYNBoPqGGe9rkcWpWgF_6ru2Kqeg7Tm2_dx6zIfzL28PAic&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQF0PcjGKxYSSy_OmZwZym1xJqd0o_hnwcT8FbfMZmMJ8Fneudh5-sHVg7Y-k0qZtLdw9TUgx2faEw&oh=00_AfwTqNoqVITF-Mgzna-qcceFx8c-A9EToKDSyfD-93gGbg&oe=69B1BE28"
   },
   {
-    "id": "art_147",
+    "id": "art_152",
     "title": "THE MARCOS IMPEACHMENT WAS ALWAYS GOING TO FAIL. AND NOW IT PROTECTS HIM.",
     "date": "2026-01-21",
     "category": "Commentary",
@@ -3397,7 +3397,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/616599307_122115024003092788_120916387665468535_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=tx79FAfyx2QQ7kNvwHQC7Lj&_nc_oc=AdlMfuV67MD4jbSSzerPb5a4Ty8NMHN8ozzXz4gOJZvDQ6SqvRpevSAfCyk8f5xuh98&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQHfJ1Jf0-YIIhrUTqcSeVfPuFQJVynLQdsv4haZUxN0lAn-EM7kCUWrWSvMobkYe96tiRn791jg3Q&oh=00_AfzjgPShNLyOdFxM5suMP2VzqpaXlQBRWCuY0m791UiRYA&oe=69B1BC87"
   },
   {
-    "id": "art_148",
+    "id": "art_153",
     "title": "ONE BILLION PROMISED, THIRTY-FIVE MILLION DELIVERED",
     "date": "2026-01-20",
     "category": "Commentary",
@@ -3420,7 +3420,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/616630474_122114942703092788_245604028152655595_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_ohc=g1097mywuR8Q7kNvwGCA9rs&_nc_oc=AdlQXzq5jIj3b7wueMgU920WB0NnqEQMUzwPXZKOymosZ94_CxHAmpJfLnNgA7XExV0&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQGf7lmnws4x_F1nVgdt3GWsHlMWg-L1Im4RBvFS3xBlp6FoEMY5ANo4u0D802E8SWeAZoCek4KCMg&oh=00_AfzDRU8x8IMNQSwqktMVNNhLmYFOeFAuGhaIMoEZOm-yKA&oe=69B1D43D"
   },
   {
-    "id": "art_149",
+    "id": "art_154",
     "title": "WHY ISN'T MARK VILLAR CHARGED YET? FOLLOWING THE MONEY (AND THE SILENCE) THROUGH THE FLOOD CONTROL SCANDAL",
     "date": "2026-01-20",
     "category": "Commentary",
@@ -3443,7 +3443,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/615886805_122114935641092788_539189016082645622_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=gpzPUI9k9eEQ7kNvwGyuk40&_nc_oc=AdnRnY5yKJFkH2rh7xf8__BhlFZSjgwTm98k5phRPGH-x8CaHv9Asau7LjcPcAOk8Ss&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQE9vSsKkBVBknwttSDUp5AFJv5QtBAm0GEhedvfy9DSpX4V34tWY-vLYry5OFIYqyqT820zYZNEfA&oh=00_AfzsZZUQodj2-esaAFYGrvrMOodgKw6Hjk33Df4qQgK5gw&oe=69B1CB7C"
   },
   {
-    "id": "art_150",
+    "id": "art_155",
     "title": "WHEN A FAMILY BECOMES THE ONLY ENEMY: WHY WE NEED BIGGER THINKING",
     "date": "2026-01-20",
     "category": "Commentary",
@@ -3465,8 +3465,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/616832955_122114927253092788_5869815833257617318_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_ohc=59q9bXFr_8IQ7kNvwGCWdzl&_nc_oc=Adl9NLiTU-LT80wfVOVwplSnVIhkLmckZJyaikZhkajOqLEPO7EmiFae5yEZWwSS530&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQHFKjZV1i-8Qd4QyKdyWYmzrPkAYxCpoacRN0kb2lfEyLznceLNVQDTBk9uMYbHrugnEFsQARIfFg&oh=00_Afwt7lxTRbJEIJVXwhbS27dxKzCXv4t9AF1Yi8eAsUgMAA&oe=69B1B45B"
   },
   {
-    "id": "art_151",
-    "title": "WHAT HAPPENED AT YESTERDAY'S SENATE BLUE RIBBON HEARING \u2013 PART 2: A SHALLOW FIRST LOOK",
+    "id": "art_156",
+    "title": "WHAT HAPPENED AT YESTERDAY'S SENATE BLUE RIBBON HEARING – PART 2: A SHALLOW FIRST LOOK",
     "date": "2026-01-20",
     "category": "Commentary",
     "source": "facebook",
@@ -3488,7 +3488,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/618630589_122114906601092788_3475341984046470727_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=mU5e9qJBUr0Q7kNvwFRH2QT&_nc_oc=Adk4MnBvvEkR2zUowzjp3R9XqJXGSokHybJunqjy17aoypToH0oudLwPRwLfrrykPNE&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQE3V1dsz5Zcyuo2SPptud6agPuCI-KovBtRawr4aU7Ty3kThOUL6V58zXqc5VZFHWaHCqKjAL1AUQ&oh=00_AfxLc2XKQn3MyqscZ_gJE-FQiwQulca_NnJ5pWk2zHVQUA&oe=69B1DF65"
   },
   {
-    "id": "art_152",
+    "id": "art_157",
     "title": "WHAT HAPPENED AT TODAY'S SENATE BLUE RIBBON COMMITTEE HEARING ON FLOOD CONTROL CORRUPTION - Part 1",
     "date": "2026-01-19",
     "category": "Commentary",
@@ -3511,7 +3511,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/617020516_122114859759092788_1201247093194203812_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=D1f6DzbbsYsQ7kNvwHTdXF6&_nc_oc=Adnn8mrbf-5-OXapNpXerIaaKsdppBTrCyglSzdkg-XlVyXhyVu9mB4xcgbOKrPncmI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQGIdwWs78bCAHYfdSkVg6IhxrV3q95Q86nKtqHyX7PuhWk0fW5K7am1q2gBVPH-H5TJOigYVZKI1A&oh=00_AfwxSPLzF1I5LIthRLCgIUgXPpkdxBTukgdn4z1xWb3R8g&oe=69B1B39C"
   },
   {
-    "id": "art_153",
+    "id": "art_158",
     "title": "When Obeying Congress Becomes A Crime: The Case Against Ralph Recto",
     "date": "2026-01-17",
     "category": "Commentary",
@@ -3534,7 +3534,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/615478265_122114671761092788_6264134517102037686_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=blV2MtERRPsQ7kNvwFH4vdM&_nc_oc=AdlfJB-3Mpb00jumVpuYRFqwcyI3uGpnDDJGgrN4iDgPtlJXIpax0rU75ot-_WzrMAM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQEYb9COSmdP_r0YPSjJZ4aJQyzH6a31bsmzW9mLlmqKHlkA6x7rNw7vhn0CLSYMTzWTx2RzFWnMRw&oh=00_Afxzz_J9bqnKtQNraB0n8_GyEtH9UGUKNzrDUPPjKTzTtg&oe=69B1B951"
   },
   {
-    "id": "art_154",
+    "id": "art_159",
     "title": "THE TAX TIME FORGOT",
     "date": "2026-01-17",
     "category": "Commentary",
@@ -3557,7 +3557,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/615734151_122114600415092788_7220655937041818420_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=PY_8aCwlDuEQ7kNvwEo9XXv&_nc_oc=Adn3aUdlystR-fRCCv-ttlllSQZb9vWdxitxlxMg6n4WPGFko2Zmv7a7C8kbcHknFdg&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQFU1t5M1IQS2wSlUU2DZfFrbhxFgoxQSOfJaQmeCfYRAPfQeRaSFTndluDkHpsG6az6gwiZvkU7lg&oh=00_AfzT6n1SQzS9X_rYQCcqyrOhQah0-Bs60Jl_W0jfyAJMtw&oe=69B1D2D8"
   },
   {
-    "id": "art_155",
+    "id": "art_160",
     "title": "WHILE THEY DO THIS IN OUR WATERS",
     "date": "2026-01-17",
     "category": "Commentary",
@@ -3579,7 +3579,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/616009545_122114597997092788_3988506852976692116_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=DZAl8qdZQsUQ7kNvwHuZXg5&_nc_oc=AdmfRyICU4oVcmL2CSHH8BX2Th71fLAepfqLvyn2P_Dfbt8vlu7XVGDHkBjI_Rlt-BM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQERw-tZcU19LCmY4U2Il3XCpAwo6qROOv4aNfPL-bOFkxBIPhxiyi_yhI4V1BapDOHJtfQReBjovw&oh=00_AfzdEQpV6YJivZGUHRzPLBnxWYAX-oTl0kXvH193neKpuA&oe=69B1D206"
   },
   {
-    "id": "art_156",
+    "id": "art_161",
     "title": "WHO REALLY RUNS THE COUNTRY",
     "date": "2026-01-17",
     "category": "Commentary",
@@ -3602,7 +3602,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/616574589_122114576457092788_3540713300329837847_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=jBueuJF2V_0Q7kNvwF525Jo&_nc_oc=AdlssZx3AlcrWN0iSWT8lsxmz3AbftiQn5B9Mf4F6AC6k1eB4v87V34VhZUlDNwwuRI&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQEUJOZhbUqIjern4-MhyZ9hGgAaD3-LosSKJYkdD5FDn7gonyGTXrK_ejJO_pKCdcZRJymGNeEGgg&oh=00_Afw4fCWyVTTF9Ka29J9JDYGa07iNaQlZ0WEfqnA79CTAIA&oe=69B1C006"
   },
   {
-    "id": "art_157",
+    "id": "art_162",
     "title": "WHO ROLLS OUT THE WHEELCHAIR FIRST?",
     "date": "2026-01-16",
     "category": "Commentary",
@@ -3625,7 +3625,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/616038708_122114553213092788_7738404408251437948_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=WJr9vSq-ayIQ7kNvwG3c8Vx&_nc_oc=Adk-BSrMhHurLBQRtuvUvhSaUNQDDLTzeb6bfwr9DCJZzkcFAmcRHbzrCX6KlgMTJNU&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQEpxcaSEABR_q0n88RBNTO2yqmPcHngO4T66y9V-4L9mO8NvCUW8BOji1EtO7dMPz6CQ6OLcL_V7Q&oh=00_AfxM6H3xarXarED_7C_ozxdUUvRqEs7AWZ1SBjoOhAkTXg&oe=69B1B225"
   },
   {
-    "id": "art_158",
+    "id": "art_163",
     "title": "THE ANG CASE IN PLAIN VIEW",
     "date": "2026-01-16",
     "category": "Commentary",
@@ -3648,8 +3648,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/615360100_122114547561092788_2899449900148077635_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=4EWu1yU1GeEQ7kNvwHrVECr&_nc_oc=AdlQvBuQeIXyKx4MYHJpS2yJxtmwhOQp4CuClxTY07D-pM2w0T6T2sf4FewV-BtZXG8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQHa29taU7XtmKrdVsDS0XoY7hgXfiuuSJClGI-hKB_udTM3dK5M0kXDvW1Koqd12M7EP9gF3R4yvw&oh=00_AfwCBuby5TWE1463PTk1BPjOCk5Uh0Bs-xRhx-iH2DQcSg&oe=69B1BA8A"
   },
   {
-    "id": "art_159",
-    "title": "WHEN \u201cTWO SIDES\u201d SHRINKS YOUR BRAIN",
+    "id": "art_164",
+    "title": "WHEN “TWO SIDES” SHRINKS YOUR BRAIN",
     "date": "2026-01-15",
     "category": "Commentary",
     "source": "facebook",
@@ -3670,7 +3670,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/615877441_122114433393092788_5420097815021992455_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=fMyEP4R8wLUQ7kNvwHcsb3H&_nc_oc=Adn8S_AmWJywpHQRQJ8waeThm1I3gVOeKO08JJS3eiWoG5Zt8CNgXQ5unVCvPS1U3Oc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQGtKhcGK7OnPC5S7VG7N9Lp1sS9lv4y0YrS-h5uiyHkEukoblGRH3QJqnoTn8eJf7D0cuJmgb-Ifg&oh=00_Afz227UmDh_3ichTWcDbJXM0BOClt1wtfnDkN39RuRTZkw&oe=69B1D9CF"
   },
   {
-    "id": "art_160",
+    "id": "art_165",
     "title": "HOW CONGRESS ALREADY LEARNED TO PROTECT SARA",
     "date": "2026-01-15",
     "category": "Commentary",
@@ -3693,7 +3693,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/616038260_122114354505092788_6568861622440388077_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=Hl3sp0oXB_AQ7kNvwFv9CQb&_nc_oc=Adl7ZjoQ0BbmyuJt7S82gTsoOEx0TtQFJJCMv-D9_2I7HwMBUraOALcwXObjp5Yg3XI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQFALIwffVvjioGgMxgIUeSeGxvLb2CRircBeFVmeE9L5JADEzMeUaBVeuB5dKKRGmRelN1dQj3Zsg&oh=00_Afx1wd6fOU3aFo3_zVbq2QyDP5SDvv2ty-_FGSteQtjudw&oe=69B1D318"
   },
   {
-    "id": "art_161",
+    "id": "art_166",
     "title": "LAYING IT OUT AS I SEE IT",
     "date": "2026-01-15",
     "category": "Commentary",
@@ -3716,7 +3716,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/615702450_122114329413092788_6132974213688463866_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=AxMFvnfvVPUQ7kNvwGFWf2o&_nc_oc=Adk9vrL0_m3z8ztu_1uqkub0iRj6ZyVriWh8hckCIFqBzgQouZyjF48ZWtzGySqMGPE&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQH2EJZrBsIMQ5N6mmK32D_sULjmYnGVKUiz6AYC-9MO-GmQ-5rTr32kWFlm8-EjJCtEPuqCszuh1Q&oh=00_AfyM8awPgmuPcz0uBEXdj8O0tTXdtf3X-pd7Eh1H0XUFEg&oe=69B1DCE6"
   },
   {
-    "id": "art_162",
+    "id": "art_167",
     "title": "Romualdez, Razon, and the Bribery Story Kiko Now Wants Us to Believe",
     "date": "2026-01-15",
     "category": "Commentary",
@@ -3739,7 +3739,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/617084335_122114312895092788_388059536134212415_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=n134ymtAWs8Q7kNvwHxgRfK&_nc_oc=AdlQPKSt67ekK1VcemtfJEqiltjBwroM2zrJ7YHz3LhKcbxMuNyE6MSQkuJx2sVgVRI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQEpT5TG7uZDekWrJkigTRDVTyaFBR2wDzLxFgGj6-t4ulbYym8-i1-TvtW8EwaoGiVdtNS_51mvNQ&oh=00_Afyy4gvbif3EGnbvhm770SiCgBqWAT005n23CXDqHU_n5A&oe=69B1CB6E"
   },
   {
-    "id": "art_163",
+    "id": "art_168",
     "title": "WHAT CANADA IS ACTUALLY DOING (AND FAILING AT)",
     "date": "2026-01-14",
     "category": "Commentary",
@@ -3762,8 +3762,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/615393568_122114203407092788_5426815716015326303_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=rfvsPP0OwT0Q7kNvwGaFtUg&_nc_oc=AdnnnV08xDl6KpnPStebmINqZeNUqzL5OBG194IvmvNupD4UvDQaaI6ovqNgWpdNZ-A&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQFrdYWSMD6X72VN0SzPFlXjv7ct-MZaZiKQg5xnejbM1XeoZUZqVfv6EGLBdL9lJCtaGwS7r8SoJA&oh=00_Afy4GmJcwqN9WEEwigBW8mcLBGGoDUv5lr9GLngaGoWlxw&oe=69B1D6EA"
   },
   {
-    "id": "art_164",
-    "title": "HOW \u201cHONORABLE\u201d GOT STUCK ON OUR POLITICIANS",
+    "id": "art_169",
+    "title": "HOW “HONORABLE” GOT STUCK ON OUR POLITICIANS",
     "date": "2026-01-14",
     "category": "Commentary",
     "source": "facebook",
@@ -3785,7 +3785,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/615368045_122114192535092788_2794560688754137377_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=CzmmsCaPtTsQ7kNvwH18PSq&_nc_oc=AdnF5VcExrbheDODDsZ96d_5cgkk-TI_BT7RvV3OlnIIvQGPTYJVCp9eq4_atq6chk0&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQFJ4JnvXkXaECV9lLMgCJ5ZxvIgZZiAntZj5tvcAQx6dGqNt2MPyXO1ppFiJX9eGN4t0M_8_-usEQ&oh=00_AfwRPbqvDe6K60a9k8Z2OC0qAYrRZ_8gaIGmSJdBNmXOVA&oe=69B1C705"
   },
   {
-    "id": "art_165",
+    "id": "art_170",
     "title": "THE MYTH OF THE EVIL MEDIA MACHINE",
     "date": "2026-01-14",
     "category": "Commentary",
@@ -3804,8 +3804,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/615337129_122114178861092788_3720585380163705893_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=pnVl3KYTIWUQ7kNvwF5ZvEd&_nc_oc=Adnq6ADZkc1YRja1LKAcUJ5rx5EF-ZAnLKWMrV5PGW_FFTpbi-WrTs5hUMSTfIzKv-U&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQFxfNo_7rnYpcaIddoHKTWtuFJU7794VIWA8LHLDqfFvG7PHwmJ7tpMpBsJ0RBZCVq3cDC4iypT_g&oh=00_AfxGJ8Mg4BW6ZyRbFeC8NcF_03Z_Xmb1WtgkjUJsAc_W7g&oe=69B1B245"
   },
   {
-    "id": "art_166",
-    "title": "\u201cHi MCT. I just wanted to ask: Why are you not talking to the mass market? Why do you write for people na nakaka intindi na?\u201d",
+    "id": "art_171",
+    "title": "“Hi MCT. I just wanted to ask: Why are you not talking to the mass market? Why do you write for people na nakaka intindi na?”",
     "date": "2026-01-14",
     "category": "Commentary",
     "source": "facebook",
@@ -3823,7 +3823,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/615152387_122114245815092788_2144585837797778992_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=lU5g5TLRCHQQ7kNvwGxJSUU&_nc_oc=AdlRzR1Pyn2uRn5MBBbqsPTdYTI8optAHmO3xCh8SjUsdSTegxLofZDpRMK2Ftfdsj8&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=BTCevKSJzhzMHfPo9dM0Kw&_nc_tpa=Q5bMBQGXyTcEqJBRGBzP4lFwEUfssy0bnNxF3vwcyHUv4107ya7YxkAxCnuwCgiVww7sFrYPUs-h5p5-vw&oh=00_AfxIbk_lTvp8NNJcc_LXPhmtzCvXU8wGvXJCOQ6NcGPY1A&oe=69B2B065"
   },
   {
-    "id": "art_167",
+    "id": "art_172",
     "title": "WHEN THE LEVISTE CLEAN ENERGY STORY STOPPED ADDING UP",
     "date": "2026-01-13",
     "category": "Commentary",
@@ -3836,7 +3836,7 @@ const ARTICLES_META = [
       "Ombudsman"
     ],
     "excerpt": "",
-    "word_count": 2734,
+    "word_count": 2743,
     "read_time": 14,
     "url": "https://www.facebook.com/122120826315092788/posts/122114123985092788",
     "fb_post_id": "893376663850463_122114123985092788",
@@ -3846,7 +3846,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/615227238_122114123961092788_2863223611017073045_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=OFqUe5V7SF0Q7kNvwEYUmSh&_nc_oc=AdlR0CQpxQnOydrfwfJmEOHMMmn3-fDbFcwWTKdjR5m45n6uRVjj_2WkVvq8hKKwgRY&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQEWVRtPU1wkmFU3OMQLprexdlkvYSnercsrGKVGJTm1oFSUXqj2KdkdaOIyUWL8G_oIcL8pLDgLUA&oh=00_AfzpIDT-I-kLwiBVqXhfKFlKtOMnASt0M7vIA6FxGqZ7Zw&oe=69B1B001"
   },
   {
-    "id": "art_168",
+    "id": "art_173",
     "title": "WHY THE ALGORITHM LOVES GARBAGE",
     "date": "2026-01-12",
     "category": "Commentary",
@@ -3869,7 +3869,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/613112870_122113927287092788_1255902907150670483_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=aMqI4o5i3bsQ7kNvwGOSQEj&_nc_oc=AdkFHAyx1OpUjtkkM4TwE-fseOt8JAGR-fH7XZ1ITjeYyNy076ib4A6l_SVtdMrOqe8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=dyB6kVP8JKbdyBVgoCDZWw&_nc_tpa=Q5bMBQGtcavaA9aIMpCh5gI9lAKhQRu-0A6Nfy9CrWb1Oji7iWJBplokIcJPQp9lXBJiBpKRPPhlnMlZqQ&oh=00_Afx_mYT2huwGKbeSKpvBSzYnyZis4iq5BrOqVc4fR_oN1g&oe=69B1AD10"
   },
   {
-    "id": "art_169",
+    "id": "art_174",
     "title": "TACLOBAN 5 CASE: VERDICT DATES SET FOR JANUARY AND FEBRUARY 2026",
     "date": "2026-01-12",
     "category": "Commentary",
@@ -3892,7 +3892,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/613630847_122113895487092788_6937500141581102809_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=EymdHy5z4LQQ7kNvwEhT4I0&_nc_oc=Admuf1EtfItGZABUevGlPsNq_oug9zkotgnByXzzwQr7tdVTVHCdCiPnjh7ggtS0DEo&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQEojwxCnRcFbkOWwbMdcdZl6r6E8OQGMxbbtQe3_a9YXF5PDlEVndP5wf0G8Zykj6DlOA4cZRM6ew&oh=00_AfxpXmeFHVjcO7oXxzMV-AaGwMD9nZulqLEXlyzWkF850g&oe=69B1B13F"
   },
   {
-    "id": "art_170",
+    "id": "art_175",
     "title": "Just asking out loud",
     "date": "2026-01-11",
     "category": "Commentary",
@@ -3912,7 +3912,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/614905125_122113819239092788_5655592203959335379_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Grsws5QVkJUQ7kNvwEcAzeu&_nc_oc=AdmNgjLOrhUKS_-j7xeIp5Gay6BfSzCWA32uBU1AyoFyCSN4pi02b8hrnS4PH-I3Ic4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQGnFgfdIb44vLTFttqUXuX59ZwY_UMljq7uSBxvEQoz1l5BfrEXWQAcs-HG4kZltjKe84Kdsy_AjA&oh=00_AfyAPouHBeB9u-KOORUM-fVsmAxQcHtieDiei1EErXYQWg&oe=69B1BC88"
   },
   {
-    "id": "art_171",
+    "id": "art_176",
     "title": "When Good People Stand Alone: The Government's Betrayal of Father Flavie",
     "date": "2026-01-10",
     "category": "Commentary",
@@ -3935,8 +3935,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/614766928_122113582359092788_5897418597375220955_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=66bSsWC5sP4Q7kNvwGSa9Xw&_nc_oc=AdnDUerO_Mbk3bruE0kuDjPGE-lsFSucWaKVV9QQLMB1FeBcT05R95P1y_Rcxc_xg0w&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQHUKO8wmdQLJ_gjX08GmlyWqQnUSxIDQOO41aJYTjVvHeEeR5OSQxfaOtD9KXlfR8uRZXS_hdi34g&oh=00_AfyiNtaill_TML6A4rhrSR141F1A7znJIGBakdcPnHvB_A&oe=69B1C6F6"
   },
   {
-    "id": "art_172",
-    "title": "Henry Alcantara\u2019s \u201cwalang kasalanan\u201d turn: what it really does to the flood control cases",
+    "id": "art_177",
+    "title": "Henry Alcantara’s “walang kasalanan” turn: what it really does to the flood control cases",
     "date": "2026-01-10",
     "category": "Commentary",
     "source": "facebook",
@@ -3958,7 +3958,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/612501726_122113559499092788_6955739682819208757_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=0yc_NqHsVSoQ7kNvwGtVWAx&_nc_oc=Adma9UCBFD6ZAQwv15IRVUMFQv-9kpDafB2Dzk63wxv077a_rJJeKWG0_VKgOyUmtwU&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQHjgQwJgcRpaW7lr8c1OZgO_JTJEQUMjT1mMhdqjAct-wDuOlgIA6MGWhPekoH_c7tzMZbCGu8H5Q&oh=00_Afyloy1NbnZQ41UmqP4OVBYuatvy9L4Q4tcSQwq4fVEWWA&oe=69B1AF5B"
   },
   {
-    "id": "art_173",
+    "id": "art_178",
     "title": "The PrimeWater Mess: What Happened to the Damage Left Behind After the Villars Sold Out?",
     "date": "2026-01-09",
     "category": "Commentary",
@@ -3981,7 +3981,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/612260206_122113493895092788_2996976668312501135_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=cETjhXuQeDEQ7kNvwGKPSaJ&_nc_oc=AdmLgYJaIdac5IoyufQj4uQtgUTADF4b6x6QYzbH0NCt47dvO7hdLjBU7CBa7OwbUoE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQHQ6RySggww2_ny09t4bTLYknYRmaA-Z0i1AkFzVtj-wqRrMcZb8DWC7vDDGmB07PiizAwFBRsEjA&oh=00_AfxgP48PHc8XamUahjMXhyqCDA6Pj5lvHgSjzfZXSgX69Q&oe=69B1B30B"
   },
   {
-    "id": "art_174",
+    "id": "art_179",
     "title": "Hating the Corrupt: Why Filipinos Settle for Rage Instead of Real Accountability",
     "date": "2026-01-09",
     "category": "Commentary",
@@ -4004,7 +4004,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/613964496_122113427433092788_2109096662894452298_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=KscsKv_RQ8sQ7kNvwFZv8QJ&_nc_oc=Adna0p1h-2HHVb0SqrBqQF8jIdDPohyqvB14iTCXUT7zznaQXq7bNgi1WaXQ84kYoYY&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQGheT5ha4ZHT5PPVqsZKPkTdyOVNRyQWQOU_QSVaQrAsXIRZ1kUt6JI6oiot0BCI5yI8rFskHuoHw&oh=00_Afz_XKe87YQSIfAgNpnLGKnahspDe2PXYFpm5BicYMbe_Q&oe=69B1BA67"
   },
   {
-    "id": "art_175",
+    "id": "art_180",
     "title": "The policy, on its own",
     "date": "2026-01-08",
     "category": "Commentary",
@@ -4027,7 +4027,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/613092978_122113396179092788_5617449796114233918_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=XEeAGNxsA_gQ7kNvwG1pFVi&_nc_oc=AdkwTEFBq-iyJwAH2xaRkFQsfycHsr90KJKkNnOsgFDZHtXx4xsVMjVVDfXuD7XP_WY&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQE8Th4BEtXpC0ugrndFuMIggX0uYET52BVEkiD6G7j6mdtlaNoh1QZZITCmapxOdBWIqj5gKMrBaw&oh=00_AfzGG_qUzNeFykpcnVZ6odCgOHhFkB41Wvyae4MxcYPY0g&oe=69B1BFF5"
   },
   {
-    "id": "art_176",
+    "id": "art_181",
     "title": "What Actually Happened",
     "date": "2026-01-08",
     "category": "Commentary",
@@ -4050,7 +4050,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/611831008_122113242537092788_6644781055557648062_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Su9YpkBqzHcQ7kNvwHMEqm_&_nc_oc=Adl4Q3rWcVco1giUWC7ut2m5HaSTDyu6YGg2mmCOYv_H6xg4an-K9gOKFkiSuC_3qx0&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQFNES5d6EljVoegZyqJEee1ltp3kvALVe6cjWNd-_zRMtiwfPVIafkfyhf9LB9MYG9BUQh8Ic50EQ&oh=00_AfyPa6YGBM6VIXwHHbZZX4wLH3SoqcgM8_NvznZh9YcXSQ&oe=69B1DC61"
   },
   {
-    "id": "art_177",
+    "id": "art_182",
     "title": "What Actually Happened in February 1986",
     "date": "2026-01-07",
     "category": "Commentary",
@@ -4073,7 +4073,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/611129553_122113233051092788_4939068245574566504_n.jpg?stp=cp1_dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ENpI3HSxUb0Q7kNvwHOOWCe&_nc_oc=AdmqFNlZ91_2C15-pNb9srWUexp3AcMVYLR-B6N1bjoVLQx8VnHhGeoIz6EZY3YyVyc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQERVZl4Pfp-AXtr2d7E0ZAGAFIo9AbyrFcEeHyDc5zFBRHgNeJrBHw1288VDKaIsj35ZrZsiXdTTg&oh=00_AfxK_oqTxgKwtkGl27b-fvINduxYoMp8g2f-301mjBZXzQ&oe=69B1D9C8"
   },
   {
-    "id": "art_178",
+    "id": "art_183",
     "title": "Looking At Surveys and Public Opinion",
     "date": "2026-01-07",
     "category": "Commentary",
@@ -4084,7 +4084,7 @@ const ARTICLES_META = [
       "Marcos"
     ],
     "excerpt": "",
-    "word_count": 1821,
+    "word_count": 1827,
     "read_time": 10,
     "url": "https://www.facebook.com/122120826315092788/posts/122113135185092788",
     "fb_post_id": "893376663850463_122113135185092788",
@@ -4094,7 +4094,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/612252837_122113135155092788_820458722870082470_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=pfhQB9jWnS8Q7kNvwGrPJ1s&_nc_oc=Adn-iBZ_RBV18u60MyZiXzuyd8NcuB8GgQhp4BUL7MlQnbxwstWF2JQtB5qw3A_gM2c&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQGfnTXBgAp2oYG1RQB0uPlMR7XmvRPESrRShnFmBEhGdje47ljBkhF9OnJcEUyAafoK6eoRuogPYA&oh=00_AfzyutAhT1DraAs775bRByp-NCMqPPNmJvUYYBbfv_06-g&oe=69B1D2B2"
   },
   {
-    "id": "art_179",
+    "id": "art_184",
     "title": "Mathematics of Greed: The Cong-tractor Economy of Edwin Gardiola",
     "date": "2026-01-07",
     "category": "Commentary",
@@ -4115,7 +4115,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/611187147_122113110087092788_115071444375834060_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=84TUlubbZjwQ7kNvwG2mS5h&_nc_oc=AdldO3MFd7ArrhAT9s3-oR6jjMKzciXvhGKI6tq4TktWvrPJYNthxxLZXEBayiCWImk&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQEjN6NeA7cLAB16XK5BFcSX9Nhy1Jw7BV9_uXFTDZoiJqI9uPgok9SOJHj1vW95PPjiP1PqYqgg_g&oh=00_AfyR3fZCMpijr4GFGAq_Vs-TuvBlmIzTzTer73rDTF7GlQ&oe=69B1BA09"
   },
   {
-    "id": "art_180",
+    "id": "art_185",
     "title": "What kind of garbage is this, Greco Belgica?",
     "date": "2026-01-06",
     "category": "Commentary",
@@ -4138,8 +4138,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/611178694_122112964827092788_4025858207072881843_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=wqKM2eT0d30Q7kNvwHL4C_Q&_nc_oc=AdlJhwH6xZpWY-sF1mw9dpytRKUfWnl5lVoJTS8jT0031sWkwQF3aRYawGJeASt99eA&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQEVOXUvZuNEXQIVuPXGaMkD62TUYsA1qSrIWu8YG-BF4-6OvF9XqrNDGZFNUgRPQC2KrdxG8lOqug&oh=00_AfwyGrWLqiq7yJoL0iSm4u9Ld_CDSPhoZOX_RjLxnNdLYg&oe=69B1B1C5"
   },
   {
-    "id": "art_181",
-    "title": "When \u201cI\u2019m Not Aware\u201d Becomes An Insult",
+    "id": "art_186",
+    "title": "When “I’m Not Aware” Becomes An Insult",
     "date": "2026-01-05",
     "category": "Commentary",
     "source": "facebook",
@@ -4161,7 +4161,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/611908320_122112861807092788_2468428679101298174_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=wVVjpUQcGIkQ7kNvwHcMxH-&_nc_oc=Adn0DRb8UTFVZMDHFSZxnWCGhHjvu8K-BEz9RFmbxKZCYHSokURDM91QZQGCxbsd_vQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQFYKS82lkghkqoRBFd77tRhDCYixgcRtsP3fnZaUElOwcwx2DIOXMmcgUnixXzZU27rlTSnnOcDwQ&oh=00_AfyUKAnzwjq1r1-vAPAEVaD9VobVcIpOrMVbYkfyO9BdBg&oe=69B1E34E"
   },
   {
-    "id": "art_182",
+    "id": "art_187",
     "title": "The Filipino Paradox: When You're Complaining About Corruption But You Are Corrupt Yourself (And You Don't See It)",
     "date": "2026-01-05",
     "category": "Commentary",
@@ -4181,7 +4181,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/608282491_122112785919092788_7878090104604209206_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=JhCK1VlmLZ4Q7kNvwEBOX9u&_nc_oc=AdlkrfjRXPJVMtJauxj-nkmp0VKX6bUwjTY-tSQ1z06-42U-cHNDfFOG2lqBwdKWK3k&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQGLAuS75PC5lgap3IZKtoavyj4Rs3VA3k5p1ZSlI1VB6nynfk_7Rr4c_2WGryMbr9WG2KaOoQh7OQ&oh=00_AfxTjOf_3Jsz16omI6Qs7QXgT9qFHSXhfD-C5nJc00qNJA&oe=69B1B7DF"
   },
   {
-    "id": "art_183",
+    "id": "art_188",
     "title": "How things built up",
     "date": "2026-01-04",
     "category": "Commentary",
@@ -4193,7 +4193,7 @@ const ARTICLES_META = [
       "Elections"
     ],
     "excerpt": "",
-    "word_count": 1134,
+    "word_count": 1138,
     "read_time": 6,
     "url": "https://www.facebook.com/122120826315092788/posts/122112693099092788",
     "fb_post_id": "893376663850463_122112693099092788",
@@ -4203,8 +4203,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/610941182_122112692829092788_6538281519230556045_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=tYeXD7B4TFAQ7kNvwH1wVYe&_nc_oc=Adl4q9sj9BXJwLlbJGsnv2W73Q9NHphfdE3VmN9tDtUREdJQor3q9EXQ-5X4b5fLLpA&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQHDV7-x72yIvV35OOPymNWCWbIRvqFuokAsed7pRmwbKHGXMOy6rStR_2HIerwwifs1A-2NIRIK0A&oh=00_AfySW_necH3TGq57W8Yr6OP-AeJBbU6n3m07DXn9cU2i8g&oe=69B1ADF1"
   },
   {
-    "id": "art_184",
-    "title": "My Meta Account Was Hacked\u2014And My Panicked Fixes Made Everything Worse",
+    "id": "art_189",
+    "title": "My Meta Account Was Hacked—And My Panicked Fixes Made Everything Worse",
     "date": "2026-01-04",
     "category": "Commentary",
     "source": "facebook",
@@ -4224,7 +4224,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/607141056_122112652527092788_7742288931692478978_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=NN95BNCiuxoQ7kNvwG1i643&_nc_oc=AdmOnuv9I3uWEV0tahp-CYtg1sL5DmjHBUcg8C2NcphbqrCOnyatjcb94hBtzO7sV7M&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQE08uKdUsCAvaTTHqFbXH07ip3ZTdrmR87Uc1UnsWSArYRjrUE3J_AB3ckJ_VEbi75ZbNlsgxAQMw&oh=00_AfzsCW0nX19symE48bMXsOw6rpYnp321gW4TDVwSUKsQlg&oe=69B1CC7F"
   },
   {
-    "id": "art_185",
+    "id": "art_190",
     "title": "The soft, forgiving culture",
     "date": "2026-01-03",
     "category": "Commentary",
@@ -4247,7 +4247,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/611133475_122112525021092788_7404448497151779262_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=syq4WvQUbZgQ7kNvwHCLNf9&_nc_oc=Adn1RC9UJW-dUgRk9YLEuTS46d7Z9K-pTatKY7bDaBB4Qg936bE31BQOn290CfG8AJw&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQGFm0xwWb0-rM-msFDDpqsqZOqT2o_Q0YtiYGa3O4UDjzhEZ5bkPvnBx0IQCb2NDqXhJdLt6iGa3w&oh=00_Afw0tL8S7bAZVsHayxWlFmH9VyKxJ4WdNTENbLr0g1lNzA&oe=69B1D007"
   },
   {
-    "id": "art_186",
+    "id": "art_191",
     "title": "Lesson 1:   Accountability Is Usually \"For Show Only\"",
     "date": "2026-01-02",
     "category": "Commentary",
@@ -4270,7 +4270,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/607284912_122112508101092788_5050794207969730924_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=VxbYDG-n3ekQ7kNvwGrlkIA&_nc_oc=AdnNQgbxluEdMhZIpL5NVocjPbH1CJy7vwkURFJvqLTTC6bCf2ThBj2SoA6lRLzqFns&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQH_OjGo_WElf0Qe0_h-SNu2TaY-IBn1F50Y1FFD84IXKBdmT3XMixxM0hLgKBSSEruEV3gDQqJJmg&oh=00_AfwBaXm6vpYrZPsZBjReMdQL4CwjC-F6wto0cXFp_wuMtA&oe=69B1BCB7"
   },
   {
-    "id": "art_187",
+    "id": "art_192",
     "title": "What has been released so far from the Leviste Files",
     "date": "2026-01-02",
     "category": "Commentary",
@@ -4293,8 +4293,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/608911112_122112442785092788_3094251996464501949_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=7r2bX15lNzMQ7kNvwF39ajw&_nc_oc=AdlwHVENovg_wtP32yiUhySt5AAsvYlYq-QqagZqzxanI7vu__mAEplMotjYRvQXKPM&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQEmkGvELAz8lb-N_-FtvCLbzreDsvr828M-Gfmt4ioppwBU_RhDtev02g174zLQWrFLwU7My0zluA&oh=00_Afyo3q-AKRGUvGiPCjI9ekS_b90hYyu7a5EOhspe51KcPA&oe=69B1D914"
   },
   {
-    "id": "art_188",
-    "title": "Philippine Politics in 2026: One Citizen\u2019s Take",
+    "id": "art_193",
+    "title": "Philippine Politics in 2026: One Citizen’s Take",
     "date": "2026-01-02",
     "category": "Commentary",
     "source": "facebook",
@@ -4316,8 +4316,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/605904833_122112420897092788_3053332504483754368_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=vQv3jTcFirUQ7kNvwEU-beV&_nc_oc=AdkcdNdf-MxtTHLo8Yb98Gu_ro06FmRbkMkSUAV9p-GCaEXPHZs-vWajc-UDCt00Xxc&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQH4OWA82Chwpo_bZP2A85JTJtY2nuyZQuNdZ7bkzO_yzgk8-mZ2bmzT-hgafslLz7g0d5KvHkSA5g&oh=00_Afz4iKzdLn4Gc89E1f4Y_SCteFIMxCLTnVwnxW3S5eNWww&oe=69B1D379"
   },
   {
-    "id": "art_189",
-    "title": "\u20b11.5 million break bonus daw.",
+    "id": "art_194",
+    "title": "₱1.5 million break bonus daw.",
     "date": "2026-01-02",
     "category": "Commentary",
     "source": "facebook",
@@ -4338,7 +4338,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/605830833_122112502047092788_2664704465424645934_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=rKwx1HqlbdkQ7kNvwHA-V6L&_nc_oc=Adkco47pynoHR7PpJa8E4kgsKs2p1g8nJcYzL863WBHc3gcdMnqJ_S2LiCjYa3dB46o&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=G8Gdkv7Cxf_LigSuuXbebA&_nc_tpa=Q5bMBQFM9rKgB06g9A-qjk-qPGH9f6cYkeLuYhc71SyazkqUakej0MWT_tgSQuXfSHgQ9d9cLDAPqEUFEw&oh=00_AfzyEGmgeok4AD_AWXKJNYp1k4m242-_MVcue-j66hpn0g&oe=69B2ACC0"
   },
   {
-    "id": "art_190",
+    "id": "art_195",
     "title": "How This Mindset Feeds Corruption",
     "date": "2026-01-01",
     "category": "Commentary",
@@ -4358,8 +4358,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/605713105_122112295869092788_571896737316846823_n.jpg?stp=cp1_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=qJWBVY5FAhQQ7kNvwFZHfoq&_nc_oc=AdkbaT8mfqLjVrT768JnTBHIjccov_4CrQO3KRC3QyHpQGkJ5YvwA-VzjV98FSVsmms&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQE97D12d8lAzW7LyVpwaDFeo1TD2JEpnWpQPB8CS2nfwZu3rufogOU6n5PKFdkCT5Xv1N77MTCOwA&oh=00_Afzvd0ZDBpaMqb98zFoUtO0DOeXQktpDb8MY7hoJ5CM6Pg&oe=69B1C3B5"
   },
   {
-    "id": "art_191",
-    "title": "When \u201cpag-asa ng bayan\u201d looks like clout",
+    "id": "art_196",
+    "title": "When “pag-asa ng bayan” looks like clout",
     "date": "2026-01-01",
     "category": "Commentary",
     "source": "facebook",
@@ -4368,7 +4368,7 @@ const ARTICLES_META = [
       "Rizal"
     ],
     "excerpt": "",
-    "word_count": 885,
+    "word_count": 892,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122112267975092788",
     "fb_post_id": "893376663850463_122112267975092788",
@@ -4378,7 +4378,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/605672417_122112267951092788_8453057537384007261_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=kcGvp_lYnmUQ7kNvwFZ5x-x&_nc_oc=AdlMRbp6IRG4Ux3p5MdQdjVfpAvUH_gqg3qwYf5cYWjiJeR1rPMdi2JrjNT4Q140q18&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQFCABS11UD-E2cQHi6x3E6bGk5jDuad5fqc89vJxzsfwR0XNY_ZwLIFDIyIF4Rc3KZyix1B98xOcw&oh=00_AfwLK7isfHC0gvk6HIMyODIvb7iG3s__jSivirLtgfW-DA&oe=69B1B23B"
   },
   {
-    "id": "art_192",
+    "id": "art_197",
     "title": "What this space has quietly been doing",
     "date": "2025-12-31",
     "category": "Commentary",
@@ -4398,8 +4398,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/605718886_122112241695092788_6860505244027607931_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=kk_zp-gF8d4Q7kNvwHsFdO0&_nc_oc=AdkhJmjDhbdG-00gjmRLdXsxdT7fnb6PtqT5MwrCnkhDpFi_5reG8jB9SwMc4FlOl2E&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQEtnrV92tzQlgQJIK8F9ighzk7qF6nBHASfF2HrTeEw6ctdHVIupJwWNBD4vyoY82x_AVMtcA90EQ&oh=00_Afw5NHXQGRIwN5P2WGnVeM26jLKaKNRkKwDcVHPvHinGVw&oe=69B1BE10"
   },
   {
-    "id": "art_193",
-    "title": "1. Ano ba talaga \u2018yung 12.9B?",
+    "id": "art_198",
+    "title": "1. Ano ba talaga ‘yung 12.9B?",
     "date": "2025-12-31",
     "category": "Commentary",
     "source": "facebook",
@@ -4421,7 +4421,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/605720708_122112222999092788_1004197795580288375_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=xgIATZVSIYcQ7kNvwH0PtAk&_nc_oc=AdndTPi1zHHsYIXrl-yFIgUVcG9cYzOcxMAclzIFYMmaFP8oUCVYH0F7WWJ_bb_DDOQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQGtZV7vGAUrN5EB8PYL8Jy5nA2r2ti3UiGQgJcVnNUWBuq5TCStiqY3yyA-kyqFvAi4DhBE94P-0g&oh=00_AfzOWuQC2eL4oLZsQVY3VYmTbHT8dZdVqLCuCCemnwaWFQ&oe=69B1B547"
   },
   {
-    "id": "art_194",
+    "id": "art_199",
     "title": "Why Pompous Writing Turns People Off",
     "date": "2025-12-31",
     "category": "Commentary",
@@ -4440,7 +4440,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/607455464_122112096291092788_8098618138580085995_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=dcmQ_DCoB70Q7kNvwF0yr_X&_nc_oc=AdmUNPsveG8bG2m4EAmS43V6kuoeStEMSVqK8iX0TJb5ZqY_BJCgQbvfIgTtzJyEk_M&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQFS-_da1H3BgETCoy5RYTGNze9uoVUgaevIZXhaCrRjWN3UJUdAIEk1aEACPZLQ1riMjhCulnPM1g&oh=00_AfzEGgknUzT3Wl2brDqxrSHqvmm5TnzfldKMz8tYF9vv8Q&oe=69B1C76E"
   },
   {
-    "id": "art_195",
+    "id": "art_200",
     "title": "How did Rizal become a hero?",
     "date": "2025-12-30",
     "category": "Commentary",
@@ -4463,7 +4463,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/605720626_122112030729092788_6879781326111376830_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=sEi5pLjJKTUQ7kNvwEts0JG&_nc_oc=AdnlXvT3typbaActOFXMYnIfCeRtcxvZjqizPn_AKfLkvWbSaNMpJtQPcSVlrcUCh_g&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQHyQCv5DzJcqK_Dw8b-XtmXT8J2f4Lrx9qvH-_x5PcSc50bV2FL5BtRbA2-rS1G3t4UPfVTlB4mIA&oh=00_AfywaOWshWrhYWquZxaBgLDJtVbNdNPFSFqvl2MTDiWGhQ&oe=69B1AEF5"
   },
   {
-    "id": "art_196",
+    "id": "art_201",
     "title": "The Cabral files: hero move or something darker?",
     "date": "2025-12-30",
     "category": "Commentary",
@@ -4484,7 +4484,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/607959025_122111977641092788_5074835979212972501_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=q2huSstj3ZIQ7kNvwHDd_Tu&_nc_oc=AdmORwu1Z_dxo7SbEfuyYFLD6M3aBrWUZXcNj3QDiO7yWFRjw2raZzdJo8O3RVqk2x0&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQF5aYPweZDKaYDUWx4Ft9TR0QOPme6Eo67ijSWLL4vm7iLwps-Ep2PaQk_NQk6Us6PQtHrZledZlA&oh=00_AfzVT-ZULRDZbvcKA1Ygaw5tgyupzz243eYQdVGSQ-Rewg&oe=69B1BB50"
   },
   {
-    "id": "art_197",
+    "id": "art_202",
     "title": "The Last Morning of Dr. Jose Rizal: An MCT Reimagining",
     "date": "2025-12-30",
     "category": "Commentary",
@@ -4507,8 +4507,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/605117410_122111969019092788_7726491905644336886_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Bz-esozIXdUQ7kNvwHEsWgG&_nc_oc=AdnvqXCd_a5CSoZgCv2CfJpPKgnXotB7NM45tivRk2dFYlzuslT9X3g0hAUppwUTWuQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQF23mENwp3p95odBWFNayIhQwFZABDi32dcPYFIxzyJ891tgXrmQ8TxevD5BOCFBbO_K5v97uhJrQ&oh=00_Afz34ewa120GVByhjFdVmkh_utoZPQAF_iu6bfBVcjVW7w&oe=69B1DCE9"
   },
   {
-    "id": "art_198",
-    "title": "December 2025: The Anti\u2011Dynasty Bill\u2019s \u201cBig Moment\u201d That Wasn\u2019t",
+    "id": "art_203",
+    "title": "December 2025: The Anti‑Dynasty Bill’s “Big Moment” That Wasn’t",
     "date": "2025-12-29",
     "category": "Commentary",
     "source": "facebook",
@@ -4530,7 +4530,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/604782148_122111814939092788_2016174649099814701_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=01-5QL0xMhUQ7kNvwGR33iQ&_nc_oc=Adn_WUNU9uYjBv4Rf1lz0-dnCyja6COmk4DQlwCJjs74_7Fulaj3Q9E0MrYT42bOzNo&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQF4hixXmkpI2gEeSM1RWOeA_L-RB_NiAww8djMv3I0bZsgSLxuKtFcl_eruEOPu3xkjU5RpQHlIqA&oh=00_AfwnAIHAUe-VHi00ZW52DUcWFds-IxZ_CqdX_7TJnJ8tRw&oe=69B1BE3F"
   },
   {
-    "id": "art_199",
+    "id": "art_204",
     "title": "Someone asked if the Severino Mallari piece was AI-Assisted.",
     "date": "2025-12-29",
     "category": "Commentary",
@@ -4550,7 +4550,7 @@ const ARTICLES_META = [
     "image": ""
   },
   {
-    "id": "art_200",
+    "id": "art_205",
     "title": "The Hidden Tell: What Your Questions and Comments Say About You",
     "date": "2025-12-28",
     "category": "Commentary",
@@ -4573,8 +4573,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/605131213_122111649495092788_3573609488582818150_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=d52Q7kj7HQ4Q7kNvwEbTf2a&_nc_oc=AdlKepEDhsV81aGRWioWZrdMrkGI9zsQ-m21ksiXKp5Dh0aSBUBsKUgCslskn2s7xUQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQFX1Z5pMw67zAsWWWqshiLSk2Kry2uQ1Swkrbf6-pxKDgfP_Nq5ZPvpSxNFMwxaPm4OT6yhy0IVww&oh=00_AfxGnKV-unIDielSw5D8ZdEy6klueQH4Nt0PCJG3p8lYGQ&oe=69B1AFCC"
   },
   {
-    "id": "art_201",
-    "title": "I\u2019ve always been deeply curious about the story of Fr. Juan Severino Mallari.",
+    "id": "art_206",
+    "title": "I’ve always been deeply curious about the story of Fr. Juan Severino Mallari.",
     "date": "2025-12-27",
     "category": "Commentary",
     "source": "facebook",
@@ -4592,7 +4592,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/605765535_122111631021092788_4026732854513628841_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=SDTDl6D_Ei4Q7kNvwGKTjxT&_nc_oc=AdmaCObWOOL2pQCt1qAda1Sk9yimzXjYGTWV-8wuPF5HLgJSOHnh_Q0Q2gJLeiz4gyM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=4Y0ebn1mrTfCx-6LjYaAXQ&_nc_tpa=Q5bMBQEswSDUlsk8fgqgEumk_hBxkG2s1JW1y-PDu4VeT8B9snD7oRB-yHWGE8AbK0HEwJ2odk4UmCC-Iw&oh=00_AfxNr_TUkSOmZCkgx3Ezc70UBClsaflg6iMvWbkYE-ezXA&oe=69B29D8F"
   },
   {
-    "id": "art_202",
+    "id": "art_207",
     "title": "We recognize AI content now",
     "date": "2025-12-27",
     "category": "Commentary",
@@ -4601,7 +4601,7 @@ const ARTICLES_META = [
       "Philippine Politics"
     ],
     "excerpt": "",
-    "word_count": 536,
+    "word_count": 541,
     "read_time": 3,
     "url": "https://www.facebook.com/122120826315092788/posts/122111636385092788",
     "fb_post_id": "893376663850463_122111636385092788",
@@ -4611,7 +4611,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/597341984_122111636313092788_4591487209791023840_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=s3q40RsgM24Q7kNvwFAPjCM&_nc_oc=AdlEP2ER-cs3witUpy1whm9DLXoAop6J0rm2BQohRwtdvW0vy6TDpmphj4XovcvoHyE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQF7iy4lXqszOJ4tArvaQ1btl8HCc1fPMKeWUKrhRll2jMjlGlEWWCXHrign2OuadDNqE9Z3Ur8FhQ&oh=00_AfylFq4IP9-r_iqoY2rqAqZ7b83t-u8TTGq7KWIYu0gFlg&oe=69B1D87C"
   },
   {
-    "id": "art_203",
+    "id": "art_208",
     "title": "What the leaked files say",
     "date": "2025-12-27",
     "category": "Commentary",
@@ -4634,7 +4634,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/606425653_122111520591092788_4605553699328136321_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=QNubuiyuTTkQ7kNvwFSjKqw&_nc_oc=AdkSf8Z35JDcAny1mjMBODO0c8UB7eHIZRU_mJjJuKtLXAXKMPQFBO8bXhncuf6ZcQ4&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQFxZmVOXlgAfSQu9TL-mTysxGLDytybaffiQ7IwyMGGWFr2CkYyL1CsU-lFokKwTBvoTTbD00I28Q&oh=00_AfztyCyn3GqCxVSLlhkVUmnhUa-CAGsqjbm79NWyoIR_IQ&oe=69B1D973"
   },
   {
-    "id": "art_204",
+    "id": "art_209",
     "title": "When the Watchdogs Walk Away: What Three Resignations Tell Us About Accountability",
     "date": "2025-12-26",
     "category": "Commentary",
@@ -4657,7 +4657,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/604849940_122111469267092788_2341847877589555895_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=jwaqmhxmbdEQ7kNvwGaCGOr&_nc_oc=AdllLDb2wD-PGKmP4Hxv5yFw1qR81fXLnRdu-IZ61DepTtduFnEwvsvsH6a6DbGdOnc&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQHdxeEIHKeIt2utCpf28E2tH89J85rbFnXNzX2cu_AF8kX2joFwNR6TuHyEjzfJjhvhlDE20lS_eg&oh=00_AfxGYhb9DfFigg3pGyOfbE65KSPbvAbl8azKL0-c1VB2_w&oe=69B1D62B"
   },
   {
-    "id": "art_205",
+    "id": "art_210",
     "title": "The Promise That Wasn't",
     "date": "2025-12-26",
     "category": "Commentary",
@@ -4680,7 +4680,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/605658867_122111413131092788_6209564829278885168_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=xwxj6wZZ70cQ7kNvwHM5nxv&_nc_oc=AdlqrSKYvX9ntpedDkVnj8B4fdK-lP-qNyGtKz_skLvSsbD81q8kiRAencAH-ZHxa6E&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQE4JZqZxbtvPT0DUzbTVNPAcOeO6-a4SngLrCdIpNQ9iJEWVDGsCZR4GB5b1KGkY3zEcn65zpuHpQ&oh=00_AfzDmvaxgX7HW3JykuglN3U9rr1NE5VTG76P6fiE1dP9kA&oe=69B1B2B2"
   },
   {
-    "id": "art_206",
+    "id": "art_211",
     "title": "Etrikes and EVs in the Philippines: The Good, The Bad, the Ugly",
     "date": "2025-12-26",
     "category": "Commentary",
@@ -4701,7 +4701,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/605718363_122111388195092788_4950231301606570806_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=3Rb5Tuz0-pcQ7kNvwEIh1cG&_nc_oc=Adn4Ngo_EAU3HEK-n_LfTO0dekGWK12oQlYyaiX2H8ETGNxSgUPtsLNBWSSwuUhVVB8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQHj9lBJ4QEaumGLvPCnUv5z4ZSVObnLVNwiHH-alB46l5oc6_NSymDFzUJJYQOb3oQMjxc-5KKztQ&oh=00_Afw14tRb8Gt1P18Jvae61Fq8voUGg-AQgoo4e1JPyt0yoA&oe=69B1B249"
   },
   {
-    "id": "art_207",
+    "id": "art_212",
     "title": "What Vilma Actually Said",
     "date": "2025-12-26",
     "category": "Commentary",
@@ -4724,7 +4724,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/597270400_122111375253092788_1274856035192860717_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=N4pfbc5QMjwQ7kNvwFR6MZ1&_nc_oc=Adl2blsdl51NhRbGiPPpzp7EwfOp7Scf11ljZTnNZqK7DdcXdlLHNn__Q2YqrFMwOsE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQH98zcSfWRqNbKivW61vwK4yVgGZhvzDv9Tiom3RV3R6H3l5x32RuZYRyGoBZDWL1smSHXnT3LfYQ&oh=00_AfyeZetqqyUHuXgQJPYiyocJI6PEso1_t9HRRgSP7L5hmg&oe=69B1D4EB"
   },
   {
-    "id": "art_208",
+    "id": "art_213",
     "title": "Ego and first reactions",
     "date": "2025-12-25",
     "category": "Commentary",
@@ -4743,7 +4743,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/606823381_122111364141092788_3977355752931143431_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=C1UDa4H3_CsQ7kNvwGKwmQY&_nc_oc=Adlxo3J_P12jvBilGZ43tMFB91GO1CeQ_UmX5y0mNG0gD1XRY3-IL9PZAFhoGNWL0BY&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQENqXikWS7XFJj8f-b6a1cRd4DqYyV0fCDVxkPTg7qtfZrD72V5RiKbYCG7um-agdIMcx1UvwHNsA&oh=00_Afz_eXdDj5znbf4xkuGY_5yRDNiXtalhDEUhnmROwIQ8JA&oe=69B1CDCE"
   },
   {
-    "id": "art_209",
+    "id": "art_214",
     "title": "When the Propaganda Machine Starts Telling the Truth",
     "date": "2025-12-25",
     "category": "Commentary",
@@ -4766,7 +4766,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/605834115_122111343873092788_2133421877547469626_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=lzaIqzZIq0AQ7kNvwG8DrDi&_nc_oc=Adm6yy6hphrjFpmlFOQ2gkRtzgf81VVtmIlGBJJSqdOh2I9BYY-NvOROQ9DZMd5fu9g&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQFeoJmXOo1KDXa3ZlHxFgFlsCUYS0l7s4T3N8zsVA4gx8mqlq4n1ioqDBupTr8wOkXUtzIGNEg7QA&oh=00_Afzx-0MjOJSGi6htARp6enzcv8IHQTdSbx6DFPyigHypJg&oe=69B1CC4A"
   },
   {
-    "id": "art_210",
+    "id": "art_215",
     "title": "The Guarantee",
     "date": "2025-12-25",
     "category": "Commentary",
@@ -4787,7 +4787,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/602363027_122111239665092788_8023230220738666793_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=apYzSo-tC84Q7kNvwHGpRDI&_nc_oc=AdmTS8at-VSd1UnczJSTjZajQmRNf7cr5FA3CWBOifH61rucoN0bb7RRxsTy_3zB1i8&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQHPK_uMX_IhVCd5cGUtBJ_8pep9eW9d7tZAXU845UlYi50aNZdaG7QAuByD8NUm_C9_Pj_zbBVdgQ&oh=00_Afz_RV1hn06_6feIEUHnjteyjTptjpf4U82c0pWJCaEehw&oe=69B1B13C"
   },
   {
-    "id": "art_211",
+    "id": "art_216",
     "title": "The Promil Kid's Hostage Crisis: How Leandro Leviste Is Destroying the DPWH Scandal for a Media Stunt",
     "date": "2025-12-25",
     "category": "Commentary",
@@ -4810,7 +4810,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/604460221_122111233203092788_4908033605349003157_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=x8l3A03EhyEQ7kNvwFY9vFq&_nc_oc=Adm1p7MeSPcS0Sinx5K7uaBRwr_pPwLTTbzPg9JHkiPp-3FjsZ5IoJRmiBtV4lnLu3M&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQGOBIdja46FEDdeHJcES2i6t5xLNnDzIAdrDIsLTR6EPhDHyo0TXseuQ_js8jaqWFXBtg-Cu6Ad5w&oh=00_AfxPMZo45h6qb3KHoPWcCkWfJyNn3OSZzqmIMH_z_PbDjg&oe=69B1BD99"
   },
   {
-    "id": "art_212",
+    "id": "art_217",
     "title": "The Things We Tell Ourselves We'll Never Have",
     "date": "2025-12-24",
     "category": "Commentary",
@@ -4829,8 +4829,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/603059926_122111143203092788_4749866892841668856_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=RdgbR7hnmrEQ7kNvwE1YVG8&_nc_oc=AdkytsKM8BiUvsrBAonGAl8FDSnywCIB5Xr6M2PdIjyWO_rzJyaQKqH8WzirWhsCgzg&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQHFWAdG7vW2AcRIeGhaKxHRxBaL2V8pnq9TVRXranJtmkVKKRMYQTlG9FCpWxB8laqdxIs_hWIeyw&oh=00_AfySVNItzS7oT85blYMlqXMCIkeEv_f083xAuAWU9n0tXQ&oe=69B1B70A"
   },
   {
-    "id": "art_213",
-    "title": "When \u201cGood Faith\u201d Becomes a Get-Out-of-Jail-Free Card",
+    "id": "art_218",
+    "title": "When “Good Faith” Becomes a Get-Out-of-Jail-Free Card",
     "date": "2025-12-24",
     "category": "Commentary",
     "source": "facebook",
@@ -4852,7 +4852,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/602465478_122111138469092788_3427997938145070220_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=Swm0WhTX5-AQ7kNvwE93fP3&_nc_oc=AdkOnjC1PmLdqjIJNPphbO-zHJDYX2dj-bvrmwgbon5772BBWqV0He1GfO0c1UKu84Q&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=NQTNpQvrmrw1-aq35EMPFw&_nc_tpa=Q5bMBQEKRdY3pYEDrfGzrjGzLqOFJx5gVz-hjZSMWw4EdBJFJMOYEJGkFZsvfMifDLCWMpstBQzOhXO-Wg&oh=00_AfwBMoPxqMq4I8aUrBZD-80Ue5WSTWC7SXJB41oK4_NNtA&oe=69B1C52C"
   },
   {
-    "id": "art_214",
+    "id": "art_219",
     "title": "Being curious and pissed-off is really what started this for me: why does Leandro Leviste's name keep showing up in the DPWH scandal, and why does he seem to know so much?",
     "date": "2025-12-23",
     "category": "Commentary",
@@ -4875,8 +4875,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/601371318_122111015295092788_3489846586430469823_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=WuyoGYFrbdIQ7kNvwFPTYqM&_nc_oc=AdngosNxPr5Ajiu5COpFr_CPGl2xd16AJcGVZ7KgmL6QRNxZX2xRDImTtg2mwm0iVAQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=UCP_U1_zW59jL4AW_5Arag&_nc_tpa=Q5bMBQFRbPqgoOOXVYLFTjQRNaKLkNmQqBJc_Fkvn9jUFnpzZM1LJElDRCJPVCeAQAoPa1shpWcCYjLk1w&oh=00_AfxreM90unHE5EqMxc6sAEjNIdTXe1F3d1mlnxVqRzdNxQ&oe=69B2AEA7"
   },
   {
-    "id": "art_215",
-    "title": "Hi MCT. Curious lang ako \u2013 why does your writing look ChatGPT?",
+    "id": "art_220",
+    "title": "Hi MCT. Curious lang ako – why does your writing look ChatGPT?",
     "date": "2025-12-23",
     "category": "Commentary",
     "source": "facebook",
@@ -4894,7 +4894,7 @@ const ARTICLES_META = [
     "image": "https://external-sea1-1.xx.fbcdn.net/emg1/v/t13/8871334495650377094?url=https%3A%2F%2Fassets.zyrosite.com%2Fcdn-cgi%2Fimage%2Fformat%3Dauto%2Cw%3D1440%2Ch%3D756%2Cfit%3Dcrop%2Cf%3Djpeg%2FYKb6lR8JqoUWnrNv%2Fmorning-coffee-thoughts-A85Vq2oZKLSeZZad.png&fb_obo=1&utld=zyrosite.com&edm=AJfPMC4EAAAA&_nc_gid=tJjG0mnmF8WwLCsWhtoMRg&_nc_oc=AdmMg4mYo_wOe6W7w-T8JSDuVHSeK0bw2j5Qv4hHAWeW2RnP-lb2g98TbjXtrZGNiaY&ccb=13-1&stp=dst-emg0_fr_q75_tt6&ur=50234c&_nc_sid=64c8fc&oh=06_Q3-8AdS_BJeqTz2r65a96r-bwYyqeEjqucMEDxWnTL-fht4Z&oe=69AEBA45"
   },
   {
-    "id": "art_216",
+    "id": "art_221",
     "title": "Why Cabral Chose Leviste",
     "date": "2025-12-22",
     "category": "Commentary",
@@ -4917,7 +4917,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/600358274_122110962891092788_8401827467520574392_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=YAUWxUPmvp8Q7kNvwGjMA0U&_nc_oc=Adna5zhNPvlkvNUUN5-1TDSPN7T4AQQIqSil8LRgjLFSxztVDTr6rL10i-ErBZZbxVQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQGLfxC-jfJPtiJvEvhlDNR8r_tapK3oqUZtG4gWdUZLhM5TuLEKhgvfCT2UYs5Yl9F-DQ5gQ4XEvQ&oh=00_AfyjB7BZw0Ye9FweLSQu_Nh_You2IocTB5E-OM1VREG2lg&oe=69B1B076"
   },
   {
-    "id": "art_217",
+    "id": "art_222",
     "title": "So, what is this coin test?",
     "date": "2025-12-21",
     "category": "Commentary",
@@ -4940,7 +4940,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/600812326_122110756713092788_6003306031033275915_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=0Vjpuxd3Dy8Q7kNvwFeF4sJ&_nc_oc=AdmdrFhCcGY2gl7Zxz1q8XfxOLtvwScTZmJ4cbYqL0B_KKUpB1XAygHUGnFfITb_znQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQGR9RqA28bZrIcP9rOgCzO-YlkfSltzfgA6ewAzDWmSPUIcFIfFhgQQx4k0UhSAGh_3CZaU0_Zv7g&oh=00_AfxUbFbZYsyJoa6qJDGE5_nM7aDKgBiVPN0Ya4Ma9LnACA&oe=69B1B669"
   },
   {
-    "id": "art_218",
+    "id": "art_223",
     "title": "Richard Gomez in Congress",
     "date": "2025-12-21",
     "category": "Commentary",
@@ -4963,7 +4963,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/600366886_122110725687092788_9113980308328125191_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Ibqu9fUuwucQ7kNvwGN5uOH&_nc_oc=AdlgYjBVp-LBcWkiztod3PHkr1vu_VrjKBbpdkCFM0u2FmHd6usexAKTKAji3mBwP6w&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQEuvQSwiMyMv-dv-p_kfrbU9EQgIpS__RyMhPe-lVndKoIa1RCPOd-dBEf1eLVP3fc4DdHt6c08MQ&oh=00_AfwIZFyCtTKULs7KlcL20UUkjbFxPh3NU18zJXInv85ELA&oe=69B1D183"
   },
   {
-    "id": "art_219",
+    "id": "art_224",
     "title": "The Source Problem",
     "date": "2025-12-21",
     "category": "Commentary",
@@ -4976,7 +4976,7 @@ const ARTICLES_META = [
       "Corruption"
     ],
     "excerpt": "",
-    "word_count": 1091,
+    "word_count": 1094,
     "read_time": 6,
     "url": "https://www.facebook.com/122120826315092788/posts/122110721853092788",
     "fb_post_id": "893376663850463_122110721853092788",
@@ -4986,7 +4986,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/601995976_122110721829092788_666625987052565274_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=UpfOB8d-2rkQ7kNvwFsJUxw&_nc_oc=AdmlqjoIMe_pG8p6YADFfeLyJ_2zC7pltP3F-1AgfSJTr1wmmq6nTjbRgp4G8A1if00&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQE5BWNW2xnu055Qwa9qOLwuO0VYk88K6i22jgcgKFPklRclo2WLj7wZBf04lv6l3QtOBJNi-rpqQA&oh=00_Afzdq_6Nc7hcuQpv7vEL9DXR_4gIlybiBN0j1FpAnp8fgw&oe=69B1E0B9"
   },
   {
-    "id": "art_220",
+    "id": "art_225",
     "title": "Ano Bang Nangyari?",
     "date": "2025-12-21",
     "category": "Commentary",
@@ -5008,7 +5008,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/599962902_122110694523092788_6156688674166055252_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=MfgScV-aD2QQ7kNvwGkMll5&_nc_oc=AdlOfex8wLJVkTT5KDocqpLR2QsG2IZR0gnrWllcml-Hy3Ok7y_Z5AVWGuvyPIDx73g&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQERy7bt6eUEWif9VMF2gMJ9B1yLRMjKzZvIPU1KM-ndU8cxwY14rrlf08C2MTPkqSQ4Xhj4NDma_g&oh=00_Afxq8UU1hFCvbhbHG_1JNN2VUcEHz1s0Ht37WblL6LB-5g&oe=69B1DF5A"
   },
   {
-    "id": "art_221",
+    "id": "art_226",
     "title": "Ang \"strongman\" na talaw (duwag)",
     "date": "2025-12-20",
     "category": "Commentary",
@@ -5028,7 +5028,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/600269605_122110548303092788_5214381419621593335_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ogx4RQu9De0Q7kNvwEekgYr&_nc_oc=AdmvF8A8VSrk4irtzI3Ynosz94vAbZC2PyoiFoceNUSmxTZqshlGc9goxASkVRlycm8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQGJkBOTBQUstweqQ99kv9_JZvmAncXW1a_-tdV-rCIP_WrWitTzQc0hD8U5Lmcjvje_OIhruKf_1A&oh=00_AfxxAqLx7fRCT0_dhhHbRy-JKkJv3ERKPDU_x7-6Smw_PA&oe=69B1E300"
   },
   {
-    "id": "art_222",
+    "id": "art_227",
     "title": "Catalina Cabral is dead.",
     "date": "2025-12-19",
     "category": "Commentary",
@@ -5051,7 +5051,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/599957253_122110406397092788_7381179888791463820_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=GNYxm4d-7P4Q7kNvwEk7A2A&_nc_oc=AdkM3u87sX44Nw4d0Z8q1FkUiiQcfptcmB8j3OqyrLgBqx4TUiVcYjxzTz07vWYI_KQ&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=WypLB7kBAHQM5oHKhc6bwQ&_nc_tpa=Q5bMBQEiO1emf3rkknGeA6gAXnXMw_8DniR_h_uNtmRcGOh-20dF9mpKBz0Zdah5ZKRT7Gg4uW1OepXc4g&oh=00_Afyrf4oWOwPGxAeUjjx-dnaehR4IKoye7CkxLSI09RSnVw&oe=69B28E75"
   },
   {
-    "id": "art_223",
+    "id": "art_228",
     "title": "Power in Manila, Pain at Home",
     "date": "2025-12-16",
     "category": "Commentary",
@@ -5074,8 +5074,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/599827384_122109915759092788_2974846352961879789_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=uAo3xfGhIJoQ7kNvwHu-JIh&_nc_oc=AdmrK4Q1YibJ8qtYx8FhDjHUUFSzp_Q2ATjKKbrA_GQ272vu2yl37MZuFyb-K0pxvPk&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQEgBtfj7C7sZlY5o2P5PzcjYmN-u5UiPwRv0H6qkdgmEtfWfUBiFecw6qp7jMN80C-olYGoMi92yQ&oh=00_AfypAhP0VZpdI_bRQatyc4nuzjUxIegKukGJufbt61O2Dw&oe=69B1C93F"
   },
   {
-    "id": "art_224",
-    "title": "Why a Priest\u2019s Past Became the Easiest Way to Dodge \u20b1612.5 Million",
+    "id": "art_229",
+    "title": "Why a Priest’s Past Became the Easiest Way to Dodge ₱612.5 Million",
     "date": "2025-12-16",
     "category": "Commentary",
     "source": "facebook",
@@ -5097,7 +5097,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/599075433_122109882855092788_4365224262229297323_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=S9GyeINqBfYQ7kNvwHgNrtO&_nc_oc=Admw4QxyEtyhEW85UVTIRDHx-q3gaPuAFQws_EQ2l6pwWlK1m-c9ONn1uBc_qTLS4Q4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQGKJAhBlGe9UfP3Y12qUuxH9b4FS-Vvv0VUrBjPqXJrYGrOp3WhFCWxIQT3T-rl2KOivtYRAC0g2w&oh=00_AfyHe1isNooGx7RBYpsQ53FejYRQf52pNc7DaoSKdfNyUQ&oe=69B1D2C6"
   },
   {
-    "id": "art_225",
+    "id": "art_230",
     "title": "When Your Only Tool Is a Hammer: Robin Padilla's Character Assassination Question",
     "date": "2025-12-16",
     "category": "Commentary",
@@ -5120,8 +5120,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/597699750_122109875829092788_8417951814809867928_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=E4NUg2S7FTAQ7kNvwHYdZ3M&_nc_oc=AdlKcUfsB4JiPOoXWYuorZP3SkVKJRBEkSztabEVizErSKtiKQTdTLos5oGycM1TiHg&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQHo4xfP4m-0vS1uXOfTxUsL6WfHZFqCj7gI7ET1FwDAiRK1Qkt6gEUnf9JiQJtR7p1pe8-VFlmexg&oh=00_AfyM8JU-ytSKAlABAo44ADVTLINfQCDiVcRZK3unErmxEQ&oe=69B1E273"
   },
   {
-    "id": "art_226",
-    "title": "The Messy War of \u201cPolitical Commentators\u201d: Guanzon, Heydarian, Sasot, Magno, Llamas, Falcis",
+    "id": "art_231",
+    "title": "The Messy War of “Political Commentators”: Guanzon, Heydarian, Sasot, Magno, Llamas, Falcis",
     "date": "2025-12-16",
     "category": "Commentary",
     "source": "facebook",
@@ -5143,8 +5143,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/599926097_122109864651092788_4656285171209808158_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=J0_b1Y_UN0sQ7kNvwEeGwsj&_nc_oc=Adn9LOFzZmsT1RYvJTj4eAaBlIxDfxCSA0j1riRFJrhPw6hAgQLYlY0e4Ss2yPH3V1s&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQGffrhRuSvFmB6FSzeI1uQsy-wkrI7yd_sejQF2jH1pEa04QuRCMCEI4sOefarhRmQKmk7MtERkKw&oh=00_AfyVA_QdJ9xRa1FnrACI6iFrBbwnV47TMyT4Nki2bJYz3w&oe=69B1CFFE"
   },
   {
-    "id": "art_227",
-    "title": "Vince Dizon\u2019s Budget Deadlock: From Admitting Overpricing to Asking for the Money Back",
+    "id": "art_232",
+    "title": "Vince Dizon’s Budget Deadlock: From Admitting Overpricing to Asking for the Money Back",
     "date": "2025-12-15",
     "category": "Commentary",
     "source": "facebook",
@@ -5166,7 +5166,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/598062633_122109859239092788_7662940729873290458_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=4pSEdoHq2BwQ7kNvwF43bva&_nc_oc=AdlNqdtPK-wgyhBZxIuPWgwNhjCdemcGGRbM3PmbgQg5lxbjDBmcQ1HBLczD8z_IyCE&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQFw4agV7GG4tyg2l50h6S1An6UsLxT6C8FUGxLGXfcicdFqN95yXuz4GndeXAglC8fHigpoXfjzwg&oh=00_AfxUBjxaNabB13rNXPzWj6NkoaCEGtVvgSL409UkyBy16Q&oe=69B1CF94"
   },
   {
-    "id": "art_228",
+    "id": "art_233",
     "title": "What patronage looks like from the line",
     "date": "2025-12-15",
     "category": "Commentary",
@@ -5189,7 +5189,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/598107698_122109856095092788_4861259772249416619_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Vutt98dQTzUQ7kNvwHg25B3&_nc_oc=AdlGiAiR3GgEln9RHkVySChQ1WlmdaIUaiMgUzJ18RHQCHdUPMIoyKmus7jVSrhTcSY&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQFU4iVDCQC1Q0nYa0dc74IeN5JA9QaZLi08RQrThpKJjOaNxWZAypWJu8tJrb1KWB8Fgu3GPZQ9SA&oh=00_AfylRSjXNQ7BN7Jwo60OidSh8B7p_pezFsjQSTLNpN4O8g&oe=69B1D22B"
   },
   {
-    "id": "art_229",
+    "id": "art_234",
     "title": "When Science Was Too Expensive But Corruption Was Free",
     "date": "2025-12-15",
     "category": "Commentary",
@@ -5212,7 +5212,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/599407830_122109796599092788_3344541206910969999_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=cUYstF91GgYQ7kNvwGpLNwP&_nc_oc=AdngmCd-239tNNs5j0NGda2M1v3iOodwSoPmzyw1qN-kqhnO_Ho88eydX9xc7ukqIfg&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQECo3cg1ozgujFfX6g0micFS-cdZoyQfs7zaa3qKQgFpxBa-sspU-HJBdMABM7NZHOIb1XqyBKr6w&oh=00_Afyd4SRKRUSLfovIDPRrrt_qtyZ_MsxvLDnqb0vS_vaV2A&oe=69B1C2F6"
   },
   {
-    "id": "art_230",
+    "id": "art_235",
     "title": "May Pork Barrel pa ba sa 2026 Budget?",
     "date": "2025-12-14",
     "category": "Commentary",
@@ -5235,7 +5235,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/597716958_122109714855092788_60621865809923822_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=pUHcLK7POcYQ7kNvwFKKNy9&_nc_oc=AdmOYVKd4_GDaFvNzwIkh2yXP89sLo-iwlOY9Ong7IDP9r3xiJq08uAyDMVjOvYmoB4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQEMrBv7iR0elJOMwOu8_IuyVynFsISANQcsIdMwxN6KyaUEaRiU_LvdSDtwUNcXUykgAzKsOIJeKQ&oh=00_Afzb1_3KqKFskgjZx7xDOcK_PR196T5btkBhygBJHpQu-g&oe=69B1D235"
   },
   {
-    "id": "art_231",
+    "id": "art_236",
     "title": "What was actually filed",
     "date": "2025-12-14",
     "category": "Commentary",
@@ -5258,7 +5258,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/597695393_122109656943092788_6306281967711339745_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=0cE5Xn9eMg8Q7kNvwEJ8znp&_nc_oc=AdlvmC5WqeFG14QJlEGgCsfJ1syisOC4GuVidjUHOl75cOBkjs6AgWvGI4zNqH6Nqlc&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQEzAyXNbRzS5sVmQS_Cmzyv7T-GJnr8E9KIyhmq7uZPEHvHrdVg_8LynYJe7yZESqEneTu5fifyzQ&oh=00_AfzD2PfSQ_Ug3XrIDkYcSUjlsx8DmgpMhrrbU24pnyfd1A&oe=69B1C63E"
   },
   {
-    "id": "art_232",
+    "id": "art_237",
     "title": "How to Talk to Family and Friends Who Support Corrupt Politicians | Morning Coffee Thoughts",
     "date": "2025-12-14",
     "category": "Commentary",
@@ -5281,7 +5281,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/untitled-design-4-5bOgEzsie3EpWxS1.png"
   },
   {
-    "id": "art_233",
+    "id": "art_238",
     "title": "The Pattern",
     "date": "2025-12-13",
     "category": "Commentary",
@@ -5304,7 +5304,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/599942019_122109516345092788_7432460234679660577_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=6l-IWgJb14sQ7kNvwGXU-fL&_nc_oc=Adnhy_9V67KbmaperbdgAXQdZcain25q1nd5VoLMNh85S8VeL7LYWwGAfTYLZMfAQ_o&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQEAZxNPp-BERgKO_-QKUzEncBdRLD-BnRjLUvsiAdRcpY1G4EASQzHEpa2TBVjnbeXP5CK996Sipw&oh=00_Afx17wxA4xKVikCIAhDDBT_LoVX64XteAviIdc3veKTVXg&oe=69B1E243"
   },
   {
-    "id": "art_234",
+    "id": "art_239",
     "title": "One Answer: Data",
     "date": "2025-12-13",
     "category": "Commentary",
@@ -5324,8 +5324,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/597722060_122109408105092788_9163992974221323608_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=_kdompcCS3AQ7kNvwH6mSjq&_nc_oc=AdmuIQjYLxNFBNbUC8KjC0J64Z0xwDOdFRpHdHw1vbhs8KWrtyaAhea705uPZtLyPKk&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQHqd-BaMkg1ULYSneL-RyfRFFueG9fydkZdbUwBVrSjsI8YyALmmjNJCbkTMQuDOw76NZ5Vliko7g&oh=00_Afwln-nJcVzDzZUOqCNLNJdXKQAQAVpS5sdwDwBBvBi1Hw&oe=69B1D50A"
   },
   {
-    "id": "art_235",
-    "title": "The noise feels\u2026 thin.",
+    "id": "art_240",
+    "title": "The noise feels… thin.",
     "date": "2025-12-12",
     "category": "Commentary",
     "source": "facebook",
@@ -5343,7 +5343,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/597736534_122109335925092788_1917993514406882830_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=wWMMNSsHXncQ7kNvwGzg7dM&_nc_oc=Admm1cjsufuB8wTMG4gSTfHnAV0ilEWMNBEYd7fniyc9j5V46ukNwi0zX2vnmxqTKuc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQFfjbF-uHd9Ec6EJSQlzXjkNId_75OpUvS39cPV1BAHFYyXS4heSEAHRlVVP-I2yydgD9Gs5ErLJA&oh=00_AfymxgwEXsaEIWOA3ga7lCKFB55IIxR-k05vNwFBkbXXkw&oe=69B1DB78"
   },
   {
-    "id": "art_236",
+    "id": "art_241",
     "title": "Plunder Case Filed Against Sara Duterte. So What?",
     "date": "2025-12-12",
     "category": "Commentary",
@@ -5366,7 +5366,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/600068441_122109312045092788_2471069030889363409_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=WIlSRNOgydkQ7kNvwE_kLhB&_nc_oc=AdnjsWrhAc-eW_G8_KgkwrpH-DWt4vrri2gHrsbkH0I0jADMarS0LnmGQpimuBSNCU4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQEv4gX0hEKw0EBUOvOfCW0SCHUhFurgsuaB_uSCYC7H6nGxP5vsRZ14P4uhV3JHb38jsvN8J60sXg&oh=00_AfwJFeUrYAT-xum5JT93Gb9PAG-bW68eR4mymsHM8rgB1g&oe=69B1AC6A"
   },
   {
-    "id": "art_237",
+    "id": "art_242",
     "title": "Where Was Madriaga During the Impeachment?",
     "date": "2025-12-11",
     "category": "Commentary",
@@ -5389,7 +5389,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/598684159_122109250893092788_288346538135931708_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ZcoFHFBG1U8Q7kNvwGu5y0z&_nc_oc=AdlxFY6ooKS_jPcDgNllvKjw5dDenu_IQcGUXvBODils1EQ-D6zUJeUgglhYVCjChvQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQHsGuUevaKx7zlZ3FqVSv7BzFaywKjyHxhSBY7urvMN-bunieKTc7d4G3I41u6vPsLFqDa0IrVijg&oh=00_AfziUwr5NpI2Fy7dBvH0m2nqK8TqJw1vpz7gzLhyw4XfGQ&oe=69B1DBB8"
   },
   {
-    "id": "art_238",
+    "id": "art_243",
     "title": "When the dynasties promise to police themselves",
     "date": "2025-12-11",
     "category": "Commentary",
@@ -5412,7 +5412,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/597393890_122109155229092788_1956310662095720785_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_ohc=InMjd81HkvYQ7kNvwEQWnFk&_nc_oc=AdkRi1DdCsPI7sihF3yCAhNt4g4Kh2T-RT8y1Jt1-d862XplXzEE-EkqvF33iiL_mpI&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQFIrHpuNUV_Ni4bsc98fznb9QFOipeeykhLGeeLczVRZZabW4gqfMVkOR8t-sKjdwoYK9Y8P4VFMA&oh=00_Afxc_K4diMcVHNOEjV-t4_BVqalEw6PSAmoljcoJq3nCvg&oe=69B1D1F0"
   },
   {
-    "id": "art_239",
+    "id": "art_244",
     "title": "How Some Barangay Officials Revictimize AICS Beneficiaries",
     "date": "2025-12-11",
     "category": "Commentary",
@@ -5435,7 +5435,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/596803270_122109091917092788_3244016095023304772_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=nY6XPfCkjakQ7kNvwHs2osH&_nc_oc=AdmRjW4j9S6RXGiBBuUs72LpQcMRU_IiJWwSMbqy1PLb_7e6pfycdckC8Og2yJOE4Xo&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQGCkDG3_pvvjWURtyZ1sAXJilgBeHfWVhHPH_2L_foxGDzM-Vv4FZk0cR_OoaEU9ne0HlGCSpR-9A&oh=00_AfyB0eu9PJ8XxVSxccJKYoBBHDdvXvFtSKhCIYV7QSKKug&oe=69B1B846"
   },
   {
-    "id": "art_240",
+    "id": "art_245",
     "title": "Who Is This Man?",
     "date": "2025-12-11",
     "category": "Commentary",
@@ -5458,7 +5458,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/595273967_122109054147092788_7464370308434368668_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=-MQ4Z3jT5U4Q7kNvwF0zQ9j&_nc_oc=AdnGI5bFFjp3IvtN_1DgLczkEwZUCregTFU_Sq47M5Wd74OJyitYHinQXcvEekS5ax8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=zmUPVoMXyQUKb6ymVkx__w&_nc_tpa=Q5bMBQGMHOO_Gt55rdMOJbYgZv0WMCaEpaHzYoLYuc0rQ4CVU5XU6AdjMNU0rR0syB19sJZjWYOHLfxc5w&oh=00_Afw9BnA0icwMDwwy-uZ2LD31aibGv8MLKXKy3StyXe8HVw&oe=69B1DF20"
   },
   {
-    "id": "art_241",
+    "id": "art_246",
     "title": "The Man Left Holding the Budget",
     "date": "2025-12-10",
     "category": "Commentary",
@@ -5481,8 +5481,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/597345104_122108924349092788_8356706541114687194_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=kg_N1VAi4AUQ7kNvwEzd_0j&_nc_oc=AdngKM-FBG8bx_cRhfrX_PV9Rz3-pc7GOx6xJ1_Ttyo7dKWT6OFcEdXlTRixQTeUT60&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQHJXvo1EhjT0-wlTgDvcfU52bFxXODmwaTmQTtfkf8e7TNUGz10L6Q56KXOnKrQUNujbIOPZ-Th7A&oh=00_Afwf3797-PZA3-IAxQNl4vOryCbQPpZts0GRn5RclfFq-g&oe=69B1B592"
   },
   {
-    "id": "art_242",
-    "title": "\u25fb\ufe0f When the Numbers Stop Making Sense",
+    "id": "art_247",
+    "title": "◻️ When the Numbers Stop Making Sense",
     "date": "2025-12-10",
     "category": "Commentary",
     "source": "facebook",
@@ -5502,7 +5502,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/596803719_122108896689092788_4466921381818710392_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=55bDDRHhC9oQ7kNvwEgfqFi&_nc_oc=Adkq0FNeXgt3x_XOEQnBQM-gHWLju7HrKsj67lyn7MW6i4qN-kkUKlHUw8tM74QvMeM&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AJfPMC4EAAAA&_nc_gid=RToDmjn5R7QwKF-MvX-_tQ&_nc_tpa=Q5bMBQFPR0kwzeWvE-26_EYJeB0nPtpd35BUHbDYtewVte-8NIrlsxqyGZZf7x9uzx6x8wNDBeGvdalnrA&oh=00_Afz2xXZ7NChAoo7sjTmPw5NisnpXNn3lbRMd9dPlW0sT-A&oe=69B2A07A"
   },
   {
-    "id": "art_243",
+    "id": "art_248",
     "title": "When Turkeys Vote for Christmas: BBM's Anti-Dynasty Gambit",
     "date": "2025-12-09",
     "category": "Commentary",
@@ -5525,7 +5525,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/596325846_122108799099092788_8601977846422213325_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=4k2ZPR10JJQQ7kNvwFmZjFw&_nc_oc=Adn6_-F2uwwUdulr8LGUc8kXbxHDPlre3IqfTjhDTIWKWpNLHn57KRIcKc9yrWLrcQY&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQFSydBJUYMI0Pt9jeQi2vRQ2HGnZtS4GvLShTK2PJGRbFD-3nGM_HZSy-4O58UnHHu04O2LCCAAeQ&oh=00_AfzZ9oVqwFEV5JQKmYT1sec2AQcR130gs9VVl-CSGYihAw&oe=69B1E22A"
   },
   {
-    "id": "art_244",
+    "id": "art_249",
     "title": "From Party-List to Powerbroker",
     "date": "2025-12-09",
     "category": "Commentary",
@@ -5548,7 +5548,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/595236230_122108788353092788_4181967645176295164_n.webp?stp=dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=4wHe0Gt8hoQQ7kNvwHt-4vv&_nc_oc=AdkM4X4EAxW9YBao-dHdDnmLqI7MiA-N0CjKl-ww1zHRceACqo6ozhIDeMheIoJdwtA&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQE1Ggt4askdCGlXsCbOcLhmCzCbKEs6vGY93TnUK1EG1pO-MIAwZ6r1akQ33cDgchi2QtaiJOhjkA&oh=00_AfwLgn2hwbsNw7XfpobQ1DAMmTzWRIjZrVyGUxFcbak2IQ&oe=69B1CDFF"
   },
   {
-    "id": "art_245",
+    "id": "art_250",
     "title": "The Claim vs the Pattern",
     "date": "2025-12-08",
     "category": "Commentary",
@@ -5571,7 +5571,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/595354026_122108677209092788_6782641325944447314_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=kz7c4plIm8MQ7kNvwGlLStb&_nc_oc=AdnKGIefzeEufzVuP-UrLvHO8ZTk8CBiMDd6xGVU8CqJRRvavOS4Ne703bKaRS6r_WE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQGo9kF2zrqhykGx2zqFpPsNAzq47tQvmmMEVG66AY6Ax_gi53XThLnNvxWfSRBHLd2W0NUAxu6kzw&oh=00_AfxkVgE62CxXUToSVR6cHH0RuWcw6yjyCVym9QXUoEUInQ&oe=69B1B406"
   },
   {
-    "id": "art_246",
+    "id": "art_251",
     "title": "The Myth of the \"Clean Hands\" Citizen",
     "date": "2025-12-08",
     "category": "Commentary",
@@ -5591,7 +5591,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/597205567_122108628747092788_8222763441288775947_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=j_R-PkeKT0sQ7kNvwGRqq-a&_nc_oc=AdmeA-xxE2rcKTQ-EUCagw4jQ-CQ8hEdweuUn4C1aLfKEVCIaquEmejHkpYY0im8MP8&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQGYljQs_vwtDFVuH_ha5oOoMQicxGLJy8q329RwY5gyRr-dT9Duf46dfTfgSEXgCR1I7_YoAve_DQ&oh=00_Afw6H1C0-zOvChLEqxnuxK6mqhEbnYN0tj0XvbjjM6prDg&oe=69B1C749"
   },
   {
-    "id": "art_247",
+    "id": "art_252",
     "title": "\"Sana mamulat na ang mamamayan\"",
     "date": "2025-12-08",
     "category": "Commentary",
@@ -5612,7 +5612,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/595954644_122108554599092788_8682405704304432723_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_ohc=cnjiWuqafbEQ7kNvwGIiJ1S&_nc_oc=AdmK6LqZHF5KhEZVSZ6f0ZlAztS1x7Ixvux9wDjLzM9-eFdXLyizLRUagZ4QHhiqZXs&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQGwA1blFbEcynYPKJ2rrI-_-laArfoiGZsY0nMwyjQ-m_DPqmHQO9cAGZjttfqLBKW_eyBcGHFSeQ&oh=00_AfzEykjoR4kJHTkF6AF9i_e_DyLvUe9t25S5QVlwbxMGOg&oe=69B1C920"
   },
   {
-    "id": "art_248",
+    "id": "art_253",
     "title": "The Problem With Giving Legal Advice You're Not Entitled to Give",
     "date": "2025-12-08",
     "category": "Commentary",
@@ -5635,7 +5635,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/595172360_122108546985092788_8639552595644950802_n.webp?stp=dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=heJdTIVBr6oQ7kNvwF4vDG3&_nc_oc=AdnM1iKG_WF-1BBG4HsiF-XFN-PbXN2_HmPR9_ykHfqWvZ3oEyuVgFSj_fmPp7vHO1c&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQFgWgD7LqXWWVVtd1nZeE2-Ky1jM2VqjwCGP4w2teI_vo05pQz3GKH-TkVr47-nhNTfwg1Camqc2Q&oh=00_AfzRFwyUMdoz9jgyKw3j7TGxPckEuXSx7zQdmaf0DR_rAg&oe=69B1DB33"
   },
   {
-    "id": "art_249",
+    "id": "art_254",
     "title": "Hacked: 50+ Unauthorized Ads Running on My Account (Here's What I Learned)",
     "date": "2025-12-07",
     "category": "Commentary",
@@ -5655,7 +5655,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/595346395_122108540607092788_6587173094802558476_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=_2IPzz188_8Q7kNvwG-sQJX&_nc_oc=AdkIhbOJDEpdvmw8ktk7wf92SSxJ-s-1aNc-UO_8hFq7TR_82Drc0bWysUXOYXFnzE8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQGAtHpJbpna7uQJgLzAUnZQfMf_PirE7TCtElQHy2BKzKyjPrNZm1M9cJPL-8wDscPKkcROCcFPjQ&oh=00_Afwr0GS3eZ1kmwfqMlCMM_AYHKo_InAw1dy23w8wJByltg&oe=69B1AE97"
   },
   {
-    "id": "art_250",
+    "id": "art_255",
     "title": "The Claim",
     "date": "2025-12-07",
     "category": "Commentary",
@@ -5668,7 +5668,7 @@ const ARTICLES_META = [
       "Mindanao"
     ],
     "excerpt": "",
-    "word_count": 662,
+    "word_count": 664,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122108472753092788",
     "fb_post_id": "893376663850463_122108472753092788",
@@ -5678,7 +5678,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/593584490_122108472729092788_9061456529697706933_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=dmhsPzrpOBoQ7kNvwHzPxxY&_nc_oc=Adk2zYyEADyOoaMjzxJiAepplJUEhxFDb5v4zDug_b-eKZawR6_KI0jdEJw3fN14MqU&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQFzpjxcZg-EhQQM4-Nvr7YVcFkHM1faF3jMb4UaacMBQllSy44W-rDG4MIkV6KwkBd1vcp16WFK8w&oh=00_AfwFRY60NZru7i4D4j6UehHcWCNWEYHZKuOERPosuqJegA&oe=69B1C185"
   },
   {
-    "id": "art_251",
+    "id": "art_256",
     "title": "When Someone Tells You Who They Are",
     "date": "2025-12-07",
     "category": "Commentary",
@@ -5701,7 +5701,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/594076677_122108418735092788_2684972182510333610_n.webp?stp=dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_ohc=oyJC4VM9kf0Q7kNvwHEb0CC&_nc_oc=AdlA07Xw-naLr_zrGUiz6m9TC_5da3ukZQ-cvz3Tij_loAcuLoKEcrYdEUEKu4FK6l0&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQH1SDcvXXo6CWAAACrqwVLgVmHy1FcQdlGJtoikqZjX5W9Zz9S7BrZZg4__LLObuu2tsPuIvyojZQ&oh=00_AfywACWSvHzLM2Ral3NfeT8gRmUQraaY0w2j8G3YjIp8Ng&oe=69B1D30B"
   },
   {
-    "id": "art_252",
+    "id": "art_257",
     "title": "The PhilHealth Money Trail: Why We're Blaming the Wrong People",
     "date": "2025-12-07",
     "category": "Commentary",
@@ -5724,7 +5724,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/595127607_122108410785092788_6027185805870901383_n.jpg?stp=dst-jpg_p851x315_tt6&_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=tUfOzf5SMwAQ7kNvwG6Mpbs&_nc_oc=AdkKDJUeXBZPmI0tcpH52_tREga0Lr49LSMPh80O_Q-jb5iwbDyQDz379ozFQhcq2k8&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQHiwnTYVPygvHCr2vp4uuWCpdhoMwRUvr8OwB0Sq9nJYPUnKhCuzW85jfWn8JEcQMaIk4DrFrJpmw&oh=00_Afz0pytlsjuqq1omolSDRr0-OSzuluUQ1t5S9wYQhbxDjQ&oe=69B1C19C"
   },
   {
-    "id": "art_253",
+    "id": "art_258",
     "title": "When the Pages Went Dark",
     "date": "2025-12-06",
     "category": "Commentary",
@@ -5743,7 +5743,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/594962328_122108385543092788_3781188616012301552_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=9cSJWoZuJiIQ7kNvwHAqH28&_nc_oc=AdmVaxsSuUr0xqoo-L7CaWY_G1bQKtvW8cO55ciny11p3Vi5QoWYnkjOvRFzGMP7BIo&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQEE6w5-fS60ODGjRpf_6xkJfHzjTq2wbltO27DtBo9bL-JtwwRbiRUGgb93WCGXLMO6fK-QF7yDPA&oh=00_Afwkwb5AeiDADqmyKsxFqFx41BdNF0ziM9KdqPaQibkLhQ&oe=69B1B8B8"
   },
   {
-    "id": "art_254",
+    "id": "art_259",
     "title": "There Are Lines You Do Not Cross",
     "date": "2025-12-06",
     "category": "Commentary",
@@ -5766,7 +5766,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/594398555_122108382723092788_3766821428933475470_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=03SrAbzrfdIQ7kNvwFPsyDW&_nc_oc=AdkdTrOPMaUSdVb4KR3DWhiQU4sGtVP8AQbQl1PI2hbE2kNkKhwiWze6MHzvTNF8a7E&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQHWo4uMIjd6igPKefy2V6sgC0_aOaefp3mkPBPv5fkgXSG89lLiZNIkK0N_Ymx4WFnfxeVSKnQz7w&oh=00_AfydkSiVeiXcOlqbyz7a-XdodZaK0sx6U51JTxe2-c8hHQ&oe=69B1DF89"
   },
   {
-    "id": "art_255",
+    "id": "art_260",
     "title": "The VAT scar that never healed",
     "date": "2025-12-06",
     "category": "Commentary",
@@ -5787,7 +5787,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/593610635_122108379879092788_3751595234893391516_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=t25izsvmr7YQ7kNvwEhDiU7&_nc_oc=AdmZkzFuZTsuAR7be3gFCebn4PmZh6M_fHZSaJTZpxh7Tl_Pg5v6NPUcikg3-Qm0Zsk&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQHCeThPHSbrMuHHHRReWw3GtZ0yWLO-bV8CF0iZMvMncoFHbhrjl23nXtGnK5nIwqQZ3ey1WXB2nQ&oh=00_AfxsQm3OswN-hMwvn0_ggpvPyoRtXFURu0o_PXpr_cjYww&oe=69B1D087"
   },
   {
-    "id": "art_256",
+    "id": "art_261",
     "title": "Why Corrupt Politicians Sleep So Well",
     "date": "2025-12-06",
     "category": "Commentary",
@@ -5807,7 +5807,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/594190297_122108306817092788_4547976692812676769_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=RRxOV1yxjTQQ7kNvwG8LXtE&_nc_oc=AdnK-yWMqefh_swku5wKN3d3PhsH2400jkuI7GFYpBSXLTFnjlqPVa1ANpnlFCWdas8&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQHRcBgFv-X4uCGOLMaW7K8VSYyfgSutpb7EGeAdbLlhYaNI1GgsRUiDEdx9TG78g0cWw_vYx7kuIA&oh=00_AfwvuptHTY7XR-kK-Ijm4BaGLstIsTjXaYcCYEdexDskpw&oe=69B1B5D9"
   },
   {
-    "id": "art_257",
+    "id": "art_262",
     "title": "When Showing Up Becomes Heroic: Our Dangerously Low Bar",
     "date": "2025-12-05",
     "category": "Commentary",
@@ -5828,7 +5828,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/593671089_122108261133092788_3350132132680078624_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=iTBFhezVb1YQ7kNvwHm74ne&_nc_oc=Adl35bAlzLUz-hGptKQSVeL9r2-qYMAFpaxHbGxPVBcZ2UkiccdRoFxd_IIAIQ9x8OA&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQGaeea9vzXpfychXOjnX2wx9vxe8aul1lmDdHGzLRcwqyuQD7_TIvQKtNK6SZaSCpkh8MQvfsDT5A&oh=00_Afy6f2yvCuQGHagM6p17ICOcx-_SRrbaq6rBgsDcVtuICg&oe=69B1B1BC"
   },
   {
-    "id": "art_258",
+    "id": "art_263",
     "title": "When the Smoking Gun Has a Paper Trail",
     "date": "2025-12-05",
     "category": "Commentary",
@@ -5851,7 +5851,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/594065525_122108150025092788_3317881278185980732_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_ohc=Tu1W1cLsWUcQ7kNvwE_SGVi&_nc_oc=Adl9fgBZpJi6HoxA7xbBy2I627vvwkHcFuOC-Mb7IUVtiL95p1o3XZXQAuu7ulBWjMQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQE-yZOoa9gXNELVsABUz7deG1RFx5ZEJNH5-yc9DIi97-5pAK5JEgm7997FnV-7ecjf-iUNYpk-2w&oh=00_AfzA2APet4IpqHhU7nO7WDbdtePSsChro38zGHucNPaG1Q&oe=69B1BA76"
   },
   {
-    "id": "art_259",
+    "id": "art_264",
     "title": "Survey Firms and Mind Conditioning: What You Need to Know",
     "date": "2025-12-05",
     "category": "Commentary",
@@ -5874,7 +5874,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/594252708_122108128977092788_7637589977875782640_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ZCxZ5mbOKPQQ7kNvwF3oF0I&_nc_oc=Adn36DDR3S2eQSBYQ86dlSK98y3B8IdXEZNmt-hQueg5-HISj0uToKfS3UERKgf81W0&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQENaU2OztQAMIR1f4pia3Ay6z-OKQIhtUp7-DJDhxXffcqagY18GfN32O3S-9p71E_lZ5OH_QDTTg&oh=00_AfxEv8dSd8je_CW9UVc7n5PVwabAULr45G5T1aAEjNOp8Q&oe=69B1ACD9"
   },
   {
-    "id": "art_260",
+    "id": "art_265",
     "title": "Paolo Duterte's Sudden U-Turn on ICI Investigation",
     "date": "2025-12-04",
     "category": "Commentary",
@@ -5897,7 +5897,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/595210256_122108052147092788_8827179143114917404_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=hUedGd_H4h8Q7kNvwGloaES&_nc_oc=Adk7T3tSWairdBTQC4Ax93Po3tc8WW1WNiRRQ4JrLEoKtetUVbVARnNytxbOWUTBDwI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQFZQzCVOC14yhsQQUaWfe7-efABgu7QwbbfBqgqJLCq8NZVc1AT3-tpfF16A32SjLPy-mkBzs-qMg&oh=00_AfwQ9dZB3Xhask66heByFBW8l3qSOYAD1RyFma2Hye2PWg&oe=69B1BDE4"
   },
   {
-    "id": "art_261",
+    "id": "art_266",
     "title": "A Tale of Two Sons: The Duterte Who Ran and the Marcos Who Showed Up",
     "date": "2025-12-04",
     "category": "Commentary",
@@ -5920,7 +5920,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/593766902_122108037477092788_2079052294880432462_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=m4SKrfFWsIcQ7kNvwHv-WFG&_nc_oc=AdkAiGi61WiipCgYAV-CV_jVHooCv9webIe0ZCcqO79ftPe_wUnn3NUWEwoMCFGGaGc&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQETTeMlWNI0z_u5YIpq6RWIRhqNgKyTnnuHydKROva9SwYT5u9a76Lopv3IHJRz97ijg3HWuMLKAg&oh=00_AfxepxHGq7joYrBrJSg7YBbX3mDbkTYifofSji_RUTqJ7Q&oe=69B1CFE2"
   },
   {
-    "id": "art_262",
+    "id": "art_267",
     "title": "How to Fact-Check Social Media",
     "date": "2025-12-03",
     "category": "Commentary",
@@ -5930,7 +5930,7 @@ const ARTICLES_META = [
       "Disinformation"
     ],
     "excerpt": "",
-    "word_count": 964,
+    "word_count": 969,
     "read_time": 5,
     "url": "https://www.facebook.com/122120826315092788/posts/122107919163092788",
     "fb_post_id": "893376663850463_122107919163092788",
@@ -5940,7 +5940,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/594963564_122107919175092788_1350804816750167046_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=t9kMOTCy5VAQ7kNvwHKxu9Y&_nc_oc=Adnd0ErkhZKYtPc8rSXcYhP5Cyk8pQcsiAlRznMXJiqIGiZM1K5XqKy7nPqLUMSCU5U&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQHhnSzvV6iK-0ides0uw1Gp4suFJOfqoM55aS8V8fhj_QSECPy8uyaz4pmmfir_42hxDxAzTK-tHQ&oh=00_AfweTgcaV125elpnrSkTger5ZNuy1Nv6dF_lwCG-U86GKg&oe=69B1C0A7"
   },
   {
-    "id": "art_263",
+    "id": "art_268",
     "title": "When The Good Ones Walk Away: Babes Singson And The ICI That Could Have Been",
     "date": "2025-12-03",
     "category": "Commentary",
@@ -5963,8 +5963,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/591616021_122107912125092788_6691026903669679304_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=nYQiStzF9WQQ7kNvwFlVQSo&_nc_oc=AdlVRp3kzSsNlkH814oTM8dy3x-3RmZfetXu6Qlw7wx0TDiyvm_ibm9Q-H6yOnbuE-g&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQF_AcVPHR_t5Dr59fkZJHfsm4YgOJ9yC9Y6aK4EnWg2m7wIAjxr4k2BKyPxkN1FnAR3usPrd1L7RA&oh=00_AfzfzKZb1gcwjb_7BUvrSwYytKtKnqv7juv9aKrcY6YM6Q&oe=69B1C3C3"
   },
   {
-    "id": "art_264",
-    "title": "An Open Letter to Senate President Tito Sotto: End the Senate\u2019s \u201cNo Work, No Pay\u201d Exemption",
+    "id": "art_269",
+    "title": "An Open Letter to Senate President Tito Sotto: End the Senate’s “No Work, No Pay” Exemption",
     "date": "2025-12-02",
     "category": "Commentary",
     "source": "facebook",
@@ -5986,7 +5986,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/592978907_122107841829092788_5617287925316520881_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=lb1ZelPzK48Q7kNvwFKspov&_nc_oc=AdnK3deAqFMXkeHAzLAyjK2xS80dqGDwXZ6v7Gp47SltzoWZhlyVq3GrfsUqJ8ELkgc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQGrItYcSZju9gft2G8OyGYo4VgVe8FvSOjAg65a5clOnrMm6Rs0fvpDLWPtuza12jFXgNGn3was8Q&oh=00_AfxYi_OjkxX601HAu2tG5c12pnAOhGZPP3IVnFfJvaBBDw&oe=69B1E3DD"
   },
   {
-    "id": "art_265",
+    "id": "art_270",
     "title": "Recent COA Audit Findings on Office of the Vice President Expenditures",
     "date": "2025-12-02",
     "category": "Commentary",
@@ -6008,7 +6008,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/591711129_122107838271092788_2091649460682757530_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=PCI9HW7aJcYQ7kNvwGSK9fd&_nc_oc=AdmABXINR0TlKajkzIgLc4USlzJLLAnbKi32gtbJv483wSzffQnE6S5hcS-TaLbwF6A&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQFhhhJGJD2yanBvNzV8Ry1LmOLLTD5RfBI4ds1RV4w8IRpqzpcJ7G4GB9gT2h0_cTrr7iFal39n0g&oh=00_AfxTqAvIXiSq-c6XsGhU64aIZWkvzAPjBZEfVXS2FgDsYg&oe=69B1C1AD"
   },
   {
-    "id": "art_266",
+    "id": "art_271",
     "title": "The Audacity: Sara Duterte Talks About Corruption While Running From Her Own",
     "date": "2025-12-02",
     "category": "Commentary",
@@ -6031,8 +6031,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/591106079_122107732563092788_4585992724982657763_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=gKB38CLrtJcQ7kNvwHr6K27&_nc_oc=Adkhq8MXnF5FAVwrObAO5pnsX4lrqHkA6nZuSmCmBXkQRK3znsG3sjzYaZ0BliVr1Ps&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQFHH3eegZ7fptaB41LnBt-Nz9AKsPtAabaCyDXQ1XMmg27hM4MrKd_wYKA_YKc-Rp4e-Pr2BmrtqA&oh=00_AfxXR-qVaQtVatD30gLDSxmIyXNm-K6qb4JpGducWjYADQ&oe=69B1D2B6"
   },
   {
-    "id": "art_267",
-    "title": "The Gardiola Files: When a \u201cWorkers\u2019 Representative\u201d Turns Billionaire Contractor",
+    "id": "art_272",
+    "title": "The Gardiola Files: When a “Workers’ Representative” Turns Billionaire Contractor",
     "date": "2025-12-01",
     "category": "Commentary",
     "source": "facebook",
@@ -6054,8 +6054,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/592324556_122107696695092788_3587685014707124927_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=KAV1UxfF0XoQ7kNvwGTj7rL&_nc_oc=AdlMyrjDXljB3uVC__vdR0sQGNf0wLNNTPkOIVVKtWAcuzN3elETY3BpBEhgbQihK38&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQEmNnxuk9mqTPn0vwyhCWfjAvJpH8an-wvahuI4BSSSBm8OAckW7QglF5nDy8Lq0Awr6-N-wuN5Mg&oh=00_AfzAUfoa0Hw1SAGxJhhedZr1NAaEH-9Vm4lzz9DP5-zQYw&oe=69B1B4FF"
   },
   {
-    "id": "art_268",
-    "title": "Breaking Down Leandro Leviste\u2019s Defense of Kiko Barzaga",
+    "id": "art_273",
+    "title": "Breaking Down Leandro Leviste’s Defense of Kiko Barzaga",
     "date": "2025-12-01",
     "category": "Breaking",
     "source": "facebook",
@@ -6077,8 +6077,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/591276807_122107693725092788_1977535850917236932_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=h8k6-AO6nH4Q7kNvwEvBacg&_nc_oc=Adke8bowRtRemkzmwJ8nbG1H4K2mn5--iH9jtR835rTDPAX136QL7_yN85FIKLvfIh4&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQHbBYHwAHYQgnw5sUBFxuT_sP6Cc4Dd54nxO8yBdX8wOQZ7qV5-glmZYVE9-oxtEBAAC9YKKSERvA&oh=00_AfynSva5YOyPVCh_0QRJGDTGY6yDhQ4bBO9CWyVMYs4YsA&oe=69B1D2B9"
   },
   {
-    "id": "art_269",
-    "title": "Deconstructing Marcoleta\u2019s Hollow Defense",
+    "id": "art_274",
+    "title": "Deconstructing Marcoleta’s Hollow Defense",
     "date": "2025-12-01",
     "category": "Commentary",
     "source": "facebook",
@@ -6100,7 +6100,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/593688134_122107649517092788_705302164537968360_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=x-r_wHnroXYQ7kNvwH6ix_h&_nc_oc=AdlE6_lqlMxI_nXtHWJexdU6UtgfhQ1O3o9Cr2goJYsZ2ZqdNXz77x1sL6ktsYepm0k&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQESdFufYf4l6sjkJSq1RU88hug0RTqcCHKbdZgK2AfEN-_Oj8wquGloPA-MBrmP2CwtJ9lythdCKA&oh=00_AfwUIX4G4a52G9uIlw45V2gmsI8ueJkisLCzh-M0B2QFTA&oe=69B1BF05"
   },
   {
-    "id": "art_270",
+    "id": "art_275",
     "title": "Who's Next for The Hague?: An Attempt to Understans the ICC's Arrest Warrant Pipeline",
     "date": "2025-12-01",
     "category": "Commentary",
@@ -6123,7 +6123,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/592105897_122107636623092788_25338685400789388_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=Ru2zFdoz8hkQ7kNvwGk2c82&_nc_oc=Adk5zo9RNmVBTfbNV9JnfdDbDfL3Fhv5kObaKzembLhr74FR_8cQWOmvg4mLTyQkwbY&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQGrpzCtXA3emBFddRgGS9aLYlUn2eCYo22clDBXRK0ANU-4Sa27STF6ig_VQMU6rghw0Kmw4fdeNQ&oh=00_AfziOA7VcHgbJFpzicE5mxc1UaAMgWopkG2w0iqdVFCn_A&oe=69B1B742"
   },
   {
-    "id": "art_271",
+    "id": "art_276",
     "title": "The Year Problem",
     "date": "2025-12-01",
     "category": "Commentary",
@@ -6136,7 +6136,7 @@ const ARTICLES_META = [
       "Austria"
     ],
     "excerpt": "",
-    "word_count": 1274,
+    "word_count": 1277,
     "read_time": 7,
     "url": "https://www.facebook.com/122120826315092788/posts/122107606395092788",
     "fb_post_id": "893376663850463_122107606395092788",
@@ -6146,7 +6146,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/594058583_122107605897092788_7640620470295326546_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=w2cdqriREfMQ7kNvwEMsH5k&_nc_oc=AdkAEUvokBLysSGqG4_yswRO-2MBvYo_3B-ICnLtUFW8rCczAZgMeF54NJ0kLWZX8s8&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQH8S7pHXt_zas33ss_-9rue6t_8GCV7MDxHsXbu2u7oX2BVvAgcJW1463vPasR1zLLQ7iO8onBeAw&oh=00_AfxUm8egdXbz1PAQ52RxWNjFoCtbuaiyQMhGxcw87NiLdw&oe=69B1CE85"
   },
   {
-    "id": "art_272",
+    "id": "art_277",
     "title": "What the Supreme Court Did",
     "date": "2025-12-01",
     "category": "Commentary",
@@ -6158,7 +6158,7 @@ const ARTICLES_META = [
       "Supreme"
     ],
     "excerpt": "",
-    "word_count": 782,
+    "word_count": 787,
     "read_time": 4,
     "url": "https://www.facebook.com/122120826315092788/posts/122107573569092788",
     "fb_post_id": "893376663850463_122107573569092788",
@@ -6168,7 +6168,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/592119821_122107573431092788_4140086400177104944_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=VtknbWU2NpYQ7kNvwHMgH-0&_nc_oc=AdmyQXQHlj4hnere3cWQ00PhebakhgyWV3Ae6zutz7G3KsQM0jGZAODAe7TBRKM9yxo&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQFG-UVazoxzuqdws6lMWnJ4zdGH5u8uSLEANZ7fzw8bKfzvROUDGh_Sxvmz14t41-HjUMRZB7fABQ&oh=00_Afw8C4IZUB9SC5suKrJX4UouYl4mctM6amt5wAPVVqRTyw&oe=69B1D45C"
   },
   {
-    "id": "art_273",
+    "id": "art_278",
     "title": "What's Happening with Quiboloy's Cases Right Now",
     "date": "2025-11-29",
     "category": "Commentary",
@@ -6191,7 +6191,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/589886050_122107409361092788_6136272618477037392_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=E0n8ccpigLEQ7kNvwGmx5q4&_nc_oc=AdmUKAttYHVaOWSHOBTikngNKYdQHh0g6Dn6xv8hMgN-rn_W2u7rVi0HtsDZ1YJDw3E&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQFyDqJ-Dh68GYvxYlmaGLLRCKX4aqLSID5GliiTAQhtFrgCXZ2ktFMwIU1u3rPHCcOJbIGk6JGpdA&oh=00_AfyaxUC67a5-XWbtjO5tR-5a__vhcVY-sOdCdl3M8AtJ9g&oe=69B1C9C8"
   },
   {
-    "id": "art_274",
+    "id": "art_279",
     "title": "Why COMELEC Cleared Chiz Escudero",
     "date": "2025-11-29",
     "category": "Commentary",
@@ -6214,8 +6214,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/591250533_122107282629092788_7499627096350572491_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=lUuQrpBmim4Q7kNvwEX80ZR&_nc_oc=Adn703YnyGdwlrF0mhAwLMPO2u2p-pEIepO5gtDaJH3WpcTz_jR2aBS-69UCG3-4CU4&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQF5CwQJ0P8iD5FoGp1z1Tct-wdxVDs-QHZCmYpZqQsWF70VSzdUFrf1Ovcjdnm7coR2x20NaAPSoQ&oh=00_Afw8MFZbCk0SyBpdgxONfhlQjQiYFD54TLa8pmgJIrUEng&oe=69B1BBF2"
   },
   {
-    "id": "art_275",
-    "title": "Omar Duterte\u2019s \u201cInhumane\u201d Complaint",
+    "id": "art_280",
+    "title": "Omar Duterte’s “Inhumane” Complaint",
     "date": "2025-11-28",
     "category": "Commentary",
     "source": "facebook",
@@ -6237,8 +6237,8 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/587118455_122107266423092788_185957385392745288_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=BACcp5lIMV4Q7kNvwETXBpf&_nc_oc=AdmgIlYM1qTBG7Qf7jxOPc6PJH71MHeb_NP_db_VL1d9myJaaOiEzmaXRo1RfsYanwg&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQEe4dxvfHfW1G-yV7xpZEd2ERKFUWdt1J5T85FjEkmQcOFK0F638Xg8ykwrmSDVaQRR4rKNFHaxYg&oh=00_AfzdkK3tbSYUkpOq6zuOeqBTn1IcJhOrKSvF18mrFoYNig&oe=69B1BBF5"
   },
   {
-    "id": "art_276",
-    "title": "The Humanitarian Paradox: Duterte\u2019s War to \u201cSave\u201d Children and His Plea for Mercy",
+    "id": "art_281",
+    "title": "The Humanitarian Paradox: Duterte’s War to “Save” Children and His Plea for Mercy",
     "date": "2025-11-28",
     "category": "Commentary",
     "source": "facebook",
@@ -6260,7 +6260,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/589163984_122107257615092788_4520887130718487776_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=BZyYyAyLgu8Q7kNvwH5VGQ5&_nc_oc=AdnUIbDcWNrIBUAcYxrPLfxR2_4TdEcpjkaZjvHSL8Pm5lZGb005bSOagyNvn3uKWnU&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQGrKe53mMKSt3BNXh7MHKYJ5DifvfPFUr_PcGsTNyeS6snj59L2GrrZ8ghyANsVi9WV9_rbAN28LQ&oh=00_AfzLp_a4_f6NevR6Hl0pTwzvV_kmAJJQIeNaR6Lc7lSOuQ&oe=69B1B7CC"
   },
   {
-    "id": "art_277",
+    "id": "art_282",
     "title": "How Did Sara Duterte Spend P125M in 11 Days",
     "date": "2025-11-28",
     "category": "Commentary",
@@ -6283,7 +6283,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/588484837_122107147221092788_1549948322550555711_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=jyNQCffI9OsQ7kNvwEqxLiY&_nc_oc=AdkCZQuzLr6mmvsXc_peG-Vlbh9YRXhLFhFakaCPmxJbCJBY63wrsQsov6ENTCykgMI&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQGujT8_qkmCq4aVs8ihXBtW5j3mYbxPhVT6k8LKmF4geudWsSd52LmmtGKDWqYmY69OnzghCCJiiA&oh=00_Afxa8JKw-8yX9zQlwd02rGDhSeqKhjtIfvWPxygEElZwaA&oe=69B1B347"
   },
   {
-    "id": "art_278",
+    "id": "art_283",
     "title": "The Audacity of Praying for a Butcher",
     "date": "2025-11-28",
     "category": "Commentary",
@@ -6305,7 +6305,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea1-1.xx.fbcdn.net/v/t39.30808-6/592138408_122107115307092788_7745781305868238178_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=3rFZIeO1JQQQ7kNvwFhvTrc&_nc_oc=AdniJRgqUFicOmYKnQspow1pi-kUF0FWuF86GLztWnVJMG5qYHy4_mc8W-Ol97zSUTE&_nc_zt=23&_nc_ht=scontent-sea1-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQEtCFecQ78V1DVTXL4Vyxh6C_RcPzXJJEWmztV0vWSRO_lSDzHI1x8YByhnOhXGE82S5njXZ4Gncg&oh=00_Afw633Zmktp9ATdgMS9zPp5yxU0XKOSC_cRuxERONO8FRw&oe=69B1BE3C"
   },
   {
-    "id": "art_279",
+    "id": "art_284",
     "title": "The COMELEC's Dangerous Precedent: Why the Escudero-Lubiano Decision Undermines Philippine Election Law",
     "date": "2025-11-27",
     "category": "Commentary",
@@ -6328,7 +6328,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/589559643_122107102599092788_2605581215517031368_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=MpXJzEYOFjIQ7kNvwGlVjry&_nc_oc=AdlgQOpTmzkEZsYiFX74mS-9qJdKLdBDgi-dzJz82lBEEW6tk5NDzpS51xvdIcctPV0&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AKK4YLsEAAAA&_nc_gid=ohTInCYaAOK7YL6LKmn3eA&_nc_tpa=Q5bMBQEoNOgGPSr_MOzTn-_hAPqOY9ZmNZXZrCqOXAP3hfqIviG2X7uOcmKxF62MjCabTE3sdu8Yy_X0xw&oh=00_Afy9eqmOatFtFn0AUFD7wyU4X0y6Ao3yfEIYIc1glD8DaQ&oe=69B1BB68"
   },
   {
-    "id": "art_280",
+    "id": "art_285",
     "title": "Is Bongbong Marcos a Pushover?",
     "date": "2025-11-25",
     "category": "Commentary",
@@ -6351,8 +6351,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/you-are-cordially-invited-16-x-9-in-4-PR05QCT6yxgAqjSk.png"
   },
   {
-    "id": "art_281",
-    "title": "The Zaldy Co\u2013Rodrigo Duterte Connection: An Alliance of Convenience, a Partnership of Plunder",
+    "id": "art_286",
+    "title": "The Zaldy Co–Rodrigo Duterte Connection: An Alliance of Convenience, a Partnership of Plunder",
     "date": "2025-11-25",
     "category": "Commentary",
     "source": "website",
@@ -6374,7 +6374,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/news01-082319-ouBsuUYT4Y7gDhxe.jpg"
   },
   {
-    "id": "art_282",
+    "id": "art_287",
     "title": "Unmodified Opinion: Setting the Record Straight",
     "date": "2025-11-24",
     "category": "Commentary",
@@ -6397,7 +6397,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/you-are-cordially-invited-16-x-9-in-3-sSX4miXEoH33n9yT.png"
   },
   {
-    "id": "art_283",
+    "id": "art_288",
     "title": "Strategic Political Isolation: Weakening a Leader by Stripping Away Their Inner Circle",
     "date": "2025-11-22",
     "category": "Commentary",
@@ -6420,7 +6420,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/f6b6cb48-ef14-4c7d-ad74-540754097d3c-S7zcB9pdBaZZbZy2.png"
   },
   {
-    "id": "art_284",
+    "id": "art_289",
     "title": "Where Are the Billions Coming From? The DPWH Maleta Mystery",
     "date": "2025-11-22",
     "category": "Commentary",
@@ -6443,7 +6443,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/21f30ac6-33d9-45a9-a45a-3d4c336df67d-e2BQAgb7b8CSipKU.png"
   },
   {
-    "id": "art_285",
+    "id": "art_290",
     "title": "[Topic Request] The Dangerous Gravity of Sara Duterte",
     "date": "2025-11-20",
     "category": "Commentary",
@@ -6466,7 +6466,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/ap25038148792987-scaled-KYVTzeJ0Jk4UDE8Z.jpg"
   },
   {
-    "id": "art_286",
+    "id": "art_291",
     "title": "Is Kiko Barzaga Insane? The Evidence Points to a Calculated Political Operator ()",
     "date": "2025-11-14",
     "category": "Commentary",
@@ -6489,7 +6489,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/64b1dd42-5cd9-4740-8ac6-5270db35fe11-Ph42tDUeaAvs39Cm.png"
   },
   {
-    "id": "art_287",
+    "id": "art_292",
     "title": "Morning Coffee Thoughts - Article Collection Update (March 2026)",
     "date": "2025-11-13",
     "category": "Commentary",
@@ -6512,7 +6512,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/7b37f064c032de66226bb46415abd4e4afce161c-hUjzYZcdQev0UOgn.jpg"
   },
   {
-    "id": "art_288",
+    "id": "art_293",
     "title": "When a Superpower Stumbles: Watching America Unravel Under Trump",
     "date": "2025-11-13",
     "category": "Commentary",
@@ -6535,7 +6535,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/ba0f48d5-5877-48fd-8035-cf1a8b09ac58-5zL2QSrlKwSa91K0.png"
   },
   {
-    "id": "art_289",
+    "id": "art_294",
     "title": "The Divine Playbook: How the Bible and God Have Been Used as Political Tools",
     "date": "2025-11-11",
     "category": "Commentary",
@@ -6558,7 +6558,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/ba8cea77-6e21-4cab-9aad-bfe68a5c5aa2-4fgMncNY9vOzmNGz.png"
   },
   {
-    "id": "art_290",
+    "id": "art_295",
     "title": "When Votes Become Transactions: The INC Endorsement and the Politics of Corruption",
     "date": "2025-11-11",
     "category": "Commentary",
@@ -6581,8 +6581,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/cf0c62d1-a2e1-4fe2-86a0-a4f53962e5de-2nznzuuIGn5NmoKo.png"
   },
   {
-    "id": "art_291",
-    "title": "Philippines, ICC, and Justice: The Debate Over Bato dela Rosa\u2019s Arrest",
+    "id": "art_296",
+    "title": "Philippines, ICC, and Justice: The Debate Over Bato dela Rosa’s Arrest",
     "date": "2025-11-10",
     "category": "Commentary",
     "source": "website",
@@ -6604,7 +6604,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/99badb39-6bde-4d53-ad9f-7645eb5a8d9d-nO89Z2FweZ0cks68.png"
   },
   {
-    "id": "art_292",
+    "id": "art_297",
     "title": "When Mountains Weep: The Sierra Madre's Silent Sacrifice",
     "date": "2025-11-10",
     "category": "Commentary",
@@ -6627,7 +6627,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/mxtoczlhkftdlmf-800x450-nopad-orRATzd9qXGucph5.jpg"
   },
   {
-    "id": "art_293",
+    "id": "art_298",
     "title": "When the Tough Guy Cries: Bato dela Rosa's Cycle of Courage and Cowardice",
     "date": "2025-11-09",
     "category": "Commentary",
@@ -6650,7 +6650,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/you-are-cordially-invited-16-x-9-in-4-jghWLdg2tZFWVwqU.png"
   },
   {
-    "id": "art_294",
+    "id": "art_299",
     "title": "When the Tough Guy Cries: Bato dela Rosa's Cycle of Courage and Cowardice ()",
     "date": "2025-11-09",
     "category": "Commentary",
@@ -6673,7 +6673,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/you-are-cordially-invited-16-x-9-in-4-jghWLdg2tZFWVwqU.png"
   },
   {
-    "id": "art_295",
+    "id": "art_300",
     "title": "The Hypocrisy of Alan Peter Cayetano: When Due Process Becomes a Selective Shield",
     "date": "2025-11-09",
     "category": "Commentary",
@@ -6696,7 +6696,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/balitang_national_-_the_post_optimized-r4BjgIo8mGTO3LnF.jpg"
   },
   {
-    "id": "art_296",
+    "id": "art_301",
     "title": "The PR Machine: How Politicians Are Repackaged and Sold to You",
     "date": "2025-11-07",
     "category": "Commentary",
@@ -6719,7 +6719,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/ac1eb06b-a269-46f6-8f73-9714a94515dc-w07ACjhdnif4xTak.png"
   },
   {
-    "id": "art_297",
+    "id": "art_302",
     "title": "Court Grants Motion to Quash Murder Charges Against Journalist Frenchie Mae Cumpio",
     "date": "2025-11-06",
     "category": "Commentary",
@@ -6742,7 +6742,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/19ba5117-25da-4413-af37-be50ae8a3f87-7PNQi6z3Kcl8RbVZ.jpg"
   },
   {
-    "id": "art_298",
+    "id": "art_303",
     "title": "Terry Ridon: From Youth Activist to Congressional Lightning Rod",
     "date": "2025-11-06",
     "category": "Commentary",
@@ -6765,7 +6765,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/20171212-terry-ridon-tHVWXPBDDEM0i3kC.webp"
   },
   {
-    "id": "art_299",
+    "id": "art_304",
     "title": "Inside Philippine Media: The High Cost of Journalism for Sale",
     "date": "2025-11-06",
     "category": "Commentary",
@@ -6788,8 +6788,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/701f46f0-3aa7-43fa-8fb9-2dae1561dac4-uJ69HYGSPJvKs56H.png"
   },
   {
-    "id": "art_300",
-    "title": "\u201cDapat May Makulong\u201d: A Country Wishing for Justice",
+    "id": "art_305",
+    "title": "“Dapat May Makulong”: A Country Wishing for Justice",
     "date": "2025-11-06",
     "category": "Commentary",
     "source": "website",
@@ -6809,8 +6809,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/ac11dc24-3e32-49c1-9385-caaed43fb122-vPYsb7NebhtAbkKX.png"
   },
   {
-    "id": "art_301",
-    "title": "My Facebook Feed Thinks I\u2019m a DDS Supporter \u2014 and How I\u2019m Fighting Back",
+    "id": "art_306",
+    "title": "My Facebook Feed Thinks I’m a DDS Supporter — and How I’m Fighting Back",
     "date": "2025-11-02",
     "category": "Commentary",
     "source": "website",
@@ -6828,7 +6828,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/66ed2548-6828-4b64-87b5-934408b0572e-IgfascSlvA9nvdrd.png"
   },
   {
-    "id": "art_302",
+    "id": "art_307",
     "title": "When Lawyers Stand for Justice: Why Atty. Kristina Conti Wants Us to Rethink What Lawyers Actually Do",
     "date": "2025-11-02",
     "category": "Commentary",
@@ -6851,7 +6851,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/atty_conti_pinoy-weekly-nyNgsLyFSKqlBuRW.png"
   },
   {
-    "id": "art_303",
+    "id": "art_308",
     "title": "When Love Fights the Law: A Personal Look at Divorce Law in the Philippines",
     "date": "2025-11-02",
     "category": "Commentary",
@@ -6872,7 +6872,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/chatgpt-image-nov-2-2025-03_11_19-pm-mNHYKEuDKNkvaixI.png"
   },
   {
-    "id": "art_304",
+    "id": "art_309",
     "title": "Cambridge Analytica and the Philippines: The Past That Still Shapes 2028",
     "date": "2025-11-02",
     "category": "Commentary",
@@ -6895,7 +6895,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/you-are-cordially-invited-16-x-9-in-3-LBRGsqy3Ue2Fm9Rs.png"
   },
   {
-    "id": "art_305",
+    "id": "art_310",
     "title": "Why Most Corrupt or Accused-of-Corruption Politicians Gravitate Toward Sara Duterte: An Observation",
     "date": "2025-10-30",
     "category": "Commentary",
@@ -6918,8 +6918,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/0d530db7-b442-45e9-a461-14d0b5ab55e0-AR01Eo02kOSrrRGY.png"
   },
   {
-    "id": "art_306",
-    "title": "Breaking Down Chiz Escudero\u2019s SALN Against Heart Evangelista\u2019s Luxury Lifestyle",
+    "id": "art_311",
+    "title": "Breaking Down Chiz Escudero’s SALN Against Heart Evangelista’s Luxury Lifestyle",
     "date": "2025-10-29",
     "category": "Commentary",
     "source": "website",
@@ -6940,7 +6940,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/d4bd4a27-aa4c-4e26-990c-a630ceb1d6e7-1-1692362784-dOqZLbNOXbiQarPN.jpg"
   },
   {
-    "id": "art_307",
+    "id": "art_312",
     "title": "When Corruption Wins: A Personal Reckoning with the Enrile-Napoles Acquittal ()",
     "date": "2025-10-24",
     "category": "Commentary",
@@ -6963,8 +6963,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/enrile-1-A1az0b2Z0jcnn7Dq.png"
   },
   {
-    "id": "art_308",
-    "title": "The Preacher\u2019s Paradox: Joel Villanueva\u2019s JIL Anniversary Claims and the Record He Can\u2019t Ignore",
+    "id": "art_313",
+    "title": "The Preacher’s Paradox: Joel Villanueva’s JIL Anniversary Claims and the Record He Can’t Ignore",
     "date": "2025-10-20",
     "category": "Commentary",
     "source": "website",
@@ -6986,8 +6986,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/jil-YbN4kKJBzBsWr9aB.jpg"
   },
   {
-    "id": "art_309",
-    "title": "What the Duterte \u201cDestabilization\u201d Saga Reveals About Philippine Politics",
+    "id": "art_314",
+    "title": "What the Duterte “Destabilization” Saga Reveals About Philippine Politics",
     "date": "2025-10-20",
     "category": "Commentary",
     "source": "website",
@@ -6999,7 +6999,7 @@ const ARTICLES_META = [
       "Military & Defense"
     ],
     "excerpt": "",
-    "word_count": 1705,
+    "word_count": 1715,
     "read_time": 9,
     "url": "https://www.morningcoffeethoughts.org/what-the-duterte-destabilization-saga-reveals-about-philippine-politics",
     "fb_post_id": "",
@@ -7009,7 +7009,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/scowling-A85M8PQg79hyJ6ew.png"
   },
   {
-    "id": "art_310",
+    "id": "art_315",
     "title": "Critical Thinking in the Philippines: A Self-Reflective Journey Through History, Philosophy, and Digital Disruption",
     "date": "2025-10-19",
     "category": "Commentary",
@@ -7032,7 +7032,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/chatgpt-image-oct-19-2025-12_00_26-pm-YZ9EolgXJOuX5K1D.png"
   },
   {
-    "id": "art_311",
+    "id": "art_316",
     "title": "DOH \"Ghost Health Centers\" Scandal: Where Things Stand",
     "date": "2025-10-17",
     "category": "News",
@@ -7055,7 +7055,7 @@ const ARTICLES_META = [
     "image": ""
   },
   {
-    "id": "art_312",
+    "id": "art_317",
     "title": "Is Mayor Benjie Magalong Clean? A Complicated Political Portrait",
     "date": "2025-10-17",
     "category": "Commentary",
@@ -7078,7 +7078,7 @@ const ARTICLES_META = [
     "image": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/565809876_122138980892901350_4479471500476588448_n.webp?stp=dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=VYijaQlm9UcQ7kNvwGF-smY&_nc_oc=AdmjnxsIsV1CZGyZb9sQu6ImIaMWeL0sHso8MQuaamP3AlSxBG0KZ3NIZ2EV_XyyJxvMEL14V6i9q3NJJiayWnu3&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=a942UfUxWtq5iXUuwxANVg&_nc_ss=8&oh=00_AfyxYyqt3LL8bULQrGsDnsbCmV8MXjLBVh-A9-Fh5r9KAQ&oe=69B2C5C6"
   },
   {
-    "id": "art_313",
+    "id": "art_318",
     "title": "The Flood Control Scandal Is Far From Over",
     "date": "2025-10-17",
     "category": "Commentary",
@@ -7101,7 +7101,7 @@ const ARTICLES_META = [
     "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/561729298_122138960300901350_7123274964401060155_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=FZxAB0nTTT4Q7kNvwH4mUMO&_nc_oc=Adnvz8vxGnpGcQkFFHNbwZ9XPrqP4P-gaJTzQfyuHMwuL-oBovQ5W-3ywNzLPAeApXqx0hQ--chDaqF62csd42f6&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=iTfc96UpTNoh7Bw8DI4Ljg&_nc_ss=8&oh=00_AfyXsOcCR09FYIQXKSCaPfBWrPFbJ0OlOIePCfoygCLyUQ&oe=69B2E2EB"
   },
   {
-    "id": "art_314",
+    "id": "art_319",
     "title": "Smartmatic, Bribery, and the Cost of Our Vote",
     "date": "2025-10-16",
     "category": "Commentary",
@@ -7124,7 +7124,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/smartmatic-mjE4e0Q1k8U37MBV.jpg"
   },
   {
-    "id": "art_315",
+    "id": "art_320",
     "title": "Building a Glass-Walled Republic",
     "date": "2025-10-16",
     "category": "Commentary",
@@ -7145,7 +7145,7 @@ const ARTICLES_META = [
     "image": "https://scontent-lax7-1.xx.fbcdn.net/v/t39.30808-6/562374818_122138936324901350_3715251884186269553_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=13d280&_nc_ohc=Exhc4Y2BWzQQ7kNvwGS0tOA&_nc_oc=AdmxzKcaCLomgHdOD4QJnvyvtOV0LraJd9OM08Rzqp_kbk_03gt_uHkPEjkEu39qJbQ&_nc_zt=23&_nc_ht=scontent-lax7-1.xx&_nc_gid=4-ExgAyyX6TZ1xFlFLtrkA&_nc_ss=8&oh=00_AfxLfhdtJaLkduM52lMwjZ_CnuQvmBatomuNnX0xQvq6GQ&oe=69B2C85A"
   },
   {
-    "id": "art_316",
+    "id": "art_321",
     "title": "The Perpetual Problem of Quarrying: When We Ourselves Are Killing the Land That Keeps Us Alive",
     "date": "2025-10-16",
     "category": "Commentary",
@@ -7168,7 +7168,7 @@ const ARTICLES_META = [
     "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/561874882_122138873282901350_1861653758550795558_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=476ZVSvigEsQ7kNvwHkM1b9&_nc_oc=AdnJGXFANWue1zNFKcMy9rl1DbzgH0Fct8S6mhPa51z2Xlj_q9nmjrYbLoY1wenFuPc&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=KoApwD0WvyAPDdah46eALw&_nc_ss=8&oh=00_Afz5xGvDg-4pTBf5rxhLtPK6xS0bZRxW7Tzq2pxbebiytg&oe=69B2D5F2"
   },
   {
-    "id": "art_317",
+    "id": "art_322",
     "title": "The Tricycle Dilemma in Cabanatuan: Power, Policy, and Everyday Survival",
     "date": "2025-10-16",
     "category": "Commentary",
@@ -7191,7 +7191,7 @@ const ARTICLES_META = [
     "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/565778415_122138810288901350_4373005391151741087_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=i9LQj0FGNZoQ7kNvwHO1_9n&_nc_oc=Adk1cK42u5rfgiu4KqoVgNcoJTcrBRGeymGnW32XRRhdesgpQUEl8lFswi_RBexGuWE&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=jdP6i40PovYButaI3rsyWw&_nc_ss=8&oh=00_Afzmp6plTSyVKws2sFpAd09XWJvZ3IKKR5umiyTpFEk2AA&oe=69B2E54E"
   },
   {
-    "id": "art_318",
+    "id": "art_323",
     "title": "The House Keeps Burning Because We Never Learn",
     "date": "2025-10-16",
     "category": "Commentary",
@@ -7213,7 +7213,7 @@ const ARTICLES_META = [
     "image": "https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/463312324_122101451312551394_2812314512345678901_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=abcdefg&_nc_ht=scontent.fmnl4-2.fna&oh=00_AfC123456789&oe=652F1234 (Note: This is a placeholder as the exact URL could not be extracted due to technical limitations, but the image shows a man smiling while looking at his phone with a house burning in the background.)"
   },
   {
-    "id": "art_319",
+    "id": "art_324",
     "title": "Investigating Sara Duterte's Confidential Fund Claims: A Political Dodge of Her Father's Legacy",
     "date": "2025-10-16",
     "category": "Commentary",
@@ -7236,7 +7236,7 @@ const ARTICLES_META = [
     "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/561656050_122138906912901350_5818926860266405560_n.jpg?stp=cp6_dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=0ZT-sH84YsMQ7kNvwFsAMzJ&_nc_oc=AdkTZFm9O7HYwa_WIkEnQ0IO-YvNlb8-tQZRBAXafU6v1QFKIqi83GjyqbPpb2GKuwg&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=mTVv5a8PJdjcZ7maElbpfg&_nc_ss=8&oh=00_AfyiH0Vw4pa-z13jC0mzdqBuNpSXt3CTvdMnd24i90N-VQ&oe=69B2C865"
   },
   {
-    "id": "art_320",
+    "id": "art_325",
     "title": "Why It's Time to Revisit the Ombudsman Order to Remove Joel Villanueva from the Senate",
     "date": "2025-10-15",
     "category": "Commentary",
@@ -7259,7 +7259,7 @@ const ARTICLES_META = [
     "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/564154023_122138725670901350_6915405110288232087_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=zOsj7c743DUQ7kNvwFyOnyf&_nc_oc=AdkywXNH-CWICoyWb5rNvDY16p0X1CCY8LSRVpNa5uWF_6PfM46z8qgembu8LIV2ax8&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=YP0foSYUzsko0BjYRs9gLQ&_nc_ss=8&oh=00_Afxo4l7mY5x0YilVzHI8TszxOoWkj44Z4PaltCCLjsblfQ&oe=69B2C745"
   },
   {
-    "id": "art_321",
+    "id": "art_326",
     "title": "The Marcos Succession Dilemma: Who Will Fill the Political Vacuum Left by Romualdez?",
     "date": "2025-10-15",
     "category": "Commentary",
@@ -7282,7 +7282,7 @@ const ARTICLES_META = [
     "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t39.30808-6/564628367_122138709668901350_7085172322032123675_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=S-4jx7eF55sQ7kNvwFf2iH3&_nc_oc=AdmFPUqyj7VvesbEm8uyew_FmtPn_FhW1NGaXh6vrLQ8vyDVFmsbgVUyocSVPE1pzZE&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&_nc_gid=JFjbmQ0372i6zcZALxtuxw&_nc_ss=8&oh=00_AfwatZhhDo3Ct9MjKub7oreUB8kcSeBFBJrJb3UWZjjsIQ&oe=69B2C849"
   },
   {
-    "id": "art_322",
+    "id": "art_327",
     "title": "The Useless Lookout Orders Protecting the Powerful",
     "date": "2025-10-15",
     "category": "Commentary",
@@ -7305,7 +7305,7 @@ const ARTICLES_META = [
     "image": "https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/561160581_122138719652901350_5608742049737832755_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=asYCCjlhozAQ7kNvwHV8tqP&_nc_oc=Adljw5KcnIAsGJTq_EkNxFRaPN5IGCS_zmMbbMHnqK9aghpYJV0-5p9OE5PA0xbyQjs&_nc_zt=23&_nc_ht=scontent-lax3-2.xx&_nc_gid=PBsdegwoNisJXpPcWzkM7g&_nc_ss=8&oh=00_AfwANRt_ZQB3KLNcyLdm4MfinOA9QODpBIuThj5sqG4uXQ&oe=69B2C298"
   },
   {
-    "id": "art_323",
+    "id": "art_328",
     "title": "The Gentleman's Agreement Between China and Rodrigo Duterte",
     "date": "2025-10-14",
     "category": "Commentary",
@@ -7328,8 +7328,8 @@ const ARTICLES_META = [
     "image": "https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/462520379_122176483562187648_4528173434190805179_n.jpg"
   },
   {
-    "id": "art_324",
-    "title": "Why Jesus Crispin \u201cBoying\u201d Remulla Should Not Be Ombudsman: A Dangerous Seven-Year Mistake",
+    "id": "art_329",
+    "title": "Why Jesus Crispin “Boying” Remulla Should Not Be Ombudsman: A Dangerous Seven-Year Mistake",
     "date": "2025-10-07",
     "category": "Commentary",
     "source": "website",
@@ -7351,7 +7351,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/jesus-crispin-remulla-doj-rappler-onthology-001-scaled-Yan00X5ZDrf329ey.webp"
   },
   {
-    "id": "art_325",
+    "id": "art_330",
     "title": "From Row Four to Critical Thinking: A Journey of Questions",
     "date": "2025-10-06",
     "category": "Commentary",
@@ -7371,7 +7371,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/untitled-design-A1azz5MzNpceE3lx.png"
   },
   {
-    "id": "art_326",
+    "id": "art_331",
     "title": "The Senate's Duterte House Arrest Vote: A Masterclass in Political Self-Preservation",
     "date": "2025-10-02",
     "category": "Commentary",
@@ -7394,8 +7394,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/senate-approves-duterte-icc-house-arrest-october-1-2025-1-m2Wq89l9O3iK59WK.webp"
   },
   {
-    "id": "art_327",
-    "title": "Resetting the Government: A Risk The Philippines Can\u2019t Afford",
+    "id": "art_332",
+    "title": "Resetting the Government: A Risk The Philippines Can’t Afford",
     "date": "2025-09-30",
     "category": "Commentary",
     "source": "website",
@@ -7407,7 +7407,7 @@ const ARTICLES_META = [
       "Health"
     ],
     "excerpt": "",
-    "word_count": 2933,
+    "word_count": 2943,
     "read_time": 15,
     "url": "https://www.morningcoffeethoughts.org/resetting-the-government-a-risk-the-philippines-cant-afford",
     "fb_post_id": "",
@@ -7417,7 +7417,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/bedb8c62-d8de-4370-9243-6355dfcc647b-m6L2je7b2ZIwB5wX.png"
   },
   {
-    "id": "art_328",
+    "id": "art_333",
     "title": "The Guteza Witness Controversy: Alleged Witness Planting in the Senate Blue Ribbon Committee",
     "date": "2025-09-26",
     "category": "Commentary",
@@ -7440,8 +7440,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/failed-Yle4y0xL26tqjnaZ.png"
   },
   {
-    "id": "art_329",
-    "title": "The Futile Exercise: Sara Duterte\u2019s Strategic Martyrdom Campaign for 2028",
+    "id": "art_334",
+    "title": "The Futile Exercise: Sara Duterte’s Strategic Martyrdom Campaign for 2028",
     "date": "2025-09-26",
     "category": "Commentary",
     "source": "website",
@@ -7463,8 +7463,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/807c165d-1edc-4f50-b6b4-6fd023e4321f-AE074b1DjnfNNw7G.png"
   },
   {
-    "id": "art_330",
-    "title": "Swimming With Crocodiles: Vince Dizon\u2019s Impossible DPWH Mission",
+    "id": "art_335",
+    "title": "Swimming With Crocodiles: Vince Dizon’s Impossible DPWH Mission",
     "date": "2025-09-22",
     "category": "Commentary",
     "source": "website",
@@ -7486,7 +7486,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/untitled-design-1-AzGMD9ae11H23jV3.png"
   },
   {
-    "id": "art_331",
+    "id": "art_336",
     "title": "Complete Guide to Identifying DDS Trolls and Their Online Tactics | Morning Coffee Thoughts",
     "date": "2025-09-22",
     "category": "Commentary",
@@ -7509,8 +7509,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/0e9c653e-218a-48a9-8ef6-7fdcbfbec1da-YBgjyVbrlNHLor7w.png"
   },
   {
-    "id": "art_332",
-    "title": "Who Should Investigate DPWH? The People\u2019s Slate vs. the Blue Ribbon Farce",
+    "id": "art_337",
+    "title": "Who Should Investigate DPWH? The People’s Slate vs. the Blue Ribbon Farce",
     "date": "2025-09-06",
     "category": "Commentary",
     "source": "website",
@@ -7532,7 +7532,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/who-should-ALp2GrnPQRHnQOPl.png"
   },
   {
-    "id": "art_333",
+    "id": "art_338",
     "title": "Toby Tiangco: Whistleblower or Hypocrite?",
     "date": "2025-09-06",
     "category": "Commentary",
@@ -7555,7 +7555,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/failed-1-YBgjxWPE4pI50ZyP.png"
   },
   {
-    "id": "art_334",
+    "id": "art_339",
     "title": "Mayor Benjie Magalong and the Mayors Who Chose Risk Over Comfort ()",
     "date": "2025-08-31",
     "category": "Commentary",
@@ -7568,7 +7568,7 @@ const ARTICLES_META = [
       "DPWH Scandal"
     ],
     "excerpt": "",
-    "word_count": 2106,
+    "word_count": 2118,
     "read_time": 11,
     "url": "https://www.morningcoffeethoughts.org/mayor-benjie-magalong-and-the-mayors-who-chose-risk-over-comfort",
     "fb_post_id": "",
@@ -7578,7 +7578,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/mayors-for-good-governance-YbN43L3LzEHeGw9B.jpg"
   },
   {
-    "id": "art_335",
+    "id": "art_340",
     "title": "Lifestyle Checks in the Philippines: Why the System Keeps Falling Apart | Morning Coffee Thoughts",
     "date": "2025-08-28",
     "category": "Commentary",
@@ -7599,8 +7599,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/untitled-design-A0xvqQv52Pt5Gy3K.png"
   },
   {
-    "id": "art_336",
-    "title": "\u201cI Did It for My Country\u201d: The Double-Edged Sword of Nationalist Justification",
+    "id": "art_341",
+    "title": "“I Did It for My Country”: The Double-Edged Sword of Nationalist Justification",
     "date": "2025-08-22",
     "category": "Commentary",
     "source": "website",
@@ -7622,7 +7622,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/blue-illustrated-incandescent-jellyfish-desktop-wallpaper-dWxOXknlEEizMwqM.png"
   },
   {
-    "id": "art_337",
+    "id": "art_342",
     "title": "[TOPIC REQUEST] Sara Duterte's Vice Presidential Accomplishments",
     "date": "2025-08-22",
     "category": "Commentary",
@@ -7645,7 +7645,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/f9f26ba3-932f-40b6-bc27-b64f511d2f9b-YleQ3wwZzaS7KKwz.png"
   },
   {
-    "id": "art_338",
+    "id": "art_343",
     "title": "Congressman Arnan Panaligan and the Flood Control Controversy",
     "date": "2025-08-20",
     "category": "Commentary",
@@ -7668,7 +7668,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/arnan-panaligan-1-mnlJ19VVMkfN3q2p.jpg"
   },
   {
-    "id": "art_339",
+    "id": "art_344",
     "title": "Facing the Blank Stares: A Personal Journey Through Depression and Harmful Filipino Responses",
     "date": "2025-08-18",
     "category": "Commentary",
@@ -7688,8 +7688,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/just-pray-2-A0xjMyxOnDc4lL6L.png"
   },
   {
-    "id": "art_340",
-    "title": "Sara Duterte\u2019s Educational Critique: The Hypocrisy That Writes Itself",
+    "id": "art_345",
+    "title": "Sara Duterte’s Educational Critique: The Hypocrisy That Writes Itself",
     "date": "2025-08-18",
     "category": "Commentary",
     "source": "website",
@@ -7709,7 +7709,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/blue-illustrated-incandescent-jellyfish-desktop-wallpaper-mxBXW5reGnUQLr4e.png"
   },
   {
-    "id": "art_341",
+    "id": "art_346",
     "title": "Why the Imee Marcos Hype Never Made Sense to Me",
     "date": "2025-08-14",
     "category": "Commentary",
@@ -7732,7 +7732,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/morning-coffee-thoughts-A1a5RbBJ7OIW20lK.png"
   },
   {
-    "id": "art_342",
+    "id": "art_347",
     "title": "The Supreme Court Impeachment Ruling That Protected Power, Not Justice",
     "date": "2025-07-26",
     "category": "Commentary",
@@ -7755,7 +7755,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/supreme-ALpPZZN52pTeoVMa.png"
   },
   {
-    "id": "art_343",
+    "id": "art_348",
     "title": "The Fistfight That Backfired: How Baste Duterte Lost Before He Even Threw a Punch",
     "date": "2025-07-24",
     "category": "Commentary",
@@ -7778,7 +7778,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/chatgpt-image-jul-24-2025-06_21_04-pm-YBgbXPE55lu5koMb.png"
   },
   {
-    "id": "art_344",
+    "id": "art_349",
     "title": "An Open Letter to Sebastian \"Baste\" Duterte",
     "date": "2025-07-24",
     "category": "Commentary",
@@ -7801,8 +7801,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/baste-YZ9jz4XbPrcVQkKZ.png"
   },
   {
-    "id": "art_345",
-    "title": "Topic Request: What\u2019s the Story Behind the \u20b1142.7 Billion Budget Insertion?",
+    "id": "art_350",
+    "title": "Topic Request: What’s the Story Behind the ₱142.7 Billion Budget Insertion?",
     "date": "2025-07-23",
     "category": "Commentary",
     "source": "website",
@@ -7824,7 +7824,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/insdertion-AE0rg0eP8vtLQZD6.png"
   },
   {
-    "id": "art_346",
+    "id": "art_351",
     "title": "Why Jailing 10-Year-Olds Is a Dangerous Proposal Built on Flawed Thinking",
     "date": "2025-07-23",
     "category": "Commentary",
@@ -7847,8 +7847,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/child-mv0JKLxZkVsnWGqp.png"
   },
   {
-    "id": "art_347",
-    "title": "Ping Lacson Is Back\u2014And Frankly, We Need Him More Than Ever",
+    "id": "art_352",
+    "title": "Ping Lacson Is Back—And Frankly, We Need Him More Than Ever",
     "date": "2025-07-22",
     "category": "Commentary",
     "source": "website",
@@ -7869,8 +7869,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/2ea76e4e-a228-4e09-bbea-5b3bf0558dac-AQEZPLLy4NiwEeqr.png"
   },
   {
-    "id": "art_348",
-    "title": "Bongbong Marcos Through the Lens of Niccol\u00f2 Machiavelli\u2019s The Prince",
+    "id": "art_353",
+    "title": "Bongbong Marcos Through the Lens of Niccolò Machiavelli’s The Prince",
     "date": "2025-07-21",
     "category": "Commentary",
     "source": "website",
@@ -7892,7 +7892,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/nicolo-m6LbQKGP90SLxBNR.png"
   },
   {
-    "id": "art_349",
+    "id": "art_354",
     "title": "The Barrios-Pacquiao Fight: A Bittersweet Return That Left Me Both Inspired and Frustrated",
     "date": "2025-07-20",
     "category": "Commentary",
@@ -7913,7 +7913,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/f6204db7-b1dd-4914-8376-24f564ba8e1a-Yg2ywK8J0Of9NOg3.png"
   },
   {
-    "id": "art_350",
+    "id": "art_355",
     "title": "POLITICAL DYNASTY: When Public Service Becomes a Family Business",
     "date": "2025-07-19",
     "category": "Commentary",
@@ -7936,7 +7936,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/nakaw-YZ9jvN93aMCabPR7.png"
   },
   {
-    "id": "art_351",
+    "id": "art_356",
     "title": "Morning Coffee Thoughts: What Happens If Sara Duterte \"Walks\"?",
     "date": "2025-07-19",
     "category": "Commentary",
@@ -7959,8 +7959,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/im-free-YbNJw3RaRMf6Xo1l.png"
   },
   {
-    "id": "art_352",
-    "title": "Every Time We Shrug, Corruption Wins: How Vote-Buying Costs the Philippines \u20b1700B a Year",
+    "id": "art_357",
+    "title": "Every Time We Shrug, Corruption Wins: How Vote-Buying Costs the Philippines ₱700B a Year",
     "date": "2025-07-14",
     "category": "Commentary",
     "source": "website",
@@ -7982,7 +7982,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/sana-all-AE0r7o8LBGcNjl03.png"
   },
   {
-    "id": "art_353",
+    "id": "art_358",
     "title": "Revolutionary Form of Government: Pwede Nang Hindi Bayaran Ang Utang Ng PIlipinas?",
     "date": "2025-07-13",
     "category": "Commentary",
@@ -8003,8 +8003,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/leon-trotsky-YNq2M5NjyGu2x6LQ.jpg"
   },
   {
-    "id": "art_354",
-    "title": "Topic Request: The Philippines\u2019 National Debt Story",
+    "id": "art_359",
+    "title": "Topic Request: The Philippines’ National Debt Story",
     "date": "2025-07-13",
     "category": "Commentary",
     "source": "website",
@@ -8024,8 +8024,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/image-Y4LvPbrkwjHkNRPg.png"
   },
   {
-    "id": "art_355",
-    "title": "The Mayors Rejecting Confidential Funds\u2014and the Message They Send",
+    "id": "art_360",
+    "title": "The Mayors Rejecting Confidential Funds—and the Message They Send",
     "date": "2025-07-12",
     "category": "Commentary",
     "source": "website",
@@ -8047,7 +8047,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/3-mayoers-YNq22yZl8GS5kpWN.png"
   },
   {
-    "id": "art_356",
+    "id": "art_361",
     "title": "Build Build Build, Unmasked: A Research-Based Dissection of Systemic Corruption",
     "date": "2025-07-11",
     "category": "Commentary",
@@ -8070,7 +8070,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/billed-Yg2yj3V0gWIMXzr3.png"
   },
   {
-    "id": "art_357",
+    "id": "art_362",
     "title": "Leonor Briones: When Even the Guardians Are Accused",
     "date": "2025-07-11",
     "category": "Commentary",
@@ -8091,8 +8091,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/briones-ALpPP0rK1XHa5MEG.png"
   },
   {
-    "id": "art_358",
-    "title": "CAYETANO\u2019S DUTERTE REPATRIATION MOVE",
+    "id": "art_363",
+    "title": "CAYETANO’S DUTERTE REPATRIATION MOVE",
     "date": "2025-07-11",
     "category": "Commentary",
     "source": "website",
@@ -8113,7 +8113,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/cayetano-mxBX4VNW5zcPzvnM.png"
   },
   {
-    "id": "art_359",
+    "id": "art_364",
     "title": "The Story of Jun Lozada: A Hero's Journey from Whistleblower to Freedom",
     "date": "2025-07-10",
     "category": "Commentary",
@@ -8136,7 +8136,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/jun-lozada-Yyv09XRWG5tjn35m.png"
   },
   {
-    "id": "art_360",
+    "id": "art_365",
     "title": "Duterte's ICC Lawyer & Imee Marcos' Senate Report Insight ()",
     "date": "2025-07-10",
     "category": "Commentary",
@@ -8159,8 +8159,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/kauffman-mp8JW7wP1rFwapKg.png"
   },
   {
-    "id": "art_361",
-    "title": "Even Friendly Reporters Aren\u2019t Safe: What Eden Santos\u2019 Ban Says About Press Freedom",
+    "id": "art_366",
+    "title": "Even Friendly Reporters Aren’t Safe: What Eden Santos’ Ban Says About Press Freedom",
     "date": "2025-07-07",
     "category": "Commentary",
     "source": "website",
@@ -8182,8 +8182,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/eden-santos-mePJvojzOGt9kO6X.jpg"
   },
   {
-    "id": "art_362",
-    "title": "The Silence That Spoke Too Loud: Where the \u201cBam and Kiko Joining the Majority\u201d Story Really Began",
+    "id": "art_367",
+    "title": "The Silence That Spoke Too Loud: Where the “Bam and Kiko Joining the Majority” Story Really Began",
     "date": "2025-07-06",
     "category": "Commentary",
     "source": "website",
@@ -8205,7 +8205,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/morning-coffee-thoughts-m2WEEnDy82Tq6O1R.png"
   },
   {
-    "id": "art_363",
+    "id": "art_368",
     "title": "How Morning Coffee Thoughts Quietly Became Crowdfunded ()",
     "date": "2025-07-06",
     "category": "Commentary",
@@ -8225,8 +8225,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/morning-coffee-thoughts-dJob6r5VRbc9rl2b.png"
   },
   {
-    "id": "art_364",
-    "title": "What Is the Joint BPI Account Between Rodrigo and Sara That They Don\u2019t Want Investigated?",
+    "id": "art_369",
+    "title": "What Is the Joint BPI Account Between Rodrigo and Sara That They Don’t Want Investigated?",
     "date": "2025-06-28",
     "category": "Commentary",
     "source": "website",
@@ -8248,7 +8248,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/bpi-joint-YD0wDa00K1HNM0wZ.png"
   },
   {
-    "id": "art_365",
+    "id": "art_370",
     "title": "You Just Made Morning Coffee Thoughts a Micro-Influencer",
     "date": "2025-06-27",
     "category": "Commentary",
@@ -8270,7 +8270,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/screenshot-2025-06-27-at-2.25.38a-pm-Aq2JeM8Nb9sjKgKB.png"
   },
   {
-    "id": "art_366",
+    "id": "art_371",
     "title": "When DDS Arguments Masquerade as Political Insight",
     "date": "2025-06-27",
     "category": "Commentary",
@@ -8293,8 +8293,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/file_00000000486c61f899029debe96340bc-m7Vb80XVZRfo016w.png"
   },
   {
-    "id": "art_367",
-    "title": "Is Morality Really Subjective? A Reflection on Pura Luka Vega\u2019s Statement",
+    "id": "art_372",
+    "title": "Is Morality Really Subjective? A Reflection on Pura Luka Vega’s Statement",
     "date": "2025-06-27",
     "category": "Commentary",
     "source": "website",
@@ -8315,7 +8315,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/vega-Y4LvO0l2axFnEoyl.png"
   },
   {
-    "id": "art_368",
+    "id": "art_373",
     "title": "Why Religious Leaders and Members Support Duterte Despite Moral Contradictions",
     "date": "2025-06-26",
     "category": "Commentary",
@@ -8337,7 +8337,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/duterte-as-a-god-m5Knl4N4npc0QXO4.png"
   },
   {
-    "id": "art_369",
+    "id": "art_374",
     "title": "The Michael Maurilio Recantation and What It Says About Truth in Our Politics",
     "date": "2025-06-26",
     "category": "Commentary",
@@ -8360,8 +8360,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/risa-hontiveros-dJobGvJ2briW6bwR.png"
   },
   {
-    "id": "art_370",
-    "title": "Sara Duterte\u2019s Downfall: Why I Pity Her, But Can\u2019t Support Her",
+    "id": "art_375",
+    "title": "Sara Duterte’s Downfall: Why I Pity Her, But Can’t Support Her",
     "date": "2025-06-26",
     "category": "Commentary",
     "source": "website",
@@ -8383,8 +8383,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/sara-sad-dJobGn1vOaSrn19G.png"
   },
   {
-    "id": "art_371",
-    "title": "Fact-Checking Sara Duterte\u2019s Melbourne Posturing (Even If It Makes Me Grit My Teeth)",
+    "id": "art_376",
+    "title": "Fact-Checking Sara Duterte’s Melbourne Posturing (Even If It Makes Me Grit My Teeth)",
     "date": "2025-06-23",
     "category": "Commentary",
     "source": "website",
@@ -8406,7 +8406,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/sara-m6Lb8b5Q09Cp05Xo.png"
   },
   {
-    "id": "art_372",
+    "id": "art_377",
     "title": "Through the Smoke and Selfies: How to Spot Political Optics in the Philippines",
     "date": "2025-06-22",
     "category": "Commentary",
@@ -8429,7 +8429,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/optics-mk3Jl7JxeOcyDRGL.png"
   },
   {
-    "id": "art_373",
+    "id": "art_378",
     "title": "Christian Esguerra and Facts First: Why He Still Inspires Me",
     "date": "2025-06-21",
     "category": "Commentary",
@@ -8452,7 +8452,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/9da84306-0150-4e8f-a652-ddd41c0075c8-AzGNED0RZQsZWNG1.png"
   },
   {
-    "id": "art_374",
+    "id": "art_379",
     "title": "Morning Coffee Thoughts: It Finally Has a Home",
     "date": "2025-06-21",
     "category": "Commentary",
@@ -8471,7 +8471,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/014ad65f-f791-4fee-85fe-7543b3877ade-dOqDr7D8OWspWl1X.png"
   },
   {
-    "id": "art_375",
+    "id": "art_380",
     "title": "Why I Keep Watching Bongbong Marcos: Patterns, Power, and the Silence That Protects Him",
     "date": "2025-06-20",
     "category": "Commentary",
@@ -8494,8 +8494,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/bbm-AMq8MR72vphopV7g.png"
   },
   {
-    "id": "art_376",
-    "title": "Bong Revilla\u2019s Lawsuit Plan: Just Because You Can, Doesn\u2019t Mean You Should",
+    "id": "art_381",
+    "title": "Bong Revilla’s Lawsuit Plan: Just Because You Can, Doesn’t Mean You Should",
     "date": "2025-05-27",
     "category": "Commentary",
     "source": "website",
@@ -8517,8 +8517,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/1212_12-m2W8V52rykCe1wyj.jpg"
   },
   {
-    "id": "art_377",
-    "title": "Unipink Isn\u2019t Unity\u2014It\u2019s Exhaustion in Disguise",
+    "id": "art_382",
+    "title": "Unipink Isn’t Unity—It’s Exhaustion in Disguise",
     "date": "2025-05-27",
     "category": "Commentary",
     "source": "website",
@@ -8540,7 +8540,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/fcc605b9-81dd-474e-b456-b51d67d22307-A85ePrGRRqT5qDJy.png"
   },
   {
-    "id": "art_378",
+    "id": "art_383",
     "title": "How Filipinos Argue: A Pyramid Framework for Philippine Political Discourse",
     "date": "2025-05-22",
     "category": "Commentary",
@@ -8563,7 +8563,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/1-mv0WgK7n4xUvDyRN.png"
   },
   {
-    "id": "art_379",
+    "id": "art_384",
     "title": "We Built the Troll Farms: How the Philippines Engineered Disinformation",
     "date": "2025-05-19",
     "category": "Commentary",
@@ -8584,7 +8584,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/dds-sila-forever-Yg2jn1kryKC6E6yX.png"
   },
   {
-    "id": "art_380",
+    "id": "art_385",
     "title": "Bong Revilla, Budots, and the Fall of Gimmick Politics in the Philippines |",
     "date": "2025-05-18",
     "category": "Commentary",
@@ -8597,7 +8597,7 @@ const ARTICLES_META = [
       "Inquirer"
     ],
     "excerpt": "",
-    "word_count": 2174,
+    "word_count": 2186,
     "read_time": 11,
     "url": "https://www.morningcoffeethoughts.org/bong-revilla-budots-and-the-fall-of-gimmick-politics-in-the-philippines](https://www.morningcoffeethoughts.org/bong-revilla-budots-and-the-fall-of-gimmick-politics-in-the-philippines",
     "fb_post_id": "",
@@ -8607,8 +8607,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/budots-na-naman-A0xlJXpGBgH1Pgke.png"
   },
   {
-    "id": "art_381",
-    "title": "How the DDS Contribute to the Ruin of the Philippines\u2014and Why It Still Matters",
+    "id": "art_386",
+    "title": "How the DDS Contribute to the Ruin of the Philippines—and Why It Still Matters",
     "date": "2025-04-21",
     "category": "Commentary",
     "source": "website",
@@ -8620,7 +8620,7 @@ const ARTICLES_META = [
       "Marcos"
     ],
     "excerpt": "",
-    "word_count": 3150,
+    "word_count": 3165,
     "read_time": 16,
     "url": "https://www.morningcoffeethoughts.org/how-the-dds-contribute-to-the-ruin-of-the-philippinesand-why-it-still-matters",
     "fb_post_id": "",
@@ -8630,7 +8630,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/smile-mnlW43PjE7UN6aJ6.png"
   },
   {
-    "id": "art_382",
+    "id": "art_387",
     "title": "The Corrupt and the Wicked Do Not Rest: Who Watches the Watchers?",
     "date": "2025-04-19",
     "category": "Commentary",
@@ -8653,7 +8653,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/corruption-YNqB2PLkE3HMKn64.png"
   },
   {
-    "id": "art_383",
+    "id": "art_388",
     "title": "Why Voting for Another Tulfo in the Senate Is a Bad Idea ()",
     "date": "2025-04-18",
     "category": "Commentary",
@@ -8676,8 +8676,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/tulfo-YNqBBxbB3DFqr25n.png"
   },
   {
-    "id": "art_384",
-    "title": "The Torture and Death of Archimedes Trajano: Imee Marcos\u2019 Role and the Quest for Justice",
+    "id": "art_389",
+    "title": "The Torture and Death of Archimedes Trajano: Imee Marcos’ Role and the Quest for Justice",
     "date": "2025-04-17",
     "category": "Commentary",
     "source": "website",
@@ -8699,7 +8699,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/remember1081_archie-YD0lloB5j3Co9yr0.webp"
   },
   {
-    "id": "art_385",
+    "id": "art_390",
     "title": "Camille Villar: You Want Our Vote? Fix PrimeWater First",
     "date": "2025-04-17",
     "category": "Commentary",
@@ -8719,7 +8719,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/camille-villar-alyansa-ng-bagong-pilipinas-proclamation-pasay-february-18-2025-001-scaled-dWxvvL36nGtzwxb2.webp"
   },
   {
-    "id": "art_386",
+    "id": "art_391",
     "title": "Challenging Political Dynasties, One Step at a Time",
     "date": "2025-04-16",
     "category": "Commentary",
@@ -8742,7 +8742,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/poster-m2W8aZGzPBH2O855.png"
   },
   {
-    "id": "art_387",
+    "id": "art_392",
     "title": "Is the Marcos vs. Duterte Feud Just Good for Show? |",
     "date": "2025-04-16",
     "category": "Commentary",
@@ -8765,7 +8765,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/no-dOqa8PrGlEfPnorw.png"
   },
   {
-    "id": "art_388",
+    "id": "art_393",
     "title": "Why \"VOTE WISELY\" Doesn't Work in the Philippines |",
     "date": "2025-04-07",
     "category": "Commentary",
@@ -8788,7 +8788,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/vote-wisely-dWxv0Vn3xqhky1VO.png"
   },
   {
-    "id": "art_389",
+    "id": "art_394",
     "title": "The \"Weak Generation\"? A Reflection on Filipino Youth, Strength, and Misunderstood Resilience",
     "date": "2025-04-02",
     "category": "Commentary",
@@ -8807,7 +8807,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/weak-cover-Yg2j14b7eZiEOXqB.png"
   },
   {
-    "id": "art_390",
+    "id": "art_395",
     "title": "Rebuilding the Nation Through National Discipline: A Presidential Agenda That Starts With Us ()",
     "date": "2025-04-01",
     "category": "Commentary",
@@ -8828,7 +8828,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/tatamaan-m5KMPonlJZSRjzkz.png"
   },
   {
-    "id": "art_391",
+    "id": "art_396",
     "title": "Creativity or Copyright Theft? Why AI's Ghibli Imagery Tests the Boundaries of Fair Use and Artistry",
     "date": "2025-03-31",
     "category": "Commentary",
@@ -8847,7 +8847,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/ghibli-YrDW31E01Nhn9nMn.png"
   },
   {
-    "id": "art_392",
+    "id": "art_397",
     "title": "If You Idolize Duterte as a Parent, What Values Are You Teaching Your Kids?",
     "date": "2025-03-30",
     "category": "Commentary",
@@ -8869,7 +8869,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/obedience-YD0lrjNpwvCqPXJ2.png"
   },
   {
-    "id": "art_393",
+    "id": "art_398",
     "title": "Why Does Rodrigo Duterte Still Have Followers? A Personal Reflection",
     "date": "2025-03-30",
     "category": "Commentary",
@@ -8892,7 +8892,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/digong-YZ98Wka0neUkZR2B.png"
   },
   {
-    "id": "art_394",
+    "id": "art_399",
     "title": "Vox Populi, Vox Dei? A Reality Check on Democracy in the Philippines",
     "date": "2025-03-29",
     "category": "Commentary",
@@ -8915,7 +8915,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/vox-mp8WeDBp1vi8Z7yv.png"
   },
   {
-    "id": "art_395",
+    "id": "art_400",
     "title": "The Fake News Trap: When the Display Looks Real but the Truth Is Hidden",
     "date": "2025-03-27",
     "category": "Commentary",
@@ -8938,7 +8938,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/pro-duterte-vloggers-house-tri-comm-house-representatives_2025-03-21_12-10-50-YBg75ozpV5HLoGzy.jpg"
   },
   {
-    "id": "art_396",
+    "id": "art_401",
     "title": "Leila de Lima: The Unbreakable Spirit",
     "date": "2025-03-23",
     "category": "Commentary",
@@ -8961,7 +8961,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/de5-mk3vx1NB3acNMBB4.png"
   },
   {
-    "id": "art_397",
+    "id": "art_402",
     "title": "Vico Sotto: A Rare Gem in Philippine Politics",
     "date": "2025-03-23",
     "category": "Commentary",
@@ -8984,8 +8984,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/vico-sotto-100-days-pasig-october-8-2019-003-Yg2jX25W3rhqw8Dw.jpg"
   },
   {
-    "id": "art_398",
-    "title": "Harry Roque Wants Asylum \u2014 The Netherlands Should Say No",
+    "id": "art_403",
+    "title": "Harry Roque Wants Asylum — The Netherlands Should Say No",
     "date": "2025-03-22",
     "category": "Commentary",
     "source": "website",
@@ -9007,8 +9007,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/hp2-YBg7xknebaUQqQba.png"
   },
   {
-    "id": "art_399",
-    "title": "When \u2018My Truth\u2019 Becomes Fake News: How \u2018Daw\u2019 Fuels Misinformation in the Philippines",
+    "id": "art_404",
+    "title": "When ‘My Truth’ Becomes Fake News: How ‘Daw’ Fuels Misinformation in the Philippines",
     "date": "2025-03-22",
     "category": "Commentary",
     "source": "website",
@@ -9030,7 +9030,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/iyakan-YD0l5b78zDHVwelX.png"
   },
   {
-    "id": "art_400",
+    "id": "art_405",
     "title": "Fact-Checking Without Fact-Checkers: How Filipinos Can Verify Information Before Sharing",
     "date": "2025-03-20",
     "category": "Commentary",
@@ -9052,7 +9052,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/fact-check-ALpep15DP8CV65j5.png"
   },
   {
-    "id": "art_401",
+    "id": "art_406",
     "title": "You Think Duterte Is the Only Problem? Think Again.",
     "date": "2025-03-18",
     "category": "Commentary",
@@ -9065,7 +9065,7 @@ const ARTICLES_META = [
       "ICC"
     ],
     "excerpt": "",
-    "word_count": 2193,
+    "word_count": 2203,
     "read_time": 12,
     "url": "https://www.morningcoffeethoughts.org/you-think-duterte-is-the-only-problem-think-again",
     "fb_post_id": "",
@@ -9075,7 +9075,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/duterte-in-prison-mxB4kNMq9bT00xZB.png"
   },
   {
-    "id": "art_402",
+    "id": "art_407",
     "title": "What the Hell Happened to Harry Roque?",
     "date": "2025-03-14",
     "category": "Commentary",
@@ -9098,7 +9098,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/harry-roque-29october2024-AoPWlwv0ophZj3ej.jpg"
   },
   {
-    "id": "art_403",
+    "id": "art_408",
     "title": "Camille Villar, Inquirer.net, and the Blurred Line Between News and PR",
     "date": "2025-03-08",
     "category": "Commentary",
@@ -9121,8 +9121,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/image-3-8-25-at-9.12a-pm-AVL1lQqraoFkQ5ya.jpeg"
   },
   {
-    "id": "art_404",
-    "title": "The VAT on Electricity That Shouldn\u2019t Be There",
+    "id": "art_409",
+    "title": "The VAT on Electricity That Shouldn’t Be There",
     "date": "2025-03-02",
     "category": "Commentary",
     "source": "website",
@@ -9142,8 +9142,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/bvat-AGBnXMeZGaS6p6nN.png"
   },
   {
-    "id": "art_405",
-    "title": "The Boomerang Effect: Why Sara Duterte\u2019s Words Always Come Back to Haunt Her",
+    "id": "art_410",
+    "title": "The Boomerang Effect: Why Sara Duterte’s Words Always Come Back to Haunt Her",
     "date": "2025-02-28",
     "category": "Commentary",
     "source": "website",
@@ -9165,8 +9165,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/hq720-AzG3lyvQBGhkr6LO.jpg"
   },
   {
-    "id": "art_406",
-    "title": "Who Gets to Exist? America\u2019s Erasure of LGBTQ+ Rights",
+    "id": "art_411",
+    "title": "Who Gets to Exist? America’s Erasure of LGBTQ+ Rights",
     "date": "2025-02-26",
     "category": "Commentary",
     "source": "website",
@@ -9185,7 +9185,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/not-in-america-AR0MPB1e9QtnX5Vb.png"
   },
   {
-    "id": "art_407",
+    "id": "art_412",
     "title": "How to Erase a Revolution: If I Were in Power, How Would I Make Filipinos Forget EDSA 1986?",
     "date": "2025-02-24",
     "category": "Commentary",
@@ -9204,7 +9204,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/how-to-make-people-forget-edsa-mjEqa3Ozz8FZxMje.png"
   },
   {
-    "id": "art_408",
+    "id": "art_413",
     "title": "Sara Duterte Impeachment: Political Downfall of a Once-Untouchable Power Player",
     "date": "2025-02-20",
     "category": "Commentary",
@@ -9227,7 +9227,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/sara-duterte-under-fire-mjEq3MxjxDUNl4B0.png"
   },
   {
-    "id": "art_409",
+    "id": "art_414",
     "title": "15 Steps to High-Ranking Blog Posts",
     "date": "2025-02-16",
     "category": "Commentary",
@@ -9250,7 +9250,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/page-2-YyvZVwzX71hjkXj6.png"
   },
   {
-    "id": "art_410",
+    "id": "art_415",
     "title": "Should Upwork Clients Rethink 'No AI' in Upwork Job Posts for Efficiency",
     "date": "2025-02-16",
     "category": "Commentary",
@@ -9262,7 +9262,7 @@ const ARTICLES_META = [
       "Assisted"
     ],
     "excerpt": "",
-    "word_count": 3354,
+    "word_count": 3367,
     "read_time": 17,
     "url": "https://www.morningcoffeethoughts.org/the-no-ai-dilemma-why-upwork-clients-should-rethink-their-stance-on-ai-assisted-writers",
     "fb_post_id": "",
@@ -9272,8 +9272,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/no-si-AR0MvQyzJDFypNL4.png"
   },
   {
-    "id": "art_411",
-    "title": "Faith in the Face of Suffering: Wrestling with the Question That Won\u2019t Go Away",
+    "id": "art_416",
+    "title": "Faith in the Face of Suffering: Wrestling with the Question That Won’t Go Away",
     "date": "2025-02-16",
     "category": "Commentary",
     "source": "website",
@@ -9292,7 +9292,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/footsteps-m7V50bbkQZuKn0Z6.png"
   },
   {
-    "id": "art_412",
+    "id": "art_417",
     "title": "The UK and US Reject AI Declaration: A Strategic Move or a Missed Opportunity?",
     "date": "2025-02-12",
     "category": "Commentary",
@@ -9311,7 +9311,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/pm-in-a-family-photograph-during-the-ai-action-summit-in-paris-france-on-february-11-2025-pib-AVL1v6oZGnuZX4l8.webp"
   },
   {
-    "id": "art_413",
+    "id": "art_418",
     "title": "AI Self-Replication: Impacts and Concerns",
     "date": "2025-02-12",
     "category": "Commentary",
@@ -9330,8 +9330,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/self-duplication-A85Evno6GWfWKvJ3.png"
   },
   {
-    "id": "art_414",
-    "title": "France's \u20ac10 Billion AI Investment in Supercomputer ()",
+    "id": "art_419",
+    "title": "France's €10 Billion AI Investment in Supercomputer ()",
     "date": "2025-02-12",
     "category": "Commentary",
     "source": "website",
@@ -9350,7 +9350,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/france-mjEq13LeMZhrMl0Q.png"
   },
   {
-    "id": "art_415",
+    "id": "art_420",
     "title": "Breaking Free from Hopelessness and Oppression",
     "date": "2025-02-11",
     "category": "Commentary",
@@ -9371,7 +9371,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/dalla-e-2025-02-11-08.30.57---a-tired-filipina-woman-sitting-outside-her-small-hut-in-a-shantytown-in-tondo-manila.-she-wears-worn-out-clothes-her-face-showing-exhaustion-and-dee-YyvZW5XMj2ueyp7J.webp"
   },
   {
-    "id": "art_416",
+    "id": "art_421",
     "title": "AI-Powered Troll Farms and the Battle for Truth in the Philippines",
     "date": "2025-02-11",
     "category": "Commentary",
@@ -9394,7 +9394,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/ai-troll-farms-d957zMnRkxUxEvN7.png"
   },
   {
-    "id": "art_417",
+    "id": "art_422",
     "title": "Gaslit Nation: When Filipino Politics Makes You Doubt Reality",
     "date": "2025-02-03",
     "category": "Commentary",
@@ -9417,7 +9417,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/manipulated-AQEDBKp7MVtWnNv7.png"
   },
   {
-    "id": "art_418",
+    "id": "art_423",
     "title": "The Zero-Sum Illusion: Are Filipinos Wired to Lose?",
     "date": "2025-02-02",
     "category": "Commentary",
@@ -9439,7 +9439,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/tug-of-war-YbNqwJaQy8cg3PZE.png"
   },
   {
-    "id": "art_419",
+    "id": "art_424",
     "title": "Balota and the Philippine Curse of Repeating History",
     "date": "2025-02-01",
     "category": "Commentary",
@@ -9462,8 +9462,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/balota-A0x1Gg8xD5tgbjRV.png"
   },
   {
-    "id": "art_420",
-    "title": "Tired of Loving a Country That Won\u2019t Love Itself",
+    "id": "art_425",
+    "title": "Tired of Loving a Country That Won’t Love Itself",
     "date": "2025-02-01",
     "category": "Commentary",
     "source": "website",
@@ -9481,7 +9481,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/frustrated-mePbwPeEMJTgno2R.png"
   },
   {
-    "id": "art_421",
+    "id": "art_426",
     "title": "DeepSeek AI: National Security Risk Explained",
     "date": "2025-01-31",
     "category": "Commentary",
@@ -9501,7 +9501,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/banned-Yg2qvZQ8jNSnnM3x.png"
   },
   {
-    "id": "art_422",
+    "id": "art_427",
     "title": "Deepseek: Disrupting the AI Industry with Open-Source",
     "date": "2025-01-30",
     "category": "Commentary",
@@ -9520,7 +9520,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/screenshot-2025-01-30-at-11.46.22a-am-YX4aVKr3Vpfn42kW.png"
   },
   {
-    "id": "art_423",
+    "id": "art_428",
     "title": "Signs of Hearing Loss and My Hearing Aid Journey",
     "date": "2025-01-18",
     "category": "Commentary",
@@ -9539,7 +9539,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/hearing-loss-Yanq9vEQMvCzr778.png"
   },
   {
-    "id": "art_424",
+    "id": "art_429",
     "title": "AI Content Writing & Skilled Writers Unite",
     "date": "2025-01-15",
     "category": "Commentary",
@@ -9558,7 +9558,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/skilled-content-writer-AVL1JxEK0PtEp6On.png"
   },
   {
-    "id": "art_425",
+    "id": "art_430",
     "title": "Why I Hate Grave of the Fireflies: A Beautiful Pain That Haunts Me",
     "date": "2025-01-13",
     "category": "Commentary",
@@ -9568,7 +9568,7 @@ const ARTICLES_META = [
       "Setsuko"
     ],
     "excerpt": "",
-    "word_count": 1672,
+    "word_count": 1686,
     "read_time": 9,
     "url": "https://www.morningcoffeethoughts.org/why-i-hate-grave-of-the-fireflies-a-beautiful-pain-that-haunts-me",
     "fb_post_id": "",
@@ -9578,7 +9578,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/title-screen-dJo5BvVB9KcpOGp8.jpg"
   },
   {
-    "id": "art_426",
+    "id": "art_431",
     "title": "Changing What We Cannot Accept: Reflections on the Philippine Elections",
     "date": "2025-01-13",
     "category": "Commentary",
@@ -9599,7 +9599,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/election-dWxB0qgPeLfvjb8Y.png"
   },
   {
-    "id": "art_427",
+    "id": "art_432",
     "title": "Living with Sleep Apnea: A Personal Journey",
     "date": "2025-01-12",
     "category": "Commentary",
@@ -9618,8 +9618,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/sleep-apnea-YanqM0KxWEUOQe8y.png"
   },
   {
-    "id": "art_428",
-    "title": "Scope Creep in Freelancing: Let\u2019s Talk About That \"One More Thing\"",
+    "id": "art_433",
+    "title": "Scope Creep in Freelancing: Let’s Talk About That \"One More Thing\"",
     "date": "2025-01-12",
     "category": "Commentary",
     "source": "website",
@@ -9639,7 +9639,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/scope-creep-mp8q6KzQZotGqnrz.png"
   },
   {
-    "id": "art_429",
+    "id": "art_434",
     "title": "The Hidden Dangers of Contact Lenses",
     "date": "2025-01-11",
     "category": "Commentary",
@@ -9658,7 +9658,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/contact-lens-A3QOaeeMXZigzKOE.png"
   },
   {
-    "id": "art_430",
+    "id": "art_435",
     "title": "Freelancing Subscriptions for Success",
     "date": "2025-01-08",
     "category": "Commentary",
@@ -9678,7 +9678,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/subscription-freelancing-AGBnr6nw4gcBj1yw.png"
   },
   {
-    "id": "art_431",
+    "id": "art_436",
     "title": "Condemning Mark Zuckerberg's Fact-Checking Exodus: A Reckless Gamble with the Truth",
     "date": "2025-01-07",
     "category": "Commentary",
@@ -9700,8 +9700,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/6786d105c19ca-AzG3rN6y37C5EqKw.webp"
   },
   {
-    "id": "art_432",
-    "title": "Mastering Discovery Calls: A Freelancer\u2019s Guide to Finding the Right Projects ()",
+    "id": "art_437",
+    "title": "Mastering Discovery Calls: A Freelancer’s Guide to Finding the Right Projects ()",
     "date": "2024-12-13",
     "category": "Commentary",
     "source": "website",
@@ -9710,7 +9710,7 @@ const ARTICLES_META = [
       "Labor"
     ],
     "excerpt": "",
-    "word_count": 1766,
+    "word_count": 1777,
     "read_time": 9,
     "url": "https://www.morningcoffeethoughts.org/mastering-discovery-calls-a-freelancers-guide-to-finding-the-right-projects",
     "fb_post_id": "",
@@ -9720,7 +9720,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/talkijngnto-client-mePv9Or7b1U129NZ.png"
   },
   {
-    "id": "art_433",
+    "id": "art_438",
     "title": "Brownout Survival Tools for Freelancers: Affordable and Reliable Solutions",
     "date": "2024-12-08",
     "category": "Commentary",
@@ -9740,7 +9740,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/brownout-kit-mk3zW3QgxQIElpaw.png"
   },
   {
-    "id": "art_434",
+    "id": "art_439",
     "title": "Micromanagement in Freelancing: Why It Happens and How to Handle It",
     "date": "2024-12-08",
     "category": "Commentary",
@@ -9761,7 +9761,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/micromanagement-mjEv6kpbb4FM36EV.png"
   },
   {
-    "id": "art_435",
+    "id": "art_440",
     "title": "Think Before You Post: The Legal and Emotional Fallout of Sharing Private Messages",
     "date": "2024-12-04",
     "category": "Commentary",
@@ -9781,8 +9781,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/maris-racal-anthony-jennings-jam-villanueva-m2WpRqgEzKHeVpv0.jpg"
   },
   {
-    "id": "art_436",
-    "title": "Sara Duterte\u2019s Downfall: A Front-Row Seat to Political Chaos",
+    "id": "art_441",
+    "title": "Sara Duterte’s Downfall: A Front-Row Seat to Political Chaos",
     "date": "2024-11-26",
     "category": "Commentary",
     "source": "website",
@@ -9803,7 +9803,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/burning-candle-ALpnxREEkzFneDo0.png"
   },
   {
-    "id": "art_437",
+    "id": "art_442",
     "title": "Can Sara Duterte Be Disbarred and Impeached?",
     "date": "2024-11-25",
     "category": "Commentary",
@@ -9826,8 +9826,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/sara-duterte-screenshots-video_2024-11-25_11-26-29-YbNvpq7yVphKwj5Z.jpg"
   },
   {
-    "id": "art_438",
-    "title": "Freelancer\u2019s Dilemma: Upwork, PayPal, and the Waiting Game |",
+    "id": "art_443",
+    "title": "Freelancer’s Dilemma: Upwork, PayPal, and the Waiting Game |",
     "date": "2024-11-25",
     "category": "Commentary",
     "source": "website",
@@ -9836,7 +9836,7 @@ const ARTICLES_META = [
       "Freelancers"
     ],
     "excerpt": "",
-    "word_count": 937,
+    "word_count": 992,
     "read_time": 5,
     "url": "https://www.morningcoffeethoughts.org/freelancers-dilemma-upwork-paypal-and-the-waiting-game",
     "fb_post_id": "",
@@ -9846,7 +9846,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/where-is-my-money-mnlvp3GG9MtV9jwq.png"
   },
   {
-    "id": "art_439",
+    "id": "art_444",
     "title": "Senatorial Candidate Spotlight: Heidi Mendoza",
     "date": "2024-11-24",
     "category": "Commentary",
@@ -9869,7 +9869,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/heidi_mendoza-mv0DpxDe8efLneby.jpg"
   },
   {
-    "id": "art_440",
+    "id": "art_445",
     "title": "Project Almanac and a Box of Memories",
     "date": "2024-11-22",
     "category": "Commentary",
@@ -9888,7 +9888,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/1989-AzGeVvaB68uJVpQX.webp"
   },
   {
-    "id": "art_441",
+    "id": "art_446",
     "title": "The Blinking Cursor and the Silent Garden ()",
     "date": "2024-11-22",
     "category": "Commentary",
@@ -9897,7 +9897,7 @@ const ARTICLES_META = [
       "Philippine Politics"
     ],
     "excerpt": "",
-    "word_count": 1017,
+    "word_count": 1024,
     "read_time": 6,
     "url": "https://www.morningcoffeethoughts.org/the-blinking-cursor-and-the-silent-garden",
     "fb_post_id": "",
@@ -9907,7 +9907,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/air-dOqyPR8BPJsnp8J0.png"
   },
   {
-    "id": "art_442",
+    "id": "art_447",
     "title": "Understanding Filipino Criticism Culture: Why We Love to Criticize But Hate Feedback",
     "date": "2024-11-18",
     "category": "Commentary",
@@ -9926,7 +9926,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/criticism-AE0ojlo620cEbEB4.png"
   },
   {
-    "id": "art_443",
+    "id": "art_448",
     "title": "A Reflection on Filipino Crab Mentality",
     "date": "2024-11-18",
     "category": "Commentary",
@@ -9945,7 +9945,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/crab-mentality-dJo6z3gNONtPNelk.png"
   },
   {
-    "id": "art_444",
+    "id": "art_449",
     "title": "Oversharing in 2024: The Real Dangers of Telling Too Much Online",
     "date": "2024-11-16",
     "category": "Commentary",
@@ -9964,7 +9964,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/burger-YbNvlPLOPRFPnyVg.png"
   },
   {
-    "id": "art_445",
+    "id": "art_450",
     "title": "When a Client Tells You Not to Lower Your Rate: A Lesson in Self-Value",
     "date": "2024-11-15",
     "category": "Commentary",
@@ -9983,7 +9983,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/coffee-laptop-d95Kj3RG9xfKy4b9.png"
   },
   {
-    "id": "art_446",
+    "id": "art_451",
     "title": "Why Installing Desktop Apps on Your Phone Might Be Hurting Your Freelance Work-Life Balance",
     "date": "2024-11-15",
     "category": "Commentary",
@@ -10002,8 +10002,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/man-checking-phone-AQEya4QRJZUBOgkq.webp"
   },
   {
-    "id": "art_447",
-    "title": "Don\u2019t Give Up on Freelancing Just Yet: My Story and Why You Should Hang On",
+    "id": "art_452",
+    "title": "Don’t Give Up on Freelancing Just Yet: My Story and Why You Should Hang On",
     "date": "2024-11-15",
     "category": "Commentary",
     "source": "website",
@@ -10021,8 +10021,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/problematic-AQEya3WvK8UWa2b9.webp"
   },
   {
-    "id": "art_448",
-    "title": "Is Freelancing Still Worth It in 2025? Let\u2019s Get Real",
+    "id": "art_453",
+    "title": "Is Freelancing Still Worth It in 2025? Let’s Get Real",
     "date": "2024-11-12",
     "category": "Commentary",
     "source": "website",
@@ -10041,8 +10041,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/freelancing-A0xwzPQeewf11BjW.png"
   },
   {
-    "id": "art_449",
-    "title": "The Reality of Freelance Life\u2014Beyond the Myths and Digital Chaos",
+    "id": "art_454",
+    "title": "The Reality of Freelance Life—Beyond the Myths and Digital Chaos",
     "date": "2024-11-10",
     "category": "Commentary",
     "source": "website",
@@ -10060,7 +10060,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/dalla-e-2024-11-10-14.30.09---cinematic-horizontal-cover-image-of-a-filipino-man-in-his-50s-with-glasses-a-skinhead-haircut-and-a-short-beard-and-mustache.-he-is-sitting-at-his-w-AzGePPEpjpUM2M21.webp"
   },
   {
-    "id": "art_450",
+    "id": "art_455",
     "title": "Drawing Inspiration from Tech Visionaries",
     "date": "2024-11-10",
     "category": "Commentary",
@@ -10083,8 +10083,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/billionaires-A85wG9kpB9swLVQQ.png"
   },
   {
-    "id": "art_451",
-    "title": "A Reflection on America\u2019s Crossroads",
+    "id": "art_456",
+    "title": "A Reflection on America’s Crossroads",
     "date": "2024-11-10",
     "category": "Commentary",
     "source": "website",
@@ -10105,8 +10105,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/america-m5KwGoo8xXuZ0Prg.png"
   },
   {
-    "id": "art_452",
-    "title": "Freelance Content Writers Are Back in High Demand, Here\u2019s Why ()",
+    "id": "art_457",
+    "title": "Freelance Content Writers Are Back in High Demand, Here’s Why ()",
     "date": "2024-11-08",
     "category": "Commentary",
     "source": "website",
@@ -10124,7 +10124,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/content-writer-m2WpnpoV6JUWpObz.png"
   },
   {
-    "id": "art_453",
+    "id": "art_458",
     "title": "The Fear That Became My Guide",
     "date": "2024-11-07",
     "category": "Commentary",
@@ -10143,7 +10143,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/dalla-e-2024-11-07-12.43.48---a-cinematic-horizontal-image-of-a-single-candle-burning-in-the-middle-of-a-storm.-the-candle-stands-alone-its-flame-flickering-but-resilient-against-AoPvbBGyV0c4x6EG.webp"
   },
   {
-    "id": "art_454",
+    "id": "art_459",
     "title": "Benefits and Challenges of Morning Digital Detox",
     "date": "2024-11-04",
     "category": "Commentary",
@@ -10163,7 +10163,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/1c057767-41fb-456e-a36d-0fab9a13af43-AE0o7M2POQsgGQnr.webp"
   },
   {
-    "id": "art_455",
+    "id": "art_460",
     "title": "The Value of Solitude: Embracing Time Alone",
     "date": "2024-11-04",
     "category": "Commentary",
@@ -10182,7 +10182,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/dalla-e-2024-11-04-10.22.08---a-cinematic-horizontal-image-of-a-person-sitting-alone-in-a-peaceful-natural-setting-surrounded-by-serene-beauty.-the-person-is-seated-on-a-rock-or-YX4yjXQeW7IjPx35.webp"
   },
   {
-    "id": "art_456",
+    "id": "art_461",
     "title": "Finding Peace Through Emotional Closure and Healing",
     "date": "2024-11-03",
     "category": "Commentary",
@@ -10201,7 +10201,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/download-4-YX4yxQEMo5fjX0lw.jpg"
   },
   {
-    "id": "art_457",
+    "id": "art_462",
     "title": "The Filipino's Art of Calling Out Stupidity",
     "date": "2024-10-24",
     "category": "Commentary",
@@ -10223,7 +10223,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/bobo-AwvMpOegLRhMqxwm.png"
   },
   {
-    "id": "art_458",
+    "id": "art_463",
     "title": "Feathers of Submission: How Politicians Control Filipinos",
     "date": "2024-10-19",
     "category": "Commentary",
@@ -10246,7 +10246,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/chicken-AR0yve2X0NfXDLbJ.webp"
   },
   {
-    "id": "art_459",
+    "id": "art_464",
     "title": "Are We the Reason Corruption Thrives in the Philippines?",
     "date": "2024-10-11",
     "category": "Commentary",
@@ -10266,7 +10266,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/ikaw-YNqyjXXVnRTnDePj.png"
   },
   {
-    "id": "art_460",
+    "id": "art_465",
     "title": "The Stigma of Negative Thinking",
     "date": "2024-05-08",
     "category": "Commentary",
@@ -10285,7 +10285,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/negative-thinking-YNqy2GkErDHekL2W.png"
   },
   {
-    "id": "art_461",
+    "id": "art_466",
     "title": "The Ati of Boracay: Paradise and the Price of Progress",
     "date": "2024-03-24",
     "category": "Commentary",
@@ -10308,8 +10308,8 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/errljimtuvvhjzt-800x450-nopad-uzi1yTxFHdXqIbfc.jpg"
   },
   {
-    "id": "art_462",
-    "title": "My First 24 Hours with the MacBook Air M1 (2020)",
+    "id": "art_467",
+    "title": "My First 24 Hours with the MacBook Air M1 (2020) ()",
     "date": "2025-01-01",
     "category": "Commentary",
     "source": "website",
@@ -10318,7 +10318,7 @@ const ARTICLES_META = [
       "Freelancing"
     ],
     "excerpt": "",
-    "word_count": 1297,
+    "word_count": 1356,
     "read_time": 7,
     "url": "https://www.morningcoffeethoughts.org/my-first-24-hours-with-the-macbook-air-m1-2020](https://www.morningcoffeethoughts.org/my-first-24-hours-with-the-macbook-air-m1-2020",
     "fb_post_id": "",
@@ -10328,7 +10328,7 @@ const ARTICLES_META = [
     "image": "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1440,h=756,fit=crop,f=jpeg/YKb6lR8JqoUWnrNv/mac-edited-AGB6QzoJ1bTkNZVy.png"
   },
   {
-    "id": "art_463",
+    "id": "art_468",
     "title": "The PrimeWater Crisis in Cabanatuan: Corporate Predation Disguised as Public-Private Partnership",
     "date": "2024-12-01",
     "category": "Commentary",
@@ -10351,7 +10351,7 @@ const ARTICLES_META = [
     "image": ""
   },
   {
-    "id": "art_464",
+    "id": "art_469",
     "title": "Defending Pag-asa: Standing Firm for the West Philippine Sea",
     "date": "2024-12-01",
     "category": "Commentary",
@@ -10372,164 +10372,21 @@ const ARTICLES_META = [
   },
   {
     "id": "art_470",
-    "title": "UNEMPLOYMENT RATE SURGES TO 5.8% IN JANUARY",
-    "date": "2026-03-13",
-    "tags": [
-      "Economy",
-      "Government"
-    ],
-    "image": "https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/651183906_122121522201092788_127082889480615591_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGkodMqfQmXfUjZBiIPfp0mAByYNya21GYAHJg3JrbUZmoMpZVRaXSgsViDGHnYP8M&_nc_ohc=B25IkAQVm98Q7kNvwEbgCx4&_nc_oc=AdlvODnjNNutfugtpMvtiJUpEY8BiViW8z6nMLdOfKYp1746y5rHjCGo_sn7YYxVQDbmEWCR_YUw0GBZ3VwK-YLN&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=SmupOQfJRA1bMuRUPZAfKg&_nc_ss=8&oh=00_AfwZvJTVi97T0RaOuuOrFrV3eYmRFsPs60CYEAOVsSSPvw&oe=69B97D7D",
-    "excerpt": "How fast can a labor market collapse? In December, the Philippine Statistics Authority reported a 4.4% unemployment rate.",
-    "word_count": 523,
-    "read_time": 3,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_471",
-    "title": "FRASCO OUT AS DOT CHIEF, NAMED PRESIDENTIAL ADVISER FOR SUSTAINABLE AND RESILIENT COMMUNITIES",
-    "date": "2026-03-13",
-    "tags": [
-      "Government",
-      "Tourism",
-      "ASEAN"
-    ],
-    "image": "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/650785712_122121494001092788_2025905995941163597_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGLIplersHdlLuuzkQsUJScvp12fy2Bmze-nXZ_LYGbN5e4BxlSgwiX-gQxgL2BQ1Q&_nc_ohc=nQ4TqZsFlWIQ7kNvwHnuW0w&_nc_oc=AdlGYmZEORHdm5_8S0N-SZLShg3U3rtyWF18aAAvL-jL85dSYS9xbK0_q_Qv49aiwNmkB84f7Lho680ZmpI7CIaR&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=ByER9f8wXBx72C9-xJ1QXw&_nc_ss=8&oh=00_Afw3lsNUJKeSFvk6T7369cJ-Di0sKufdz6kwQxAamZxjnw&oe=69B97003",
-    "excerpt": "The Palace said she did not resign. That was the first thing they made clear.",
-    "word_count": 762,
-    "read_time": 4,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_472",
-    "title": "DSWD ALLOCATES P30 BILLION FOR CASH AID AS FUEL PRICES KEEP CLIMBING",
-    "date": "2026-03-13",
-    "tags": [
-      "Social Welfare",
-      "Energy",
-      "Government"
-    ],
-    "image": "https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/649270003_122121523491092788_8920628481958969439_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeGf6CQOY-lrEAUfpAunYwN89Enx23T3mPH0SfHbdPeY8YiWC0mKbTPrHWHSwK-qsn8&_nc_ohc=eFZNtEWGC8MQ7kNvwERTIOt&_nc_oc=AdlIkhc0dKxtctV63ImY2Qo1ubhodk-XiWosktVm10zvXnUn1d1m6ermM0fGdbSuiaGZhFRb-vHJGqD82YRBTqbI&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&_nc_gid=PXZpn7KMJhm6iHIAHC4Fww&_nc_ss=8&oh=00_Afy41bNqOInAumqGLPhwJC_KrIwoZsdqQncMRUxcFQuDxw&oe=69B97853",
-    "excerpt": "The Department of Social Welfare and Development is setting aside P30 billion from its Assistance to Individuals in Crisis Situation (AICS) budget for cash aid to Filipinos affected by the ongoing ...",
-    "word_count": 567,
-    "read_time": 3,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_473",
-    "title": "IRAN'S NEW SUPREME LEADER SPEAKS \u2014 BUT NEVER APPEARS ON CAMERA",
-    "date": "2026-03-12",
-    "tags": [
-      "Iran"
-    ],
-    "image": "https://scontent.fmnl4-3.fna.fbcdn.net/v/t39.30808-6/651043983_122121492021092788_3176084473020910436_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEavPjh4qw5ppul9-c_urulqsaey0A10maqxp7LQDXSZjOo0bIjYg3ooPQOvtUuSWk&_nc_ohc=KE9eg-lkACEQ7kNvwENkFq8&_nc_oc=AdnEd5fFu5DEMM4bdj6Tn8N0UewxIaaERZZbenUe2SqwOaSGhA4Y_Pd2lY8sj6pfiKUD0jPUcfMd53gtIWpI8Vdt&_nc_zt=23&_nc_ht=scontent.fmnl4-3.fna&_nc_gid=km__hARk_oGkVNCpN03aaA&_nc_ss=8&oh=00_AfwCP5SXNaKvmX5IpyzL5u5Nz2fXrwKXxGjn9hXgb3dTRg&oe=69B99B1A",
-    "excerpt": "Nobody saw his face. On Day 13 of the Iran war, Mojtaba Khamenei \u2014 the man who now holds the title of Supreme Leader of Iran \u2014 issued his first public statement since taking office.",
-    "word_count": 722,
-    "read_time": 4,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_474",
-    "title": "ELECTRICITY SPOT MARKET PRICES COULD JUMP 59% IN APRIL",
-    "date": "2026-03-13",
-    "tags": [
-      "Energy",
-      "Economy"
-    ],
-    "image": "https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/650320089_122121490455092788_5629957926495304520_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHGMZ1EtE8wtIsQjJ4DylSK30rCGczmOY7fSsIZzOY5jq4cLov7oKgapPTfMuW9Ats&_nc_ohc=SaWtgRT1-_4Q7kNvwHyIqNY&_nc_oc=Adnst8PZPwyETZvswQZli0Zhq2tEnHfxZzNAapF90YeW49R7PFtkyBl3paAafOTQNuMeTCDU--ijwA2uM9jsWb_D&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=NDGffQj3TW0wSVQFgwJRvA&_nc_ss=8&oh=00_AfzPlV2CJCZuj0PL3aCSRptHT9AdU6rFZhREAwqu-xtGDg&oe=69B9919D",
-    "excerpt": "P7.93 per kilowatt-hour. That is the upper-end scenario from IEMOP simulations of what market-clearing prices could reach in the Wholesale Electricity Spot Market (WESM) in April.",
-    "word_count": 623,
-    "read_time": 4,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_475",
-    "title": "SANDIGANBAYAN DENIES ESTRADA'S BID FOR PDAF INVESTIGATION RECORDS",
-    "date": "2026-03-13",
-    "tags": [
-      "Corruption",
-      "Judiciary",
-      "Senate"
-    ],
-    "image": "https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/650207215_122121525915092788_695278897447656184_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFcN41OyI1yg9RWyVmuieK_vBd6AJQDKAu8F3oAlAMoCwoGOfg7A5eg_gLpEPUyfaI&_nc_ohc=PJQD5EUYrfYQ7kNvwHjDZoh&_nc_oc=AdnKFejRA9k8l2-R3AAjvDnGaYI1X7YXsQGwqMOdK_WD0A74IX8Y4oYgyA8_Ys57uyInWQaRcGaBZgTZXvJtksfj&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=D0D8zkM_vcvTOTKyLYNlow&_nc_ss=8&oh=00_AfygTxgtZqAqRm2_8sPTUI70CJWTVX_bPMQZKpidgH8DNg&oe=69B97DB5",
-    "excerpt": "Senator Jinggoy Estrada wanted access to the preliminary investigation records of the Ombudsman. The Sandiganbayan said no \u2014 twice.",
-    "word_count": 571,
-    "read_time": 3,
-    "category": "News",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_476",
-    "title": "HOW TO FACT-CHECK LIKE YOU'RE TRYING TO LOSE AN ARGUMENT",
-    "date": "2026-03-12",
-    "tags": [
-      "Media"
-    ],
-    "image": "",
-    "excerpt": "A follower sent me an email last week asking if I could share the fact-checking technique I actually use every time I write. So here it is.",
-    "word_count": 921,
-    "read_time": 5,
+    "title": "The House With Two Rooms: The Duality Of Sara Duterte’s Faith And Fury",
+    "date": "2026-03-14",
     "category": "Commentary",
-    "source": "facebook",
-    "fb_post_id": "",
-    "url": "",
-    "reactions": 0,
-    "comments": 0,
-    "shares": 0
-  },
-  {
-    "id": "art_477",
-    "title": "AN OPEN LETTER TO SENATOR PING LACSON AND SENATE PRESIDENT TITO SOTTO",
-    "date": "2026-03-13",
+    "source": "website",
     "tags": [
-      "Senate",
-      "Corruption",
-      "Government"
+      "sara duterte"
     ],
-    "image": "https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/650769998_122121497715092788_4458995671161592511_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFkv46EOAoJh90t7PxpkjSbUtIMetKpnNRS0gx60qmc1AG-OneTlDAmqTZNnch6Ro4&_nc_ohc=RVasbJwW_ycQ7kNvwHF_UfO&_nc_oc=Adm9DIxNFkdJ0MVzy_Ler2wGDvQilp-xb_BMdr1Tvo4wT265JC_XZWISPilZFsYUlje47gsIiNi4UqRrd6lZZbIx&_nc_zt=23&_nc_ht=scontent.fmnl4-6.fna&_nc_gid=UnG2W2dAn5bCjfVIaRULBQ&_nc_ss=8&oh=00_AfyTdL9KnWJXAG35cqqtkFttQEplLKs88DkmyfhPKlcguA&oe=69B97842",
-    "excerpt": "Senator Panfilo \"Ping\" Lacson, Chairman, Senate Blue Ribbon Committee",
-    "word_count": 857,
-    "read_time": 5,
-    "category": "Commentary",
-    "source": "facebook",
-    "fb_post_id": "",
+    "excerpt": "Last year, I wrote that for many Filipinos, faith and politics live in the same house but in different rooms. We know the way to the \"God room\" by heart: Sunday mass, novena, rosary, fiesta,...",
+    "word_count": 2326,
+    "read_time": 12,
     "url": "",
+    "fb_post_id": "",
     "reactions": 0,
     "comments": 0,
-    "shares": 0
+    "shares": 0,
+    "image": "https://raw.githubusercontent.com/mctversion2/mct-hub/main/images/img_1773481822210.jpg"
   }
 ];
