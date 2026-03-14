@@ -1,0 +1,1 @@
+Hello World - this is a test of inline content from call_external_tool at 2026-03-14
