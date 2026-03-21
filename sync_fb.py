@@ -13,7 +13,7 @@ def fetch_fb_posts():
     since_timestamp = int(datetime.strptime(SINCE_DATE, "%Y-%m-%d").timestamp())
     url = f"https://graph.facebook.com/v21.0/{PAGE_ID}/posts"
     params = {
-        'fields': 'message,created_time,id',
+        'fields': 'message,created_time,id,full_picture',
         'access_token': TOKEN,
         'limit': 100,
         'since': since_timestamp
@@ -57,7 +57,7 @@ def fetch_fb_posts():
                 'message': msg,
                 'link': link,
                 'created_time': created,
-                'image': None
+                'image': post.get('full_picture', None)
             })
 
         # Handle pagination
