@@ -13,7 +13,7 @@ def fetch_fb_posts():
     since_timestamp = int(datetime.strptime(SINCE_DATE, "%Y-%m-%d").timestamp())
     url = f"https://graph.facebook.com/v21.0/{PAGE_ID}/feed"
     params = {
-        'fields': 'message,full_picture,link,created_time,id',
+        'fields': 'message,attachments{media,url},link,created_time,id',
         'access_token': TOKEN,
         'limit': 100,
         'since': since_timestamp
@@ -28,7 +28,6 @@ def fetch_fb_posts():
             print(f"!! CRITICAL ERROR: Facebook API returned {response.status_code}")
             print(f"!! Response Body: {response.text}")
             break
-
         data = response.json()
         posts = data.get('data', [])
         print(f"Found {len(posts)} raw posts in this batch...")
@@ -56,12 +55,22 @@ def fetch_fb_posts():
             # If it passes, process it
             lines = msg.strip().split('\n')
             title = lines[0].replace('\U0001f7e5', '').strip()
+
+            # Extract image from attachments
+            image_url = None
+            attachments = post.get('attachments', {}).get('data', [])
+            if attachments:
+                media = attachments[0].get('media', {})
+                image_url = media.get('image', {}).get('src')
+                if not image_url:
+                    image_url = attachments[0].get('url')
+
             all_posts.append({
                 "id": post_id,
                 "title": title,
                 "date": post.get('created_time'),
                 "content": msg,
-                "image": post.get('full_picture'),
+                "image": image_url,
                 "link": post.get('link')
             })
             print(f" - [SUCCESS] Added Article: {title}")
