@@ -13,7 +13,7 @@ def fetch_fb_posts():
     since_timestamp = int(datetime.strptime(SINCE_DATE, "%Y-%m-%d").timestamp())
     url = f"https://graph.facebook.com/v21.0/{PAGE_ID}/posts"
     params = {
-        'fields': 'message,link,created_time,id',
+        'fields': 'message,created_time,id',
         'access_token': TOKEN,
         'limit': 100,
         'since': since_timestamp
@@ -49,7 +49,7 @@ def fetch_fb_posts():
                 print(f"  - SKIPPED (word_count={word_count}, has_emoji={has_emoji})")
                 continue
 
-            link = post.get('link', f"https://www.facebook.com/{post_id}")
+            link = f"https://www.facebook.com/{post_id}"
             created = post.get('created_time', '')
 
             all_posts.append({
