@@ -9,7 +9,7 @@ PAGE_ID = '893376663850463'
 SINCE_DATE = "2026-03-13"  # The date the site froze
 
 def get_post_image(post_id):
-    """Fetch image for a post via its attachments endpoint (avoids deprecated feed fields)"""
+    """Fetch image for a post via its attachments endpoint"""
     try:
         url = f"https://graph.facebook.com/v21.0/{post_id}/attachments"
         params = {
@@ -33,7 +33,7 @@ def get_post_image(post_id):
 def fetch_fb_posts():
     # Convert date to timestamp for Facebook
     since_timestamp = int(datetime.strptime(SINCE_DATE, "%Y-%m-%d").timestamp())
-    url = f"https://graph.facebook.com/v21.0/{PAGE_ID}/feed"
+    url = f"https://graph.facebook.com/v21.0/{PAGE_ID}/posts"
     params = {
         'fields': 'message,link,created_time,id',
         'access_token': TOKEN,
@@ -78,7 +78,7 @@ def fetch_fb_posts():
             lines = msg.strip().split('\n')
             title = lines[0].replace('\U0001f7e5', '').strip()
 
-            # Fetch image separately to avoid deprecated feed fields
+            # Fetch image separately
             image_url = get_post_image(post_id)
 
             all_posts.append({
