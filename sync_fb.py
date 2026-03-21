@@ -8,12 +8,34 @@ TOKEN = os.getenv('FB_PAGE_TOKEN')
 PAGE_ID = '893376663850463'
 SINCE_DATE = "2026-03-13"  # The date the site froze
 
+def get_post_image(post_id):
+    """Fetch image for a post via its attachments endpoint (avoids deprecated feed fields)"""
+    try:
+        url = f"https://graph.facebook.com/v21.0/{post_id}/attachments"
+        params = {
+            'fields': 'media,url,type',
+            'access_token': TOKEN
+        }
+        response = requests.get(url, params=params)
+        if response.status_code == 200:
+            data = response.json()
+            items = data.get('data', [])
+            if items:
+                media = items[0].get('media', {})
+                src = media.get('image', {}).get('src')
+                if src:
+                    return src
+                return items[0].get('url')
+    except Exception as e:
+        print(f" - Image fetch error: {e}")
+    return None
+
 def fetch_fb_posts():
     # Convert date to timestamp for Facebook
     since_timestamp = int(datetime.strptime(SINCE_DATE, "%Y-%m-%d").timestamp())
     url = f"https://graph.facebook.com/v21.0/{PAGE_ID}/feed"
     params = {
-        'fields': 'message,attachments{media,url},link,created_time,id',
+        'fields': 'message,link,created_time,id',
         'access_token': TOKEN,
         'limit': 100,
         'since': since_timestamp
@@ -56,14 +78,8 @@ def fetch_fb_posts():
             lines = msg.strip().split('\n')
             title = lines[0].replace('\U0001f7e5', '').strip()
 
-            # Extract image from attachments
-            image_url = None
-            attachments = post.get('attachments', {}).get('data', [])
-            if attachments:
-                media = attachments[0].get('media', {})
-                image_url = media.get('image', {}).get('src')
-                if not image_url:
-                    image_url = attachments[0].get('url')
+            # Fetch image separately to avoid deprecated feed fields
+            image_url = get_post_image(post_id)
 
             all_posts.append({
                 "id": post_id,
