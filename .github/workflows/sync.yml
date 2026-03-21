@@ -1,0 +1,37 @@
+name: Facebook Auto-Sync
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Run every hour
+  workflow_dispatch: # Allows manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run sync script
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: python sync_fb.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "MCT Sync Bot"
+          git config --global user.email "bot@morningcoffeethoughts.org"
+          git add fb_posts.json
+          git commit -m "Auto-update Facebook posts [skip ci]" || echo "No changes to commit"
+          git push
