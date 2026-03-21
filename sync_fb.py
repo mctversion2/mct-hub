@@ -14,10 +14,8 @@ def download_image(image_url, post_id):
     if not image_url:
         return None
     os.makedirs(IMG_DIR, exist_ok=True)
-    # Use a safe filename based on post_id
     safe_id = post_id.replace('_', '-')
     local_path = f"{IMG_DIR}/fb-{safe_id}.jpg"
-    # Skip download if already saved
     if os.path.exists(local_path):
         print(f"   - Image already exists: {local_path}")
         return local_path
@@ -35,8 +33,40 @@ def download_image(image_url, post_id):
         print(f"   - Image download error: {e}")
         return None
 
+def migrate_existing_images():
+    """One-time migration: for all posts in fb_posts.json that still have
+    a CDN URL (or null) as image, try to download the image and update
+    the record to point to the local path instead."""
+    output_file = 'fb_posts.json'
+    if not os.path.exists(output_file):
+        return
+    with open(output_file, 'r', encoding='utf-8') as f:
+        posts = json.load(f)
+    changed = 0
+    for post in posts:
+        post_id = post.get('id', '')
+        current_image = post.get('image')
+        safe_id = post_id.replace('_', '-')
+        local_path = f"{IMG_DIR}/fb-{safe_id}.jpg"
+        # If local file already exists, just make sure the record points to it
+        if os.path.exists(local_path):
+            if post.get('image') != local_path:
+                post['image'] = local_path
+                changed += 1
+        elif current_image and current_image.startswith('http'):
+            # Still has a CDN URL — try to download it now
+            result = download_image(current_image, post_id)
+            if result:
+                post['image'] = result
+                changed += 1
+    if changed > 0:
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(posts, f, ensure_ascii=False, indent=2)
+        print(f"---- Migration: Updated {changed} existing post image paths ----")
+    else:
+        print("---- Migration: No image paths needed updating ----")
+
 def fetch_fb_posts():
-    # Convert date to timestamp for Facebook
     since_timestamp = int(datetime.strptime(SINCE_DATE, "%Y-%m-%d").timestamp())
     url = f"https://graph.facebook.com/v21.0/{PAGE_ID}/posts"
     params = {
@@ -47,7 +77,6 @@ def fetch_fb_posts():
     }
     print(f"---- Starting Sync for Page ID: {PAGE_ID} ----")
     all_posts = []
-    # Pagination Loop
     while url:
         response = requests.get(url, params=params if '?' not in url else None)
         if response.status_code != 200:
@@ -60,19 +89,16 @@ def fetch_fb_posts():
         for post in posts:
             msg = post.get('message', '')
             post_id = post.get('id')
-            # ---- DEBUGGING PRINTS ----
             word_count = len(msg.split())
             has_emoji = "\U0001f7e5" in msg
             print(f"Checking Post {post_id}:")
             print(f"  - Word Count: {word_count}")
             print(f"  - Has emoji: {has_emoji}")
-            # Filter: skip posts with less than 50 words or containing the red square emoji
             if word_count < 50 or has_emoji:
                 print(f"  - SKIPPED (word_count={word_count}, has_emoji={has_emoji})")
                 continue
             link = f"https://www.facebook.com/{post_id}"
             created = post.get('created_time', '')
-            # Download image locally so it can be served from GitHub Pages
             cdn_url = post.get('full_picture')
             local_image = download_image(cdn_url, post_id)
             all_posts.append({
@@ -82,11 +108,10 @@ def fetch_fb_posts():
                 'created_time': created,
                 'image': local_image
             })
-        # Handle pagination
         paging = data.get('paging', {})
         next_url = paging.get('next')
         url = next_url
-        params = None  # params are already in the next URL
+        params = None
     return all_posts
 
 def save_posts(posts):
@@ -106,5 +131,8 @@ def save_posts(posts):
         print(f"---- Sync Complete. Total Articles Saved: 0 ----")
 
 if __name__ == '__main__':
+    # Step 1: Migrate existing posts to use local image paths
+    migrate_existing_images()
+    # Step 2: Fetch and save any new posts
     posts = fetch_fb_posts()
     save_posts(posts)
