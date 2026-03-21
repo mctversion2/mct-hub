@@ -13,7 +13,7 @@ def fetch_fb_posts():
     since_timestamp = int(datetime.strptime(SINCE_DATE, "%Y-%m-%d").timestamp())
     url = f"https://graph.facebook.com/v21.0/{PAGE_ID}/posts"
     params = {
-        'fields': 'message,link,created_time,id,full_picture',
+        'fields': 'message,link,created_time,id',
         'access_token': TOKEN,
         'limit': 100,
         'since': since_timestamp
@@ -49,10 +49,6 @@ def fetch_fb_posts():
                 print(f"  - SKIPPED (word_count={word_count}, has_emoji={has_emoji})")
                 continue
 
-            # Get image from full_picture field
-            image_url = post.get('full_picture')
-            print(f"  - Image URL: {image_url}")
-
             link = post.get('link', f"https://www.facebook.com/{post_id}")
             created = post.get('created_time', '')
 
@@ -61,7 +57,7 @@ def fetch_fb_posts():
                 'message': msg,
                 'link': link,
                 'created_time': created,
-                'image': image_url
+                'image': None
             })
 
         # Handle pagination
