@@ -8,39 +8,17 @@ TOKEN = os.getenv('FB_PAGE_TOKEN')
 PAGE_ID = '893376663850463'
 SINCE_DATE = "2026-03-13"  # The date the site froze
 
-def get_post_image(post_id):
-    """Fetch image for a post via its attachments endpoint"""
-    try:
-        url = f"https://graph.facebook.com/v21.0/{post_id}/attachments"
-        params = {
-            'fields': 'media,url,type',
-            'access_token': TOKEN
-        }
-        response = requests.get(url, params=params)
-        if response.status_code == 200:
-            data = response.json()
-            items = data.get('data', [])
-            if items:
-                media = items[0].get('media', {})
-                src = media.get('image', {}).get('src')
-                if src:
-                    return src
-                return items[0].get('url')
-    except Exception as e:
-        print(f" - Image fetch error: {e}")
-    return None
-
 def fetch_fb_posts():
     # Convert date to timestamp for Facebook
     since_timestamp = int(datetime.strptime(SINCE_DATE, "%Y-%m-%d").timestamp())
     url = f"https://graph.facebook.com/v21.0/{PAGE_ID}/posts"
     params = {
-        'fields': 'message,link,created_time,id',
+        'fields': 'message,link,created_time,id,full_picture',
         'access_token': TOKEN,
         'limit': 100,
         'since': since_timestamp
     }
-    print(f"--- Starting Sync for Page ID: {PAGE_ID} ---")
+    print(f"---- Starting Sync for Page ID: {PAGE_ID} ----")
     all_posts = []
 
     # Pagination Loop
@@ -50,6 +28,7 @@ def fetch_fb_posts():
             print(f"!! CRITICAL ERROR: Facebook API returned {response.status_code}")
             print(f"!! Response Body: {response.text}")
             break
+
         data = response.json()
         posts = data.get('data', [])
         print(f"Found {len(posts)} raw posts in this batch...")
@@ -58,47 +37,59 @@ def fetch_fb_posts():
             msg = post.get('message', '')
             post_id = post.get('id')
 
-            # --- DEBUGGING PRINTS ---
+            # ---- DEBUGGING PRINTS ----
             word_count = len(msg.split())
             has_emoji = "\U0001f7e5" in msg
             print(f"Checking Post {post_id}:")
-            print(f" - Word Count: {word_count}")
-            print(f" - Has emoji: {has_emoji}")
+            print(f"  - Word Count: {word_count}")
+            print(f"  - Has emoji: {has_emoji}")
 
-            # APPLY FILTERS
-            if not has_emoji:
-                print(" - [SKIP] No red square emoji found.")
+            # Filter: skip posts with less than 50 words or containing the red square emoji
+            if word_count < 50 or has_emoji:
+                print(f"  - SKIPPED (word_count={word_count}, has_emoji={has_emoji})")
                 continue
 
-            if word_count <= 500:
-                print(f" - [SKIP] Only {word_count} words (Need > 500).")
-                continue
+            # Get image from full_picture field
+            image_url = post.get('full_picture')
+            print(f"  - Image URL: {image_url}")
 
-            # If it passes, process it
-            lines = msg.strip().split('\n')
-            title = lines[0].replace('\U0001f7e5', '').strip()
-
-            # Fetch image separately
-            image_url = get_post_image(post_id)
+            link = post.get('link', f"https://www.facebook.com/{post_id}")
+            created = post.get('created_time', '')
 
             all_posts.append({
-                "id": post_id,
-                "title": title,
-                "date": post.get('created_time'),
-                "content": msg,
-                "image": image_url,
-                "link": post.get('link')
+                'id': post_id,
+                'message': msg,
+                'link': link,
+                'created_time': created,
+                'image': image_url
             })
-            print(f" - [SUCCESS] Added Article: {title}")
 
-        # Check for next page
-        url = data.get('paging', {}).get('next')
-        params = {}  # Clear params for the next URL
+        # Handle pagination
+        paging = data.get('paging', {})
+        next_url = paging.get('next')
+        url = next_url
+        params = None  # params are already in the next URL
 
-    # Save results
-    with open('fb_posts.json', 'w', encoding='utf-8') as f:
-        json.dump(all_posts, f, ensure_ascii=False, indent=4)
-    print(f"--- Sync Complete. Total Articles Saved: {len(all_posts)} ---")
+    return all_posts
 
-if __name__ == "__main__":
-    fetch_fb_posts()
+def save_posts(posts):
+    output_file = 'fb_posts.json'
+    existing = []
+    if os.path.exists(output_file):
+        with open(output_file, 'r', encoding='utf-8') as f:
+            existing = json.load(f)
+
+    existing_ids = {p['id'] for p in existing}
+    new_posts = [p for p in posts if p['id'] not in existing_ids]
+
+    if new_posts:
+        combined = new_posts + existing
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(combined, f, ensure_ascii=False, indent=2)
+        print(f"---- Sync Complete. Total Articles Saved: {len(new_posts)} ----")
+    else:
+        print(f"---- Sync Complete. Total Articles Saved: 0 ----")
+
+if __name__ == '__main__':
+    posts = fetch_fb_posts()
+    save_posts(posts)
